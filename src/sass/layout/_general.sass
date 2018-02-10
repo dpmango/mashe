@@ -15,8 +15,7 @@ ul
 
 body, html
   background: white
-  color: $btnBgColor
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family: $fontBook, 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size: 16px
   min-width: 320px
   max-width: 100%
@@ -35,20 +34,24 @@ body, html
     display: flex
     flex-direction: column
     // header offset ex
-    padding-top: 100px
 
 .container
-  max-width: 1200px
+  max-width: 1460px
   width: 100%
   margin-left: auto
   margin-right: auto
-  padding-left: 40px
-  padding-right: 40px
-
-+r($mobile)
+  padding-left: 30px
+  padding-right: 30px
+  
++r($wide)
   .container
     padding-left: 20px
     padding-right: 20px
+
++r($mobile)
+  .container
+    padding-left: 15px
+    padding-right: 15px
 
 // REMOVE FOR PRODUCTION !
 .dev-bp-debug

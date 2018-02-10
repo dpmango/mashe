@@ -1,5 +1,28 @@
 // HEADER :: START
 header.header
-  .container
-        
+  .header__topbar
+    .container
+      span Бесплатная доставка первого заказа для новых клиентов!
+  .header__mainbar
+    button.header__menu(type="button")
+      //+icon('ico-menu')
+    button.header__search(type="button")
+      //+icon('ico-search')
+    button.header__cart(type="button")
+      //+icon('ico-bag')
+    button.header__like(type="button")
+      //+icon('ico-heart')
+    .container
+      .header__nav
+        a.header__link(href="#") Оплата и доставка
+        a.header__link(href="#") Скидки
+        a.header__link(href="#") Контакты
+      a.header__logo(href="/")
+        img(src="icons/logo-big.svg")
+      .header__nav
+        a.header__link(href="#") Обратный звонок
+        a.header__link.header__link--tel(href="tel:88005059543") 8 800 505-95-43
+          span по будням с 10 до 18
+        a.header__link(href="#") Вход
+      
 // HEADER :: END

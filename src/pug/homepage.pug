@@ -1,6 +1,84 @@
 ---
-title: Homepage title
+title: Homepage || MASHE
 bodyClass: homepage
 ---
 extends shared/_layout
 block content
+
+  // MAIN SLIDER
+  section.main-slider
+    .main-slider__slide
+      .container
+        span.main-slider__subtitle Натуральный
+        h1.main-slider__title Шелк для декора
+        p.main-slider__descr от 315 рублей, с доставкой по России от 2 дней
+        a.main-slider__btn(href="#") Перейти в каталог
+        
+  // ADVANTAGES
+  section.advantages
+    .container
+      .advantages__wrap
+        .advantages__item
+          h3.advantages__title Мин.отрез 0,5 метра
+            //+icon('ico-')
+          p.advantages__descr Идеально для рукоделия или на пробу
+            //+icon('ico-')
+        .advantages__item
+          h3.advantages__title Высокое качество
+            //+icon('ico-')
+          p.advantages__descr Работаем напрямую с производителями тканей
+            //+icon('ico-')
+        .advantages__item
+          h3.advantages__title Удобная доставка
+            //+icon('ico-')
+          p.advantages__descr Курьер, самовывоз, почта – от 130 руб.
+            //+icon('ico-')
+        .advantages__item
+          h3.advantages__title Безопасная оплата
+            //+icon('ico-')
+          p.advantages__descr Онлайн-чек сразу после оплаты по e-mail или в sms
+            //+icon('ico-')
+        .advantages__item
+          h3.advantages__title Оптовые цены от 10 м
+            //+icon('ico-')
+          p.advantages__descr Выгодное предложение при заказе оптом
+            //+icon('ico-')
+            
+  // MASTERPIECE
+  section.masterpiece
+    .container
+      h2.masterpiece__title Творите шедевры
+      h3.masterpiece__subtitle Наслаждайтесь результатом
+      .masterpiece__wrap
+        .masterpiece__item.masterpiece__item--photo
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для шитья
+            span.masterpiece__item-amount 22 вида
+          p.masterpiece__descr Возможна покраска шелка по pantone и тканипод заказ на выгодныхусловиях
+        .masterpiece__item
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для росписи
+            span.masterpiece__item-amount 25 видов
+          p.masterpiece__descr Натуральный белый шелк, платки и шарфы
+        .masterpiece__item.masterpiece__item--photo
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для декора
+            span.masterpiece__item-amount 22 вида
+          p.masterpiece__descr Оптовые цены от 10 метров. Сотрудничество с фотогорафами и декораторами
+        .masterpiece__item
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для валяния
+            span.masterpiece__item-amount 25 видов
+          p.masterpiece__descr Разреженный маргиланские шелка, лен, хлопок
+        .masterpiece__item.masterpiece__item--photo
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для вышивки
+            span.masterpiece__item-amount 22 вида
+          p.masterpiece__descr Пайетки, бисер и шелковые нити
+        .masterpiece__item
+          .masterpiece__title-wrap
+            h3.masterpiece__item-title Шелк для цветов
+            span.masterpiece__item-amount 25 видов
+          p.masterpiece__descr Минимальный отрез от 0,5 метра
+          
+      a.masterpiece__btn(href="#") Перейти в полный каталог

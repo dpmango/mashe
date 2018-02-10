@@ -1,1 +1,144 @@
-
+.header
+  &__topbar
+    background-color: $primary2Color
+    color: #969FA3
+    text-align: center
+    font-size: 18px
+    font-family: $fontMedium
+    padding-top: 10px
+    padding-bottom: 12px
+    font-weight: 500
+  &__mainbar
+    padding-top: 40px
+    padding-bottom: 42px
+    position: relative
+    .container
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+  &__menu
+    position: absolute
+    left: 40px
+    top: 18px
+    width: 62px
+    padding: 0
+    border: 0
+    height: 62px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $btnBgHover
+  &__search
+    position: absolute
+    left: 40px
+    top: 90px
+    width: 62px
+    padding: 0
+    border: 0
+    height: 62px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $btnBgHover
+  &__cart
+    position: absolute
+    right: 40px
+    top: 18px
+    width: 62px
+    padding: 0
+    border: 0
+    height: 62px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $primary2Color
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $primary2Hover
+  &__like
+    position: absolute
+    right: 40px
+    top: 90px
+    width: 62px
+    padding: 0
+    border: 0
+    height: 62px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $primaryColor
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $primaryHover
+  &__nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    width: calc(50% - 147px)
+    &:first-child
+      justify-content: flex-start
+    &:last-child
+      justify-content: flex-end
+  &__link
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: bold
+    font-family: $fontBold
+    color: $btnBgColor
+    position: relative
+    padding-left: 25px
+    padding-right: 25px
+    letter-spacing: 0.06em
+    z-index: 2
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: transparentize($btnBgColor, .3)
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+    &--tel
+      span
+        position: absolute
+        font-size: 16px
+        font-weight: 400
+        text-transform: none
+        font-family: $fontBook
+        bottom: -15px
+        right: 25px
+        letter-spacing: 0
+        color: $textColor
+  &__logo
+    width: 295px
+    flex: 0 0 auto
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 330px
+      height: 100px
+      background-color: #fff
+      border-radius: 80%
+      top: -10px
+      z-index: 1
+      left: 50%
+      transform: translateX(-50%)
+    img
+      width: 100%
+      height: auto
+      display: block
+      position: absolute
+      top: -27px
+      z-index: 2

@@ -1,0 +1,31 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(16229 14322)">
+<g id="Group">
+<g id="Rectangle">
+<mask id="mask0_outline_out">
+<rect id="mask0_outline_inv" fill="white" x="-2" y="-2" width="16" height="16" transform="translate(-16227 -14320)"/>
+<use xlink:href="#path0_fill" fill="black" transform="translate(-16227 -14320)"/>
+</mask>
+<g mask="url(#mask0_outline_out)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-16227 -14320)" fill="#353535"/>
+</g>
+</g>
+<g id="Ellipse">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(-16224.4 -14317.4)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(-16224.4 -14317.4)" fill="#353535"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 3C 0 1.34315 1.34315 0 3 0L 9 0C 10.6569 0 12 1.34315 12 3L 12 9C 12 10.6569 10.6569 12 9 12L 3 12C 1.34315 12 0 10.6569 0 9L 0 3Z"/>
+<path id="path1_stroke_2x" d="M 3 2L 9 2L 9 -2L 3 -2L 3 2ZM 10 3L 10 9L 14 9L 14 3L 10 3ZM 9 10L 3 10L 3 14L 9 14L 9 10ZM 2 9L 2 3L -2 3L -2 9L 2 9ZM 3 10C 2.44772 10 2 9.55228 2 9L -2 9C -2 11.7614 0.238576 14 3 14L 3 10ZM 10 9C 10 9.55228 9.55228 10 9 10L 9 14C 11.7614 14 14 11.7614 14 9L 10 9ZM 9 2C 9.55228 2 10 2.44772 10 3L 14 3C 14 0.238576 11.7614 -2 9 -2L 9 2ZM 3 -2C 0.238576 -2 -2 0.238576 -2 3L 2 3C 2 2.44772 2.44772 2 3 2L 3 -2Z"/>
+<path id="path2_fill" d="M 6.85714 3.42857C 6.85714 5.32212 5.32212 6.85714 3.42857 6.85714C 1.53502 6.85714 0 5.32212 0 3.42857C 0 1.53502 1.53502 0 3.42857 0C 5.32212 0 6.85714 1.53502 6.85714 3.42857Z"/>
+<path id="path3_stroke_2x" d="M 4.85714 3.42857C 4.85714 4.21755 4.21755 4.85714 3.42857 4.85714L 3.42857 8.85714C 6.42669 8.85714 8.85714 6.42669 8.85714 3.42857L 4.85714 3.42857ZM 3.42857 4.85714C 2.63959 4.85714 2 4.21755 2 3.42857L -2 3.42857C -2 6.42669 0.430454 8.85714 3.42857 8.85714L 3.42857 4.85714ZM 2 3.42857C 2 2.63959 2.63959 2 3.42857 2L 3.42857 -2C 0.430454 -2 -2 0.430454 -2 3.42857L 2 3.42857ZM 3.42857 2C 4.21755 2 4.85714 2.63959 4.85714 3.42857L 8.85714 3.42857C 8.85714 0.430454 6.42669 -2 3.42857 -2L 3.42857 2Z"/>
+</defs>
+</svg>
