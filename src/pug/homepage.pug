@@ -169,4 +169,84 @@ block content
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
+      .examples__wrap
+        .examples__item
+          .examples__photo
+            img(src="img/example1.png")
+            button.examples__btn(type="button")
+          h3.examples__item-title Каталог образцов тканей
+          .examples__size 10x10 см
+          .examples__price 600₽
+        .examples__item
+          .examples__photo
+            img(src="img/example2.png")
+            button.examples__btn(type="button")
+          h3.examples__item-title Каталог образцов тканей
+          .examples__size 10x10 см
+          .examples__price 600₽
+        .examples__item
+          .examples__photo
+            img(src="img/example3.png")
+            button.examples__btn(type="button")
+          h3.examples__item-title Каталог образцов тканей
+          .examples__size 10x10 см
+          .examples__price 600₽
+        .examples__item
+          .examples__photo
+            img(src="img/example4.png")
+            button.examples__btn(type="button")
+          h3.examples__item-title Каталог образцов тканей
+          .examples__size 10x10 см
+          .examples__price 600₽
+          
+  // CLIENTS
+  section.clients
+    .container
+      h2.clients__title Довольные клиенты
+      h3.clients__subtitle Более 1 500 человек
+      .clients__wrap(jsClientsSlider)
+        .clients__item
+          .clients__photo
+            img(src="img/client.png")
+          blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
+          cite.clients__name Оксана Гутка
+          span.clients__pos Дизайнер одежды Gutka
+        .clients__item
+          .clients__photo
+            img(src="img/client.png")
+          blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
+          cite.clients__name Оксана Гутка
+          span.clients__pos Дизайнер одежды Gutka
+        .clients__item
+          .clients__photo
+            img(src="img/client.png")
+          blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
+          cite.clients__name Оксана Гутка
+          span.clients__pos Дизайнер одежды Gutka
+          
+      a.clients__btn(href="#") + Добавить отзыв
+  
+  // PHOTOS
+  section.photos
+    img.photos__item(src="img/image1.jpg")
+    img.photos__item(src="img/image2.jpg")
+    img.photos__item(src="img/image3.jpg")
+    img.photos__item(src="img/image4.jpg")
+    img.photos__item(src="img/image5.jpg")
+    img.photos__item(src="img/image6.jpg")
+    img.photos__item(src="img/image7.jpg")
+    
+  // NEWSLETTER
+  section.newsletter
+    .container
+      .newsletter__wrap
+        .newsletter__info
+          h2.newsletter__title Подпишись на рассылку 
+          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
+        form.newsletter__form(action="#")
+          .newsletter__form-wrap
+            input.newsletter__input(type="email" placeholder="Ваш email")
+            button.newsletter__btn(type="submit") Подписаться !
+          p.newsletter__text Нажимая на кнопку, вы даете согласие на
+            a.newsletter__link(href="#") обработку своих персональных данных
         

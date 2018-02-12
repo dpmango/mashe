@@ -1,2 +1,86 @@
 // FOOTER
-
+.footer
+  &__topbar
+    padding-top: 52px
+    padding-bottom: 53px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 44px
+    font-size: 18px
+    font-family: $fontBold
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: $btnBgColor
+  &__item
+    width: 20%
+  ul
+    margin: 0
+    padding: 0
+  li
+    display: block
+    margin-bottom: 17px
+    &:last-child
+      margin-bottom: 0
+  &__link
+    font-size: 18px
+    font-family: $fontMedium
+    color: #9FAFB5
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $btnBgColor
+  &__tel
+    font-size: 24px
+    line-height: 100%
+    font-family: $fontHeavy
+    color: $btnBgColor
+    display: block
+    margin-bottom: 5px
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $btnBgHover
+  &__time
+    font-size: 18px
+    display: block
+    font-family: $fontBook
+    color: #B5C3C9
+    margin-bottom: 27px
+  &__mail
+    font-size: 18px
+    font-family: $fontBook
+    color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $btnBgHover
+  &__socials
+    margin-top: 45px
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__fb,
+  &__vk,
+  &__inst
+    border-radius: 50%
+    margin-right: 6px
+    width: 37px
+    height: 37px
+    border: 2px solid $btnBgColor
+    color: $btnBgColor
+    display: flex
+    justify-content: center
+    align-items: center
+  &__bottombar
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding-top: 31px
+    padding-bottom: 50px
+    border-top: 1px solid $primary2Color
+  &__copy,
+  &__dev
+    color: #B5C3C9
+    font-size: 16px
+    font-family: $fontBook

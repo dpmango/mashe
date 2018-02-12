@@ -1,3 +1,4 @@
+// MAIN SLIDER SECTION
 .main-slider
   &__slide
     background-repeat: no-repeat
@@ -43,6 +44,8 @@
     &:hover
       background-color: $btnBgHover
     
+    
+// ADVANTAGES SECTION
 .advantages
   margin-top: -122px
   &__wrap
@@ -77,6 +80,8 @@
     position: relative
     padding-top: 25px
     
+    
+// MASTERPIECE SECTION
 .masterpiece
   padding-top: 105px
   padding-bottom: 85px
@@ -191,6 +196,8 @@
     &:hover
       background-color: $btnBgHover
     
+    
+// POPULAR SECTION
 .popular
   padding-top: 105px
   padding-bottom: 60px
@@ -363,9 +370,11 @@
       display: inline-block
       vertical-align: middle
       
+      
+// EXAMPLES SECTION
 .examples
   padding-top: 185px
-  padding-bottom: 95px
+  padding-bottom: 100px
   position: relative
   text-align: center
   &__title
@@ -384,7 +393,7 @@
   &__subtitle
     font-size: 20px
     margin-top: 0
-    margin-bottom: 60px
+    margin-bottom: 56px
     max-width: 830px
     margin-left: auto
     margin-right: auto
@@ -392,3 +401,228 @@
     font-family: $fontBook
     line-height: 140%
     color: #707070
+  &__wrap
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+  &__item
+    padding: 40px 34px 30px 34px
+    border: 1px solid $primary2Color
+    margin-left: 6px
+    margin-right: 6px
+    width: calc(25% - 12px)
+    text-align: center
+  &__photo
+    position: relative
+    margin-bottom: 29px
+    border-radius: 50%
+    min-height: 262px
+    display: flex
+    justify-content: center
+    align-items: stretch
+    img
+      display: block
+      height: auto
+      width: 100%
+      border-radius: 50%
+  &__btn
+    border-radius: 50%
+    background-color: $primary2Color
+    border: 5px solid #fff
+    width: 75px
+    height: 75px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all $transitionSpeed $ease
+    position: absolute
+    bottom: 0
+    right: 0
+    &:hover
+      background-color: $primary2Hover
+  &__item-title
+    margin-top: 0
+    margin-bottom: 52px
+    letter-spacing: 0.05em
+    line-height: 100%
+    font-size: 26px
+    font-family: $fontMedium
+  &__size
+    font-size: 16px
+    margin-bottom: 30px
+  &__price
+    font-size: 36px
+    font-family: $fontMedium
+    position: relative
+    padding-top: 25px
+    
+    
+// CLIENTS SECTION
+.clients
+  padding-top: 115px
+  padding-bottom: 115px
+  background-color: #FFEDE9
+  text-align: center
+  &__title
+    font-size: 36px
+    margin-top: 0
+    font-family: $fontBold
+    margin-bottom: 5px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.05em
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 110px
+    font-size: 24px
+    text-align: center
+    font-family: $fontHeavy
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    margin-left: -14px
+    margin-right: -14px
+    margin-bottom: 50px
+  &__item
+    width: calc(33% - 28px)
+    margin-left: 14px
+    margin-right: 14px
+    background-color: #fff
+    padding: 0 50px 48px 50px
+  &__photo
+    width: 130px
+    height: 130px
+    border-radius: 50%
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 33px
+    margin-top: -65px
+    img
+      display: block
+      height: 100%
+      width: 100%
+      border-radius: 50%
+  &__text
+    font-size: 20px
+    line-height: 150%
+    font-family: $fontBook
+    margin-top: 0
+    margin-bottom: 45px
+    margin-left: 0
+    margin-right: 0
+    color: $btnBgColor
+  &__name
+    display: block
+    font-style: normal
+    font-size: 24px
+    font-family: $fontMedium
+    margin-top: 0
+    padding-top: 80px
+    position: relative
+    margin-bottom: 3px
+    color: $btnBgColor
+  &__pos
+    font-size: 18px
+    font-family: $fontMedium
+    color: $textColor
+    
+  &__btn
+    display: inline-block
+    padding: 16px 44px
+    font-size: 14px
+    letter-spacing: 0.05em
+    text-decoration: none
+    background-color: $btnBgColor
+    color: #fff
+    border-radius: 30px
+    text-transform: uppercase
+    font-family: $fontBold
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $btnBgHover
+    
+    
+// PHOTOS SECTION
+.photos
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  justify-content: space-between
+  &__item
+    display: block
+    height: auto
+    width: 14.3%
+    
+// NEWSLETTER SECTION
+.newsletter
+  padding-top: 48px
+  padding-bottom: 52px
+  background-color: $bgColor
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__info
+    width: 40%
+  &__form
+    width: 60%
+    text-align: right
+  &__title
+    font-size: 24px
+    font-family: $fontBold
+    margin-top: 7px
+    text-transform: uppercase
+    color: $btnBgColor
+    margin-bottom: 8px
+  &__subtitle
+    font-size: 18px
+    font-family: $fontHeavy
+    margin: 0
+    color: $btnBgColor
+  &__form-wrap
+    max-width: 550px
+    margin-left: auto
+    position: relative
+    margin-bottom: 18px
+  &__input
+    text-align: left
+    border: 0
+    border-radius: 20px
+    display: block
+    width: 100%
+    background-color: #fff
+    padding: 10px 33px
+    font-size: 18px
+    font-family: $fontMedium
+    color: $btnBgColor
+  &__btn
+    position: absolute
+    top: 0
+    right: 0
+    font-size: 14px
+    padding: 12px 42px
+    text-align: center
+    text-transform: uppercase
+    border: 0
+    background-color: $btnBgColor
+    color: #fff
+    font-family: $fontHeavy
+    letter-spacing: 0.05em
+    border-radius: 20px
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-color: $btnBgHover
+  &__text
+    font-size: 16px
+    margin: 0
+    font-family: $fontMedium
+    color: $textColor
+  &__link
+    text-decoration: none
+    color: $btnBgColor
+    margin-left: 4px
+    &:hover
+      text-decoration: underline
