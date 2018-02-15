@@ -24,6 +24,11 @@ body, html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+.no-scroll
+  overflow: hidden
+  max-height: 100vh
+  position: fixed
+
 .page
   display: flex
   flex-direction: column
@@ -36,18 +41,18 @@ body, html
     // header offset ex
 
 .container
-  max-width: 1460px
+  max-width: 1500px
   width: 100%
   margin-left: auto
   margin-right: auto
-  padding-left: 30px
-  padding-right: 30px
+  padding-left: 50px
+  padding-right: 50px
   
-+r($wide)
++r($desktop)
   .container
-    padding-left: 20px
-    padding-right: 20px
-
+    padding-left: 30px
+    padding-right: 30px
+  
 +r($mobile)
   .container
     padding-left: 15px
@@ -64,3 +69,34 @@ body, html
   padding: 5px
   font-size: 12px
   border-bottom-left-radius: 5px
+
+  
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+.animated.infinite
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+
+.animated.hinge
+  -webkit-animation-duration: 2s
+  animation-duration: 2s
+  
+@-webkit-keyframes fadeIn
+  from
+    opacity: 0
+  to 
+    opacity: 1
+
+@keyframes fadeIn 
+  from 
+    opacity: 0
+  to 
+    opacity: 1
+
+.fadeIn
+  -webkit-animation-name: fadeIn
+  animation-name: fadeIn

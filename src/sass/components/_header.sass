@@ -1,3 +1,315 @@
+// SEARCH PANEL
+.search-panel
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  text-align: left
+  padding-top: 160px
+  padding-bottom: 100px
+  overflow: hidden
+  opacity: 0
+  visibility: hidden
+  &.is-active
+    opacity: 1
+    visibility: visible
+  &__round
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    top: 0
+    left: 0
+    background-color: #fff
+    position: absolute
+    transform: translate(40px, 130px) scale(1.0)
+    transform-origin: center
+    z-index: 1
+    opacity: 1
+    transition: all 0.5s $ease
+    &.is-active
+      transform: translate(40px, 130px) scale(90.0)
+      //opacity: 1
+  &__close
+    position: absolute
+    z-index: 2
+    top: 50px
+    left: 50px
+    padding: 0
+    border: 0
+    width: 35px
+    height: 35px
+    background-color: transparent
+    transition: all $transitionSpeed $ease
+    &:hover
+      opacity: 0.8
+    img
+      display: block
+      width: 100%
+      height: auto
+  &__form
+    max-width: 540px
+    display: block
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    z-index: 2
+    opacity: 0
+    transition: all 0.5s $ease
+    &.is-active
+      opacity: 1
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-image: url(../../img/search-black.svg)
+      width: 42px
+      height: 33px
+      background-size: 100%
+  &__input
+    display: block
+    width: 100%
+    font-size: 48px
+    font-family: $fontBook
+    padding: 10px 45px 10px 60px
+    color: $btnBgColor
+    border: 0
+    border-bottom: 2px solid transparentize($btnBgColor, 0.9)
+  &__btn
+    display: block
+    position: absolute
+    padding: 0
+    border: 0
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    transition: all $transitionSpeed $ease
+    opacity: 0
+    visibility: hidden
+    background-color: transparent
+    &.is-active
+      opacity: 1
+      visibility: visible
+  &__hint
+    transition: all 0.5s $ease
+    opacity: 0
+    font-size: 18px
+    font-family: $fontBook
+    color: #918D8D
+    text-align: left
+    position: relative
+    z-index: 2
+    width: 540px
+    margin-top: 18px
+    margin-bottom: 0
+    margin-left: auto
+    margin-right: auto
+    transition: all $transitionSpeed $ease
+    &.is-active
+      opacity: 1
+    &.is-hidden
+      opacity: 0
+      
+// MENU
+.main-nav
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  text-align: center
+  padding-bottom: 100px
+  overflow: hidden
+  opacity: 0
+  visibility: hidden
+  &.is-active
+    opacity: 1
+    visibility: visible
+  &__wrapper
+    padding-top: 55px
+    width: 100%
+    opacity: 0
+    transition: all 0.5s $ease
+    position: relative
+    z-index: 2
+    &.is-active
+      opacity: 1
+  &__round
+    max-width: 100%
+    max-height: 100%
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    top: 0
+    left: 0
+    background-color: #fff
+    position: absolute
+    transform: translate(40px, 60px) scale(1.0)
+    transform-origin: center
+    z-index: 1
+    opacity: 1
+    transition: all 0.5s $ease
+    &.is-active
+      transform: translate(40px, 60px) scale(90.0)
+      //opacity: 1
+  &__close
+    position: absolute
+    z-index: 2
+    top: 50px
+    left: 50px
+    padding: 0
+    border: 0
+    width: 35px
+    height: 35px
+    background-color: transparent
+    transition: all $transitionSpeed $ease
+    &:hover
+      opacity: 0.8
+    img
+      display: block
+      width: 100%
+      height: auto
+  &__title
+    margin-top: 0
+    font-size: 36px
+    font-family: $fontBold
+    color: $btnBgColor
+    margin-bottom: 80px
+    text-transform: uppercase
+    span
+      position: relative
+      &:before,
+      &:after
+        content: ''
+        position: absolute
+        top: 40%
+        background-repeat: no-repeat
+        background-image: url(../../img/wave-title.svg)
+        width: 180px
+        height: 12px
+        background-size: 100%
+      &:before
+        left: -115%
+      &:after
+        right: -115%
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    max-width: 1400px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+  &__item
+    width: 16.66%
+    padding: 30px 15px 15px 15px
+    border-right: 2px solid #F5F5F5
+    &:last-child
+      border-right: 0
+  &__subtitle
+    position: relative
+    text-transform: uppercase
+    font-size: 14px
+    font-family: $fontBold
+    margin: 0
+    padding-top: 80px
+    &:first-child img
+      width: 66px
+      height: 62px
+    img
+      display: block
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      
+  &__categories
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    padding-bottom: 50px
+    border-bottom: 2px solid #f5f5f5
+    max-width: 1400px
+    margin-left: auto
+    margin-right: auto
+  &__category
+    margin-left: 7px
+    margin-right: 7px
+    background-color: #FFEDE9
+    color: $btnBgColor
+    text-transform: uppercase
+    text-align: center
+    font-size: 14px
+    font-family: $fontBold
+    padding: 12px 25px
+  &__submenu
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    margin-top: 33px
+    ul
+      margin: 0
+      padding: 0
+    li
+      display: block
+      margin-bottom: 17px
+      &:last-child
+        margin-bottom: 0
+    &-item
+      width: 25%
+    &-title
+      margin-top: 0
+      margin-bottom: 44px
+      font-size: 18px
+      font-family: $fontBold
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: $btnBgColor
+  &__link
+    font-size: 18px
+    font-family: $fontMedium
+    color: #9FAFB5
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $btnBgColor
+  &__socials
+    position: absolute
+    top: 50px
+    right: 50px
+  &__fb,
+  &__vk,
+  &__inst
+    margin-bottom: 12px
+    border-radius: 50%
+    margin-right: 6px
+    width: 37px
+    height: 37px
+    border: 2px solid $btnBgColor
+    color: $btnBgColor
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all $transitionSpeed $ease
+    &:hover
+      border-color: #9FAFB5
+
+    
+// HEADER
 .header
   &__topbar
     background-color: $primary2Color
@@ -18,9 +330,10 @@
       align-items: center
       justify-content: space-between
   &__menu
-    position: absolute
+    position: fixed
+    z-index: 3
     left: 40px
-    top: 18px
+    top: 58px
     width: 62px
     padding: 0
     border: 0
@@ -34,9 +347,10 @@
     &:hover
       background-color: $btnBgHover
   &__search
-    position: absolute
+    position: fixed
+    z-index: 3
     left: 40px
-    top: 90px
+    top: 130px
     width: 62px
     padding: 0
     border: 0
@@ -50,9 +364,10 @@
     &:hover
       background-color: $btnBgHover
   &__cart
-    position: absolute
+    position: fixed
+    z-index: 3
     right: 40px
-    top: 18px
+    top: 58px
     width: 62px
     padding: 0
     border: 0
@@ -66,9 +381,10 @@
     &:hover
       background-color: $primary2Hover
   &__like
-    position: absolute
+    position: fixed
+    z-index: 3
     right: 40px
-    top: 90px
+    top: 130px
     width: 62px
     padding: 0
     border: 0
@@ -120,6 +436,8 @@
         right: 25px
         letter-spacing: 0
         color: $textColor
+  &__logo--mini
+    display: none
   &__logo
     width: 295px
     flex: 0 0 auto
@@ -142,3 +460,129 @@
       position: absolute
       top: -27px
       z-index: 2
+      
+      
+@media(max-width: 1620px)
+  .header
+    &__menu,
+    &__search,
+    &__cart,
+    &__like
+      width: 52px
+      height: 52px
+      img
+        max-width: 45%
+    &__menu,
+    &__search
+      left: 20px
+    &__cart,
+    &__like
+      right: 20px
+    &__link
+      &:first-child
+        display: none
+    &__nav
+      &:first-child
+        justify-content: flex-end
+        padding-right: 30px
+      &:last-child
+        justify-content: flex-start
+        padding-left: 5px
+      
+  .main-nav
+    &__round
+      width: 50px
+      height: 50px
+      transform: translate(20px, 60px) scale(1)
+      &.is-active
+        transform: translate(20px, 60px) scale(90)
+  .search-panel
+    &__round
+      width: 50px
+      height: 50px
+      transform: translate(20px, 130px) scale(1)
+      &.is-active
+        transform: translate(20px, 130px) scale(90)
+        
++r($desktop)
+  .header
+    &__topbar
+      display: none
+    &__mainbar
+      padding: 14px 0
+    .container
+      align-items: center
+      justify-content: center
+    &__nav
+      display: none
+    &__logo
+      display: none
+    &__logo--mini
+      display: block
+      max-width: 95px
+      img
+        width: 100%
+        height: auto
+    &__menu,
+    &__search,
+    &__cart,
+    &__like
+      position: absolute
+      width: 42px
+      height: 42px
+      top: 8px
+    &__menu
+      left: 30px
+    &__search
+      left: 80px
+    &__cart
+      right: 80px
+    &__like
+      right: 30px
+      
+  .search-panel
+    padding-top: 120px
+    padding-bottom: 100px
+    &__close
+      width: 20px
+      height: 20px
+      top: 20px
+      left: 20px
+    &__round
+      width: 40px
+      height: 40px
+      transform: translate(80px, 10px) scale(1)
+      &.is-active
+        transform: translate(80px, 10px) scale(80)
+        
+  .main-nav
+    padding-bottom: 45px
+    &__round
+      width: 40px
+      height: 40px
+      transform: translate(30px, 10px) scale(1)
+      &.is-active
+        transform: translate(30px, 10px) scale(80)
+    &__title
+      margin-bottom: 50px
+    &__close
+      width: 20px
+      height: 20px
+      top: 20px
+      left: 20px
+    &__wrapper
+      padding-top: 75px
+    &__subtitle
+      font-size: 10px
+      &:first-child
+        img
+          width: 55px
+    &__category
+      font-size: 10px
+    &__socials
+      padding-top: 15px
+      text-align: center
+      position: static
+      display: flex
+      justify-content: center
+      align-items: center

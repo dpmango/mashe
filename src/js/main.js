@@ -95,6 +95,54 @@ $(document).ready(function(){
 
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
+    
+    
+    
+    //SEARCH
+    $('[jsOpenSearch]').on('click', function(){
+      $('body').addClass('no-scroll');
+      $('.search-panel').addClass('is-active');
+      $('.search-panel__round').addClass('is-active');
+      $('.search-panel__form').addClass('is-active');
+      $('.search-panel__hint').addClass('is-active');
+    });
+    
+    $('.search-panel__close').on('click', function(){
+      $('body').removeClass('no-scroll');
+      $('.search-panel__round').removeClass('is-active');
+      $('.search-panel__form').removeClass('is-active');
+      $('.search-panel__hint').removeClass('is-active');
+      setTimeout(function(){
+        $('.search-panel').removeClass('is-active');
+      }, 500)
+    });
+    
+    $('.search-panel__input').keyup(function(){
+      if ($(this).val().length > 0) {
+        $('.search-panel__btn').addClass('is-active');
+        $('.search-panel__hint').addClass('is-hidden');
+      } else {
+        $('.search-panel__btn').removeClass('is-active');
+        $('.search-panel__hint').removeClass('is-hidden');
+      }
+    });
+    
+    //MENU
+    $('[jsOpenMenu]').on('click', function(){
+      $('body').addClass('no-scroll');
+      $('.main-nav').addClass('is-active');
+      $('.main-nav__round').addClass('is-active');
+      $('.main-nav__wrapper').addClass('is-active');
+    });
+    
+    $('.main-nav__close').on('click', function(){
+      $('body').removeClass('no-scroll');
+      $('.main-nav__round').removeClass('is-active');
+      $('.main-nav__wrapper').removeClass('is-active');
+      setTimeout(function(){
+        $('.main-nav').removeClass('is-active');
+      }, 500)
+    });
   }
 
   pageReady();
@@ -298,6 +346,60 @@ $(document).ready(function(){
     //     return _socialsSlickMobile.slick(socialsSlickMobileOptions);
     //   }
     // }, 300));
+    
+    
+    $('[jsClientsSlider]').slick({
+      arrows: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+        ]
+    });
+    
+    
+    $('[jsPopularSlider]').slick({
+      arrows: true,
+      dots: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+    {
+      breakpoint: 1336,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+        {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }
+        ]
+    });
+    
+    
+    $('[jsMainSlider]').slick({
+      arrows: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 3500
+    });
 
   }
 

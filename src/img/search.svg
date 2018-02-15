@@ -1,0 +1,26 @@
+<svg width="27" height="22" viewBox="0 0 27 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(17659 20396)">
+<g id="Group 3">
+<g id="Group">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-17658.9 -20395)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-17658.9 -20395)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(0.70347 0.710724 -0.70347 0.710724 -17639.1 -20384.3)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 19.8541 10.0294C 19.8541 15.5685 15.4096 20.0588 9.92704 20.0588C 4.44449 20.0588 0 15.5685 0 10.0294C 0 4.49032 4.44449 0 9.92704 0C 15.4096 0 19.8541 4.49032 19.8541 10.0294Z"/>
+<path id="path1_stroke_2x" d="M 16.8541 10.0294C 16.8541 13.9407 13.7238 17.0588 9.92704 17.0588L 9.92704 23.0588C 17.0954 23.0588 22.8541 17.1963 22.8541 10.0294L 16.8541 10.0294ZM 9.92704 17.0588C 6.13029 17.0588 3 13.9407 3 10.0294L -3 10.0294C -3 17.1963 2.75869 23.0588 9.92704 23.0588L 9.92704 17.0588ZM 3 10.0294C 3 6.11808 6.13029 3 9.92704 3L 9.92704 -3C 2.75869 -3 -3 2.86256 -3 10.0294L 3 10.0294ZM 9.92704 3C 13.7238 3 16.8541 6.11808 16.8541 10.0294L 22.8541 10.0294C 22.8541 2.86256 17.0954 -3 9.92704 -3L 9.92704 3Z"/>
+<path id="path2_stroke" d="M 0.603426 4.938L 8.716 1.37327L 7.50915 -1.37327L -0.603426 2.19145L 0.603426 4.938Z"/>
+</defs>
+</svg>

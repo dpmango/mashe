@@ -71,6 +71,9 @@
     display: flex
     justify-content: center
     align-items: center
+    transition: all $transitionSpeed $ease
+    &:hover
+      border-color: #9FAFB5
   &__bottombar
     display: flex
     flex-direction: row
@@ -84,3 +87,56 @@
     color: #B5C3C9
     font-size: 16px
     font-family: $fontBook
+  &__dev
+    padding-right: 95px
+    position: relative
+    display: block
+    &:after
+      content: ''
+      position: absolute
+      top: -5px
+      right: 0
+      background-repeat: no-repeat
+      background-image: url(../../img/dev-icon.svg)
+      width: 89px
+      height: 21px
+    
++r($wide)
+  .footer
+    &__subtitle
+      font-size: 17px
+      margin-bottom: 34px
+    li
+      margin-bottom: 13px
+    &__link
+      font-size: 17px
+    &__tel
+      font-size: 19px
+      
++r($desktop)
+  .footer
+    &__topbar
+      flex-wrap: wrap
+      padding-bottom: 33px
+    &__item
+      width: 25%
+      text-align: center
+      &--contacts
+        width: 100%
+        text-align: center
+        margin-top: 50px
+        padding-top: 20px
+        border-top: 2px solid #B5C3C9
+    &__subtitle
+      margin-bottom: 25px
+    &__tel
+      font-size: 24px
+    &__socials
+      margin-top: 15px
+      text-align: center
+      justify-content: center
+    &__bottombar
+      flex-direction: column
+      justify-content: center
+    &__copy
+      margin-bottom: 30px

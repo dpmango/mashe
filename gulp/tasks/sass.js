@@ -31,7 +31,7 @@ var config       = require('../config');
 var processors = [
   short(),
   svginline(),
-  animations(),
+  //animations(),
   respType(),
   focus(),
   easings(),
