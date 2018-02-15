@@ -53,28 +53,6 @@ $(document).ready(function(){
     hd: 1680
   }
 
-  //////////
-  // DEVELOPMENT HELPER
-  //////////
-  function setBreakpoint(){
-    var wHost = window.location.host.toLowerCase()
-    var displayCondition = wHost.indexOf("localhost") >= 0 || wHost.indexOf("surge") >= 0
-    if (displayCondition){
-      console.log(displayCondition)
-      var wWidth = _window.width();
-
-      var content = "<div class='dev-bp-debug'>"+wWidth+"</div>";
-
-      $('.page').append(content);
-      setTimeout(function(){
-        $('.dev-bp-debug').fadeOut();
-      },1000);
-      setTimeout(function(){
-        $('.dev-bp-debug').remove();
-      },1500)
-    }
-  }
-
   ////////////
   // READY - triggered when PJAX DONE
   ////////////
@@ -95,9 +73,9 @@ $(document).ready(function(){
 
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
-    
-    
-    
+
+
+
     //SEARCH
     $('[jsOpenSearch]').on('click', function(){
       $('body').addClass('no-scroll');
@@ -106,7 +84,7 @@ $(document).ready(function(){
       $('.search-panel__form').addClass('is-active');
       $('.search-panel__hint').addClass('is-active');
     });
-    
+
     $('.search-panel__close').on('click', function(){
       $('body').removeClass('no-scroll');
       $('.search-panel__round').removeClass('is-active');
@@ -116,7 +94,7 @@ $(document).ready(function(){
         $('.search-panel').removeClass('is-active');
       }, 500)
     });
-    
+
     $('.search-panel__input').keyup(function(){
       if ($(this).val().length > 0) {
         $('.search-panel__btn').addClass('is-active');
@@ -126,7 +104,7 @@ $(document).ready(function(){
         $('.search-panel__hint').removeClass('is-hidden');
       }
     });
-    
+
     //MENU
     $('[jsOpenMenu]').on('click', function(){
       $('body').addClass('no-scroll');
@@ -134,7 +112,7 @@ $(document).ready(function(){
       $('.main-nav__round').addClass('is-active');
       $('.main-nav__wrapper').addClass('is-active');
     });
-    
+
     $('.main-nav__close').on('click', function(){
       $('body').removeClass('no-scroll');
       $('.main-nav__round').removeClass('is-active');
@@ -346,8 +324,8 @@ $(document).ready(function(){
     //     return _socialsSlickMobile.slick(socialsSlickMobileOptions);
     //   }
     // }, 300));
-    
-    
+
+
     $('[jsClientsSlider]').slick({
       arrows: true,
       dots: false,
@@ -372,8 +350,8 @@ $(document).ready(function(){
     }
         ]
     });
-    
-    
+
+
     $('[jsPopularSlider]').slick({
       arrows: true,
       dots: true,
@@ -405,8 +383,8 @@ $(document).ready(function(){
     }
         ]
     });
-    
-    
+
+
     $('[jsMainSlider]').slick({
       arrows: false,
       dots: true,
@@ -617,7 +595,19 @@ $(document).ready(function(){
     },
 
     fadeOut: function() {
-      return $(this.oldContainer).animate({ opacity: .5 }, 200).promise();
+      var deferred = Barba.Utils.deferred();
+
+      anime({
+        targets: this.oldContainer,
+        opacity : .5,
+        easing: [.02, .01, .47, 1], // swing
+        duration: 250,
+        complete: function(anim){
+          deferred.resolve();
+        }
+      });
+
+      return deferred.promise
     },
 
     fadeIn: function() {
@@ -631,9 +621,17 @@ $(document).ready(function(){
         opacity : .5
       });
 
-      $el.animate({ opacity: 1 }, 200, function() {
-        document.body.scrollTop = 0;
-        _this.done();
+      document.body.scrollTop = 0;
+
+      anime({
+        targets: $el.get(0),
+        opacity: 1,
+        easing: [.02, .01, .47, 1], // swing
+        duration: 200,
+        complete: function(anim) {
+          triggerBody()
+          _this.done();
+        }
       });
     }
   });
@@ -652,5 +650,32 @@ $(document).ready(function(){
 
   });
 
+  function triggerBody(){
+    $(window).scroll();
+    $(window).resize();
+  }
+
+
+  //////////
+  // DEVELOPMENT HELPER
+  //////////
+  function setBreakpoint(){
+    var wHost = window.location.host.toLowerCase()
+    var displayCondition = wHost.indexOf("localhost") >= 0 || wHost.indexOf("surge") >= 0
+    if (displayCondition){
+      console.log(displayCondition)
+      var wWidth = _window.width();
+
+      var content = "<div class='dev-bp-debug'>"+wWidth+"</div>";
+
+      $('.page').append(content);
+      setTimeout(function(){
+        $('.dev-bp-debug').fadeOut();
+      },1000);
+      setTimeout(function(){
+        $('.dev-bp-debug').remove();
+      },1500)
+    }
+  }
 
 });

@@ -1,19 +1,16 @@
 <svg width="37" height="39" viewBox="0 0 37 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Group 4</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(17668 21906)">
-<g id="Group 4">
-<g id="Group">
-<g id="Line 2">
-<use xlink:href="#path0_stroke" transform="matrix(0.707107 0.707107 0.707107 -0.707107 -17665 -21904)" fill="#353535"/>
-</g>
-<g id="Line 2">
-<use xlink:href="#path0_stroke" transform="matrix(-0.707107 0.707107 0.707107 0.707107 -17631 -21903)" fill="#353535"/>
-</g>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_stroke" d="M 0 0L 48.0833 0L 48.0833 -3L 0 -3L 0 0Z"/>
-</defs>
+    <title>Group 4</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(17668 21906)">
+        <g id="Group 4">
+            <g id="Group">
+                <g id="Line 2">
+                    <path d="M 0 0L 48.0833 0L 48.0833 -3L 0 -3L 0 0Z" transform="matrix(0.707107 0.707107 0.707107 -0.707107 -17665 -21904)" fill="#353535"></path>
+                </g>
+                <g id="Line 2">
+                    <path d="M 0 0L 48.0833 0L 48.0833 -3L 0 -3L 0 0Z" transform="matrix(-0.707107 0.707107 0.707107 0.707107 -17631 -21903)" fill="#353535"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

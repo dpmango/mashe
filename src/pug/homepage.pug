@@ -6,7 +6,7 @@ extends shared/_layout
 block content
 
   // MAIN SLIDER
-  section.main-slider(jsMainSlider)
+  section.main-slider(jsMainSlider).wow
     .main-slider__slide
       .container
         span.main-slider__subtitle Натуральный
@@ -22,7 +22,7 @@ block content
         
             
   // MASTERPIECE
-  section.masterpiece
+  section.masterpiece.wow
     // ADVANTAGES
     section.advantages
       .container
@@ -110,7 +110,7 @@ block content
       a.masterpiece__btn(href="#") Перейти в полный каталог  ➞
   
   // POPULAR
-  section.popular
+  section.popular.wow
     .container
       h2.popular__title 
         span самые популярные
@@ -285,7 +285,7 @@ block content
             
             
   // EXAPMLES
-  section.examples
+  section.examples.wow
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
@@ -324,7 +324,7 @@ block content
           .examples__price 600₽
           
   // CLIENTS
-  section.clients
+  section.clients.wow
     .container
       h2.clients__title 
         span Довольные клиенты
@@ -358,7 +358,7 @@ block content
       a.clients__btn(href="#") + Добавить отзыв
   
   // PHOTOS
-  section.photos
+  section.photos.wow
     a(href="#")
       img.photos__item(src="img/image1.jpg")
     a(href="#")
@@ -375,7 +375,7 @@ block content
       img.photos__item(src="img/image7.jpg")
     
   // NEWSLETTER
-  section.newsletter
+  section.newsletter.wow
     .container
       .newsletter__wrap
         .newsletter__info
