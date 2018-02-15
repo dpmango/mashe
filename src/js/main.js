@@ -361,6 +361,14 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false
       }
+    },
+        {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
     }
         ]
     });
@@ -384,6 +392,14 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
+        arrows: false
+      }
+    },
+        {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false
       }
     }

@@ -1127,3 +1127,88 @@
       margin-left: auto
       margin-right: auto
       text-align: center
+      
++r($tablet)
+  .main-slider
+    &__subtitle
+      padding-bottom: 20px
+      &:after
+        display: none
+      &:before
+        top: 32px
+        left: 50%
+        transform: translateX(-50%)
+    &__title
+      margin-top: 43px
+      margin-bottom: 50px
+    &__slide
+      padding-bottom: 175px
+      
+  .masterpiece
+    &__title
+      padding-bottom: 50px
+      span
+        &:after
+          display: none
+        &:before
+          top: auto
+          left: 50%
+          bottom: -30px !important
+          transform: translateX(-50%)
+    &__wrap
+      margin-left: 0
+      margin-right: 0
+    &__item
+      width: 100%
+      
+  .popular
+    &__title
+      padding-bottom: 50px
+      span
+        &:after
+          display: none
+        &:before
+          top: auto
+          left: 50% !important
+          bottom: -30px !important
+          transform: translateX(-50%)
+        
+    .catalog-item
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8)
+        display: none
+      
+  .examples
+    &__title
+      width: 100%
+      max-width: 530px
+      font-size: 24px
+      padding-left: 10px
+      padding-right: 10px
+    &__wrap
+      margin-left: 0
+      margin-right: 0
+    &__item
+      width: 100%
+      
+  .newsletter
+    &__info
+      padding-bottom: 50px
+    &__title
+      position: relative
+      margin-bottom: 50px
+      &:before
+        content: ''
+        position: absolute
+        bottom: -30px
+        left: 50%
+        transform: translateX(-50%)
+        background-repeat: no-repeat
+        background-image: url(../../img/wave-title.svg)
+        width: 180px
+        height: 12px
+        background-size: 100%

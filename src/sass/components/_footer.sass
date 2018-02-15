@@ -139,4 +139,39 @@
       flex-direction: column
       justify-content: center
     &__copy
+      text-align: center
       margin-bottom: 30px
+      
++r($tablet)
+  .footer
+    &__topbar
+      padding-top: 0
+    &__item
+      width: 100%
+      &--contacts
+        margin-top: 0
+        border: 0
+      ul
+        display: none
+    &__subtitle
+      width: calc(100% + 30px)
+      text-align: left
+      margin: 0
+      margin-left: -15px
+      padding: 35px 15px
+      border-bottom: 1px solid #B5C3C9
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 15px
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 1px solid #B5C3C9
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-image: url(../../img/arrow-left.svg)
+        background-size: 25%
+        transform: translateY(-50%) rotate(-90deg)

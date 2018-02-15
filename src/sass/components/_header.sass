@@ -586,3 +586,81 @@
       display: flex
       justify-content: center
       align-items: center
+      
++r($tablet)
+  .header
+    &__menu
+      left: 15px
+    &__search
+      left: 65px
+    &__like
+      right: 15px
+    &__cart
+      right: 65px
+  
+  .search-panel
+    &__form
+      max-width: 315px
+    &__input
+      font-size: 36px
+    &__hint
+      max-width: 315px
+      text-align: center
+      
+  .main-nav
+    &__wrapper
+      padding-top: 55px
+    &__title
+      font-size: 32px
+      span
+        &:before,
+        &:after
+          display: none
+    &__wrap
+      max-width: 315px
+      flex-wrap: wrap
+    &__item
+      width: 50%
+      border-top: 2px solid #F5F5F5
+      &:last-child
+        border-right: 2px solid #F5F5F5
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5)
+        border-left: 2px solid #F5F5F5
+      &:nth-child(5),
+      &:nth-child(6)
+        border-bottom: 2px solid #F5F5F5
+      
+    &__categories
+      display: none
+    ul
+      display: none
+    &__submenu
+      flex-direction: column
+    &__submenu-title
+      margin-bottom: 0
+    &__submenu-item
+      width: 100%
+      text-align: left
+      margin: 0
+      padding: 35px 15px
+      border-bottom: 1px solid #B5C3C9
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 15px
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 1px solid #B5C3C9
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-image: url(../../img/arrow-left.svg)
+        background-size: 25%
+        transform: translateY(-50%) rotate(-90deg)
+      
+    &__socials
+      padding-top: 40px
