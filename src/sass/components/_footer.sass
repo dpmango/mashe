@@ -72,8 +72,12 @@
     justify-content: center
     align-items: center
     transition: all $transitionSpeed $ease
+    font-size: 11px
+    svg
+      transition: none
     &:hover
       border-color: #9FAFB5
+      color: #9fafb5
   &__bottombar
     display: flex
     flex-direction: row
@@ -88,10 +92,12 @@
     font-size: 16px
     font-family: $fontBook
   &__dev
-    padding-right: 95px
+    //padding-right: 95px
     position: relative
     display: block
-    &:after
+    svg
+      margin-left: 5px
+    //&:after
       content: ''
       position: absolute
       top: -5px

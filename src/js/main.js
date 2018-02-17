@@ -356,20 +356,20 @@ $(document).ready(function(){
       arrows: true,
       dots: true,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       responsive: [
     {
       breakpoint: 1336,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1
       }
     },
         {
       breakpoint: 991,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         arrows: false
       }
     },

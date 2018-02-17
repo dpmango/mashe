@@ -3,7 +3,8 @@ ProjectTitle: Mashe
 PageList:
 - file: homepage.html
   ready: 70
-
+- file: catalog.html
+  ready: 50
 
 - file: icons.html
   ready: 5

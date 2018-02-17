@@ -4,7 +4,8 @@ header.header
   .search-panel
     .search-panel__round
     button.search-panel__close(type="button")
-      img(src="img/close.svg")
+      //img(src="img/close.svg")
+      +icon('ico-close')
     form.search-panel__form(action="#")
       input.search-panel__input(type="text" placeholder="Поиск")
       button.search-panel__btn(type="button")
@@ -16,7 +17,8 @@ header.header
     .main-nav__round
     .main-nav__wrapper
       button.main-nav__close(type="button")
-        img(src="img/close.svg")
+        //img(src="img/close.svg")
+        +icon('ico-close')
       h2.main-nav__title
         span Каталог
       .main-nav__wrap
@@ -93,13 +95,17 @@ header.header
       span Бесплатная доставка первого заказа для новых клиентов!
   .header__mainbar
     button.header__menu(type="button" jsOpenMenu)
-      img(src="img/menu.svg")
+      //img(src="img/menu.svg")
+      +icon('ico-menu')
     button.header__search(type="button" jsOpenSearch)
       img(src="img/search.svg")
+      //+icon('ico-search')
     button.header__cart(type="button")
-      img(src="img/bag.svg")
+      //img(src="img/bag.svg")
+      +icon('ico-bag')
     button.header__like(type="button")
-      img(src="img/heart.svg")
+      //img(src="img/heart.svg")
+      +icon('ico-heart')
     .container
       .header__nav
         a.header__link(href="#") Оплата и доставка
