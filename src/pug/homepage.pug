@@ -77,7 +77,8 @@ block content
         a.masterpiece__item(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для росписи
-              img(src="img/for-paint.svg")
+              +icon('ico-for-paint')
+              //img(src="img/for-paint.svg")
             span.masterpiece__item-amount 25 видов
        
           p.masterpiece__descr Натуральный белый шелк, платки и шарфы
@@ -90,7 +91,8 @@ block content
         a.masterpiece__item(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для валяния
-              img(src="img/for-felt-w.svg")
+              +icon('ico-for-felt')
+              //img(src="img/for-felt-w.svg")
             span.masterpiece__item-amount 25 видов
          
           p.masterpiece__descr Разреженный маргиланские шелка, лен, хлопок
@@ -103,7 +105,8 @@ block content
         a.masterpiece__item(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для цветов
-              img(src="img/for-flower-w.svg")
+              +icon('ico-for-flower')
+              //img(src="img/for-flower-w.svg")
             span.masterpiece__item-amount 25 видов
          
           p.masterpiece__descr Минимальный отрез от 0,5 метра
@@ -139,7 +142,7 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160₽</span> цена за 1м – при покупке от 10м
+            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -163,7 +166,7 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160₽</span> цена за 1м – при покупке от 10м
+            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular3.jpg")
@@ -189,7 +192,7 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160₽</span> цена за 1м – при покупке от 10м
+            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular4.jpg")
@@ -212,7 +215,7 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160₽</span> цена за 1м – при покупке от 10м
+            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular4.jpg")
@@ -235,7 +238,7 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160₽</span> цена за 1м – при покупке от 10м
+            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
             
             
             
@@ -244,7 +247,7 @@ block content
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap
+      .examples__wrap(jsExamplesSlider)
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example1.png")

@@ -91,7 +91,7 @@
     margin-right: -8px
   &__item
     background-color: #fff
-    padding: 35px
+    padding: 35px 30px
     padding-bottom: 50px
     text-align: center
     margin-left: 8px
@@ -108,7 +108,7 @@
     font-family: $fontBold
     color: $btnBgColor
     padding-top: 110px
-    img,
+    letter-spacing: 0.05em
     svg
       font-size: 70px
       color: $primaryColor
@@ -116,6 +116,16 @@
       top: 0
       left: 50%
       transform: translateX(-50%)
+      &.ico-scissors
+        font-size: 80px
+      &.ico-medal
+        font-size: 90px
+      &.ico-truck
+        font-size: 65px
+        top: 10px
+      &.ico-card
+        top: 10px
+      &.ico-
   &__descr
     font-size: 18px
     margin: 0
@@ -211,6 +221,9 @@
     &:nth-child(4),
     &:nth-child(6)
       background-color: $primaryColor
+      .masterpiece__item-title
+        svg
+         color: #fff
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
@@ -225,6 +238,9 @@
     &:nth-child(2)
       .masterpiece__item-amount
         color: $textColor
+      .masterpiece__item-title
+        svg
+         color: #B1BABE
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
@@ -236,6 +252,15 @@
           right: -60%
       &:hover
         background-color: $primary2Hover
+        .masterpiece__item-amount
+          color: #fff
+          &:before,
+          &:after
+            background-image: url(../../img/wave-w.svg)
+        .masterpiece__item-title
+          svg
+           color: #fff
+          
     &:nth-child(2),
     &:nth-child(4),
     &:nth-child(6)
@@ -289,12 +314,15 @@
     text-transform: uppercase
     color: $btnBgColor
     position: relative
-    img
+    img,
+    svg
+      font-size: 90px
       position: absolute
       top: -140px
       left: 50%
       transform: translateX(-50%)
   &__item-amount
+    transition: all $transitionSpeed $ease
     font-size: 22px
     font-family: $fontMedium
     position: relative
@@ -640,6 +668,9 @@
     margin-right: 6px
     width: calc(25% - 12px)
     text-align: center
+    &:hover
+      img
+        transform: scale(1.05)
   &__photo
     position: relative
     margin-bottom: 29px
@@ -648,9 +679,6 @@
     display: flex
     justify-content: center
     align-items: stretch
-    &:hover
-      img
-        transform: scale(1.05)
     img
       display: block
       height: auto
@@ -754,6 +782,10 @@
     margin-left: -14px
     margin-right: -14px
     margin-bottom: 50px
+    .slick-track,
+    .slick-list
+      display: flex !important
+      align-items: stretch
     .slick-prev,
     .slick-next
       display: block
@@ -776,6 +808,8 @@
       background-image: url(../../img/arrow-right.svg)
       right: -40px
   &__item
+    display: flex !important
+    flex-direction: column
     width: calc(33% - 28px)
     margin-left: 14px
     margin-right: 14px
@@ -808,7 +842,7 @@
     font-style: normal
     font-size: 24px
     font-family: $fontMedium
-    margin-top: 0
+    margin-top: auto
     padding-top: 80px
     position: relative
     margin-bottom: 3px
@@ -827,7 +861,7 @@
   &__pos
     font-size: 18px
     font-family: $fontMedium
-    color: $textColor
+    color: #B5C3C9
     
   &__btn
     display: inline-block
@@ -965,11 +999,16 @@
       position: relative
       left: 50%
       transform: translateX(-50%)
-      min-width: 1100px
+      min-width: 1110px
       margin-left: auto
       margin-right: auto
+    //&__item
+      min-width: 205px
   .masterpiece
     padding-bottom: 75px
+    &__descr
+      padding-left: 15px
+      padding-right: 15px
     &__item
       &-title
         font-size: 22px
@@ -982,6 +1021,10 @@
   .examples
     padding-top: 155px
     padding-bottom: 75px
+    &__photo
+      max-width: 265px
+      margin-left: auto
+      margin-right: auto
     &__item
       width: calc(33.33% - 12px)
       &:last-child
@@ -1030,6 +1073,8 @@
     &__title
       padding-top: 85px
       margin-bottom: 14px
+      svg.ico
+        font-size: 65px
     &__descr
       font-size: 16px
       padding-top: 27px
@@ -1052,6 +1097,7 @@
       margin-right: 10px
       padding: 20px
       &-title
+        svg,
         img
           height: 80px
           top: -100px
@@ -1071,6 +1117,7 @@
       margin-left: -9px
       margin-right: -9px
       .slick-dots
+        width: 100%
         bottom: -50px
       
   .catalog-item
@@ -1107,6 +1154,9 @@
   .clients
     padding-top: 115px
     padding-bottom: 115px
+    &__wrap
+      width: calc(100% + 60px)
+      margin-left: -30px
   .photos
     a
       width: 33.33%
@@ -1124,6 +1174,18 @@
     &__info
       width: 100%
       padding-bottom: 105px
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+        background-repeat: no-repeat
+        background-image: url(../../img/wave-title.svg)
+        width: 180px
+        height: 12px
+        background-size: 100%
     &__form
       width: 100%
     &__title
@@ -1185,6 +1247,8 @@
       margin-right: 0
     &__item
       width: 100%
+      margin-left: 0
+      margin-right: 0
       
   .popular
     &__title
@@ -1217,12 +1281,58 @@
     &__wrap
       margin-left: 0
       margin-right: 0
+      .slick-dots
+        width: 100%
+        margin: 0
+        padding: 0
+        position: absolute
+        bottom: -25px
+        left: 50%
+        transform: translateX(-50%)
+        button
+          padding: 0
+          font-size: 0
+          width: 37px
+          height: 4px
+          background-color: #E6E6E6
+          margin-left: 6px
+          margin-right: 6px
+          transition: all $transitionSpeed $ease
+        li.slick-active button
+          background-color: $btnBgColor
     &__item
       width: 100%
+      margin-left: 0
+      margin-right: 0
+      
+  .clients
+    &__wrap
+      margin-bottom: 100px
+    .slick-dots
+      width: 100%
+      margin: 0
+      padding: 0
+      position: absolute
+      bottom: -55px
+      left: 50%
+      transform: translateX(-50%)
+      button
+        padding: 0
+        font-size: 0
+        width: 37px
+        height: 4px
+        background-color: #fff
+        margin-left: 6px
+        margin-right: 6px
+        transition: all $transitionSpeed $ease
+      li.slick-active button
+        background-color: $btnBgColor
       
   .newsletter
     &__info
       padding-bottom: 50px
+      &:after
+        display: none
     &__title
       position: relative
       margin-bottom: 50px
