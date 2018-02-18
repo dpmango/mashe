@@ -471,6 +471,8 @@
     .catalog-item__descr
       visibility: visible
       opacity: 1
+      p
+        transform: translateX(0)
     .catalog-item__special
       background-color: $btnBgColor
       p
@@ -501,6 +503,8 @@
     visibility: hidden
     transition: all $transitionSpeed $ease
     p
+      transition: all $transitionSpeed $ease
+      transform: translateY(20px)
       font-size: 18px
       font-family: 
       line-height: 110%
@@ -1170,8 +1174,24 @@
         display: none
       
   .newsletter
+    overflow: hidden
     &:before
-      display: none
+      background-position: 0 50%
+      background-size: contain
+      background-image: url(../../img/news-left.svg)
+      left: 0
+      bottom: 0
+      width: 30%
+      height: 80%
+    &:after
+      content: ''
+      position: absolute
+      right: -100px
+      bottom: -60px
+      width: 30%
+      height: 80%
+      background-repeat: no-repeat
+      background-image: url(../../img/news-right.svg)
     &__wrap
       flex-direction: column
     &__info

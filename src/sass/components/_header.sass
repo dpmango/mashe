@@ -701,10 +701,12 @@
         &:after
           display: none
     &__wrap
-      max-width: 315px
+      max-width: calc(100% - 60px)
       flex-wrap: wrap
+      margin-left: auto
+      margin-right: auto
     &__item
-      width: 50%
+      width: 33.33%
       border: 2px solid #F5F5F5
       &:last-child
         border-right: 2px solid #F5F5F5
@@ -742,3 +744,14 @@
       
     &__socials
       padding-top: 40px
+      
++r($mobile)
+  .main-nav
+    &__wrap
+      max-width: 315px
+      flex-wrap: wrap
+    &__item
+      width: 50%
+      border: 2px solid #F5F5F5
+      &:last-child
+        border-right: 2px solid #F5F5F5
