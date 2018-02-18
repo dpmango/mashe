@@ -448,10 +448,10 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1
      }
-     _socialsSlickMobile.slick(socialsSlickMobileOptions);
+     //_socialsSlickMobile.slick(socialsSlickMobileOptions);
     
      _window.on('resize', debounce(function(e){
-       if ( _window.width() > 768 ) {
+       if ( _window.width() > 767 ) {
          if (_socialsSlickMobile.hasClass('slick-initialized')) {
            _socialsSlickMobile.slick('unslick');
          }
