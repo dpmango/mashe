@@ -121,6 +121,17 @@ $(document).ready(function(){
         $('.main-nav').removeClass('is-active');
       }, 500)
     });
+    
+    
+    // CATALOG
+    $('.catalog-promo__secondsort input').change(function(){
+      if ($('[jsTissue]').is(':checked')) {
+        $('.sort-items').css('display', 'block');
+      } else {
+        $('.sort-items').css('display', 'none');
+      }
+    });
+    
   }
 
   pageReady();
@@ -448,7 +459,9 @@ $(document).ready(function(){
 
   ////////////
   // UI
-  ////////////
+  
+  
+  $('[jsSelect]').selectric();
 
   // custom selects
   _document.on('click', '.ui-select__visible', function(e){

@@ -13,33 +13,69 @@ block content
         a.breadcrumbs__link(href="#") Главная
         a.breadcrumbs__link.is-active(href="#") Каталог
       h1.catalog-promo__title Каталог
-      .catalog-promo__sorting
+      form.catalog-promo__sorting(action="#")
         p.catalog-promo__text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
         .catalog-promo__mainsort
-          .catalog-promo__main-item
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item1")
+          label.catalog-promo__main-item(for="catalog-item1")
             h2.catalog-promo__subtitle Для росписи
-              img(src="img/for-paint.svg")
-          .catalog-promo__main-item
+              +icon('ico-for-paint')
+              //img(src="img/for-paint.svg")
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item2")
+          label.catalog-promo__main-item(for="catalog-item2")
             h2.catalog-promo__subtitle Для цветов
-              img(src="img/for-flower.svg")
-          .catalog-promo__main-item
+              +icon('ico-for-flower')
+              //img(src="img/for-flower.svg")
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item3")
+          label.catalog-promo__main-item(for="catalog-item3")
             h2.catalog-promo__subtitle Для валяния
-              img(src="img/for-felt.svg")
-          .catalog-promo__main-item
+              +icon('ico-for-felt')
+              //img(src="img/for-felt.svg")
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item4")
+          label.catalog-promo__main-item(for="catalog-item4")
             h2.catalog-promo__subtitle Для шитья
-              img(src="img/for-stitch.svg")
-          .catalog-promo__main-item
+              +icon('ico-for-stitch')
+              //img(src="img/for-stitch.svg")
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item5")
+          label.catalog-promo__main-item(for="catalog-item5")
             h2.catalog-promo__subtitle Для вышивки
-              img(src="img/for-embr.svg")
-          .catalog-promo__main-item
+              +icon('ico-for-embr')
+              //img(src="img/for-embr.svg")
+          input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item6")
+          label.catalog-promo__main-item(for="catalog-item6")
             h2.catalog-promo__subtitle Для декора
-              img(src="img/for-decor.svg")
+              +icon('ico-for-decor')
+              //img(src="img/for-decor.svg")
         .catalog-promo__secondsort
-          .catalog-promo__second-item Все товары / 50
-          .catalog-promo__second-item Ткани / 10
-          .catalog-promo__second-item Волокна / 20
-          .catalog-promo__second-item Нити / 5
-          .catalog-promo__second-item Образцы / 15 
+          input(type="radio" name="second-items" id="second-item1")
+          label.catalog-promo__second-item(for="second-item1") Все товары / 50
+          input(type="radio" name="second-items" id="second-item2" jsTissue)
+          label.catalog-promo__second-item(for="second-item2") Ткани / 10
+          input(type="radio" name="second-items" id="second-item3")
+          label.catalog-promo__second-item(for="second-item3") Волокна / 20
+          input(type="radio" name="second-items" id="second-item4")
+          label.catalog-promo__second-item(for="second-item4") Нити / 5
+          input(type="radio" name="second-items" id="second-item5")
+          label.catalog-promo__second-item(for="second-item5") Образцы / 15 
+  
+  section.sort-items
+    .container
+      form.sort-items__form(action="#")
+        select.sort-items__select(jsSelect)
+          option(selected disabled) По ширине  
+          option Менее 120 см
+          option 120 - 140 см
+          option 140 - 160 см
+          option Более 180 см
+        select.sort-items__select(jsSelect)
+          option(selected disabled) По плотности  
+          option Пункт 1
+          option Пункт 2
+        select.sort-items__select(jsSelect)
+          option(selected disabled) По цвету  
+          option Белая
+          option Цветная
+        span.sort-items__all Всего: 34 товара
   
   // ITEMS
   section.catalog-items.wow

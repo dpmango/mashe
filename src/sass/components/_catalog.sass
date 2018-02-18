@@ -4,7 +4,7 @@
     
 .breadcrumbs
   text-align: center
-  margin-bottom: 15px
+  margin-bottom: 20px
   &__link
     text-transform: uppercase
     text-decoration: none
@@ -38,7 +38,8 @@
     margin-top: 0
     text-align: center
     text-transform: uppercase
-    margin-bottom: 100px
+    margin-bottom: 55px
+    letter-spacing: 0.05em
     font-size: 48px
     font-family: $fontBold
     color: $btnBgColor
@@ -51,21 +52,32 @@
     font-size: 20px
     margin-top: 0
     font-family: $fontBook
-    line-height: 120%
+    line-height: 150%
     color: #707070
     max-width: 960px
     margin-left: auto
     margin-right: auto
+    margin-bottom: 40px
   &__mainsort
     display: flex
     justify-content: space-between
     align-items: stretch
-    margin-bottom: 40px
+    margin-bottom: 60px
+  &__input
+    visibility: hidden
+    display: none
+    &:checked + label svg
+      color: $btnBgColor
   &__main-item
     width: 16.66%
     padding: 30px 15px 15px 15px
     text-align: center
     border-right: 2px solid #F5F5F5
+    transition: all $transitionSpeed $ease
+    &:hover
+      cursor: pointer
+      svg
+        color: $btnBgColor
     &:last-child
       border-right: 0
   &__subtitle
@@ -75,11 +87,13 @@
     font-family: $fontBold
     margin: 0
     padding-top: 80px
+    color: $btnBgColor
     &:first-child img
       width: 66px
       height: 62px
-    img
-      display: block
+    svg
+      color: #B1BABE
+      font-size: 45px
       position: absolute
       top: 0
       left: 50%
@@ -90,6 +104,11 @@
     flex-direction: row
     justify-content: center
     align-items: stretch
+    input
+      display: none
+      &:checked + label
+        color: #fff
+        background-color: $btnBgColor
   &__second-item
     margin-left: 7px
     margin-right: 7px
@@ -100,6 +119,25 @@
     font-size: 14px
     font-family: $fontBold
     padding: 12px 25px
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: #fff
+      background-color: $btnBgColor
+      cursor: pointer
+    
+.sort-items
+  display: none
+  padding-bottom: 30px
+  background-color: $bgColor
+  &__form
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__all
+    margin-left: auto
+    font-size: 20px
+    font-family: $fontMedium
+    color: #707070
   
     
 .catalog-items
@@ -148,6 +186,7 @@
   &__descr
     width: 50%
     padding: 100px 0
+    padding-right: 50px
   &__title
     max-width: 550px
     text-transform: uppercase
@@ -169,3 +208,149 @@
       display: block
       width: 100%
       height: 100%
+      
++r($hd)
+  .catalog-promo
+    &__sorting
+      padding-left: 40px
+      padding-right: 40px
+    
++r($wide)
+  .catalog-items
+    .catalog-item
+      width: calc(33.33% - 14px)
+      &:nth-child(4)
+        display: none
+    
++r($desktop)
+  .catalog-promo
+    padding-top: 60px
+    &__title
+      margin-bottom: 30px
+    &__text
+      font-size: 16px
+    &__sorting
+      padding-top: 27px
+      padding-bottom: 40px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 10px
+      padding-top: 45px
+      svg
+        font-size: 30px
+    &__mainsort
+      margin-bottom: 20px
+    &__main-item
+      padding: 10px
+    &__second-item
+      font-size: 10px
+      padding: 12px 10px
+      
+  .sort-items
+    &__form
+      flex-wrap: wrap
+      justify-content: center
+    .selectric-wrapper
+      width: calc(33.33% - 15px)
+      margin-left: 7px
+      margin-right: 7px
+    &__all
+      margin-left: auto
+      margin-right: auto
+      margin-top: 30px
+      
+  .catalog-items
+    .catalog-item
+      width: calc(50% - 14px)
+      &:nth-child(3),
+      &:nth-child(4)
+        display: none
+      
+  .catalog-info
+    &__wrap
+      flex-direction: column
+      align-items: flex-start
+    &__descr
+      text-align: center
+      width: 100%
+      padding-right: 0
+      padding-top: 90px
+    &__title
+      max-width: 100%
+      margin-bottom: 40px
+    &__text
+      max-width: 100%
+      line-height: 150%
+    &__photo
+      width: calc(100% + 60px)
+      margin-left: -30px
+      
+      
++r($tablet)
+  .catalog-promo
+    padding-top: 50px
+    &__title
+      font-size: 36px
+      margin-bottom: 50px
+    &__sorting
+      width: calc(100% + 30px)
+      margin-left: -15px
+      padding-top: 30px
+      padding-left: 20px
+      padding-right: 20px
+    &__text
+      font-size: 20px
+    &__mainsort
+      flex-wrap: wrap
+      margin-bottom: 40px
+    &__main-item
+      width: 50%
+      padding-top: 30px
+      padding-bottom: 30px
+      border: 2px solid #F5F5F5
+      &:last-child
+        border-right: 2px solid #F5F5F5
+      &:nth-child(odd)
+        border-left: none
+    &__subtitle
+      font-size: 14px
+      padding-top: 70px
+      svg
+        font-size: 50px
+    &__secondsort
+      flex-wrap: wrap
+    &__second-item
+      font-size: 14px
+      margin-bottom: 13px
+      
+  .sort-items
+    .selectric-wrapper
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 14px
+    &__all
+      display: none
+  
+  .breadcrumbs
+    &__link
+      text-transform: none
+      
+  .catalog-items
+    .popular__wrap
+      flex-wrap: wrap
+      margin-bottom: 0
+    .catalog-item
+      width: 100%
+      margin-bottom: 30px
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        display: none
+      
+  .catalog-info
+    &__descr
+      padding-top: 70px
+      padding-bottom: 60px
+    &__title
+      font-size: 24px
