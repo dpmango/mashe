@@ -160,6 +160,11 @@
       text-align: center
       margin-bottom: 30px
       
+@media(min-width: 768px)
+  .footer
+    ul
+      display: block !important
+      
 +r($tablet)
   .footer
     &__topbar
@@ -174,6 +179,9 @@
         border: 0
       ul
         display: none
+        padding: 20px 10px 15px 20px
+      li
+        text-align: left
     &__subtitle
       width: calc(100% + 60px)
       text-align: left

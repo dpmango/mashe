@@ -240,14 +240,17 @@
         color: $textColor
       .masterpiece__item-title
         svg
-         color: #B1BABE
+          transition: all $transitionSpeed $ease
+          color: #B1BABE
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
         &:before
+          transition: all $transitionSpeed $ease
           background-image: url(../../img/wave.svg)
           left: -60%
         &:after
+          transition: all $transitionSpeed $ease
           background-image: url(../../img/wave.svg)
           right: -60%
       &:hover

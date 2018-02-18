@@ -132,6 +132,25 @@ $(document).ready(function(){
       }
     });
     
+    // FOOTER TABS
+      $('.footer__subtitle, .main-nav__submenu-title').on('click', function(){
+        if (_window.width() < 768) {
+        if ($(this).hasClass('is-active')) {
+          $(this).removeClass('is-active');
+          $(this).next('ul').slideUp(200);
+        } else {
+          $('.footer__subtitle, .main-nav__submenu-title').removeClass('is-active');
+          $('.footer__subtitle, .main-nav__submenu-title').next('ul').slideUp(200);
+          
+          $(this).addClass('is-active');
+          $(this).next('ul').slideDown(200);
+        }
+     } else {
+      $('.footer__subtitle, .main-nav__submenu-title').removeClass('is-active');
+      $('.footer__subtitle, .main-nav__submenu-title').next('ul').slideDown();
+    }
+      });
+    
   }
 
   pageReady();

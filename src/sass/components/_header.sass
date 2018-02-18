@@ -660,6 +660,11 @@
       justify-content: center
       align-items: center
       
+@media(min-width: 768px)
+  .main-nav
+    ul
+      display: block !important
+      
 +r($tablet)
   .header
     &__menu
@@ -708,6 +713,7 @@
       display: none
     ul
       display: none
+      padding: 20px 10px 15px 20px
     &__submenu
       flex-direction: column
     &__submenu-title
@@ -722,7 +728,7 @@
       &:after
         content: ''
         position: absolute
-        top: 50%
+        top: 25px
         right: 30px
         width: 40px
         height: 40px
@@ -732,7 +738,7 @@
         background-position: 50% 50%
         background-image: url(../../img/arrow-left.svg)
         background-size: 25%
-        transform: translateY(-50%) rotate(-90deg)
+        transform: rotate(-90deg)
       
     &__socials
       padding-top: 40px
