@@ -332,8 +332,15 @@
     text-transform: uppercase
     font-family: $fontBold
     transition: all $transitionSpeed $ease
+    position: relative
     &:hover
       background-color: $btnBgHover
+    svg
+      font-size: 12px
+      position: absolute
+      top: 50%
+      right: 30px
+      transform: translateY(-50%)
     
     
 // POPULAR SECTION
@@ -536,12 +543,16 @@
     text-align: left
     position: relative
     color: $btnBgColor
+    svg
+      font-size: 22px
   &__old-price
     position: absolute
     top: -22px
     left: 5px
     font-size: 16px
     color: $saleColor
+    svg
+      font-size: 10px
   &__tobag,
   &__like
     display: flex
@@ -684,6 +695,8 @@
     font-family: $fontMedium
     position: relative
     padding-top: 25px
+    svg
+      font-size: 22px
     &:before
       content: ''
       position: absolute
@@ -899,7 +912,7 @@
     margin-bottom: 18px
   &__input
     text-align: left
-    border: 0
+    border: 1px solid transparent
     border-radius: 20px
     display: block
     width: 100%
@@ -908,12 +921,15 @@
     font-size: 18px
     font-family: $fontMedium
     color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    &:focus
+      border-color: #DEDEDE
   &__btn
     position: absolute
     top: 0
     right: 0
     font-size: 14px
-    padding: 12px 42px
+    padding: 13px 42px
     text-align: center
     text-transform: uppercase
     border: 0
@@ -934,8 +950,10 @@
     text-decoration: none
     color: $btnBgColor
     margin-left: 4px
+    border-bottom: 1px solid transparent
+    transition: all $transitionSpeed $ease
     &:hover
-      text-decoration: underline
+      border-color: $btnBgColor
     
     
 +r($wide)

@@ -7,9 +7,11 @@ header.header
       //img(src="img/close.svg")
       +icon('ico-close')
     form.search-panel__form(action="#")
+      //+icon('ico-search')
       input.search-panel__input(type="text" placeholder="Поиск")
       button.search-panel__btn(type="button")
-        img(src="img/search-arrow.svg")
+        +icon('ico-search-arrow')
+        //img(src="img/search-arrow.svg")
     p.search-panel__hint Чтобы начать поиск, введите описание или артикул
     
   // menu
@@ -22,30 +24,47 @@ header.header
       h2.main-nav__title
         span Каталог
       .main-nav__wrap
-        .main-nav__item
+        input.main-nav__input(type="radio" id="menu-item1" name="menu-item")
+        label.main-nav__item(for="menu-item1")
           h3.main-nav__subtitle Для росписи
-            img(src="img/for-paint.svg")
-        .main-nav__item
+            +icon('ico-for-paint')
+            //img(src="img/for-paint.svg")
+        input.main-nav__input(type="radio" id="menu-item2" name="menu-item")
+        label.main-nav__item(for="menu-item2")
           h3.main-nav__subtitle Для цветов
-            img(src="img/for-flower.svg")
-        .main-nav__item
+            +icon('ico-for-flower')
+            //img(src="img/for-flower.svg")
+        input.main-nav__input(type="radio" id="menu-item3" name="menu-item")
+        label.main-nav__item(for="menu-item3")
           h3.main-nav__subtitle Для валяния
-            img(src="img/for-felt.svg")
-        .main-nav__item
+            +icon('ico-for-felt')
+            //img(src="img/for-felt.svg")
+        input.main-nav__input(type="radio" id="menu-item4" name="menu-item")
+        label.main-nav__item(for="menu-item4")
           h3.main-nav__subtitle Для шитья
-            img(src="img/for-stitch.svg")
-        .main-nav__item
+            +icon('ico-for-stitch')
+            //img(src="img/for-stitch.svg")
+        input.main-nav__input(type="radio" id="menu-item5" name="menu-item")
+        label.main-nav__item(for="menu-item5")
           h3.main-nav__subtitle Для вышивки
-            img(src="img/for-embr.svg")
-        .main-nav__item
+            +icon('ico-for-embr')
+            //img(src="img/for-embr.svg")
+        input.main-nav__input(type="radio" id="menu-item6" name="menu-item")
+        label.main-nav__item(for="menu-item6")
           h3.main-nav__subtitle Для декора
-            img(src="img/for-decor.svg")
+            +icon('ico-for-decor')
+            //img(src="img/for-decor.svg")
       .main-nav__categories
-        .main-nav__category Все товары / 50
-        .main-nav__category Все ткани / 34
-        .main-nav__category Волокна / 4
-        .main-nav__category Нити / 10
-        .main-nav__category Образцы / 2
+        input(type="radio" id="category-item1" name="category-item")
+        label.main-nav__category(for="category-item1") Все товары / 50
+        input(type="radio" id="category-item2" name="category-item")
+        label.main-nav__category(for="category-item2") Все ткани / 34
+        input(type="radio" id="category-item3" name="category-item")
+        label.main-nav__category(for="category-item3") Волокна / 4
+        input(type="radio" id="category-item4" name="category-item")
+        label.main-nav__category(for="category-item4") Нити / 10
+        input(type="radio" id="category-item5" name="category-item")
+        label.main-nav__category(for="category-item5") Образцы / 2
       .main-nav__submenu 
         .main-nav__submenu-item
           h3.main-nav__submenu-title Информация
@@ -82,11 +101,14 @@ header.header
               a.main-nav__link(href="#") Конфиденциальность
       .main-nav__socials
         a.main-nav__fb(href="#")
-          img(src="img/fb.svg")
+          +icon('ico-fb')
+          //img(src="img/fb.svg")
         a.main-nav__vk(href="#")
-          img(src="img/vk.svg")
+          +icon('ico-vk')
+          //img(src="img/vk.svg")
         a.main-nav__inst(href="#")
-          img(src="img/inst.svg")
+          +icon('ico-inst')
+          //img(src="img/inst.svg")
   
   
   // header

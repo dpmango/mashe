@@ -1,0 +1,9 @@
+<svg width="13" height="12" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow 2</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(16647 18236)">
+        <g id="Arrow 2">
+            <path d="M 12.5657 0.565685C 12.8781 0.253266 12.8781 -0.253266 12.5657 -0.565685L 7.47452 -5.65685C 7.1621 -5.96927 6.65557 -5.96927 6.34315 -5.65685C 6.03073 -5.34443 6.03073 -4.8379 6.34315 -4.52548L 10.8686 0L 6.34315 4.52548C 6.03073 4.8379 6.03073 5.34443 6.34315 5.65685C 6.65557 5.96927 7.1621 5.96927 7.47452 5.65685L 12.5657 0.565685ZM 0 0.8L 12 0.8L 12 -0.8L 0 -0.8L 0 0.8Z" transform="translate(-16647 -18230)" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

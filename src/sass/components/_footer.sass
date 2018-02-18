@@ -48,11 +48,14 @@
     color: #B5C3C9
     margin-bottom: 27px
   &__mail
+    display: inline-block
     font-size: 18px
     font-family: $fontBook
     color: $btnBgColor
     transition: all $transitionSpeed $ease
+    border-bottom: 1px solid transparent
     &:hover
+      border-color: $btnBgColor
       color: $btnBgHover
   &__socials
     margin-top: 45px
@@ -76,8 +79,8 @@
     svg
       transition: none
     &:hover
-      border-color: #9FAFB5
-      color: #9fafb5
+      background-color: $btnBgColor
+      color: #fff
   &__bottombar
     display: flex
     flex-direction: row
@@ -95,6 +98,9 @@
     //padding-right: 95px
     position: relative
     display: block
+    &:hover
+      svg
+        color: #ff4725
     svg
       margin-left: 5px
     //&:after
