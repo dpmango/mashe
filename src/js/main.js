@@ -169,13 +169,20 @@ $(document).ready(function(){
       }  
     });
     
-    // TO TOP BTN
     _window.scroll(function () {
+      // TO TOP BTN
 		  if ($(this).scrollTop() > 950) {
 		  	$('.to-top-btn').addClass('is-active')
 		  } else {
 		  	$('.to-top-btn').removeClass('is-active')
 		  }
+      
+      // MENU/SEARCH/CART BUTTONS
+      if ($(this).scrollTop() > 100) {
+        $('.header__menu, .header__search, .header__cart, .header__like').addClass('is-active')
+      } else {
+        $('.header__menu, .header__search, .header__cart, .header__like').removeClass('is-active')
+      }
 	  });
     
     $('a[href*="#"]:not([href="#"])').click(function () {

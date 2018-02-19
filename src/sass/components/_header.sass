@@ -413,10 +413,14 @@
     justify-content: center
     align-items: center
     background-color: $btnBgColor
-    transition: all $transitionSpeed $ease
+    transition: all $transitionSpeed linear
+    &.is-active
+      transform: translateY(-30px)
+      &:hover
+        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $btnBgHover
-      transform: scale(1.05)
+      transform: scale(1.05) translateY(0)
   &__search
     color: #fff
     font-size: 20px
@@ -433,10 +437,14 @@
     justify-content: center
     align-items: center
     background-color: $btnBgColor
-    transition: all $transitionSpeed $ease
+    transition: all $transitionSpeed linear
+    &.is-active
+      transform: translateY(-30px)
+      &:hover
+        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $btnBgHover
-      transform: scale(1.05)
+      transform: scale(1.05) translateY(0)
   &__cart
     color: $btnBgColor
     font-size: 20px
@@ -453,10 +461,14 @@
     justify-content: center
     align-items: center
     background-color: $primary2Color
-    transition: all $transitionSpeed $ease
+    transition: all $transitionSpeed linear
+    &.is-active
+      transform: translateY(-30px)
+      &:hover
+        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $primary2Hover
-      transform: scale(1.05)
+      transform: scale(1.05) translateY(0)
   &__like
     font-size: 20px
     color: $btnBgColor
@@ -473,10 +485,14 @@
     justify-content: center
     align-items: center
     background-color: $primaryColor
-    transition: all $transitionSpeed $ease
+    transition: all $transitionSpeed linear
+    &.is-active
+      transform: translateY(-30px)
+      &:hover
+        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $primaryHover
-      transform: scale(1.05)
+      transform: scale(1.05) translateY(0)
   &__nav
     display: flex
     flex-direction: row
