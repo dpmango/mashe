@@ -151,6 +151,20 @@ $(document).ready(function(){
     }
       });
     
+    // CATALOG PHOTO
+    
+    var wrapOffset = $('.catalog-info__wrap').offset().left;
+    if (_window.width() > 992) {
+    $('.catalog-info__photo img').css('width', 'calc(100% + ' + wrapOffset + 'px)');
+    }
+    
+    _window.resize(function(){
+      var wrapOffset = $('.catalog-info__wrap').offset().left;
+      if (_window.width() > 992) {
+    $('.catalog-info__photo img').css('width', 'calc(100% + ' + wrapOffset + 'px)');
+    }
+    });
+    
   }
 
   pageReady();
@@ -392,6 +406,30 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         dots: true
+      }
+    }
+        ]
+    });
+    
+    // PHOTOS SLIDER
+    $('[jsPhotosSlider]').slick({
+      arrows: false,
+      dots: false,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+        {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 3
       }
     }
         ]

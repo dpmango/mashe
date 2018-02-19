@@ -81,6 +81,7 @@
     transition: all $transitionSpeed $ease
     &:hover
       background-color: $btnBgHover
+      transform: scale(1.05)
     
     
 // ADVANTAGES SECTION
@@ -234,17 +235,20 @@
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
-        &:before
-          background-image: url(../../img/wave-w.svg)
-          left: -60%
-        &:after
-          background-image: url(../../img/wave-w.svg)
-          right: -60%
+        svg
+          position: absolute
+          top: 50%
+          transform: translateY(-42%)
+          width: 40px
+          height: 7px
+          color: #fff
+          &:first-child
+            left: -70%
+          &:last-child
+            right: -70%
       &:hover
         background-color: #FFBFB5
     &:nth-child(2)
-      .masterpiece__item-amount
-        color: $textColor
       .masterpiece__item-title
         svg
           transition: all $transitionSpeed $ease
@@ -252,21 +256,24 @@
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
-        &:before
-          transition: all $transitionSpeed $ease
-          background-image: url(../../img/wave.svg)
-          left: -60%
-        &:after
-          transition: all $transitionSpeed $ease
-          background-image: url(../../img/wave.svg)
-          right: -60%
+        color: $textColor
+        svg
+          position: absolute
+          top: 50%
+          transform: translateY(-42%)
+          width: 40px
+          height: 7px
+          color: #A4AEB2
+          &:first-child
+            left: -70%
+          &:last-child
+            right: -70%
       &:hover
         background-color: #D0D8DB
         .masterpiece__item-amount
           color: #fff
-          &:before,
-          &:after
-            background-image: url(../../img/wave-w.svg)
+          svg
+            color: #fff
         .masterpiece__item-title
           svg
            color: #fff
@@ -286,12 +293,17 @@
     &:nth-child(3),
     &:nth-child(5)
       .masterpiece__item-amount
-        &:before
-          background-image: url(../../img/wave-pink.svg)
-          left: -60%
-        &:after
-          background-image: url(../../img/wave-pink.svg)
-          right: -60%
+        svg
+          position: absolute
+          top: 50%
+          transform: translateY(-42%)
+          width: 40px
+          height: 7px
+          color: #ffdad5
+          &:first-child
+            left: -70%
+          &:last-child
+            right: -70%
       &:before
         opacity: 0
         content: ''
@@ -341,8 +353,8 @@
     font-family: $fontMedium
     position: relative
     color: #fff
-    &:before,
-    &:after
+    //&:before,
+    //&:after
       content: ''
       position: absolute
       top: 50%
@@ -377,6 +389,7 @@
     position: relative
     &:hover
       background-color: $btnBgHover
+      transform: scale(1.05)
       svg
         transform: translate(7px, -50%)
     svg
@@ -451,12 +464,13 @@
       transition: all $transitionSpeed $ease
       &:hover
         border-color: $btnBgColor
+        transform: scale(1.05)
     .slick-prev
       background-image: url(../../img/arrow-left.svg)
-      left: 0px
+      left: 15px
     .slick-next
       background-image: url(../../img/arrow-right.svg)
-      right: 0px
+      right: 15px
     .slick-dots
       margin: 0
       padding: 0
@@ -646,11 +660,13 @@
     background-color: $primary2Color
     &:hover
       background-color: $primary2Hover
+      transform: scale(1.05)
   &__like
     background-color: $primaryColor
     margin-left: 8px
     &:hover
       background-color: $primaryHover
+      transform: scale(1.05)
   &__special
     background-color: #F5F5F5
     padding: 11px 27px 13px 27px
@@ -851,7 +867,7 @@
         right: -55%
   &__subtitle
     margin-top: 0
-    margin-bottom: 45px
+    margin-bottom: 35px
     font-size: 24px
     text-align: center
     color: $btnBgColor
@@ -871,24 +887,29 @@
     .slick-prev,
     .slick-next
       display: block
+      border-radius: 50%
       position: absolute
       z-index: 2
-      top: 50%
-      transform: translateY(-50%)
-      background-color: transparent
+      top: -110px
+      background-color: #FFEDE9
       font-size: 0
       background-repeat: no-repeat
       background-position: 50%
-      background-size: auto 100%
-      width: 36px
-      height: 36px
+      background-size: 15px 24px
+      width: 76px
+      height: 76px
       padding: 0
+      border: 3px solid #fff
+      transition: all $transitionSpeed $ease
+      &:hover
+        border-color: $btnBgColor
+        transform: scale(1.05)
     .slick-prev
       background-image: url(../../img/arrow-left.svg)
-      left: -40px
+      left: 15px
     .slick-next
       background-image: url(../../img/arrow-right.svg)
-      right: -40px
+      right: 15px
   &__item
     display: flex !important
     flex-direction: column
@@ -897,13 +918,17 @@
     margin-right: 14px
     background-color: #fff
     background-image: linear-gradient(to bottom, #FFEDE9 65px, #fff 65px, #fff 100%)
-    padding: 0 50px 48px 50px
+    padding: 10px 50px 48px 50px
+    &:hover
+      .clients__photo
+        transform: scale(1.05)
   &__photo
     width: 130px
     height: 130px
     border-radius: 50%
     margin-left: auto
     margin-right: auto
+    transition: all $transitionSpeed $ease
     margin-bottom: 33px
     img
       display: block
@@ -959,6 +984,7 @@
     transition: all $transitionSpeed $ease
     &:hover
       background-color: $btnBgHover
+      transform: scale(1.05)
     
     
 // PHOTOS SECTION
@@ -983,7 +1009,7 @@
 .newsletter
   padding-top: 48px
   padding-bottom: 52px
-  background-color: $bgColor
+  background-color: #F0F1F2
   position: relative
   overflow: hidden
   &:before
@@ -1072,6 +1098,12 @@
       border-color: $btnBgColor
     
     
+@media(max-width: 1600px)
+  .main-slider
+    &__slide
+      padding-top: 136px
+      padding-bottom: 240px
+    
 +r($wide)
   .advantages
     padding-bottom: 75px
@@ -1118,11 +1150,6 @@
   .clients
     padding-top: 75px
     padding-bottom: 75px
-    &__wrap
-      .slick-prev
-        left: -35px
-      .slick-next
-        right: -35px
     &__item
       padding: 0 25px 48px 25px
       
@@ -1245,14 +1272,6 @@
     &__wrap
       width: calc(100% + 60px)
       margin-left: -30px
-  .photos
-    a
-      width: 33.33%
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6),
-      &:nth-child(7)
-        display: none
       
   .newsletter
     overflow: hidden
@@ -1339,6 +1358,8 @@
     &__title
       padding-bottom: 50px
       span
+        width: 100%
+        display: block
         &:after
           display: none
         &:before
@@ -1358,11 +1379,13 @@
     &__title
       padding-bottom: 50px
       span
+        width: 100%
+        display: block
         &:after
           display: none
         &:before
           top: auto
-          left: 50% !important
+          left: 50%
           bottom: -30px !important
           transform: translateX(-50%)
         
@@ -1410,8 +1433,22 @@
       margin-right: 0
       
   .clients
+    padding-top: 65px
+    padding-bottom: 85px
     &__wrap
       margin-bottom: 100px
+    &__title
+      margin-bottom: 50px
+      span
+        width: 100%
+        display: block
+        &:after
+          display: none
+        &:before
+          top: auto
+          left: 50%
+          bottom: -30px !important
+          transform: translateX(-50%)
     .slick-dots
       width: 100%
       margin: 0

@@ -84,6 +84,7 @@ block content
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -103,7 +104,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -127,25 +131,26 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular3.jpg")
-            .catalog-item__badge.catalog-item__badge--sale Уценка
+            img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Жоржет
+          h3.catalog-item__title Эксельсиор узбекский
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
             .catalog-item__info-item Плотность:
               span 8 м/м ≈ 34 г/м2
           .catalog-item__wrap
-            span.catalog-item__price 1 930
+            span.catalog-item__price 1 260
               +icon('ico-ruble')
-              del.catalog-item__old-price 1 760
-                +icon('ico-ruble')
             button.catalog-item__tobag(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
@@ -153,14 +158,18 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular4.jpg")
+            img(src="img/popular2.jpg")
+            .catalog-item__badge.catalog-item__badge--new Новинка
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Атлас стрейч «Deep Purple»
+          h3.catalog-item__title Атлас стрейч «Deep Pink»
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
@@ -176,12 +185,16 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         
       .popular__wrap
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -201,7 +214,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -225,25 +241,26 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular3.jpg")
-            .catalog-item__badge.catalog-item__badge--sale Уценка
+            img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Жоржет
+          h3.catalog-item__title Эксельсиор узбекский
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
             .catalog-item__info-item Плотность:
               span 8 м/м ≈ 34 г/м2
           .catalog-item__wrap
-            span.catalog-item__price 1 930
+            span.catalog-item__price 1 260
               +icon('ico-ruble')
-              del.catalog-item__old-price 1 760
-                +icon('ico-ruble')
             button.catalog-item__tobag(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
@@ -251,14 +268,18 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular4.jpg")
+            img(src="img/popular2.jpg")
+            .catalog-item__badge.catalog-item__badge--new Новинка
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Атлас стрейч «Deep Purple»
+          h3.catalog-item__title Атлас стрейч «Deep Pink»
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
@@ -274,7 +295,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
             
       // ADVANTAGES      
       .advantages__wrap
@@ -318,6 +342,7 @@ block content
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -337,7 +362,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -361,25 +389,26 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular3.jpg")
-            .catalog-item__badge.catalog-item__badge--sale Уценка
+            img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Жоржет
+          h3.catalog-item__title Эксельсиор узбекский
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
             .catalog-item__info-item Плотность:
               span 8 м/м ≈ 34 г/м2
           .catalog-item__wrap
-            span.catalog-item__price 1 930
+            span.catalog-item__price 1 260
               +icon('ico-ruble')
-              del.catalog-item__old-price 1 760
-                +icon('ico-ruble')
             button.catalog-item__tobag(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
@@ -387,14 +416,18 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular4.jpg")
+            img(src="img/popular2.jpg")
+            .catalog-item__badge.catalog-item__badge--new Новинка
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Атлас стрейч «Deep Purple»
+          h3.catalog-item__title Атлас стрейч «Deep Pink»
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
@@ -410,12 +443,16 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         
       .popular__wrap
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -435,7 +472,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -459,25 +499,26 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular3.jpg")
-            .catalog-item__badge.catalog-item__badge--sale Уценка
+            img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Жоржет
+          h3.catalog-item__title Эксельсиор узбекский
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
             .catalog-item__info-item Плотность:
               span 8 м/м ≈ 34 г/м2
           .catalog-item__wrap
-            span.catalog-item__price 1 930
+            span.catalog-item__price 1 260
               +icon('ico-ruble')
-              del.catalog-item__old-price 1 760
-                +icon('ico-ruble')
             button.catalog-item__tobag(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
@@ -485,14 +526,18 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
-            img(src="img/popular4.jpg")
+            img(src="img/popular2.jpg")
+            .catalog-item__badge.catalog-item__badge--new Новинка
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
-          h3.catalog-item__title Атлас стрейч «Deep Purple»
+          h3.catalog-item__title Атлас стрейч «Deep Pink»
           .catalog-item__info
             .catalog-item__info-item Ширина:
               span 140 см
@@ -508,7 +553,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
             
       a.catalog-items__btn(href="#") Показать еще
             
@@ -518,7 +566,7 @@ block content
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap
+      .examples__wrap(jsExamplesSlider)
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example1.png")
@@ -527,34 +575,38 @@ block content
               +icon('ico-bag')
           h3.examples__item-title Каталог образцов тканей
           .examples__size 10x10 см
-          .examples__price 600₽
+          .examples__price 600
+            +icon('ico-ruble')
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example2.png")
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Каталог образцов цветных шелковых тканей
           .examples__size 10x10 см
-          .examples__price 600₽
+          .examples__price 500
+            +icon('ico-ruble')
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example3.png")
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Каталог образцов по применению
           .examples__size 10x10 см
-          .examples__price 600₽
+          .examples__price 400
+            +icon('ico-ruble')
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example4.png")
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Образцы волокон и нитей
           .examples__size 10x10 см
-          .examples__price 600₽
+          .examples__price 300
+            +icon('ico-ruble')
           
           
   // CATALOG INFO
