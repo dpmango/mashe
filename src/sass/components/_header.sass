@@ -541,6 +541,34 @@
       top: -27px
       z-index: 2
       
+.to-top-btn
+  position: fixed
+  right: 30px
+  top: 40%
+  z-index: 3
+  text-decoration: none
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: transparent
+  border: 2px solid $btnBgColor
+  color: $btnBgColor
+  font-size: 25px
+  transition: all $transitionSpeed $ease
+  width: 65px
+  height: 65px
+  visibility: hidden
+  opacity: 0
+  &.is-active
+    visibility: visible
+    opacity: 1
+  svg
+    transition: none
+  &:hover
+    background-color: $btnBgColor
+    color: #fff
+      
       
 @media(max-width: 1620px)
   .header
@@ -586,6 +614,11 @@
       &.is-active
         transform: translate(20px, 130px) scale(90)
         
+  .to-top-btn
+    right: 20px
+    width: 50px
+    height: 50px
+        
 +r($desktop)
   .header
     &__topbar
@@ -612,7 +645,7 @@
       position: absolute
       width: 42px
       height: 42px
-      top: 8px
+      top: 8px !important
       font-size: 16px
     &__menu
       left: 30px
@@ -622,6 +655,8 @@
       right: 80px
     &__like
       right: 30px
+  .to-top-btn
+    display: none
       
   .search-panel
     padding-top: 120px
