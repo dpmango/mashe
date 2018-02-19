@@ -7,16 +7,16 @@ block content
 
   // MAIN SLIDER
   section.main-slider(jsMainSlider).wow
-    .main-slider__slide
+    .main-slider__slide.main-slider__slide--first
       .container
         span.main-slider__subtitle Натуральный
         h1.main-slider__title Шелк для декора
         p.main-slider__descr от 315 рублей, с доставкой по России от 2 дней
         a.main-slider__btn(href="#") Перейти в каталог
-    .main-slider__slide
+    .main-slider__slide.main-slider__slide--second
       .container
-        span.main-slider__subtitle Совершенно
-        h1.main-slider__title Другой текст
+        span.main-slider__subtitle Белоснежный
+        h1.main-slider__title Шелк для росписи
         p.main-slider__descr от 315 рублей, с доставкой по России от 2 дней
         a.main-slider__btn(href="#") Перейти в каталог
         
@@ -123,6 +123,7 @@ block content
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
+            .catalog-item__badge.catalog-item__badge--hit Хит продаж
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -142,7 +143,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
@@ -166,7 +170,10 @@ block content
               //img(src="img/heart.svg")
               +icon('ico-heart')
           .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+            p 
+              span.catalog-item__special-price 1 160 
+                +icon('ico-ruble')
+              span цена за 1м – при покупке от 10м
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular3.jpg")
@@ -191,11 +198,13 @@ block content
             button.catalog-item__like(type="button")
               //img(src="img/heart.svg")
               +icon('ico-heart')
-          .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+          .catalog-item__special.catalog-item__special--sale
+            p Незначительные вкрапления в полотне
+            span.inside-link Посмотреть фото дефектов
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular4.jpg")
+            .catalog-item__badge.catalog-item__badge--wait Ожидаем поступления
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -214,11 +223,12 @@ block content
             button.catalog-item__like(type="button")
               //img(src="img/heart.svg")
               +icon('ico-heart')
-          .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+          .catalog-item__special.catalog-item__special--wait
+            p Сообщить о поступлении на почту
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular4.jpg")
+            .catalog-item__badge.catalog-item__badge--action Акция
             .catalog-item__descr
               p Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. 
               p Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.
@@ -237,8 +247,9 @@ block content
             button.catalog-item__like(type="button")
               //img(src="img/heart.svg")
               +icon('ico-heart')
-          .catalog-item__special
-            p <span>1 160 ₽</span> цена за 1м – при покупке от 10м
+          .catalog-item__special.catalog-item__special--action
+            p Акция действует до 23 февраля 2017
+            span.inside-link Правила участия в акции
             
             
             
@@ -264,9 +275,9 @@ block content
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Каталог образцов цветных шелковых тканей
           .examples__size 10x10 см
-          .examples__price 600
+          .examples__price 500
             +icon('ico-ruble')
         a.examples__item(href="#")
           .examples__photo
@@ -274,9 +285,9 @@ block content
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Каталог образцов по применению
           .examples__size 10x10 см
-          .examples__price 600
+          .examples__price 400
             +icon('ico-ruble')
         a.examples__item(href="#")
           .examples__photo
@@ -284,9 +295,9 @@ block content
             button.examples__btn(type="button")
               //img(src="img/bag.svg")
               +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
+          h3.examples__item-title Образцы волокон и нитей
           .examples__size 10x10 см
-          .examples__price 600
+          .examples__price 300
             +icon('ico-ruble')
           
   // CLIENTS

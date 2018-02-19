@@ -362,6 +362,8 @@ $(document).ready(function(){
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
       responsive: [
     {
       breakpoint: 991,
@@ -402,6 +404,8 @@ $(document).ready(function(){
       dots: true,
       slidesToShow: 4,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
       responsive: [
     {
       breakpoint: 1336,
@@ -435,7 +439,6 @@ $(document).ready(function(){
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true,
       autoplay: true,
       autoplaySpeed: 3500
     });
