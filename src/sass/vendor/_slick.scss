@@ -1,100 +1,161 @@
 /* Slider */
 
 .slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &.dragging {
-        cursor: pointer;
-        cursor: hand;
-    }
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
 
-    &:after {
-        clear: both;
-    }
+  &:after {
+    clear: both;
+  }
 
-    .slick-loading & {
-        visibility: hidden;
-    }
+  .slick-loading & {
+    visibility: hidden;
+  }
 }
+
 .slick-slide {
-    float: left;
-    height: 100%;
-    min-height: 1px;
-    [dir="rtl"] & {
-        float: right;
-    }
-    img {
-        display: block;
-    }
-    &.slick-loading img {
-        display: none;
-    }
-
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  [dir="rtl"] & {
+    float: right;
+  }
+  img {
+    display: block;
+  }
+  &.slick-loading img {
     display: none;
+  }
 
-    &.dragging img {
-        pointer-events: none;
-    }
+  display: none;
 
-    .slick-initialized & {
-        display: block;
-    }
+  &.dragging img {
+    pointer-events: none;
+  }
 
-    .slick-loading & {
-        visibility: hidden;
-    }
+  .slick-initialized & {
+    display: block;
+  }
 
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
-    }
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
 }
+
 .slick-arrow.slick-hidden {
-    display: none;
+  display: none;
+}
+
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  button {
+    padding: 0;
+    font-size: 0;
+    width: 37px;
+    height: 4px;
+    background-color: #E6E6E6;
+    margin-left: 6px;
+    margin-right: 6px;
+    transition: all $transitionSpeed $ease;
+  }
+  li.slick-active button {
+    background-color: $btnBgColor;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%; 
+  //transform: translateY(-50%);
+  background-color: #fff;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 15px 24px;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: 3px solid #F5F5F5;
+  transition: all $transitionSpeed $ease;
+  &:hover {
+    border-color: $btnBgColor;
+    transform: scale(1.05);
+  }
+}
+
+.slick-prev {
+  background-image: url(../../img/arrow-left.svg);
+  left: 15px;
+}
+
+.slick-next {
+  background-image: url(../../img/arrow-right.svg);
+  right: 15px;
 }

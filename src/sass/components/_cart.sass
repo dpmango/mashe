@@ -1,0 +1,513 @@
+.cart
+  background-color: rgb(249,249,249)
+  //background-image: linear-gradient(to bottom, rgb(249,249,249), #fff)
+  padding-top: 100px
+  padding-bottom: 80px
+  &__title
+    text-transform: uppercase
+    margin-top: 0
+    text-align: center
+    font-size: 48px
+    font-family: $fontBold
+    margin-bottom: 40px
+    letter-spacing: 0.05em
+  &__wrapper
+    background-color: #fff
+    padding: 55px
+    padding-bottom: 130px
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    max-width: 1400px
+    margin-left: auto
+    margin-right: auto
+  &__main
+    width: calc(100% - 295px)
+    padding-right: 60px
+  &__header
+    display: flex
+    flex-direction: row
+    align-items: center
+    font-size: 16px
+    font-family: $fontBook
+    color: #B1BABE
+    padding-bottom: 15px
+    border-bottom: 2px solid $bgColor
+    &-name
+      width: 40%
+    &-price
+      width: 15%
+      text-align: center
+      padding-right: 15px
+    &-amount
+      width: 25%
+      text-align: center
+    &-sum
+      width: 20%
+      padding-left: 30px
+  &__item
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 23px 0
+    border-bottom: 2px solid $bgColor
+  &__img
+    width: 125px
+    margin-right: 30px
+    img
+      display: block
+      width: 100%
+      height: auto
+  &__info
+    width: calc(40% - 155px)
+    padding-right: 15px
+  &__articul
+    font-size: 14px
+    font-family: $fontBook
+    color: #B6B6B6
+  &__item-title
+    font-size: 22px
+    font-family: $fontDemi
+    line-height: 110%
+    margin-top: 10px
+    margin-bottom: 20px
+    color: $btnBgColor
+    max-width: 185px
+  &__descr
+    font-size: 14px
+    font-family: $fontBook
+    margin-top: 0
+    margin-bottom: 0
+    color: #b6b6b6
+    span
+      color: $btnBgColor
+    &:last-child
+      margin-bottom: 0
+  &__price
+    width: 15%
+    text-align: center
+    padding-right: 15px
+    svg
+      font-size: 16px
+    span
+      color: #B1BABE
+      font-size: 28px
+      font-family: $fontMedium
+      letter-spacing: -0.05em
+  &__amount
+    width: 25%
+    &-wrap
+      display: flex
+      align-items: center
+      padding: 10px 0
+      border: 2px solid #F1F1F1
+      width: 150px
+      margin-left: auto
+      margin-right: auto
+  &__btn
+    width: 40px
+    font-size: 18px
+    font-family: $fontMedium
+    padding: 0
+    background-color: transparent
+    text-align: center
+    border: 0
+    height: 100%
+    transition: all $transitionSpeed $ease
+    &:hover
+      opacity: 0.8
+  &__input
+    font-size: 18px
+    font-family: $fontMedium
+    color: $btnBgColor
+    border: 0
+    text-align: center
+    width: 65px
+    border-left: 2px solid #F1F1F1
+    border-right: 2px solid #F1F1F1
+  &__sum
+    width: 20%
+    padding-left: 30px
+    del
+      position: absolute
+      bottom: -13px
+      right: 0
+      font-size: 18px
+      letter-spacing: -0.05em
+      color: #F0827D
+      svg
+        font-size: 12px
+    svg
+      font-size: 16px
+    span
+      position: relative
+      color: $btnBgColor
+      font-size: 28px
+      font-family: $fontMedium
+      letter-spacing: -0.05em
+  &__del
+    position: absolute
+    font-size: 24px
+    color: #FFDAD4
+    transform: translateY(-50%)
+    padding: 0
+    border: 0
+    background-color: transparent
+    right: 0
+    top: 50%
+    &:hover
+      color: $btnBgColor
+  &__promo
+    margin-top: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__back
+    font-size: 14px
+    text-transform: uppercase
+    font-family: $fontHeavy
+    text-transform: uppercase
+    text-align: center
+    padding: 16px 40px 16px 65px
+    letter-spacing: 0.05em
+    position: relative
+    border-radius: 30px
+    background-color: #F9F9F9
+    transition: color $transitionSpeed $ease, background $transitionSpeed $ease
+    &:hover
+      color: #fff
+      background-color: $btnBgColor
+      svg
+        transform: translate(-10px, -50%) rotate(-180deg)
+    svg
+      position: absolute
+      transition: transform $transitionSpeed $ease
+      left: 30px
+      top: 50%
+      transform: translate(0, -50%) rotate(-180deg)
+  &__promo-wrap
+    width: 100%
+    max-width: 400px
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    text-align: right
+  &__promo-text
+    width: 100%
+    font-size: 18px
+    text-align: right
+    position: relative
+    color: $btnBgColor
+    font-family: $fontMedium
+    margin: 0
+    svg
+      font-size: 12px
+    span
+      color: #BDBDBD
+      font-family: $fontBook
+      display: block
+      margin-top: 5px
+  &__promo-input
+    width: 240px
+    font-size: 18px
+    font-family: $fontMedium
+    padding: 12px 55px 12px 36px
+    border-top-left-radius: 30px
+    border-bottom-left-radius: 30px
+    transition: all $transitionSpeed $ease
+    border: 2px solid #F0F1F2
+    text-align: left
+    &:focus
+      border-color: $btnBgColor
+  &__promo-btn
+    position: relative
+    left: -2px
+    width: 160px
+    background-color: #F0F1F2
+    border-top-right-radius: 30px
+    border-bottom-right-radius: 30px
+    text-align: center
+    font-size: 14px
+    font-family: $fontHeavy
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    color: $btnBgColor
+    padding: 12px
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: #fff
+      background-color: $btnBgColor
+  &__all
+    width: 295px
+    border: 2px solid #F5F5F5
+    padding: 38px 35px 25px 35px
+    &-title
+      font-size: 16px
+      text-transform: uppercase
+      margin-top: 0
+      margin-bottom: 33px
+      padding-bottom: 30px
+      line-height: 130%
+      position: relative
+      color: $btnBgColor
+      text-align: center
+      font-family: $fontHeavy
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        transform: translateX(-50%)
+        left: 50%
+        background-repeat: no-repeat
+        background-image: url(../../img/wave-pink.svg)
+        width: 92px
+        height: 8px
+        background-size: 100%
+    &-sum
+      display: block
+      text-align: center
+      color: $btnBgColor
+      font-family: $fontMedium
+      font-size: 42px
+      position: relative
+      svg
+        font-size: 22px
+      span
+        font-size: 18px
+        font-family: $fontBook
+        color: #BDBDBD
+        display: block
+        position: relative
+      del
+        position: absolute
+        top: -20px
+        transform: translateX(-50%)
+        left: 50%
+        font-size: 22px
+        letter-spacing: -0.05em
+        color: #F0827D
+        svg
+          font-size: 16px
+    &-sale
+      display: block
+      text-align: center
+      color: $btnBgColor
+      font-family: $fontMedium
+      font-size: 28px
+      position: relative
+      padding-top: 13px
+      letter-spacing: -0.05em
+      margin-top: 15px
+      border-top: 2px solid #F5F5F5
+      svg
+        font-size: 16px
+      span
+        font-size: 18px
+        font-family: $fontBook
+        color: #BDBDBD
+        display: block
+        position: relative
+    &-btn
+      margin-left: auto
+      margin-right: auto
+      display: block
+      width: 100%
+      text-align: center
+      text-transform: uppercase
+      border-radius: 30px
+      margin-top: 20px
+      margin-bottom: 30px
+      position: relative
+      font-size: 14px
+      font-family: $fontHeavy
+      padding: 17px 25px
+      background-color: $btnBgColor
+      transition: all $transitionSpeed $ease
+      color: #fff
+      &:hover
+        box-shadow: 0 0 0 2px $btnBgHover
+        background-color: $btnBgHover
+      &:disabled
+        background-color: #aeaeae
+        &:hover
+          cursor: default
+          box-shadow: none
+    &-minimun
+      margin-top: 60px
+      font-family: $fontMedium
+      font-size: 18px
+      text-align: center
+      position: relative
+      line-height: 130%
+      color: $btnBgColor
+      &:before
+        content: ''
+        position: absolute
+        top: -30px
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: #F5F5F5
+      span
+        display: block
+        font-family: $fontBold
+    &-free
+      position: relative
+      padding-top: 65px
+      text-align: center
+      font-size: 18px
+      color: $textColor
+      font-family: $fontBook
+      span
+        display: inline-block
+        color: $btnBgColor
+        font-family: $fontBold
+      svg
+        font-size: 45px
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        
+.recent-items
+  margin-top: 90px
+  padding-bottom: 50px
+  &__title
+    font-size: 36px
+    margin-top: 0
+    font-family: $fontBold
+    color: $btnBgColor
+    margin-bottom: 60px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    span
+      position: relative
+      &:before,
+      &:after
+        content: ''
+        position: absolute
+        top: 40%
+        background-repeat: no-repeat
+        background-image: url(../../img/wave-title.svg)
+        width: 180px
+        height: 12px
+        background-size: 100%
+      &:before
+        left: -35%
+      &:after
+        right: -35%
+  &__wrap
+    display: flex
+    align-items: stretch
+    margin-left: -8px
+    margin-right: -8px
+    .slick-list,
+    .slick-track
+      display: flex !important
+      align-items: stretch
+    .slick-prev,
+    .slick-next
+      width: 55px
+      height: 55px
+      top: -105px
+      background-color: rgb(249,249,249)
+    .slick-dots
+      bottom: -50px
+  &__item
+    width: calc(16.66% - 16px)
+    background-color: #fff
+    box-shadow: inset 0 0 0 2px #f5f5f5
+    display: flex !important
+    margin-left: 8px
+    margin-right: 8px
+    flex-direction: column
+    &:hover
+      .recent-items__img
+        img
+          transform: scale(1.05)
+        
+  &__img
+    margin-bottom: 12px
+    overflow: hidden
+    img
+      display: block
+      transition: all $transitionSpeed $ease
+      width: 100%
+      height: 100%
+      min-height: 100%
+  &__subtitle
+    font-size: 22px
+    margin-top: 0
+    margin-bottom: 30px
+    text-align: center
+    padding-left: 25px
+    padding-right: 25px
+    position: relative
+    font-family: $fontDemi
+    color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: rgba(53, 53, 53, 0.7)
+  &__price
+    display: block
+    margin-top: auto
+    position: relative
+    text-align: center
+    font-size: 24px
+    font-family: $fontMedium
+    margin-bottom: 20px
+    padding-top: 30px
+    letter-spacing: -0.05em
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      transform: translateX(-50%)
+      left: 50%
+      background-repeat: no-repeat
+      background-image: url(../../img/wave-pink.svg)
+      width: 70px
+      height: 6px
+      background-size: 100%
+    svg
+      font-size: 15px
+      
++r($hd)
+  .cart
+    &__wrapper
+      padding: 35px
+      padding-bottom: 70px
+      flex-direction: column
+    &__main
+      width: 100%
+      padding-right: 0
+      margin-bottom: 50px
+    &__all
+      width: 100%
+      padding: 25px
+      display: flex
+      flex-direction: row
+      align-items: center
+      flex-wrap: wrap
+      justify-content: space-between
+      &-title
+        padding-bottom: 0
+        margin-bottom: 0
+        &:after
+          display: none
+      &-sum
+      &-minimun
+        width: 100%
+      &-btn
+        margin: 0
+        width: 200px
+      &-sale
+        border: 0
+        margin: 0
+        padding: 0
+      &-free
+        width: 100%
+        margin-top: 20px

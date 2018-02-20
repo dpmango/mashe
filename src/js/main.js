@@ -406,6 +406,7 @@ $(document).ready(function(){
     // CLIENTS SLIDER
     $('[jsClientsSlider]').slick({
       arrows: true,
+      accessibility: false,
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -447,6 +448,7 @@ $(document).ready(function(){
     // PHOTOS SLIDER
     $('[jsPhotosSlider]').slick({
       arrows: false,
+      accessibility: false,
       dots: false,
       slidesToShow: 7,
       slidesToScroll: 1,
@@ -472,6 +474,7 @@ $(document).ready(function(){
     // POPULAR SLIDER
     $('[jsPopularSlider]').slick({
       arrows: true,
+      accessibility: false,
       dots: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -495,6 +498,57 @@ $(document).ready(function(){
     },
         {
       breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+        ]
+    });
+    
+    // RECENT SLIDER
+    $('[jsRecentSlider]').slick({
+      arrows: true,
+      accessibility: false,
+      dots: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      responsive: [
+    {
+      breakpoint: 1336,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1
+      }
+    },
+      {
+      breakpoint: 1110,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+        {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    },
+        {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    },
+        {
+      breakpoint: 568,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

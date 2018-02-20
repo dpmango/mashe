@@ -1,0 +1,138 @@
+---
+title: Cart || MASHE
+bodyClass: cart-page
+---
+extends shared/_layout
+block content
+  // CART SECTION
+  section.cart
+    .container
+      h1.cart__title Корзина
+      form.cart__wrapper(action="#")
+        .cart__main
+          .cart__header
+            .cart__header-name Наименование
+            .cart__header-price Цена за метр
+            .cart__header-amount Количество (м)
+            .cart__header-sum Сумма
+          .cart__item
+            .cart__img
+              img(src="img/popular2.jpg")
+            .cart__info
+              span.cart__articul Арт. АС14016PP
+              h2.cart__item-title Атлас стрейч «Magic White»
+              p.cart__descr Ширина:
+                span 140 см
+              p.cart__descr Плотность:
+                span 8 м/м ≈ 34 г/м2
+            .cart__price
+              span 1 350
+                +icon('ico-ruble')
+            .cart__amount
+              .cart__amount-wrap
+                button.cart__btn.cart__btn--minus(type="button") -
+                input.cart__input(type="text" value="0.5")
+                button.cart__btn.cart__btn--plus(type="button") +
+            .cart__sum
+              span 675
+                +icon('ico-ruble')
+            button.cart__del(type="button")
+              +icon('ico-close')
+          .cart__item
+            .cart__img
+              img(src="img/popular3.jpg")
+            .cart__info
+              span.cart__articul Арт. АС14016PP
+              h2.cart__item-title Хаботай 10 мм
+              p.cart__descr Ширина:
+                span 140 см
+              p.cart__descr Плотность:
+                span 8 м/м ≈ 34 г/м2
+            .cart__price
+              span 100
+                +icon('ico-ruble')
+            .cart__amount
+              .cart__amount-wrap
+                button.cart__btn.cart__btn--minus(type="button") -
+                input.cart__input(type="text" value="1")
+                button.cart__btn.cart__btn--plus(type="button") +
+            .cart__sum
+              span 100
+                +icon('ico-ruble')
+            button.cart__del(type="button")
+              +icon('ico-close')
+          .cart__promo
+            a.cart__back(href="#") Вернуться в каталог
+              +icon('ico-arrow-button')
+            .cart__promo-wrap
+              input.cart__promo-input(type="text" placeholder="Введите промокод")
+              button.cart__promo-btn(type="button") Применить
+        .cart__all
+          h3.cart__all-title 2 товара в корзине на сумму
+          div.cart__all-sum 775
+            +icon('ico-ruble')
+            span Без стоимости доставки
+          button.cart__all-btn(type="submit" disabled) Оформить заказ
+          .cart__all-minimun Минимальная сумма заказа
+            span 1 000 руб
+            
+      .recent-items
+        h2.recent-items__title 
+          span Вы недавно просматривали
+        .recent-items__wrap(jsRecentSlider)
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular1.jpg")
+            h3.recent-items__subtitle Эксельсиор узбекский
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular2.jpg")
+            h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular3.jpg")
+            h3.recent-items__subtitle Жоржет
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular1.jpg")
+            h3.recent-items__subtitle Эксельсиор узбекский
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular2.jpg")
+            h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular3.jpg")
+            h3.recent-items__subtitle Жоржет
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+          a.recent-items__item(href="#")
+            .recent-items__img
+              img(src="img/popular3.jpg")
+            h3.recent-items__subtitle Жоржет
+            span.recent-items__price 1 260
+              +icon('ico-ruble')
+              
+  // NEWSLETTER
+  section.newsletter.wow
+    .container
+      .newsletter__wrap
+        .newsletter__info
+          h2.newsletter__title Подпишись на рассылку 
+          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
+        form.newsletter__form(action="#")
+          .newsletter__form-wrap
+            input.newsletter__input(type="email" placeholder="Ваш email")
+            button.newsletter__btn(type="submit") Подписаться !
+          p.newsletter__text Нажимая на кнопку, вы даете согласие на
+            a.newsletter__link(href="#") обработку своих персональных данных

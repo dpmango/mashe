@@ -5,6 +5,8 @@ PageList:
   ready: 90
 - file: catalog.html
   ready: 90
+- file: cart1.html
+  ready: 50
+- file: cart2.html
+  ready: 50
 
-- file: icons.html
-  ready: 0

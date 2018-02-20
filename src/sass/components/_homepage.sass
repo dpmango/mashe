@@ -1,23 +1,7 @@
 // MAIN SLIDER SECTION
 .main-slider
   .slick-dots
-    margin: 0
-    padding: 0
-    position: absolute
     bottom: 170px
-    left: 50%
-    transform: translateX(-50%)
-    button
-      padding: 0
-      font-size: 0
-      width: 37px
-      height: 4px
-      background-color: #E6E6E6
-      margin-left: 6px
-      margin-right: 6px
-      transition: all $transitionSpeed $ease
-    li.slick-active button
-      background-color: $btnBgColor
   &__slide
     background-repeat: no-repeat
     background-size: cover
@@ -451,49 +435,9 @@
     align-items: stretch
     .slick-prev,
     .slick-next
-      display: block
-      border-radius: 50%
-      position: absolute
-      z-index: 2
       top: -130px
-      //transform: translateY(-50%)
-      background-color: #fff
-      font-size: 0
-      background-repeat: no-repeat
-      background-position: 50%
-      background-size: 15px 24px
-      width: 76px
-      height: 76px
-      padding: 0
-      border: 3px solid #F5F5F5
-      transition: all $transitionSpeed $ease
-      &:hover
-        border-color: $btnBgColor
-        transform: scale(1.05)
-    .slick-prev
-      background-image: url(../../img/arrow-left.svg)
-      left: 15px
-    .slick-next
-      background-image: url(../../img/arrow-right.svg)
-      right: 15px
     .slick-dots
-      margin: 0
-      padding: 0
-      position: absolute
       bottom: -60px
-      left: 50%
-      transform: translateX(-50%)
-      button
-        padding: 0
-        font-size: 0
-        width: 37px
-        height: 4px
-        background-color: #E6E6E6
-        margin-left: 6px
-        margin-right: 6px
-        transition: all $transitionSpeed $ease
-      li.slick-active button
-        background-color: $btnBgColor
     
 .catalog-item
   text-decoration: none
@@ -892,30 +836,12 @@
       align-items: stretch
     .slick-prev,
     .slick-next
-      display: block
-      border-radius: 50%
-      position: absolute
-      z-index: 2
       top: -110px
       background-color: #FFEDE9
-      font-size: 0
-      background-repeat: no-repeat
-      background-position: 50%
-      background-size: 15px 24px
-      width: 76px
-      height: 76px
-      padding: 0
       border: 3px solid #fff
-      transition: all $transitionSpeed $ease
       &:hover
         border-color: $btnBgColor
         transform: scale(1.05)
-    .slick-prev
-      background-image: url(../../img/arrow-left.svg)
-      left: 15px
-    .slick-next
-      background-image: url(../../img/arrow-right.svg)
-      right: 15px
   &__item
     display: flex !important
     flex-direction: column
