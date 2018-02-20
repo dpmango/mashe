@@ -1,0 +1,19 @@
+<svg width="23" height="16" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3.6</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(18885 18678)">
+        <g id="Group 3.6">
+            <g id="Rectangle">
+                <mask id="mask0_outline_ins">
+                    <path d="M 0 0L 23 0L 23 16L 0 16L 0 0Z" fill="white" transform="translate(-18885 -18678)"></path>
+                </mask>
+                <g mask="url(#mask0_outline_ins)">
+                    <path d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 23 0L 25 0L 25 -2L 23 -2L 23 0ZM 23 16L 23 18L 25 18L 25 16L 23 16ZM 0 16L -2 16L -2 18L 0 18L 0 16ZM 0 2L 23 2L 23 -2L 0 -2L 0 2ZM 21 0L 21 16L 25 16L 25 0L 21 0ZM 23 14L 0 14L 0 18L 23 18L 23 14ZM 2 16L 2 0L -2 0L -2 16L 2 16Z" transform="translate(-18885 -18678)" fill="#353535"></path>
+                </g>
+            </g>
+            <g id="Vector">
+                <path d="M 9.775 7.42857L 9.16994 8.22475L 9.75802 8.67167L 10.3581 8.24098L 9.775 7.42857ZM -0.605061 0.796179L 9.16994 8.22475L 10.3801 6.63239L 0.605061 -0.796179L -0.605061 0.796179ZM 10.3581 8.24098L 20.7081 0.812405L 19.5419 -0.812405L 9.19191 6.61617L 10.3581 8.24098Z" transform="translate(-18883.3 -18676.9)" fill="#353535"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -341,7 +341,7 @@
       color: $btnBgColor
   &__link
     font-size: 18px
-    font-family: $fontMedium
+    font-family: $fontBook
     color: #9FAFB5
     transition: all $transitionSpeed $ease
     &:hover
@@ -416,11 +416,9 @@
     transition: all $transitionSpeed linear
     &.is-active
       transform: translateY(-30px)
-      &:hover
-        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $btnBgHover
-      transform: scale(1.05) translateY(0)
+      box-shadow: 0 0 0 2px $btnBgHover
   &__search
     color: #fff
     font-size: 20px
@@ -440,11 +438,9 @@
     transition: all $transitionSpeed linear
     &.is-active
       transform: translateY(-30px)
-      &:hover
-        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $btnBgHover
-      transform: scale(1.05) translateY(0)
+      box-shadow: 0 0 0 2px $btnBgHover
   &__cart
     color: $btnBgColor
     font-size: 20px
@@ -464,11 +460,9 @@
     transition: all $transitionSpeed linear
     &.is-active
       transform: translateY(-30px)
-      &:hover
-        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $primary2Hover
-      transform: scale(1.05) translateY(0)
+      box-shadow: 0 0 0 2px $primary2Hover
   &__like
     font-size: 20px
     color: $btnBgColor
@@ -488,11 +482,9 @@
     transition: all $transitionSpeed linear
     &.is-active
       transform: translateY(-30px)
-      &:hover
-        transform: scale(1.05) translateY(-30px)
     &:hover
       background-color: $primaryHover
-      transform: scale(1.05) translateY(0)
+      box-shadow: 0 0 0 2px $primaryHover
   &__nav
     display: flex
     flex-direction: row
@@ -560,7 +552,7 @@
 .to-top-btn
   position: fixed
   right: 30px
-  top: 40%
+  bottom: 7%
   z-index: 3
   text-decoration: none
   border-radius: 50%
@@ -572,8 +564,8 @@
   color: $btnBgColor
   font-size: 25px
   transition: all $transitionSpeed $ease
-  width: 65px
-  height: 65px
+  width: 62px
+  height: 62px
   visibility: hidden
   opacity: 0
   &.is-active
