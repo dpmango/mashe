@@ -15,6 +15,8 @@ block content
             .cart__header-price Цена за метр
             .cart__header-amount Количество (м)
             .cart__header-sum Сумма
+            
+          // DESKTOP ITEMS  
           .cart__item
             .cart__img
               img(src="img/popular2.jpg")
@@ -63,6 +65,67 @@ block content
                 +icon('ico-ruble')
             button.cart__del(type="button")
               +icon('ico-close')
+              
+          // MOBILE ITEMS
+          .cart__item.cart__item--mobile
+            .cart__img
+              img(src="img/popular2.jpg")
+            .cart__middle
+              .cart__info
+                span.cart__articul Арт. АС14016PP
+                h2.cart__item-title Атлас стрейч «Magic White»
+                p.cart__descr Ширина:
+                  span 140 см
+                p.cart__descr Плотность:
+                  span 8 м/м ≈ 34 г/м2
+              .cart__price
+                span 1 350
+                  +icon('ico-ruble')
+                .cart__header-price Цена за метр
+            .cart__last
+              .cart__sum
+                .cart__header-sum Сумма
+                span 13 500
+                  del 1 760
+                    +icon('ico-ruble')
+                  +icon('ico-ruble')
+              .cart__amount
+                .cart__header-amount Количество (м)
+                .cart__amount-wrap
+                  button.cart__btn.cart__btn--minus(type="button") -
+                  input.cart__input(type="text" value="10")
+                  button.cart__btn.cart__btn--plus(type="button") +
+            button.cart__del(type="button")
+              +icon('ico-close')
+          .cart__item.cart__item--mobile
+            .cart__img
+              img(src="img/popular3.jpg")
+            .cart__middle
+              .cart__info
+                span.cart__articul Арт. АС14016PP
+                h2.cart__item-title Хаботай 10 мм
+                p.cart__descr Ширина:
+                  span 140 см
+                p.cart__descr Плотность:
+                  span 8 м/м ≈ 34 г/м2
+              .cart__price
+                span 700
+                  +icon('ico-ruble')
+                .cart__header-price Цена за метр
+            .cart__last
+              .cart__sum
+                .cart__header-sum Сумма
+                span 1 750
+                  +icon('ico-ruble')
+              .cart__amount
+                .cart__header-amount Количество (м)
+                .cart__amount-wrap
+                  button.cart__btn.cart__btn--minus(type="button") -
+                  input.cart__input(type="text" value="2.5")
+                  button.cart__btn.cart__btn--plus(type="button") +
+            button.cart__del(type="button")
+              +icon('ico-close')
+              
           .cart__promo
             a.cart__back(href="#") Вернуться в каталог
               +icon('ico-arrow-button')
@@ -87,6 +150,8 @@ block content
             span 1 000 руб
           .cart__all-free Дополни корзину еще на <span>2 455 руб</span> и мы доставим заказ бесплатно!
             +icon('ico-truck')
+          a.cart__back.cart__back--mobile(href="#") Вернуться в каталог
+              +icon('ico-arrow-button')
             
       .recent-items
         h2.recent-items__title 
