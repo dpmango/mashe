@@ -125,6 +125,71 @@ header.header#top
     a.header__cart(href="#")
       //img(src="img/bag.svg")
       +icon('ico-bag')
+      span.header__cart-amount 2
+      .cart-popup
+        .cart-popup__empty
+          h3 Ваша корзина пуста
+        .cart-popup__topbar
+          .cart-popup__item
+            .cart-popup__img
+              img(src="img/popular2.jpg")
+            .cart-popup__info
+              h3.cart-popup__title Атлас стрейч «Magic White»
+              p.cart-popup__descr Ширина:
+                span 140 см
+              p.cart-popup__descr Плотность:
+                span 8 м/м ≈ 34 г/м2
+            .cart-popup__price
+              .cart-popup__amount 1 350
+                +icon('ico-ruble')
+                span x 10 м
+              .cart-popup__total 13 500
+                +icon('ico-ruble')
+          .cart-popup__item
+            .cart-popup__img
+              img(src="img/popular2.jpg")
+            .cart-popup__info
+              h3.cart-popup__title Атлас стрейч «Magic White»
+              p.cart-popup__descr Ширина:
+                span 140 см
+              p.cart-popup__descr Плотность:
+                span 8 м/м ≈ 34 г/м2
+            .cart-popup__price
+              .cart-popup__amount 1 350
+                +icon('ico-ruble')
+                span x 10 м
+              .cart-popup__total 13 500
+                +icon('ico-ruble')
+              del.cart-popup__sale 13 760
+                +icon('ico-ruble')
+          .cart-popup__item
+            .cart-popup__img
+              img(src="img/popular2.jpg")
+            .cart-popup__info
+              h3.cart-popup__title Атлас стрейч «Magic White»
+              p.cart-popup__descr Ширина:
+                span 140 см
+              p.cart-popup__descr Плотность:
+                span 8 м/м ≈ 34 г/м2
+            .cart-popup__price
+              .cart-popup__amount 1 350
+                +icon('ico-ruble')
+                span x 10 м
+              .cart-popup__total 13 500
+                +icon('ico-ruble')
+        .cart-popup__bottombar
+          .cart-popup__summ
+            p.cart-popup__text Сумма заказа
+              span без стоимости доставки
+            .cart-popup__summ-price 26 000
+              +icon('ico-ruble')
+          .cart-popup__total-sale
+            p Скидка
+            span 210
+              +icon('ico-ruble')
+          .cart-popup__buttons
+            button.cart-popup__tocart(type="button") Перейти в корзину
+            button.cart-popup__checkout(type="button") Оформить заказ
     a.header__like(href="#")
       //img(src="img/heart.svg")
       +icon('ico-heart')

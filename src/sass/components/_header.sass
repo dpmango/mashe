@@ -458,11 +458,31 @@
     align-items: center
     background-color: $primary2Color
     transition: all $transitionSpeed linear
+    &-amount
+      display: block
+      background-color: $btnBgColor
+      color: #fff
+      border-radius: 50%
+      font-size: 14px
+      text-align: center
+      font-family: $fontBold
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 30px
+      height: 30px
+      bottom: -3px
+      right: -10px
+      position: absolute
     &.is-active
       transform: translateY(-30px)
     &:hover
       background-color: $primary2Hover
       box-shadow: 0 0 0 2px $primary2Hover
+      .cart-popup
+        visibility: visible
+        opacity: 1
+        transform: translateX(0)
   &__like
     font-size: 20px
     color: $btnBgColor
@@ -549,6 +569,195 @@
       top: -27px
       z-index: 2
       
+      
+.cart-popup
+  position: absolute
+  z-index: 5
+  top: 0px
+  right: 90px
+  background-color: #fff
+  box-shadow: 0 0 20px $textColor
+  padding: 10px 40px 40px 40px
+  width: 610px
+  transition: all $transitionSpeed $ease
+  opacity: 0
+  visibility: hidden
+  transform: translateX(15px)
+  &--empty
+    width: 300px
+    .cart-popup__topbar,
+    .cart-popup__bottombar
+      display: none
+    .cart-popup__empty
+      display: block
+  &:after
+    content: ''
+    position: absolute
+    top: 20px
+    right: -10px
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 15px
+    border-color: transparent transparent transparent #fff;
+  &__empty
+    display: none
+    h3
+      margin: 0
+      font-size: 16px
+      font-family: $fontHeavy
+      text-align: center
+      text-transform: uppercase
+      color: $btnBgColor
+      position: relative
+      padding-top: 130px
+      &:before
+        content: ''
+        position: absolute
+        width: 64px
+        height: 80px
+        top: 20px
+        background-repeat: no-repeat
+        left: 50%
+        transform: translateX(-50%)
+        background-image: url(../../img/cart-empty.svg)
+        background-size: 100%
+  &__topbar
+    max-height: 285px
+    overflow-y: scroll
+  &__item
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    padding: 20px 0
+    border-bottom: 2px solid #F5F5F5
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-image: linear-gradient(to right, #fff 20%, $bgColor 80%, #fff 100%)
+  &__img
+    width: 100px
+    margin-right: 25px
+    img
+      display: block
+      width: 100%
+      height: 100%
+      min-height: 100%
+  &__info
+    max-width: 180px
+  &__title
+    margin-top: 0
+    font-size: 22px
+    font-family: $fontDemi
+    margin-bottom: 10px
+    line-height: 120%
+    color: $btnBgColor
+  &__descr
+    font-size: 14px
+    font-family: $fontBook
+    margin: 0
+    color: #BDBDBD
+    span
+      color: $btnBgColor
+  &__price
+    margin-left: auto
+    text-align: right
+  &__amount
+    font-size: 18px
+    font-family: $fontMedium
+    color: #B1BABE
+    display: block
+    letter-spacing: -0.05em
+    svg
+      font-size: 12px
+  &__total
+    font-size: 32px
+    font-family: $fontMedium
+    color: $btnBgColor
+    margin-top: 5px
+    margin-bottom: 0
+    letter-spacing: -0.05em
+    svg
+      font-size: 18px
+  &__sale
+    font-size: 16px
+    margin-top: 10px
+    font-family: $fontMedium
+    color: #F0827D
+    svg
+      font-size: 10px
+  &__bottombar
+    padding-top: 20px
+  &__summ
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__text
+    font-size: 16px
+    text-transform: uppercase
+    font-family: $fontHeavy
+    margin: 0
+    color: $btnBgColor
+    span
+      font-size: 18px
+      display: block
+      text-transform: none
+      font-family: $fontBook
+      color: #BDBDBD
+  &__summ-price
+    font-size: 36px
+    letter-spacing: -0.05em
+    font-family: $fontMedium
+    text-align: right
+    svg
+      font-size: 18px
+  &__total-sale
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 20px
+    p
+      font-size: 16px
+      text-transform: uppercase
+      font-family: $fontHeavy
+      margin: 0
+      color: $btnBgColor
+    span
+      font-size: 28px
+      font-family: $fontMedium
+      color: $btnBgColor
+      letter-spacing: -0.05em
+      svg
+        font-size: 16px
+  &__buttons
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding-top: 40px
+    justify-content: space-between
+  &__tocart,
+  &__checkout
+    font-size: 14px
+    font-family: $fontHeavy
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    text-align: center
+    border-radius: 30px
+    padding: 15px
+    width: 48%
+    transition: all $transitionSpeed $ease
+  &__tocart
+    color: $btnBgColor
+    background-color: #E4EAED
+    &:hover
+      color: #fff
+      background-color: $btnBgHover
+  &__checkout
+    color: #fff
+    background-color: $btnBgColor
+    &:hover
+      background-color: $btnBgHover
+      
+      
 .to-top-btn
   position: fixed
   right: 30px
@@ -594,6 +803,10 @@
     &__cart,
     &__like
       right: 20px
+    &__cart
+      &-amount
+        width: 25px
+        height: 25px
     &__link
       &:first-child
         display: none
@@ -661,9 +874,16 @@
       left: 80px
     &__cart
       right: 80px
+      &-amount
+        width: 20px
+        height: 20px
+        font-size: 12px
+        right: -5px
     &__like
       right: 30px
   .to-top-btn
+    display: none
+  .cart-popup
     display: none
       
   .search-panel
