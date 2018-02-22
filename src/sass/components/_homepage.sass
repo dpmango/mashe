@@ -703,7 +703,7 @@
     justify-content: space-between
   &__item
     padding: 40px 34px 30px 34px
-    border: 1px solid $primary2Color
+    border: 2px solid #f5f5f5
     margin-left: 6px
     margin-right: 6px
     width: calc(25% - 12px)
@@ -717,14 +717,15 @@
     position: relative
     margin-bottom: 29px
     border-radius: 50%
-    min-height: 262px
+    //min-height: 262px
     display: flex
     justify-content: center
-    align-items: stretch
+    //align-items: stretch
     img
       display: block
       height: auto
       width: 100%
+      object-fit: contain
       border-radius: 50%
       transition: all $transitionSpeed $ease
   &__btn
@@ -986,10 +987,15 @@
     margin: 0
     color: $btnBgColor
   &__form-wrap
-    max-width: 550px
+    max-width: 535px
     margin-left: auto
     position: relative
     margin-bottom: 18px
+    &--error
+      .newsletter__error
+        display: block
+      .newsletter__input
+        color: #F0827D
   &__input
     text-align: left
     border: 1px solid transparent
@@ -1021,6 +1027,13 @@
     transition: all $transitionSpeed $ease
     &:hover
       background-color: $btnBgHover
+  &__error
+    display: none
+    text-align: left
+    font-size: 16px
+    font-family: $fontMedium
+    color: #F0827D
+    margin-top: 10px
   &__text
     font-size: 16px
     margin: 0
