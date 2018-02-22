@@ -2882,6 +2882,12 @@ body, html {
   fill: #353535;
 }
 
+.ico-descr {
+  width: 1.13em;
+  height: 1em;
+  fill: #353535;
+}
+
 .ico-dev-icon {
   width: 4.24em;
   height: 1em;
@@ -2976,6 +2982,12 @@ body, html {
   width: 1.05em;
   height: 1em;
   fill: #FFF;
+}
+
+.ico-play {
+  width: 0.75em;
+  height: 1em;
+  fill: #353535;
 }
 
 .ico-quotes {
@@ -8993,6 +9005,602 @@ html.mfp-helper body {
     display: block;
     margin-top: 20px;
   }
+}
+
+.product-page .recent-items {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#fff));
+  background-image: -webkit-linear-gradient(top, #F9F9F9, #fff);
+  background-image: -o-linear-gradient(top, #F9F9F9, #fff);
+  background-image: linear-gradient(to bottom, #F9F9F9, #fff);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.product-section {
+  padding-top: 100px;
+  background-color: #F9F9F9;
+}
+
+.product-section .breadcrumbs {
+  margin-bottom: 0;
+}
+
+.product-section__top-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-section__link {
+  font-size: 16px;
+  font-family: "FuturaPTHeavy";
+  text-transform: uppercase;
+  color: #9E9E9E;
+  position: relative;
+  letter-spacing: 0.03em;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-section__link:hover, .product-section__link:focus {
+  color: #353535;
+}
+
+.product-section__link--prev {
+  padding-left: 20px;
+}
+
+.product-section__link--prev svg {
+  position: absolute;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.product-section__link--next {
+  padding-right: 20px;
+}
+
+.product-section__link--next svg {
+  position: absolute;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.product-section__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #353535;
+  text-align: center;
+  font-size: 48px;
+  font-family: "FuturaPTBold";
+  letter-spacing: 0.05em;
+}
+
+.product-section__articul {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "FuturaPTBook";
+  color: #B6B6B6;
+}
+
+.product-section__wrap {
+  background-color: #fff;
+  padding: 55px;
+  margin-bottom: 80px;
+}
+
+.product-section__topbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 65px;
+}
+
+.product-section__slider {
+  width: 60%;
+}
+
+.product-section__slider-wrap {
+  margin-bottom: 23px;
+}
+
+.product-section__slider-wrap img {
+  display: block;
+  max-width: 100%;
+}
+
+.product-section__slider-wrap .slick-prev,
+.product-section__slider-wrap .slick-next {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-background-size: 20px 25px;
+          background-size: 20px 25px;
+}
+
+.product-section__slider-wrap .slick-prev:hover,
+.product-section__slider-wrap .slick-next:hover,
+.product-section__slider-wrap .slick-prev:focus,
+.product-section__slider-wrap .slick-next:focus {
+  opacity: 0.8;
+}
+
+.product-section__photos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.product-section__photos-item {
+  margin-left: 6px;
+  margin-right: 6px;
+  width: -webkit-calc(20% - 12px);
+  width: calc(20% - 12px);
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-section__photos-item:hover img, .product-section__photos-item:focus img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.product-section__photos-item--video {
+  -webkit-box-shadow: inset 0 0 0 3px #F1F1F1;
+          box-shadow: inset 0 0 0 3px #F1F1F1;
+  text-align: center;
+}
+
+.product-section__photos-item--video:hover, .product-section__photos-item--video:focus {
+  -webkit-box-shadow: inset 0 0 0 3px #353535;
+          box-shadow: inset 0 0 0 3px #353535;
+}
+
+.product-section__photos-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-section__photos-item span {
+  display: block;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  color: #353535;
+  font-size: 14px;
+  font-family: "FuturaPTBold";
+  letter-spacing: 0.03em;
+  padding-top: 50px;
+}
+
+.product-section__photos-item svg {
+  font-size: 22px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.product-section__info {
+  width: 40%;
+  padding-left: 70px;
+}
+
+.product-section__price-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 35px;
+}
+
+.product-section__first-price, .product-section__second-price {
+  width: 45%;
+  border: 2px solid #FFF4F2;
+  padding: 12px 10px 12px 30px;
+  font-size: 40px;
+  font-family: "FuturaPTMedium";
+  letter-spacing: -0.05em;
+}
+
+.product-section__first-price svg, .product-section__second-price svg {
+  font-size: 24px;
+}
+
+.product-section__first-price span, .product-section__second-price span {
+  display: block;
+  font-size: 16px;
+  font-family: "FuturaPTBook";
+  color: rgba(53, 53, 53, 0.4);
+  letter-spacing: 0;
+}
+
+.product-section__second-price {
+  width: 55%;
+  background-color: #FFF4F2;
+}
+
+.product-section__amount-wrap {
+  padding-bottom: 35px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.product-section__amount-title {
+  font-size: 24px;
+  font-family: "FuturaPTMedium";
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #353535;
+}
+
+.product-section__amount-subtitle {
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  color: #B6B6B6;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.product-section__amount {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-section__amount .cart__amount-wrap {
+  margin-left: 0;
+}
+
+.product-section__tocart {
+  font-size: 14px;
+  font-family: "FuturaPTBold";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 17px 55px 17px 45px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #353535;
+  background-color: #E4EAED;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+}
+
+.product-section__tocart svg {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.product-section__tocart:hover, .product-section__tocart:focus {
+  background-color: #B4D0DE;
+}
+
+.product-section__like {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #FFDAD4;
+  color: #353535;
+  text-align: center;
+  font-size: 14px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-section__like svg {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.product-section__like:hover, .product-section__like:focus {
+  background-color: #FFB2A6;
+}
+
+.product-section__charac-title {
+  font-size: 24px;
+  font-family: "FuturaPTMedium";
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #353535;
+}
+
+.product-section__charac-descr {
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  color: #B6B6B6;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-section__charac-descr span {
+  color: #353535;
+}
+
+.product-section__links-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.product-section__tab-link {
+  width: 25%;
+  padding: 35px 60px 35px 150px;
+  position: relative;
+  border: 2px solid #F1F1F1;
+  border-left-color: transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: "FuturaPTDemiC";
+  color: #B1BABE;
+}
+
+.product-section__tab-link svg {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.product-section__tab-link .ico-descr {
+  font-size: 40px;
+}
+
+.product-section__tab-link .ico-card {
+  font-size: 44px;
+}
+
+.product-section__tab-link .ico-action {
+  font-size: 52px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  left: 90px;
+}
+
+.product-section__tab-link .ico-truck {
+  font-size: 38px;
+  left: 65px;
+}
+
+.product-section__tab-link:first-child {
+  border-left-color: #F1F1F1;
+}
+
+.product-section__tab-link:hover, .product-section__tab-link.is-active, .product-section__tab-link:focus {
+  border-color: #353535;
+  color: #353535;
+}
+
+.product-section__tab-item {
+  display: none;
+  padding-top: 50px;
+}
+
+.product-section__tab-item.is-active {
+  display: block;
+}
+
+.product-section__tab-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-section__tab-half {
+  width: 48%;
+}
+
+.product-section__tab-title {
+  font-size: 24px;
+  font-family: "FuturaPTMedium";
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.product-section__tab-text {
+  font-size: 20px;
+  font-family: "FuturaPTBook";
+  color: #707070;
+  margin-top: 0;
+  margin-bottom: 40px;
+  line-height: 150%;
+}
+
+.product-section__tab-tags {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.product-section__tab-tag {
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  text-align: center;
+  padding: 10px 18px;
+  color: #B1BABE;
+  margin-right: 7px;
+  background-color: #F9F9F9;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-section__tab-tag:hover, .product-section__tab-tag:focus {
+  color: #fff;
+  background-color: #353535;
+}
+
+.you-like {
+  margin-bottom: 95px;
+  padding-top: 185px;
+  position: relative;
+  text-align: center;
+}
+
+.you-like:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-image: url(../../img/wave-stamp.svg);
+}
+
+.you-like__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28px;
+  font-family: "FuturaPTBold";
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: #FFEDE9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 530px;
+  color: #353535;
+}
+
+.you-like .recent-items__item {
+  width: 20%;
 }
 
 /*# sourceMappingURL=app.css.map */

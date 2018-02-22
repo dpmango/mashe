@@ -568,6 +568,14 @@ $(document).ready(function(){
       autoplaySpeed: 3500
     });
     
+    // PRODUCT SLIDER
+    $('[jsProductSlider]').slick({
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+    
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');
     var socialsSlickMobileOptions = {

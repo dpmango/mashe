@@ -1,0 +1,201 @@
+---
+title: Cart || MASHE
+bodyClass: product-page
+---
+extends shared/_layout
+block content
+  // PRODUCT SECTION
+  section.product-section
+    .container
+      .product-section__top-wrap
+        a.product-section__link.product-section__link--prev(href="#") Предыдущий товар
+          +icon('ico-arrow-left')
+        .breadcrumbs
+          a.breadcrumbs__link(href="#") Главная
+          a.breadcrumbs__link(href="#") Каталог
+          a.breadcrumbs__link.is-active(href="#") Атлас АС14016PP
+        a.product-section__link.product-section__link--next(href="#") Следующий товар
+          +icon('ico-arrow-right')
+      h1.product-section__title Атлас стрейч «Magic White»
+      span.product-section__articul Арт. АС14016PP
+      .product-section__wrap
+        .product-section__topbar
+          .product-section__slider
+            .product-section__slider-wrap(jsProductSlider)
+              img(src="img/product-slide.jpg")
+              img(src="img/product-slide.jpg")
+              img(src="img/product-slide.jpg")
+              img(src="img/product-slide.jpg")
+            .product-section__photos
+              a.product-section__photos-item(href="#")
+                img(src="img/product-slide-mini1.jpg")
+              a.product-section__photos-item(href="#")
+                img(src="img/product-slide-mini2.jpg")
+              a.product-section__photos-item(href="#")
+                img(src="img/product-slide-mini3.jpg")
+              a.product-section__photos-item(href="#")
+                img(src="img/product-slide-mini4.jpg")
+              a.product-section__photos-item.product-section__photos-item--video(href="#" jsPlay)
+                span Видео
+                  +icon('ico-play')
+            
+          .product-section__info
+            .product-section__price-wrap
+              .product-section__first-price 1 350
+                +icon('ico-ruble')
+                span цена за метр
+              .product-section__second-price 1 050
+                +icon('ico-ruble')
+                span цена за метр, от 10 метров
+            .product-section__amount-wrap
+              h3.product-section__amount-title Количество / м /
+              h4.product-section__amount-subtitle Минимальный отрез 0,5 метра, далее с шагом 10 см.
+              .product-section__amount
+                .cart__amount-wrap
+                  button.cart__btn.cart__btn--minus(type="button") -
+                  input.cart__input(type="text" value="2.5")
+                  button.cart__btn.cart__btn--plus(type="button") +
+                .product-section__amount-btns
+                  button.product-section__tocart(type="button") В корзину
+                    +icon('ico-bag')
+                  button.product-section__like(type="button")
+                    +icon('ico-heart')
+            .product-section__charac-wrap
+              h3.product-section__charac-title Характеристики
+              p.product-section__charac-descr Состав:
+                span 95% шелка / 5% эластанг
+              p.product-section__charac-descr Ширина:
+                span 140 см
+              p.product-section__charac-descr Плотность:
+                span 16 мм = 69 г/м2
+              p.product-section__charac-descr Цвет:	
+                span Baby Pink
+              p.product-section__charac-descr Производство:
+                span Китай
+        
+        .product-section__tabs
+          .product-section__links-wrap
+            a.product-section__tab-link.is-active(href="#") Описание и уход
+              +icon('ico-descr')
+            a.product-section__tab-link(href="#") Варианты оплаты
+              +icon('ico-card')
+            a.product-section__tab-link(href="#") Система скидок
+              +icon('ico-action')
+            a.product-section__tab-link(href="#") Удобная доставка
+              +icon('ico-truck')
+          .product-section__tab-item.is-active
+            .product-section__tab-wrap
+              .product-section__tab-half
+                h3.product-section__tab-title Описание
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+                h3.product-section__tab-title Подходит для
+                .product-section__tab-tags
+                  a.product-section__tab-tag(href="#") #шитья
+                  a.product-section__tab-tag(href="#") #валяния
+                  a.product-section__tab-tag(href="#") #батика
+              .product-section__tab-half
+                h3.product-section__tab-title Уход за тканью
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.
+                p.product-section__tab-text Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+              
+      
+  
+  // RECENT ITEMS
+  .recent-items
+    .container
+      h2.recent-items__title 
+        span Вы недавно просматривали
+      .recent-items__wrap(jsRecentSlider)
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular1.jpg")
+          h3.recent-items__subtitle Эксельсиор узбекский
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular2.jpg")
+          h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular3.jpg")
+          h3.recent-items__subtitle Жоржет
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular1.jpg")
+          h3.recent-items__subtitle Эксельсиор узбекский
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular2.jpg")
+          h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular3.jpg")
+          h3.recent-items__subtitle Жоржет
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular3.jpg")
+          h3.recent-items__subtitle Жоржет
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+            
+  //YOU LIKE
+  section.you-like
+    .container
+      h2.you-like__title Вам понравится
+      .recent-items__wrap
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular1.jpg")
+          h3.recent-items__subtitle Эксельсиор узбекский
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular2.jpg")
+          h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular3.jpg")
+          h3.recent-items__subtitle Жоржет
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular1.jpg")
+          h3.recent-items__subtitle Эксельсиор узбекский
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+        a.recent-items__item(href="#")
+          .recent-items__img
+            img(src="img/popular2.jpg")
+          h3.recent-items__subtitle Атлас стрейч «Deep Pink»
+          span.recent-items__price 1 260
+            +icon('ico-ruble')
+              
+  // NEWSLETTER
+  section.newsletter.wow
+    .container
+      .newsletter__wrap
+        .newsletter__info
+          h2.newsletter__title Подпишись на рассылку 
+          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
+        form.newsletter__form(action="#")
+          .newsletter__form-wrap
+            input.newsletter__input(type="email" placeholder="Ваш email")
+            button.newsletter__btn(type="submit") Подписаться !
+            .newsletter__error Неверный формат e-mail
+          p.newsletter__text Нажимая на кнопку, вы даете согласие на
+            a.newsletter__link(href="#") обработку своих персональных данных
