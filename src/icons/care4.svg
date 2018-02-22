@@ -1,0 +1,9 @@
+<svg width="31" height="31" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Ellipse (Stroke)</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(-1034 15312)">
+        <g id="Ellipse (Stroke)">
+            <path fill-rule="evenodd" d="M 15.1031 28.2062C 22.3397 28.2062 28.2062 22.3397 28.2062 15.1031C 28.2062 7.86645 22.3397 2 15.1031 2C 7.86645 2 2 7.86645 2 15.1031C 2 22.3397 7.86645 28.2062 15.1031 28.2062ZM 15.1031 30.2062C 23.4443 30.2062 30.2062 23.4443 30.2062 15.1031C 30.2062 6.76188 23.4443 0 15.1031 0C 6.76188 0 0 6.76188 0 15.1031C 0 23.4443 6.76188 30.2062 15.1031 30.2062Z" transform="translate(1034.02 -15311.3)" fill="#353535"></path>
+        </g>
+    </g>
+</svg>

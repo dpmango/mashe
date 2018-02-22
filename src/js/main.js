@@ -198,6 +198,16 @@ $(document).ready(function(){
 		}
 	});
     
+    
+    // SHARE
+    $('.product-section__share').on('click', function(){
+      if ($(this).hasClass('is-active')) {
+        $(this).removeClass('is-active');
+      } else {
+        $(this).addClass('is-active')
+      }
+    });
+    
   }
 
   pageReady();
@@ -450,6 +460,7 @@ $(document).ready(function(){
       arrows: false,
       accessibility: false,
       dots: false,
+      swipeToSlide: true,
       slidesToShow: 7,
       slidesToScroll: 1,
       autoplay: true,

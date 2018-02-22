@@ -302,6 +302,13 @@
               <div class="product-section__wrap">
                 <div class="product-section__topbar">
                   <div class="product-section__slider">
+                    <div class="product-section__badge product-section__badge--wait">Ожидаем поступления</div>
+                    <div class="product-section__share">
+                      <svg class="ico ico-share">
+                        <use xlink:href="img/sprite.svg#ico-share"></use>
+                      </svg>
+                      <div class="product-section__socials"><a class="product-section__social-link product-section__social-link--fb" href="#"></a><a class="product-section__social-link product-section__social-link--vk" href="#"></a><a class="product-section__social-link product-section__social-link--tw" href="#"></a><a class="product-section__social-link product-section__social-link--ok" href="#"></a></div>
+                    </div>
                     <div class="product-section__slider-wrap" jsProductSlider><img src="img/product-slide.jpg"><img src="img/product-slide.jpg"><img src="img/product-slide.jpg"><img src="img/product-slide.jpg"></div>
                     <div class="product-section__photos"><a class="product-section__photos-item" href="#"><img src="img/product-slide-mini1.jpg"></a><a class="product-section__photos-item" href="#"><img src="img/product-slide-mini2.jpg"></a><a class="product-section__photos-item" href="#"><img src="img/product-slide-mini3.jpg"></a><a class="product-section__photos-item" href="#"><img src="img/product-slide-mini4.jpg"></a><a class="product-section__photos-item product-section__photos-item--video" href="#" jsPlay><span>Видео
                           <svg class="ico ico-play">
@@ -325,15 +332,10 @@
                       <h3 class="product-section__amount-title">Количество / м /</h3>
                       <h4 class="product-section__amount-subtitle">Минимальный отрез 0,5 метра, далее с шагом 10 см.</h4>
                       <div class="product-section__amount">
-                        <div class="cart__amount-wrap">
-                          <button class="cart__btn cart__btn--minus" type="button">-</button>
-                          <input class="cart__input" type="text" value="2.5">
-                          <button class="cart__btn cart__btn--plus" type="button">+</button>
-                        </div>
                         <div class="product-section__amount-btns">
-                          <button class="product-section__tocart" type="button">В корзину
-                            <svg class="ico ico-bag">
-                              <use xlink:href="img/sprite.svg#ico-bag"></use>
+                          <button class="product-section__tocart product-section__tocart--envelope" type="button">Сообщить о поступлении на почту
+                            <svg class="ico ico-envelope">
+                              <use xlink:href="img/sprite.svg#ico-envelope"></use>
                             </svg>
                           </button>
                           <button class="product-section__like" type="button">
@@ -371,12 +373,57 @@
                   <div class="product-section__tab-item is-active">
                     <div class="product-section__tab-wrap">
                       <div class="product-section__tab-half">
-                        <h3 class="product-section__tab-title">Описание</h3>
-                        <p class="product-section__tab-text">Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.</p>
                         <h3 class="product-section__tab-title">Подходит для</h3>
                         <div class="product-section__tab-tags"><a class="product-section__tab-tag" href="#">#шитья</a><a class="product-section__tab-tag" href="#">#валяния</a><a class="product-section__tab-tag" href="#">#батика</a></div>
+                        <h3 class="product-section__tab-title">Описание</h3>
+                        <p class="product-section__tab-text">Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.</p>
                       </div>
                       <div class="product-section__tab-half">
+                        <h3 class="product-section__tab-title">Уход за тканью</h3>
+                        <div class="product-section__care">
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care1">
+                              <use xlink:href="img/sprite.svg#ico-care1"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care2">
+                              <use xlink:href="img/sprite.svg#ico-care2"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care3">
+                              <use xlink:href="img/sprite.svg#ico-care3"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care4">
+                              <use xlink:href="img/sprite.svg#ico-care4"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care5">
+                              <use xlink:href="img/sprite.svg#ico-care5"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care6">
+                              <use xlink:href="img/sprite.svg#ico-care6"></use>
+                            </svg>
+                          </div>
+                          <div class="product-section__care-item">
+                            <div class="product-section__tooltip">Сухая химчистка</div>
+                            <svg class="ico ico-care7">
+                              <use xlink:href="img/sprite.svg#ico-care7"></use>
+                            </svg>
+                          </div>
+                        </div>
                         <h3 class="product-section__tab-title">Уход за тканью</h3>
                         <p class="product-section__tab-text">Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.</p>
                         <p class="product-section__tab-text">Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.</p>

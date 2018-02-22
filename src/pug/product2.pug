@@ -21,6 +21,14 @@ block content
       .product-section__wrap
         .product-section__topbar
           .product-section__slider
+            .product-section__badge.product-section__badge--wait Ожидаем поступления
+            .product-section__share
+                +icon('ico-share')
+                .product-section__socials
+                  a.product-section__social-link.product-section__social-link--fb(href="#")
+                  a.product-section__social-link.product-section__social-link--vk(href="#")
+                  a.product-section__social-link.product-section__social-link--tw(href="#")
+                  a.product-section__social-link.product-section__social-link--ok(href="#")
             .product-section__slider-wrap(jsProductSlider)
               img(src="img/product-slide.jpg")
               img(src="img/product-slide.jpg")
@@ -51,13 +59,9 @@ block content
               h3.product-section__amount-title Количество / м /
               h4.product-section__amount-subtitle Минимальный отрез 0,5 метра, далее с шагом 10 см.
               .product-section__amount
-                .cart__amount-wrap
-                  button.cart__btn.cart__btn--minus(type="button") -
-                  input.cart__input(type="text" value="2.5")
-                  button.cart__btn.cart__btn--plus(type="button") +
                 .product-section__amount-btns
-                  button.product-section__tocart(type="button") В корзину
-                    +icon('ico-bag')
+                  button.product-section__tocart.product-section__tocart--envelope(type="button") Сообщить о поступлении на почту
+                    +icon('ico-envelope')
                   button.product-section__like(type="button")
                     +icon('ico-heart')
             .product-section__charac-wrap
@@ -86,14 +90,37 @@ block content
           .product-section__tab-item.is-active
             .product-section__tab-wrap
               .product-section__tab-half
-                h3.product-section__tab-title Описание
-                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
                 h3.product-section__tab-title Подходит для
                 .product-section__tab-tags
                   a.product-section__tab-tag(href="#") #шитья
                   a.product-section__tab-tag(href="#") #валяния
                   a.product-section__tab-tag(href="#") #батика
+                h3.product-section__tab-title Описание
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
               .product-section__tab-half
+                h3.product-section__tab-title Уход за тканью
+                .product-section__care
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care1')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care2')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care3')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care4')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care5')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care6')
+                  .product-section__care-item
+                    .product-section__tooltip Сухая химчистка
+                    +icon('ico-care7')
                 h3.product-section__tab-title Уход за тканью
                 p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.
                 p.product-section__tab-text Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.

@@ -59,7 +59,7 @@
     color: #B6B6B6
   &__wrap
     background-color: #fff
-    padding: 55px
+    padding: 55px 55px 35px 55px
     margin-bottom: 80px
   &__topbar
     display: flex
@@ -68,8 +68,80 @@
     margin-bottom: 65px
   &__slider
     width: 60%
+    position: relative
+  &__badge
+    position: absolute
+    z-index: 2
+    top: 45px
+    left: 0
+    font-size: 12px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    font-family: $fontBold
+    color: #fff
+    text-align: center
+    padding: 12px 30px 12px 25px
+    border-top-right-radius: 20px
+    border-bottom-right-radius: 20px
+    max-width: 145px
+    &--hit
+      background-color: $hitColor
+    &--action
+      background-color: $actionColor
+    &--wait
+      background-color: $waitColor
+      text-align: left
+      border-top-right-radius: 25px
+      border-bottom-right-radius: 25px
+    &--new
+      background-color: $newColor
+    &--sale
+      background-color: $saleColor
+  &__share
+    position: absolute !important
+    left: 25px
+    bottom: 140px
+    z-index: 2
+    font-size: 26px
+    transition: all $transitionSpeed $ease
+    color: $btnBgColor
+    &.is-active
+      .product-section__socials
+        visibility: visible
+        opacity: 1
+        transform: translateX(0px)
+    &:hover
+      cursor: pointer
+      svg
+        opacity: 0.8
+  &__socials
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+    margin-left: 30px
+    position: relative
+    top: 8px
+    visibility: hidden
+    opacity: 0
+    transform: translateX(-20px)
+    transition: all $transitionSpeed $ease
+  &__social-link
+    margin-right: 7px
+    background-repeat: no-repeat
+    background-size: 100%
+    width: 40px
+    height: 40px
+    &--fb
+      background-image: url(../../img/facebook.svg)
+    &--vk
+      background-image: url(../../img/vkontakte.svg)
+    &--tw
+      background-image: url(../../img/twitter.svg)
+    &--ok
+      background-image: url(../../img/ok.svg)
   &__slider-wrap
     margin-bottom: 23px
+    position: relative
     img
       display: block
       max-width: 100%
@@ -192,6 +264,12 @@
       right: 30px
       transform: translateY(-50%)
       font-size: 22px
+    &--envelope
+      padding-left: 25px
+      padding-right: 55px
+      svg
+        font-size: 14px
+        right: 25px
     &:hover
       background-color: $primary2Hover
   &__like
@@ -293,6 +371,7 @@
       display: flex
       flex-direction: row
       align-items: stretch
+      margin-bottom: 55px
     &-tag
       font-size: 18px
       font-family: $fontBook
@@ -305,6 +384,61 @@
       &:hover
         color: #fff
         background-color: $btnBgColor
+  &__care
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 55px
+    &-item
+      margin-right: 30px
+      transition: all $transitionSpeed $ease
+      color: $btnBgColor
+      font-size: 30px
+      position: relative
+      &:last-child
+        margin-right: 0
+      &:hover
+        color: #B1BABE
+        cursor: pointer
+        .product-section__tooltip
+          transform: translate(-50%, 0px)
+          visibility: visible
+          opacity: 1
+      svg
+        transition: none
+      .ico-care2,
+      .ico-care3,
+      .ico-care6
+        font-size: 40px
+  &__tooltip
+    padding: 15px 5px
+    font-size: 16px
+    text-align: center
+    font-family: $fontBook
+    color: #7A7A7A
+    background-color: #F0F1F2
+    width: 220px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: -60px
+    left: 50%
+    transition: all $transitionSpeed $ease
+    transform: translate(-50%, 10px)
+    visibility: hidden
+    opacity: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      bottom: -7px
+      left: 50%
+      transform: translateX(-50%)
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #F0F1F2 transparent transparent transparent;
     
 .you-like
   margin-bottom: 95px

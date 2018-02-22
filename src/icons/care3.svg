@@ -1,0 +1,16 @@
+<svg width="36" height="44" viewBox="0 0 36 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Vector</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(-966 15318)">
+        <g id="Vector">
+            <path fill-rule="evenodd" d="M 8.74724 42.3068L 25.1999 0L 27.0639 0.724892L 10.6113 43.0317L 8.74724 42.3068Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 17.8756 13.0898C 13.2052 13.0898 9.41912 16.8759 9.41912 21.5463C 9.41912 26.2167 13.2052 30.0028 17.8756 30.0028C 22.546 30.0028 26.3321 26.2167 26.3321 21.5463C 26.3321 16.8759 22.546 13.0898 17.8756 13.0898ZM 7.41912 21.5463C 7.41912 15.7714 12.1007 11.0898 17.8756 11.0898C 23.6506 11.0898 28.3321 15.7714 28.3321 21.5463C 28.3321 27.3213 23.6506 32.0028 17.8756 32.0028C 12.1007 32.0028 7.41912 27.3213 7.41912 21.5463Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 34.9308 31.0347L 25.9289 26.5866L 26.8149 24.7936L 35.8168 29.2417L 34.9308 31.0347Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 8.98012 18.2443L 0 13.8519L 0.87876 12.0553L 9.85888 16.4477L 8.98012 18.2443Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 0.18517 29.2607L 9.02371 24.8556L 9.91584 26.6456L 1.0773 31.0507L 0.18517 29.2607Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 25.8973 16.4463L 34.7358 12.0412L 35.6279 13.8312L 26.7894 18.2363L 25.8973 16.4463Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 21.2311 40.5594L 19.046 30.9287L 20.9964 30.4862L 23.1815 40.1169L 21.2311 40.5594Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+            <path fill-rule="evenodd" d="M 14.8745 12.5428L 12.6894 2.91211L 14.6399 2.46958L 16.825 12.1003L 14.8745 12.5428Z" transform="translate(966.005 -15318)" fill="#353535"></path>
+        </g>
+    </g>
+</svg>
