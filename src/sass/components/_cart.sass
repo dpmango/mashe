@@ -420,6 +420,8 @@
       background-color: rgb(249,249,249)
     .slick-dots
       bottom: -50px
+      width: 100%
+      text-align: center
   &__item
     width: calc(16.66% - 16px)
     background-color: #fff
@@ -609,6 +611,19 @@
         
   .recent-items
     margin-top: 70px
+    &__title
+      font-size: 32px
+      span
+        width: 100%
+        display: block
+        &:before
+          display: none
+        &:after
+          top: auto
+          
+          left: 50%
+          transform: translateX(-50%)
+          bottom: -30px
     
     
 +r($tablet)
@@ -642,7 +657,11 @@
       padding-right: 0
     &__back
       display: none
+      max-width: 300px
+      margin-left: auto
+      margin-right: auto
       &--mobile
         display: block
         margin-top: 20px
+        
       

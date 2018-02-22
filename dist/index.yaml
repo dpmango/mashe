@@ -9,6 +9,7 @@ PageList:
   ready: 80
 - file: cart2.html
   ready: 80
-- file: product.html
+- file: product1.html
   ready: 50
-
+- file: product2.html
+  ready: 50
