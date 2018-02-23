@@ -33,13 +33,22 @@ html.mfp-helper
     transform: scale(0.8)
     opacity: 0
   &.mfp-bg
-    background: #ccc
+    background: transparentize(#303030, 0.3)
     opacity: 0
     transition: opacity 0.3s $ease
   &.mfp-ready.mfp-bg
     opacity: 1
   &.mfp-removing.mfp-bg
     opacity: 0
+  .mfp-close
+    width: 35px
+    height: 35px
+    padding-right: 0
+    background-repeat: no-repeat
+    background-size: 100%
+    background-image: url(../../img/close-w.svg)
+    top: 0
+    right: -45px
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Cart || MASHE
+title: Product || MASHE
 bodyClass: product-page
 ---
 extends shared/_layout
@@ -35,15 +35,15 @@ block content
               img(src="img/product-slide.jpg")
               img(src="img/product-slide.jpg")
             .product-section__photos
-              a.product-section__photos-item(href="#")
+              a.product-section__photos-item.is-active(href="#" jsProductBtn data-index="0")
                 img(src="img/product-slide-mini1.jpg")
-              a.product-section__photos-item(href="#")
+              a.product-section__photos-item(href="#" jsProductBtn data-index="1")
                 img(src="img/product-slide-mini2.jpg")
-              a.product-section__photos-item(href="#")
+              a.product-section__photos-item(href="#" jsProductBtn data-index="2")
                 img(src="img/product-slide-mini3.jpg")
-              a.product-section__photos-item(href="#")
+              a.product-section__photos-item(href="#" jsProductBtn data-index="3")
                 img(src="img/product-slide-mini4.jpg")
-              a.product-section__photos-item.product-section__photos-item--video(href="#" jsPlay)
+              a.product-section__photos-item.product-section__photos-item--video(href="https://www.youtube.com/watch?v=6j5t6WjtSfk" js-popupvideo)
                 span Видео
                   +icon('ico-play')
             

@@ -330,6 +330,38 @@ $(document).ready(function(){
     $(this).closest('.promo-video').toggleClass('playing');
     $(this).closest('.promo-video').find('iframe').attr("src", $("iframe").attr("src").replace("autoplay=0", "autoplay=1"));
   });
+  
+  // VIDEO PLAY POPUP
+  $('[js-popupVideo]').magnificPopup({
+      // disableOn: 700,
+      type: 'iframe',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'popup-buble',
+      callbacks: {
+        beforeOpen: function() {
+          // startWindowScroll = _window.scrollTop();
+          // $('html').addClass('mfp-helper');
+        }
+      },
+      patterns: {
+        youtube: {
+          index: 'youtube.com/',
+          id: 'v=', // String that splits URL in a two parts, second part should be %id%
+          // Or null - full URL will be returned
+          // Or a function that should return %id%, for example:
+          // id: function(url) { return 'parsed id'; }
+
+          src: '//www.youtube.com/embed/%id%?autoplay=1&controls=0&showinfo=0' // URL that will be set as a source for iframe.
+        }
+      },
+      closeMarkup: '<button class="mfp-close"><div class="video-box__close-button btn"><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><img src="img/setting/video_close.svg" alt=""/></div></button>'
+    });
 
 
   //////////
@@ -584,8 +616,19 @@ $(document).ready(function(){
       arrows: true,
       dots: false,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      infinite: false
     });
+    
+    $('[jsProductBtn]').on('click', function(e){
+      e.preventDefault();
+      $('[jsProductBtn]').removeClass('is-active');
+      $(this).addClass('is-active');
+      var dataIndex = $(this).attr('data-index');
+      $('[jsProductSlider]').slick('slickGoTo', dataIndex)
+    });
+    
+    
     
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');
