@@ -217,6 +217,7 @@
     font-size: 40px
     font-family: $fontMedium
     letter-spacing: -0.05em
+    color: $btnBgColor
     svg
       font-size: 24px
     span
@@ -238,9 +239,11 @@
     margin-top: 0
     margin-bottom: 15px
     color: $btnBgColor
+    font-weight: 400
   &__amount-subtitle
     font-size: 18px
     font-family: $fontBook
+    font-weight: 400
     color: #B6B6B6
     margin-top: 0
     margin-bottom: 20px
@@ -259,7 +262,7 @@
     font-family: $fontBold
     text-transform: uppercase
     text-align: center
-    padding: 17px 55px 17px 45px
+    padding: 17px 55px 17px 35px
     border-radius: 30px
     color: $btnBgColor
     background-color: $primary2Color
@@ -270,7 +273,7 @@
       top: 50%
       right: 30px
       transform: translateY(-50%)
-      font-size: 22px
+      font-size: 20px
     &--envelope
       padding-left: 25px
       padding-right: 55px
@@ -279,6 +282,7 @@
         right: 25px
     &:hover
       background-color: $primary2Hover
+      box-shadow: 0 0 0 2px $primary2Hover
   &__like
     border-radius: 50%
     background-color: $primaryColor
@@ -296,6 +300,7 @@
       top: 2px
     &:hover
       background-color: $primaryHover
+      box-shadow: 0 0 0 2px $primaryHover
   &__charac-wrap
     &--mobile
       display: none
@@ -305,6 +310,7 @@
     margin-top: 0
     margin-bottom: 20px
     color: $btnBgColor
+    font-weight: 400
   &__charac-descr
     font-size: 18px
     font-family: $fontBook
@@ -371,6 +377,8 @@
       font-family: $fontMedium
       margin-top: 0
       margin-bottom: 25px
+      font-weight: 400
+      color: $btnBgColor
     &-text
       font-size: 20px
       font-family: $fontBook

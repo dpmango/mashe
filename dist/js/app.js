@@ -208,6 +208,23 @@ $(document).ready(function(){
       }
     });
     
+    // PLUS MINUS
+    //$('.cart__btn--plus').on('click', function(){
+    //  var thisVal = $(this).prev('.cart__input').val();
+    //  $('.cart__input').val(parseInt(thisVal) + 0.5)
+    //});
+    
+    $('.cart__btn--plus').on('click', function () {
+		  var amount = parseFloat($(this).prev('.cart__input').val());
+		  $(this).prev('.cart__input').val(amount + 0.5);
+	  });
+    
+	  $('.cart__btn--minus').on('click', function () {
+		  var amount = parseFloat($(this).next('.cart__input').val());
+		  if (amount > 0.5) {
+		  	$(this).next('.cart__input').val(amount - 0.5); 
+      }
+    });
   }
 
   pageReady();
@@ -586,14 +603,6 @@ $(document).ready(function(){
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    },
-        {
-      breakpoint: 450,
-      settings: {
-        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false
       }

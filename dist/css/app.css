@@ -4636,7 +4636,7 @@ html.mfp-helper body {
 .to-top-btn {
   position: fixed;
   right: 30px;
-  bottom: 7%;
+  bottom: 15%;
   z-index: 3;
   text-decoration: none;
   -webkit-border-radius: 50%;
@@ -8113,6 +8113,7 @@ html.mfp-helper body {
   font-family: "FuturaPTBold";
   margin-bottom: 40px;
   letter-spacing: 0.05em;
+  color: #353535;
 }
 
 .cart__wrapper {
@@ -8161,7 +8162,7 @@ html.mfp-helper body {
   font-family: "FuturaPTBook";
   color: #B1BABE;
   padding-bottom: 15px;
-  border-bottom: 2px solid #F9F9F9;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .cart__header-name {
@@ -8200,7 +8201,7 @@ html.mfp-helper body {
       -ms-flex-align: center;
           align-items: center;
   padding: 23px 0;
-  border-bottom: 2px solid #F9F9F9;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .cart__item--mobile {
@@ -8852,6 +8853,7 @@ html.mfp-helper body {
   margin-bottom: 20px;
   padding-top: 30px;
   letter-spacing: -0.05em;
+  color: #353535;
 }
 
 .recent-items__price:before {
@@ -9096,6 +9098,14 @@ html.mfp-helper body {
   .cart__back--mobile {
     display: block;
     margin-top: 20px;
+  }
+  .recent-items__subtitle {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .recent-items__price {
+    padding-top: 20px;
   }
 }
 
@@ -9487,6 +9497,7 @@ html.mfp-helper body {
   font-size: 40px;
   font-family: "FuturaPTMedium";
   letter-spacing: -0.05em;
+  color: #353535;
 }
 
 .product-section__first-price svg, .product-section__second-price svg {
@@ -9518,11 +9529,13 @@ html.mfp-helper body {
   margin-top: 0;
   margin-bottom: 15px;
   color: #353535;
+  font-weight: 400;
 }
 
 .product-section__amount-subtitle {
   font-size: 18px;
   font-family: "FuturaPTBook";
+  font-weight: 400;
   color: #B6B6B6;
   margin-top: 0;
   margin-bottom: 20px;
@@ -9563,7 +9576,7 @@ html.mfp-helper body {
   font-family: "FuturaPTBold";
   text-transform: uppercase;
   text-align: center;
-  padding: 17px 55px 17px 45px;
+  padding: 17px 55px 17px 35px;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   color: #353535;
@@ -9581,7 +9594,7 @@ html.mfp-helper body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .product-section__tocart--envelope {
@@ -9596,6 +9609,8 @@ html.mfp-helper body {
 
 .product-section__tocart:hover, .product-section__tocart:focus {
   background-color: #B4D0DE;
+  -webkit-box-shadow: 0 0 0 2px #B4D0DE;
+          box-shadow: 0 0 0 2px #B4D0DE;
 }
 
 .product-section__like {
@@ -9625,6 +9640,8 @@ html.mfp-helper body {
 
 .product-section__like:hover, .product-section__like:focus {
   background-color: #FFB2A6;
+  -webkit-box-shadow: 0 0 0 2px #FFB2A6;
+          box-shadow: 0 0 0 2px #FFB2A6;
 }
 
 .product-section__charac-wrap--mobile {
@@ -9637,6 +9654,7 @@ html.mfp-helper body {
   margin-top: 0;
   margin-bottom: 20px;
   color: #353535;
+  font-weight: 400;
 }
 
 .product-section__charac-descr {
@@ -9763,6 +9781,8 @@ html.mfp-helper body {
   font-family: "FuturaPTMedium";
   margin-top: 0;
   margin-bottom: 25px;
+  font-weight: 400;
+  color: #353535;
 }
 
 .product-section__tab-text {
