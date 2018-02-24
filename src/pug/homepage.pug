@@ -6,7 +6,7 @@ extends shared/_layout
 block content
 
   // MAIN SLIDER
-  section.main-slider(jsMainSlider).wow
+  section.main-slider(jsMainSlider)
     .main-slider__slide.main-slider__slide--first
       .container
         span.main-slider__subtitle Натуральный
@@ -22,40 +22,40 @@ block content
         
             
   // MASTERPIECE
-  section.masterpiece.wow
+  section.masterpiece
     // ADVANTAGES
     section.advantages
       .container
         .advantages__wrap
-          .advantages__item
+          .advantages__item.wow
             h3.advantages__title Мин.отрез 0,5 метра
               +icon('ico-scissors')
               //img(src="img/scissors.svg")
             p.advantages__descr Идеально для рукоделия или на пробу
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item
+          .advantages__item.wow
             h3.advantages__title Высокое качество
               +icon('ico-medal')
               //img(src="img/medal.svg")
             p.advantages__descr Работаем напрямую с производителями тканей
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item
+          .advantages__item.wow
             h3.advantages__title Удобная доставка
               +icon('ico-truck')
               //img(src="img/truck.svg")
             p.advantages__descr Курьер, самовывоз, почта – от 130 руб.
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item
+          .advantages__item.wow
             h3.advantages__title Безопасная оплата
               +icon('ico-card')
               //img(src="img/card.svg")
             p.advantages__descr Онлайн-чек сразу после оплаты по e-mail или в sms
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item
+          .advantages__item.wow
             h3.advantages__title Оптовые цены от 10 м
               +icon('ico-action')
               //img(src="img/action.svg")
@@ -68,7 +68,7 @@ block content
         span Творите шедевры
       h3.masterpiece__subtitle Наслаждайтесь результатом
       .masterpiece__wrap
-        a.masterpiece__item.masterpiece__item--photo(href="#")
+        a.masterpiece__item.masterpiece__item--photo.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для шитья
             span.masterpiece__item-amount 22 вида
@@ -76,7 +76,7 @@ block content
               +icon('ico-wave-pink')
             
           p.masterpiece__descr Возможна покраска шелка по pantone и тканипод заказ на выгодныхусловиях
-        a.masterpiece__item(href="#")
+        a.masterpiece__item.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для росписи
               +icon('ico-for-paint')
@@ -86,7 +86,7 @@ block content
               +icon('ico-wave-pink')
        
           p.masterpiece__descr Натуральный белый шелк, платки и шарфы
-        a.masterpiece__item.masterpiece__item--photo(href="#")
+        a.masterpiece__item.masterpiece__item--photo.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для декора
             span.masterpiece__item-amount 22 вида
@@ -94,7 +94,7 @@ block content
               +icon('ico-wave-pink')
             
           p.masterpiece__descr Оптовые цены от 10 метров. Сотрудничество с фотогорафами и декораторами
-        a.masterpiece__item(href="#")
+        a.masterpiece__item.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для валяния
               +icon('ico-for-felt')
@@ -104,7 +104,7 @@ block content
               +icon('ico-wave-pink')
          
           p.masterpiece__descr Разреженный маргиланские шелка, лен, хлопок
-        a.masterpiece__item.masterpiece__item--photo(href="#")
+        a.masterpiece__item.masterpiece__item--photo.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для вышивки
             span.masterpiece__item-amount 22 вида
@@ -112,7 +112,7 @@ block content
               +icon('ico-wave-pink')
             
           p.masterpiece__descr Пайетки, бисер и шелковые нити
-        a.masterpiece__item(href="#")
+        a.masterpiece__item.wow(href="#")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для цветов
               +icon('ico-for-flower')
@@ -126,12 +126,12 @@ block content
         +icon('ico-arrow-button')
   
   // POPULAR
-  section.popular.wow
+  section.popular
     .container
       h2.popular__title 
         span самые популярные
       h3.popular__subtitle Первоклассные природные материалы
-      .popular__wrap(jsPopularSlider)
+      .popular__wrap.wow(jsPopularSlider)
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
@@ -266,11 +266,11 @@ block content
             
             
   // EXAPMLES
-  section.examples.wow
+  section.examples
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap(jsExamplesSlider)
+      .examples__wrap.wow(jsExamplesSlider)
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example1.png")
@@ -313,12 +313,12 @@ block content
             +icon('ico-ruble')
           
   // CLIENTS
-  section.clients.wow
+  section.clients
     .container
       h2.clients__title 
         span Довольные клиенты
       h3.clients__subtitle Более 1 500 человек
-      .clients__wrap(jsClientsSlider)
+      .clients__wrap.wow(jsClientsSlider)
         .clients__item
           .clients__photo
             img(src="img/client.png")

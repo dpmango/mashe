@@ -7,13 +7,13 @@ block content
   
   
   // PROMO
-  section.catalog-promo.wow
+  section.catalog-promo
     .container
-      .breadcrumbs
+      .breadcrumbs.wow
         a.breadcrumbs__link(href="#") Главная
         a.breadcrumbs__link.is-active(href="#") Каталог
-      h1.catalog-promo__title Каталог
-      form.catalog-promo__sorting(action="#")
+      h1.catalog-promo__title.wow Каталог
+      form.catalog-promo__sorting.wow(action="#")
         p.catalog-promo__text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
         .catalog-promo__mainsort
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item1")
@@ -78,9 +78,9 @@ block content
         span.sort-items__all Всего: 34 товара
   
   // ITEMS
-  section.catalog-items.wow
+  section.catalog-items
     .container
-      .popular__wrap
+      .popular__wrap.wow
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
@@ -190,7 +190,7 @@ block content
                 +icon('ico-ruble')
               span цена за 1м – при покупке от 10м
         
-      .popular__wrap
+      .popular__wrap.wow
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
@@ -301,7 +301,7 @@ block content
               span цена за 1м – при покупке от 10м
             
       // ADVANTAGES      
-      .advantages__wrap
+      .advantages__wrap.wow
         .advantages__item
           h3.advantages__title Мин.отрез 0,5 метра
             +icon('ico-scissors')
@@ -338,7 +338,7 @@ block content
             //+icon('ico-')
             img(src="img/wave-pink.svg")
             
-      .popular__wrap
+      .popular__wrap.wow
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
@@ -448,7 +448,7 @@ block content
                 +icon('ico-ruble')
               span цена за 1м – при покупке от 10м
         
-      .popular__wrap
+      .popular__wrap.wow
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular1.jpg")
@@ -562,11 +562,11 @@ block content
             
             
   // EXAPMLES
-  section.examples.wow
+  section.examples
     .container
       h2.examples__title Образцы тканей
       h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap(jsExamplesSlider)
+      .examples__wrap.wow(jsExamplesSlider)
         a.examples__item(href="#")
           .examples__photo
             img(src="img/example1.png")
@@ -612,7 +612,7 @@ block content
   // CATALOG INFO
   .catalog-info
     .container
-      .catalog-info__wrap
+      .catalog-info__wrap.wow
         .catalog-info__descr
           h2.catalog-info__title Шелк: виды, свойства, уход за тканью 
           p.catalog-info__text Шёлк – это натуральная ткань, которая не относится к растительному или животному происхождению. Её получают из кокона гусеницы шелкопряда. Но также бывают искусственные и синтетические виды шёлковых полотен. Все они отличаются уникальным блеском, гладкостью и прочностью.

@@ -7,7 +7,7 @@ block content
   // PRODUCT SECTION
   section.product-section
     .container
-      .product-section__top-wrap
+      .product-section__top-wrap.wow
         a.product-section__link.product-section__link--prev(href="#") Предыдущий товар
           +icon('ico-arrow-left')
         .breadcrumbs
@@ -16,10 +16,10 @@ block content
           a.breadcrumbs__link.is-active(href="#") Атлас АС14016PP
         a.product-section__link.product-section__link--next(href="#") Следующий товар
           +icon('ico-arrow-right')
-      h1.product-section__title Атлас стрейч «Magic White»
-      span.product-section__articul Арт. АС14016PP
+      h1.product-section__title.wow Атлас стрейч «Magic White»
+      span.product-section__articul.wow Арт. АС14016PP
       .product-section__wrap
-        .product-section__topbar
+        .product-section__topbar.wow
           .product-section__slider
             .product-section__badge.product-section__badge--wait Ожидаем поступления
             .product-section__share
@@ -96,7 +96,7 @@ block content
           p.product-section__charac-descr Производство:
             span Китай
         
-        .product-section__tabs
+        .product-section__tabs.wow
           .product-section__links-wrap
             a.product-section__tab-link.is-active(href="#") Описание и уход
               +icon('ico-descr')
@@ -151,7 +151,7 @@ block content
     .container
       h2.recent-items__title 
         span Вы недавно просматривали
-      .recent-items__wrap(jsRecentSlider)
+      .recent-items__wrap.wow(jsRecentSlider)
         a.recent-items__item(href="#")
           .recent-items__img
             img(src="img/popular1.jpg")
@@ -199,7 +199,7 @@ block content
   section.you-like
     .container
       h2.you-like__title Вам понравится
-      .recent-items__wrap
+      .recent-items__wrap.wow
         a.recent-items__item(href="#")
           .recent-items__img
             img(src="img/popular1.jpg")

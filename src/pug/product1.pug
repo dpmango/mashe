@@ -7,7 +7,7 @@ block content
   // PRODUCT SECTION
   section.product-section
     .container
-      .product-section__top-wrap
+      .product-section__top-wrap.wow
         a.product-section__link.product-section__link--prev(href="#") Предыдущий товар
           +icon('ico-arrow-left')
         .breadcrumbs
@@ -16,10 +16,10 @@ block content
           a.breadcrumbs__link.is-active(href="#") Атлас АС14016PP
         a.product-section__link.product-section__link--next(href="#") Следующий товар
           +icon('ico-arrow-right')
-      h1.product-section__title Атлас стрейч «Magic White»
-      span.product-section__articul Арт. АС14016PP
+      h1.product-section__title.wow Атлас стрейч «Magic White»
+      span.product-section__articul.wow Арт. АС14016PP
       .product-section__wrap
-        .product-section__topbar
+        .product-section__topbar.wow
           .product-section__slider
             .product-section__badge.product-section__badge--hit Хит продаж
             .product-section__share
@@ -100,17 +100,59 @@ block content
           p.product-section__charac-descr Производство:
             span Китай
         
-        .product-section__tabs
+        .product-section__tabs.wow
           .product-section__links-wrap
-            a.product-section__tab-link.is-active(href="#") Описание и уход
+            a.product-section__tab-link.is-active(href="#" data-id="tab1") Описание и уход
               +icon('ico-descr')
-            a.product-section__tab-link(href="#") Варианты оплаты
+            a.product-section__tab-link(href="#" data-id="tab2") Варианты оплаты
               +icon('ico-card')
-            a.product-section__tab-link(href="#") Система скидок
+            a.product-section__tab-link(href="#" data-id="tab3") Система скидок
               +icon('ico-action')
-            a.product-section__tab-link(href="#") Удобная доставка
+            a.product-section__tab-link(href="#" data-id="tab4") Удобная доставка
               +icon('ico-truck')
-          .product-section__tab-item.is-active
+          .product-section__tab-item#tab1.is-active
+            .product-section__tab-wrap
+              .product-section__tab-half
+                h3.product-section__tab-title Описание
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+                h3.product-section__tab-title Подходит для
+                .product-section__tab-tags
+                  a.product-section__tab-tag(href="#") #шитья
+                  a.product-section__tab-tag(href="#") #валяния
+                  a.product-section__tab-tag(href="#") #батика
+              .product-section__tab-half
+                h3.product-section__tab-title Уход за тканью
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.
+                p.product-section__tab-text Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+          .product-section__tab-item#tab2
+            .product-section__tab-wrap
+              .product-section__tab-half
+                h3.product-section__tab-title Другое описание
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+                h3.product-section__tab-title Подходит для
+                .product-section__tab-tags
+                  a.product-section__tab-tag(href="#") #шитья
+                  a.product-section__tab-tag(href="#") #валяния
+                  a.product-section__tab-tag(href="#") #батика
+              .product-section__tab-half
+                h3.product-section__tab-title Уход за тканью
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.
+                p.product-section__tab-text Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+          .product-section__tab-item#tab3
+            .product-section__tab-wrap
+              .product-section__tab-half
+                h3.product-section__tab-title Другое описание 2
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+                h3.product-section__tab-title Подходит для
+                .product-section__tab-tags
+                  a.product-section__tab-tag(href="#") #шитья
+                  a.product-section__tab-tag(href="#") #валяния
+                  a.product-section__tab-tag(href="#") #батика
+              .product-section__tab-half
+                h3.product-section__tab-title Уход за тканью
+                p.product-section__tab-text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Еще шелк, который производится из коконов шелковичных червей, также является самым прочным волокном естественного происхождения.
+                p.product-section__tab-text Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+          .product-section__tab-item#tab4
             .product-section__tab-wrap
               .product-section__tab-half
                 h3.product-section__tab-title Описание
@@ -132,7 +174,7 @@ block content
     .container
       h2.recent-items__title 
         span Вы недавно просматривали
-      .recent-items__wrap(jsRecentSlider)
+      .recent-items__wrap.wow(jsRecentSlider)
         a.recent-items__item(href="#")
           .recent-items__img
             img(src="img/popular1.jpg")
@@ -180,7 +222,7 @@ block content
   section.you-like
     .container
       h2.you-like__title Вам понравится
-      .recent-items__wrap
+      .recent-items__wrap.wow
         a.recent-items__item(href="#")
           .recent-items__img
             img(src="img/popular1.jpg")

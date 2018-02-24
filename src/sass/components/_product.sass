@@ -69,6 +69,9 @@
   &__slider
     width: 60%
     position: relative
+  &__slider-wrap
+    &:hover
+      cursor: url(../../img/search-black.svg), zoom-in
   &__badge
     position: absolute
     z-index: 2
@@ -330,12 +333,15 @@
       padding: 35px 60px 35px 150px
       position: relative
       border: 2px solid #F1F1F1
+      //box-shadow: inset 0 0 0 2px #f1f1f1
       border-left-color: transparent
       transition: all $transitionSpeed $ease
       font-size: 16px
       text-transform: uppercase
       letter-spacing: 0.03em
       font-family: $fontDemi
+      z-index: 1
+      overflow: hidden
       color: #B1BABE
       svg
         position: absolute
@@ -359,6 +365,8 @@
       &:hover,
       &.is-active
         border-color: $btnBgColor
+        //box-shadow: inset 0 0 0 2px $btnBgColor
+        z-index: 2
         color: $btnBgColor
     &-item
       display: none
@@ -763,6 +771,8 @@
         left: 45px !important
       &:last-child
         border-bottom-color: #F1F1F1
+      &.is-active
+        border-bottom-color: $btnBgColor
     &__tab-item
       display: none !important
       
