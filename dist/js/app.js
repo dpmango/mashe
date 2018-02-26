@@ -78,7 +78,7 @@ $(document).ready(function(){
 
     //SEARCH
     $('[jsOpenSearch]').on('click', function(){
-      $('body').addClass('no-scroll');
+      disableScroll();
       $('.search-panel').addClass('is-active');
       $('.search-panel__round').addClass('is-active');
       $('.search-panel__form').addClass('is-active');
@@ -86,7 +86,7 @@ $(document).ready(function(){
     });
 
     $('.search-panel__close').on('click', function(){
-      $('body').removeClass('no-scroll');
+      enableScroll();
       $('.search-panel__round').removeClass('is-active');
       $('.search-panel__form').removeClass('is-active');
       $('.search-panel__hint').removeClass('is-active');
@@ -107,14 +107,14 @@ $(document).ready(function(){
 
     //MENU
     $('[jsOpenMenu]').on('click', function(){
-      $('body').addClass('no-scroll');
+      disableScroll();
       $('.main-nav').addClass('is-active');
       $('.main-nav__round').addClass('is-active');
       $('.main-nav__wrapper').addClass('is-active');
     });
 
     $('.main-nav__close').on('click', function(){
-      $('body').removeClass('no-scroll');
+      enableScroll();
       $('.main-nav__round').removeClass('is-active');
       $('.main-nav__wrapper').removeClass('is-active');
       setTimeout(function(){
@@ -257,6 +257,51 @@ $(document).ready(function(){
       refreshDebounceWait: 150,
       appendToBody: true
     });
+  }
+  
+  
+
+  function preventDefault(e) {
+    e = e || window.event;
+    if (e.preventDefault)
+      e.preventDefault();
+    e.returnValue = false;
+  }
+  
+  function preventDefaultForScrollKeys(e) {
+    if (preventKeys[e.keyCode]) {
+      preventDefault(e);
+      return false;
+    }
+  }
+  
+  // SCROLL
+  function disableScroll() {
+    var target = $('body').get(0)
+    if (window.addEventListener) // older FF
+      target.addEventListener('DOMMouseScroll', preventDefault, false);
+    target.onwheel = preventDefault; // modern standard
+    target.onmousewheel = target.onmousewheel = preventDefault; // older browsers, IE
+    target.ontouchmove = preventDefault; // mobile
+    target.onkeydown = preventDefaultForScrollKeys;
+  }
+  
+  function enableScroll() {
+    var target = $('body').get(0)
+    if (window.removeEventListener)
+      target.removeEventListener('DOMMouseScroll', preventDefault, false);
+    target.onmousewheel = target.onmousewheel = null;
+    target.onwheel = null;
+    target.ontouchmove = null;
+    target.onkeydown = null;
+  }
+  
+  
+  if ( $('.cart-popup__topbar').length > 0 ){
+   var ps = new PerfectScrollbar('.cart-popup__topbar', {
+     wheelSpeed: 1,
+     maxScrollbarLength: 160
+   });
   }
 
 
