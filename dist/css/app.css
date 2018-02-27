@@ -3483,13 +3483,18 @@ html.mfp-helper body {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  -webkit-box-shadow: 0 0 15px #9E9E9E;
-          box-shadow: 0 0 15px #9E9E9E;
+  -webkit-transition: -webkit-box-shadow 0.2s 0.35s linear;
+  transition: -webkit-box-shadow 0.2s 0.35s linear;
+  -o-transition: box-shadow 0.2s 0.35s linear;
+  transition: box-shadow 0.2s 0.35s linear;
+  transition: box-shadow 0.2s 0.35s linear, -webkit-box-shadow 0.2s 0.35s linear;
 }
 
 .search-panel.is-active {
   opacity: 1;
   visibility: visible;
+  -webkit-box-shadow: 0 0 15px #9E9E9E;
+          box-shadow: 0 0 15px #9E9E9E;
 }
 
 .search-panel__round {
@@ -3683,6 +3688,7 @@ html.mfp-helper body {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100%;
   background-color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3706,13 +3712,18 @@ html.mfp-helper body {
   opacity: 0;
   visibility: hidden;
   max-height: 100vh;
-  -webkit-box-shadow: 0 0 15px #9E9E9E;
-          box-shadow: 0 0 15px #9E9E9E;
+  -webkit-transition: -webkit-box-shadow 0.2s 0.35s linear;
+  transition: -webkit-box-shadow 0.2s 0.35s linear;
+  -o-transition: box-shadow 0.2s 0.35s linear;
+  transition: box-shadow 0.2s 0.35s linear;
+  transition: box-shadow 0.2s 0.35s linear, -webkit-box-shadow 0.2s 0.35s linear;
 }
 
 .main-nav.is-active {
   opacity: 1;
   visibility: visible;
+  -webkit-box-shadow: 0 0 15px #9E9E9E;
+          box-shadow: 0 0 15px #9E9E9E;
 }
 
 .main-nav__wrapper {
