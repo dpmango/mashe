@@ -4,27 +4,28 @@
   -webkit-tap-highlight-color: transparent
   position: relative
   z-index: 1
-  &.owl-loaded
-    display: block
-  &.owl-loading
-    opacity: 0
-    display: block
-  &.owl-hidden
-    opacity: 0
-  &.owl-refresh .owl-item
-    visibility: hidden
-  &.owl-drag .owl-item
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
-  &.owl-grab
-    cursor: move
-    cursor: grab
-  &.owl-rtl
-    direction: rtl
-    .owl-item
-      float: right
+.owl-loaded
+  display: block
+  position: relative
+.owl-loading
+  opacity: 0
+  display: block
+.owl-hidden
+  opacity: 0
+.o-refresh .owl-item
+  visibility: hidden
+.o-drag .owl-item
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.owl-grab
+  cursor: move
+  cursor: grab
+.owl-rtl
+  direction: rtl
+  .owl-item
+    float: right
 .owl-stage
   position: relative
   -ms-touch-action: pan-Y
@@ -154,44 +155,83 @@
     height: 100%
     width: 100%
 
-.owl-theme
-  .owl-nav
-    margin-top: 10px
-    text-align: center
-    -webkit-tap-highlight-color: transparent
-    [class*='owl-']
-      color: #FFF
-      font-size: 14px
-      margin: 5px
-      padding: 4px 7px
-      background: #D6D6D6
-      display: inline-block
-      cursor: pointer
-      border-radius: 3px
-      &:hover
-        background: #869791
-        color: #FFF
-        text-decoration: none
-    .disabled
-      opacity: 0.5
-      cursor: default
-    &.disabled + .owl-dots
-      margin-top: 10px
-  .owl-dots
-    text-align: center
-    -webkit-tap-highlight-color: transparent
-    .owl-dot
-      display: inline-block
-      zoom: 1
-      *display: inline
-      span
-        width: 10px
-        height: 10px
-        margin: 5px 7px
-        background: #D6D6D6
-        display: block
-        -webkit-backface-visibility: visible
-        transition: opacity 200ms ease
-        border-radius: 30px
-      &.active span, &:hover span
-        background: #869791
+.owl-nav
+  width: 100%
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: space-between
+//.owl-dots
+//  text-align: center
+//  -webkit-tap-highlight-color: transparent
+//  .owl-dot
+//    display: inline-block
+//    zoom: 1
+//    *display: inline
+//    span
+//      width: 10px
+//      height: 10px
+//      margin: 5px 7px
+//      background: #D6D6D6
+//      display: block
+//      -webkit-backface-visibility: visible
+//      transition: opacity 200ms ease
+//      border-radius: 30px
+//    &.active span, &:hover span
+//      background: #869791
+      
+.owl-dots
+  margin: 0
+  padding: 0
+  position: absolute
+  bottom: 50px
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+  .owl-dot
+    padding: 0
+    font-size: 0
+    width: 37px
+    height: 4px
+    background-color: #E6E6E6
+    margin-left: 6px
+    margin-right: 6px
+    transition: all $transitionSpeed $ease
+    &.active
+      background-color: $btnBgColor
+  
+
+
+.owl-prev,
+.owl-next 
+  display: block
+  border-radius: 50%
+  z-index: 2
+  top: 50% 
+  //transform: translateY(-50%);
+  background-color: #fff
+  font-size: 0
+  background-repeat: no-repeat
+  background-position: 50%
+  background-size: 15px 24px
+  width: 76px
+  height: 76px
+  padding: 0
+  border: 3px solid #F5F5F5
+  transition: all $transitionSpeed $ease
+  &:hover 
+    border-color: $btnBgColor
+    transform: scale(1.05)
+  
+
+
+.owl-prev 
+  background-image: url(../../img/arrow-left.svg)
+  left: 15px
+
+
+.owl-next 
+  background-image: url(../../img/arrow-right.svg)
+  right: 15px

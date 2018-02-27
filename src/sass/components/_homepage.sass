@@ -1,6 +1,7 @@
 // MAIN SLIDER SECTION
 .main-slider
-  .slick-dots
+  .slick-dots,
+  .owl-dots
     bottom: 170px
   &__slide
     background-repeat: no-repeat
@@ -433,12 +434,16 @@
     flex-direction: row
     justify-content: space-between
     align-items: stretch
+    .owl-nav,
     .slick-prev,
     .slick-next
       top: -130px
-    .slick-dots
+    .slick-dots,
+    .owl-dots
       bottom: -60px
-    
+.owl-loaded
+  .catalog-item
+    width: 100%
 .catalog-item
   text-decoration: none
   display: block
@@ -835,6 +840,10 @@
     .slick-list
       display: flex !important
       align-items: stretch
+    .owl-nav
+      top: -110px
+    .owl-prev,
+    .owl-next,
     .slick-prev,
     .slick-next
       top: -110px
@@ -846,10 +855,9 @@
   &__item
     display: flex !important
     flex-direction: column
-    //width: calc(33% - 28px)
     width: 100%
-    margin-left: 14px
-    margin-right: 14px
+    //margin-left: 14px
+    //margin-right: 14px
     background-color: #fff
     background-image: linear-gradient(to bottom, #FFEDE9 65px, #fff 65px, #fff 100%)
     padding: 10px 50px 48px 50px
@@ -934,7 +942,8 @@
   a
     display: block
     text-decoration: none
-    width: 14.3%
+    width: 100%
+    //width: 14.3%
     transition: all $transitionSpeed $ease
     &:hover
       opacity: 0.8
@@ -1107,7 +1116,8 @@
       
 +r($desktop)
   .main-slider
-    .slick-dots
+    .slick-dots,
+    .owl-dots
       bottom: 125px
     &__slide
       padding-top: 85px
@@ -1183,10 +1193,14 @@
     &__wrap
       margin-left: -9px
       margin-right: -9px
-      .slick-dots
+      .slick-dots,
+      .owl-dots
         width: 100%
         bottom: -50px
       
+  .owl-loaded
+    .catalog-item
+      width: 100%
   .catalog-item
     width: calc(25% - 18px);
     margin-left: 9px;
@@ -1360,7 +1374,8 @@
     &__wrap
       margin-left: 0
       margin-right: 0
-      .slick-dots
+      .slick-dots,
+      .owl-dots
         width: 100%
         margin: 0
         padding: 0
@@ -1368,7 +1383,7 @@
         bottom: -25px
         left: 50%
         transform: translateX(-50%)
-        button
+        .owl-dot
           padding: 0
           font-size: 0
           width: 37px
@@ -1377,8 +1392,8 @@
           margin-left: 6px
           margin-right: 6px
           transition: all $transitionSpeed $ease
-        li.slick-active button
-          background-color: $btnBgColor
+          &.active
+            background-color: $btnBgColor
     &__item
       width: 100%
       margin-left: 0
@@ -1401,7 +1416,8 @@
           left: 50%
           bottom: -30px !important
           transform: translateX(-50%)
-    .slick-dots
+    .slick-dots,
+    .owl-dots
       width: 100%
       margin: 0
       padding: 0
@@ -1409,7 +1425,7 @@
       bottom: -55px
       left: 50%
       transform: translateX(-50%)
-      button
+      .owl-dot
         padding: 0
         font-size: 0
         width: 37px
@@ -1418,8 +1434,8 @@
         margin-left: 6px
         margin-right: 6px
         transition: all $transitionSpeed $ease
-      li.slick-active button
-        background-color: $btnBgColor
+        &.active
+          background-color: $btnBgColor
       
   .newsletter
     &__info

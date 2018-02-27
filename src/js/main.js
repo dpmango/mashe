@@ -526,188 +526,188 @@ $(document).ready(function(){
 
 
     // CLIENTS SLIDER
-//    $('[jsClientsSlider]').slick({
+    $('[jsClientsSlider]').owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      smartSpeed: 900,
+      items: 3,
+      margin: 28,
+      responsive : {
+				0 : {
+					items: 1,
+          nav: false,
+          dots: true
+			  },
+				 
+				768 : {
+					items: 2,
+          nav: false,
+          center: true
+				},
+				 
+				850 : {
+					items: 2,
+          center: true,
+          nav: false
+				 
+				},
+        991 : {
+					items: 3,
+          center: false
+				 
+				}
+			}
+    });
+    
+//    // PHOTOS SLIDER
+    $('[jsPhotosSlider]').owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      smartSpeed: 900,
+      items: 7,
+      responsive : {
+				0 : {
+					items: 3
+			  },
+				 
+				568 : {
+					items: 5
+				},
+				 
+				991 : {
+					items: 7
+				 
+				}
+			}
+    });
+
+
+    // POPULAR SLIDER
+    $('[jsPopularSlider]').owlCarousel({
+      loop: true,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      smartSpeed: 900,
+      items: 4,
+      margin: 16,
+      responsive : {
+				0 : {
+					items: 1,
+          nav: false
+			  },
+				 
+				768 : {
+					items: 2,
+          nav: false
+				},
+				 
+				991 : {
+					items: 3
+				 
+				},
+        1336 : {
+					items: 4
+				 
+				}
+			}
+    });
+    
+    
+    // RECENT SLIDER
+//    $('[jsRecentSlider]').slick({
 //      arrows: true,
 //      accessibility: false,
-//      dots: false,
-//      easing: 'swing',
-//      slidesToShow: 3,
-//      touchThreshold: 15,
-//      slidesToScroll: 1,
 //      swipeToSlide: true,
+//      dots: true,
+//      touchThreshold: 15,
+//      easing: 'swing',
+//      slidesToShow: 6,
+//      slidesToScroll: 1,
 //      autoplay: true,
 //      autoplaySpeed: 3500,
 //      responsive: [
 //    {
-//      breakpoint: 991,
+//      breakpoint: 1336,
 //      settings: {
-//        slidesToShow: 2,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        centerPadding: '70px',
-//        centerMode: true
+//        slidesToShow: 5,
+//        slidesToScroll: 1
+//      }
+//    },
+//      {
+//      breakpoint: 1110,
+//      settings: {
+//        slidesToShow: 4,
+//        slidesToScroll: 1
 //      }
 //    },
 //        {
-//      breakpoint: 850,
+//      breakpoint: 991,
 //      settings: {
-//        slidesToShow: 1,
+//        slidesToShow: 3,
 //        slidesToScroll: 1,
-//        arrows: false,
-//        centerPadding: '150px',
-//        centerMode: true
+//        arrows: false
 //      }
 //    },
 //        {
 //      breakpoint: 768,
 //      settings: {
-//        slidesToShow: 1,
+//        slidesToShow: 2,
 //        slidesToScroll: 1,
-//        arrows: false,
-//        dots: true
+//        arrows: false
 //      }
 //    }
 //        ]
 //    });
-    
-    $('[jsClientsSlider]').owlCarousel({
+     $('[jsRecentSlider]').owlCarousel({
       loop: true,
       nav: true,
-      dots: false,
-      margin: 30,
+      dots: true,
       autoplay: true,
       smartSpeed: 900,
-      items: 3
+      items: 6,
+      margin: 16,
+      responsive : {
+				0 : {
+					items: 2,
+          nav: false
+			  },
+				 
+				768 : {
+					items: 3,
+          nav: false
+				},
+				 
+				991 : {
+					items: 4
+				 
+				},
+        1110 : {
+					items: 5
+				 
+				},
+        1336 : {
+					items: 6
+				 
+				}
+			}
     });
+
     
-    // PHOTOS SLIDER
-    $('[jsPhotosSlider]').slick({
-      arrows: false,
-      accessibility: false,
-      dots: false,
-      touchThreshold: 15,
-      easing: 'swing',
-      swipeToSlide: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3500,
-      responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 5
-      }
-    },
-        {
-      breakpoint: 568,
-      settings: {
-        slidesToShow: 3
-      }
-    }
-        ]
-    });
-
-
-    // POPULAR SLIDER
-    $('[jsPopularSlider]').slick({
-      arrows: true,
-      accessibility: false,
-      swipeToSlide: true,
-      lazyLoad: 'progressive',
-      easing: 'swing',
-      dots: true,
-      touchThreshold: 15,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3500,
-      responsive: [
-    {
-      breakpoint: 1336,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    },
-        {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    },
-        {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    }
-        ]
-    });
-    
-    // RECENT SLIDER
-    $('[jsRecentSlider]').slick({
-      arrows: true,
-      accessibility: false,
-      swipeToSlide: true,
-      dots: true,
-      touchThreshold: 15,
-      easing: 'swing',
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3500,
-      responsive: [
-    {
-      breakpoint: 1336,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 1
-      }
-    },
-      {
-      breakpoint: 1110,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1
-      }
-    },
-        {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    },
-        {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    }
-        ]
-    });
-
     // MAIN SLIDER
-    $('[jsMainSlider]').slick({
-      arrows: false,
-      touchThreshold: 15,
-      easing: 'swing',
+    $('[jsMainSlider]').owlCarousel({
+      loop: true,
+      nav: false,
       dots: true,
-      accessibility: false,
-      swipeToSlide: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3500
+      smartSpeed: 900,
+      items: 1
     });
+    
     
     // PRODUCT SLIDER
     $('[jsProductSlider]').slick({
