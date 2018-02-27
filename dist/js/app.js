@@ -308,6 +308,13 @@ $(document).ready(function(){
      maxScrollbarLength: 160
    });
   }
+  
+  if ( $('.main-nav__wrapper').length > 0 ){
+   var ps = new PerfectScrollbar('.main-nav__wrapper', {
+     wheelSpeed: 1,
+     maxScrollbarLength: 160
+   });
+  }
 
 
 
@@ -619,50 +626,6 @@ $(document).ready(function(){
     
     
     // RECENT SLIDER
-//    $('[jsRecentSlider]').slick({
-//      arrows: true,
-//      accessibility: false,
-//      swipeToSlide: true,
-//      dots: true,
-//      touchThreshold: 15,
-//      easing: 'swing',
-//      slidesToShow: 6,
-//      slidesToScroll: 1,
-//      autoplay: true,
-//      autoplaySpeed: 3500,
-//      responsive: [
-//    {
-//      breakpoint: 1336,
-//      settings: {
-//        slidesToShow: 5,
-//        slidesToScroll: 1
-//      }
-//    },
-//      {
-//      breakpoint: 1110,
-//      settings: {
-//        slidesToShow: 4,
-//        slidesToScroll: 1
-//      }
-//    },
-//        {
-//      breakpoint: 991,
-//      settings: {
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        arrows: false
-//      }
-//    },
-//        {
-//      breakpoint: 768,
-//      settings: {
-//        slidesToShow: 2,
-//        slidesToScroll: 1,
-//        arrows: false
-//      }
-//    }
-//        ]
-//    });
      $('[jsRecentSlider]').owlCarousel({
       loop: true,
       nav: true,

@@ -16,7 +16,8 @@
   overflow: hidden
   opacity: 0
   visibility: hidden
-  transition: box-shadow 0.2s 0.35s linear
+  box-shadow: -1920px 0 15px $textColor
+  transition: box-shadow 0.2s $ease
   &.is-active
     opacity: 1
     visibility: visible
@@ -161,7 +162,8 @@
   opacity: 0
   visibility: hidden
   max-height: 100vh
-  transition: box-shadow 0.2s 0.35s linear
+  box-shadow: -1920px 0 15px $textColor
+  transition: box-shadow 0.2s $ease
   //&:before
     content: ''
     position: absolute

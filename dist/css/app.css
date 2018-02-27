@@ -3815,11 +3815,13 @@ html.mfp-helper body {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: -webkit-box-shadow 0.2s 0.35s linear;
-  transition: -webkit-box-shadow 0.2s 0.35s linear;
-  -o-transition: box-shadow 0.2s 0.35s linear;
-  transition: box-shadow 0.2s 0.35s linear;
-  transition: box-shadow 0.2s 0.35s linear, -webkit-box-shadow 0.2s 0.35s linear;
+  -webkit-box-shadow: -1920px 0 15px #9E9E9E;
+          box-shadow: -1920px 0 15px #9E9E9E;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .search-panel.is-active {
@@ -4045,11 +4047,13 @@ html.mfp-helper body {
   opacity: 0;
   visibility: hidden;
   max-height: 100vh;
-  -webkit-transition: -webkit-box-shadow 0.2s 0.35s linear;
-  transition: -webkit-box-shadow 0.2s 0.35s linear;
-  -o-transition: box-shadow 0.2s 0.35s linear;
-  transition: box-shadow 0.2s 0.35s linear;
-  transition: box-shadow 0.2s 0.35s linear, -webkit-box-shadow 0.2s 0.35s linear;
+  -webkit-box-shadow: -1920px 0 15px #9E9E9E;
+          box-shadow: -1920px 0 15px #9E9E9E;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 .main-nav.is-active {
