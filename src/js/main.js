@@ -530,9 +530,9 @@ $(document).ready(function(){
       arrows: true,
       accessibility: false,
       dots: false,
-      accessibility: false,
       slidesToShow: 3,
       slidesToScroll: 1,
+      swipeToSlide: true,
       autoplay: true,
       autoplaySpeed: 3500,
       responsive: [
@@ -599,6 +599,7 @@ $(document).ready(function(){
     $('[jsPopularSlider]').slick({
       arrows: true,
       accessibility: false,
+      swipeToSlide: true,
       dots: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -635,6 +636,7 @@ $(document).ready(function(){
     $('[jsRecentSlider]').slick({
       arrows: true,
       accessibility: false,
+      swipeToSlide: true,
       dots: true,
       slidesToShow: 6,
       slidesToScroll: 1,
@@ -679,6 +681,7 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
       accessibility: false,
+      swipeToSlide: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -690,6 +693,7 @@ $(document).ready(function(){
       arrows: true,
       dots: false,
       accessibility: false,
+      swipeToSlide: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: false
