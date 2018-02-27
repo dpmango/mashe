@@ -526,48 +526,58 @@ $(document).ready(function(){
 
 
     // CLIENTS SLIDER
-    $('[jsClientsSlider]').slick({
-      arrows: true,
-      accessibility: false,
+//    $('[jsClientsSlider]').slick({
+//      arrows: true,
+//      accessibility: false,
+//      dots: false,
+//      easing: 'swing',
+//      slidesToShow: 3,
+//      touchThreshold: 15,
+//      slidesToScroll: 1,
+//      swipeToSlide: true,
+//      autoplay: true,
+//      autoplaySpeed: 3500,
+//      responsive: [
+//    {
+//      breakpoint: 991,
+//      settings: {
+//        slidesToShow: 2,
+//        slidesToScroll: 1,
+//        arrows: false,
+//        centerPadding: '70px',
+//        centerMode: true
+//      }
+//    },
+//        {
+//      breakpoint: 850,
+//      settings: {
+//        slidesToShow: 1,
+//        slidesToScroll: 1,
+//        arrows: false,
+//        centerPadding: '150px',
+//        centerMode: true
+//      }
+//    },
+//        {
+//      breakpoint: 768,
+//      settings: {
+//        slidesToShow: 1,
+//        slidesToScroll: 1,
+//        arrows: false,
+//        dots: true
+//      }
+//    }
+//        ]
+//    });
+    
+    $('[jsClientsSlider]').owlCarousel({
+      loop: true,
+      nav: true,
       dots: false,
-      easing: 'swing',
-      slidesToShow: 3,
-      touchThreshold: 15,
-      slidesToScroll: 1,
-      swipeToSlide: true,
+      margin: 30,
       autoplay: true,
-      autoplaySpeed: 3500,
-      responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        centerPadding: '70px',
-        centerMode: true
-      }
-    },
-        {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        centerPadding: '150px',
-        centerMode: true
-      }
-    },
-        {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true
-      }
-    }
-        ]
+      smartSpeed: 900,
+      items: 3
     });
     
     // PHOTOS SLIDER
