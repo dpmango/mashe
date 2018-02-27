@@ -236,6 +236,11 @@ $(document).ready(function(){
 		  $('.product-section__tab-item#' + dataId).addClass('is-active');
     });
     
+    // ZOOM
+    $('.product-section__slider-wrap').zoom({
+      on: 'click',
+      magnify: 1.2
+    });
     
     
   }
