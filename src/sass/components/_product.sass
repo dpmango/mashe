@@ -723,7 +723,7 @@
       width: 100%
       padding-left: 0
     &__share
-      bottom: 100px
+      bottom: 130px
     &__photos
       margin-bottom: 25px
     &__amount-wrap
@@ -734,6 +734,7 @@
       &:before
         top: 95px
     &__tocart
+      max-width: 250px
       width: calc(100% - 65px)
       padding: 21px 60px 21px 60px
     &__like
@@ -794,3 +795,8 @@
           display: flex !important
         
         
+        
++r($mobile)
+  .product-section
+    &__share
+      bottom: 100px

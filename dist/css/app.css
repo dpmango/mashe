@@ -5448,7 +5448,7 @@ html.mfp-helper body {
   }
   .main-nav ul {
     display: none;
-    padding: 20px 10px 15px 20px;
+    padding: 20px 10px 15px 0px;
   }
   .main-nav__submenu {
     -webkit-box-orient: vertical;
@@ -6515,6 +6515,7 @@ html.mfp-helper body {
 
 .owl-loaded .catalog-item {
   width: 100%;
+  min-height: 100%;
 }
 
 .catalog-item {
@@ -7177,6 +7178,7 @@ html.mfp-helper body {
   margin-bottom: 50px;
 }
 
+.clients__wrap .owl-stage,
 .clients__wrap .slick-track,
 .clients__wrap .slick-list {
   display: -webkit-box !important;
@@ -7214,6 +7216,10 @@ html.mfp-helper body {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.clients .owl-loaded .clients__item {
+  min-height: 100%;
 }
 
 .clients__item {
@@ -7349,6 +7355,7 @@ html.mfp-helper body {
           justify-content: space-between;
 }
 
+.photos .owl-stage,
 .photos .slick-list,
 .photos .slick-track {
   display: -webkit-box !important;
@@ -7361,10 +7368,15 @@ html.mfp-helper body {
           align-items: stretch !important;
 }
 
+.photos.owl-loaded a {
+  width: 100%;
+  min-height: 100%;
+}
+
 .photos a {
   display: block;
   text-decoration: none;
-  width: 100%;
+  width: 14.3%;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -7381,6 +7393,7 @@ html.mfp-helper body {
   height: 100%;
   min-height: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 .newsletter {
@@ -9281,6 +9294,7 @@ html.mfp-helper body {
   margin-right: -8px;
 }
 
+.recent-items__wrap .owl-stage,
 .recent-items__wrap .slick-list,
 .recent-items__wrap .slick-track {
   display: -webkit-box !important;
@@ -9316,6 +9330,7 @@ html.mfp-helper body {
 
 .recent-items .owl-loaded .recent-items__item {
   width: 100%;
+  min-height: 100%;
 }
 
 .recent-items__item {
@@ -10841,7 +10856,7 @@ html.mfp-helper body {
     padding-left: 0;
   }
   .product-section__share {
-    bottom: 100px;
+    bottom: 130px;
   }
   .product-section__photos {
     margin-bottom: 25px;
@@ -10857,6 +10872,7 @@ html.mfp-helper body {
     top: 95px;
   }
   .product-section__tocart {
+    max-width: 250px;
     width: -webkit-calc(100% - 65px);
     width: calc(100% - 65px);
     padding: 21px 60px 21px 60px;
@@ -10947,6 +10963,12 @@ html.mfp-helper body {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .product-section__share {
+    bottom: 100px;
   }
 }
 

@@ -444,6 +444,7 @@
 .owl-loaded
   .catalog-item
     width: 100%
+    min-height: 100%
 .catalog-item
   text-decoration: none
   display: block
@@ -836,6 +837,7 @@
     margin-left: -14px
     margin-right: -14px
     margin-bottom: 50px
+    .owl-stage,
     .slick-track,
     .slick-list
       display: flex !important
@@ -852,6 +854,9 @@
       &:hover
         border-color: $btnBgColor
         transform: scale(1.05)
+  .owl-loaded
+    .clients__item
+      min-height: 100%
   &__item
     display: flex !important
     flex-direction: column
@@ -935,15 +940,19 @@
   flex-direction: row
   align-items: stretch
   justify-content: space-between
+  .owl-stage,
   .slick-list,
   .slick-track
     display: flex !important
     align-items: stretch !important
+  &.owl-loaded
+    a
+      width: 100%      
+      min-height: 100%
   a
     display: block
     text-decoration: none
-    width: 100%
-    //width: 14.3%
+    width: 14.3%
     transition: all $transitionSpeed $ease
     &:hover
       opacity: 0.8
@@ -953,6 +962,7 @@
     height: 100%
     min-height: 100%
     width: 100%
+    max-width: 100%
     
 // NEWSLETTER SECTION
 .newsletter
