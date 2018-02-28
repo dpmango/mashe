@@ -8,8 +8,8 @@ block content
   section.cart
     .container
       h1.cart__title.wow Корзина
-      form.cart__wrapper.wow(action="#")
-        .cart__main
+      form.cart__wrapper(action="#")
+        .cart__main.wow
           .cart__header
             .cart__header-name Наименование
             .cart__header-price Цена за метр
@@ -17,7 +17,7 @@ block content
             .cart__header-sum Сумма
             
           // DESKTOP ITEMS  
-          .cart__item
+          .cart__item.wow
             .cart__img
               img(src="img/popular2.jpg")
             .cart__info
@@ -42,7 +42,8 @@ block content
                 +icon('ico-ruble')
             button.cart__del(type="button")
               +icon('ico-close')
-          .cart__item
+          // next
+          .cart__item.wow
             .cart__img
               img(src="img/popular3.jpg")
             .cart__info
@@ -126,7 +127,7 @@ block content
             button.cart__del(type="button")
               +icon('ico-close')
               
-          .cart__promo
+          .cart__promo.wow
             a.cart__back(href="#") Вернуться в каталог
               +icon('ico-arrow-button')
             .cart__promo-wrap
@@ -135,7 +136,7 @@ block content
               p.cart__promo-text Вы успешно применили промо-код
                 +icon('ico-check')
                 span Скидка 10%
-        .cart__all
+        .cart__all.wow
           h3.cart__all-title 2 товара в корзине на сумму
           .cart__all-sum 15 250
             del 1 760
@@ -153,65 +154,6 @@ block content
           a.cart__back.cart__back--mobile(href="#") Вернуться в каталог
               +icon('ico-arrow-button')
       
-      // RECENT ITEMS
-      .recent-items
-        h2.recent-items__title 
-          span Вы недавно просматривали
-        .recent-items__wrap.wow(jsRecentSlider)
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular1.jpg")
-            h3.recent-items__subtitle Эксельсиор узбекский
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular2.jpg")
-            h3.recent-items__subtitle Атлас стрейч «Deep Pink»
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular3.jpg")
-            h3.recent-items__subtitle Жоржет
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular1.jpg")
-            h3.recent-items__subtitle Эксельсиор узбекский
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular2.jpg")
-            h3.recent-items__subtitle Атлас стрейч «Deep Pink»
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular3.jpg")
-            h3.recent-items__subtitle Жоржет
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
-          a.recent-items__item(href="#")
-            .recent-items__img
-              img(src="img/popular3.jpg")
-            h3.recent-items__subtitle Жоржет
-            span.recent-items__price 1 260
-              +icon('ico-ruble')
+      include components/_recent
               
-  // NEWSLETTER
-  section.newsletter
-    .container
-      .newsletter__wrap.wow
-        .newsletter__info
-          h2.newsletter__title Подпишись на рассылку 
-          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
-        form.newsletter__form(action="#")
-          .newsletter__form-wrap
-            input.newsletter__input(type="email" placeholder="Ваш email")
-            button.newsletter__btn(type="submit") Подписаться !
-            .newsletter__error Неверный формат e-mail
-          p.newsletter__text Нажимая на кнопку, вы даете согласие на
-            a.newsletter__link(href="#") обработку своих персональных данных
+  include components/_newsletter

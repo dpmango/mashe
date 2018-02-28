@@ -164,10 +164,10 @@
           </div>
         </nav>
         <!-- header-->
-        <div class="header__topbar">
+        <div class="header__topbar wow" data-animation-class="wowFadeDown">
           <div class="container"><span>Бесплатная доставка первого заказа для новых клиентов!</span></div>
         </div>
-        <div class="header__mainbar"><a class="header__menu" href="#" jsOpenMenu>
+        <div class="header__mainbar wow" data-animation-class="wowFadeDown"><a class="header__menu" href="#" jsOpenMenu>
             <!--img(src="img/menu.svg")-->
             <svg class="ico ico-menu">
               <use xlink:href="img/sprite.svg#ico-menu"></use>
@@ -289,19 +289,19 @@
           <!-- PRODUCT SECTION-->
           <section class="product-section">
             <div class="container">
-              <div class="product-section__top-wrap wow"><a class="product-section__link product-section__link--prev" href="#">Предыдущий товар
+              <div class="product-section__top-wrap"><a class="product-section__link product-section__link--prev" href="#">Предыдущий товар
                   <svg class="ico ico-arrow-left">
                     <use xlink:href="img/sprite.svg#ico-arrow-left"></use>
                   </svg></a>
-                <div class="breadcrumbs"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Каталог</a><a class="breadcrumbs__link is-active" href="#">Атлас АС14016PP</a></div><a class="product-section__link product-section__link--next" href="#">Следующий товар
+                <div class="breadcrumbs wow"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Каталог</a><a class="breadcrumbs__link is-active" href="#">Атлас АС14016PP</a></div><a class="product-section__link product-section__link--next" href="#">Следующий товар
                   <svg class="ico ico-arrow-right">
                     <use xlink:href="img/sprite.svg#ico-arrow-right"></use>
                   </svg></a>
               </div>
-              <h1 class="product-section__title wow">Атлас стрейч «Magic White»</h1><span class="product-section__articul wow">Арт. АС14016PP</span>
+              <h1 class="product-section__title wow" data-animation-delay=".1s">Атлас стрейч «Magic White»</h1><span class="product-section__articul wow" data-animation-delay=".2s">Арт. АС14016PP</span>
               <div class="product-section__wrap">
-                <div class="product-section__topbar wow">
-                  <div class="product-section__slider">
+                <div class="product-section__topbar">
+                  <div class="product-section__slider wow">
                     <div class="product-section__badge product-section__badge--wait">Ожидаем поступления</div>
                     <div class="product-section__share">
                       <svg class="ico ico-share">
@@ -315,7 +315,7 @@
                             <use xlink:href="img/sprite.svg#ico-play"></use>
                           </svg></span></a></div>
                   </div>
-                  <div class="product-section__info">
+                  <div class="product-section__info wow" data-animation-delay=".1s">
                     <div class="product-section__price-wrap">
                       <div class="product-section__first-price">1 350
                         <svg class="ico ico-ruble">
@@ -455,7 +455,7 @@
           <!-- RECENT ITEMS-->
           <div class="recent-items">
             <div class="container">
-              <h2 class="recent-items__title"> <span>Вы недавно просматривали</span></h2>
+              <h2 class="recent-items__title wow"><span>Вы недавно просматривали</span></h2>
               <div class="recent-items__wrap wow" jsRecentSlider><a class="recent-items__item" href="#">
                   <div class="recent-items__img"><img src="img/popular1.jpg"></div>
                   <h3 class="recent-items__subtitle">Эксельсиор узбекский</h3><span class="recent-items__price">1 260
@@ -497,7 +497,7 @@
           <!--YOU LIKE-->
           <section class="you-like">
             <div class="container">
-              <h2 class="you-like__title">Вам понравится</h2>
+              <h2 class="you-like__title wow">Вам понравится</h2>
               <div class="recent-items__wrap wow"><a class="recent-items__item" href="#">
                   <div class="recent-items__img"><img src="img/popular1.jpg"></div>
                   <h3 class="recent-items__subtitle">Эксельсиор узбекский</h3><span class="recent-items__price">1 260
@@ -527,16 +527,16 @@
             </div>
           </section>
           <!-- NEWSLETTER-->
-          <section class="newsletter wow">
+          <section class="newsletter">
             <div class="container">
               <div class="newsletter__wrap">
-                <div class="newsletter__info">
+                <div class="newsletter__info wow" data-animation-class="wowFadeLeft">
                   <h2 class="newsletter__title">Подпишись на рассылку </h2>
                   <h3 class="newsletter__subtitle">и всегда будь в курсе наших новостей!</h3>
                 </div>
-                <form class="newsletter__form" action="#">
+                <form class="newsletter__form wow" action="#" data-animation-class="wowFadeRight">
                   <div class="newsletter__form-wrap">
-                    <input class="newsletter__input" type="email" placeholder="Ваш email">
+                    <input class="newsletter__input" type="text" placeholder="Ваш email">
                     <button class="newsletter__btn" type="submit">Подписаться !</button>
                     <div class="newsletter__error">Неверный формат e-mail</div>
                   </div>

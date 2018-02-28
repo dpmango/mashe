@@ -164,10 +164,10 @@
           </div>
         </nav>
         <!-- header-->
-        <div class="header__topbar">
+        <div class="header__topbar wow" data-animation-class="wowFadeDown">
           <div class="container"><span>Бесплатная доставка первого заказа для новых клиентов!</span></div>
         </div>
-        <div class="header__mainbar"><a class="header__menu" href="#" jsOpenMenu>
+        <div class="header__mainbar wow" data-animation-class="wowFadeDown"><a class="header__menu" href="#" jsOpenMenu>
             <!--img(src="img/menu.svg")-->
             <svg class="ico ico-menu">
               <use xlink:href="img/sprite.svg#ico-menu"></use>
@@ -290,12 +290,12 @@
           <section class="catalog-promo">
             <div class="container">
               <div class="breadcrumbs wow"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link is-active" href="#">Каталог</a></div>
-              <h1 class="catalog-promo__title wow">Каталог</h1>
-              <form class="catalog-promo__sorting wow" action="#">
-                <p class="catalog-promo__text">Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.</p>
+              <h1 class="catalog-promo__title wow" data-animation-delay=".1s">Каталог</h1>
+              <form class="catalog-promo__sorting" action="#">
+                <p class="catalog-promo__text wow" data-animation-delay=".2s">Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.</p>
                 <div class="catalog-promo__mainsort">
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item1">
-                  <label class="catalog-promo__main-item" for="catalog-item1">
+                  <label class="catalog-promo__main-item wow" for="catalog-item1" data-animation-delay=".25s">
                     <h2 class="catalog-promo__subtitle">Для росписи
                       <svg class="ico ico-for-paint">
                         <use xlink:href="img/sprite.svg#ico-for-paint"></use>
@@ -304,7 +304,7 @@
                     </h2>
                   </label>
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item2">
-                  <label class="catalog-promo__main-item" for="catalog-item2">
+                  <label class="catalog-promo__main-item wow" for="catalog-item2" data-animation-delay=".3s">
                     <h2 class="catalog-promo__subtitle">Для цветов
                       <svg class="ico ico-for-flower">
                         <use xlink:href="img/sprite.svg#ico-for-flower"></use>
@@ -313,7 +313,7 @@
                     </h2>
                   </label>
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item3">
-                  <label class="catalog-promo__main-item" for="catalog-item3">
+                  <label class="catalog-promo__main-item wow" for="catalog-item3" data-animation-delay=".35s">
                     <h2 class="catalog-promo__subtitle">Для валяния
                       <svg class="ico ico-for-felt">
                         <use xlink:href="img/sprite.svg#ico-for-felt"></use>
@@ -322,7 +322,7 @@
                     </h2>
                   </label>
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item4">
-                  <label class="catalog-promo__main-item" for="catalog-item4">
+                  <label class="catalog-promo__main-item wow" for="catalog-item4" data-animation-delay=".4s">
                     <h2 class="catalog-promo__subtitle">Для шитья
                       <svg class="ico ico-for-stitch">
                         <use xlink:href="img/sprite.svg#ico-for-stitch"></use>
@@ -331,7 +331,7 @@
                     </h2>
                   </label>
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item5">
-                  <label class="catalog-promo__main-item" for="catalog-item5">
+                  <label class="catalog-promo__main-item wow" for="catalog-item5" data-animation-delay=".45s">
                     <h2 class="catalog-promo__subtitle">Для вышивки
                       <svg class="ico ico-for-embr">
                         <use xlink:href="img/sprite.svg#ico-for-embr"></use>
@@ -340,7 +340,7 @@
                     </h2>
                   </label>
                   <input class="catalog-promo__input" type="radio" name="catalog-items" id="catalog-item6">
-                  <label class="catalog-promo__main-item" for="catalog-item6">
+                  <label class="catalog-promo__main-item wow" for="catalog-item6" data-animation-delay=".5s">
                     <h2 class="catalog-promo__subtitle">Для декора
                       <svg class="ico ico-for-decor">
                         <use xlink:href="img/sprite.svg#ico-for-decor"></use>
@@ -349,7 +349,7 @@
                     </h2>
                   </label>
                 </div>
-                <div class="catalog-promo__secondsort">
+                <div class="catalog-promo__secondsort wow" data-animation-delay=".6s">
                   <input type="radio" name="second-items" id="second-item1">
                   <label class="catalog-promo__second-item" for="second-item1">Все товары / 50</label>
                   <input type="radio" name="second-items" id="second-item2" jsTissue>
@@ -673,19 +673,14 @@
                         </svg></span><span>цена за 1м – при покупке от 10м</span></p>
                   </div></a></div>
               <!-- ADVANTAGES      -->
-              <div class="advantages__wrap wow">
-                <div class="advantages__item">
-                  <h3 class="advantages__title">Мин.отрез 0,5 метра
-                    <svg class="ico ico-scissors">
-                      <use xlink:href="img/sprite.svg#ico-scissors"></use>
-                    </svg>
-                    <!--img(src="img/scissors.svg")-->
-                  </h3>
+              <div class="advantages__wrap">
+                <div class="advantages__item wow">
+                  <h3 class="advantages__title">Мин.отрез 0,5 метра<img src="img/scissors.svg"></h3>
                   <p class="advantages__descr">Идеально для рукоделия или на пробу
                     <!--+icon('ico-')--><img src="img/wave-pink.svg">
                   </p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow" data-animation-delay=".1s">
                   <h3 class="advantages__title">Высокое качество
                     <svg class="ico ico-medal">
                       <use xlink:href="img/sprite.svg#ico-medal"></use>
@@ -696,7 +691,7 @@
                     <!--+icon('ico-')--><img src="img/wave-pink.svg">
                   </p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow" data-animation-delay=".2s">
                   <h3 class="advantages__title">Удобная доставка
                     <svg class="ico ico-truck">
                       <use xlink:href="img/sprite.svg#ico-truck"></use>
@@ -707,7 +702,7 @@
                     <!--+icon('ico-')--><img src="img/wave-pink.svg">
                   </p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow" data-animation-delay=".3s">
                   <h3 class="advantages__title">Безопасная оплата
                     <svg class="ico ico-card">
                       <use xlink:href="img/sprite.svg#ico-card"></use>
@@ -718,7 +713,7 @@
                     <!--+icon('ico-')--><img src="img/wave-pink.svg">
                   </p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow" data-animation-delay=".4s">
                   <h3 class="advantages__title">Оптовые цены от 10 м
                     <svg class="ico ico-action">
                       <use xlink:href="img/sprite.svg#ico-action"></use>
@@ -1011,15 +1006,16 @@
                         <svg class="ico ico-ruble">
                           <use xlink:href="img/sprite.svg#ico-ruble"></use>
                         </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a></div><a class="catalog-items__btn" href="#">Показать еще</a>
+                  </div></a></div><a class="catalog-items__btn wow" href="#">Показать еще</a>
             </div>
           </section>
           <!-- EXAPMLES-->
           <section class="examples">
             <div class="container">
-              <h2 class="examples__title">Образцы тканей</h2>
-              <h3 class="examples__subtitle">Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"</h3>
-              <div class="examples__wrap wow" jsExamplesSlider><a class="examples__item" href="#">
+              <h2 class="examples__title wow">Образцы тканей</h2>
+              <h3 class="examples__subtitle wow" data-animation-delay=".2s">Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"</h3>
+              <div class="examples__wrap" jsExamplesSlider>
+                <!-- item--><a class="examples__item wow" href="#">
                   <div class="examples__photo"><img src="img/example1.png">
                     <button class="examples__btn" type="button">
                       <!--img(src="img/bag.svg")-->
@@ -1034,7 +1030,8 @@
                     <svg class="ico ico-ruble">
                       <use xlink:href="img/sprite.svg#ico-ruble"></use>
                     </svg>
-                  </div></a><a class="examples__item" href="#">
+                  </div></a>
+                <!-- item--><a class="examples__item wow" href="#">
                   <div class="examples__photo"><img src="img/example2.png">
                     <button class="examples__btn" type="button">
                       <!--img(src="img/bag.svg")-->
@@ -1049,7 +1046,8 @@
                     <svg class="ico ico-ruble">
                       <use xlink:href="img/sprite.svg#ico-ruble"></use>
                     </svg>
-                  </div></a><a class="examples__item" href="#">
+                  </div></a>
+                <!-- item--><a class="examples__item wow" href="#">
                   <div class="examples__photo"><img src="img/example3.png">
                     <button class="examples__btn" type="button">
                       <!--img(src="img/bag.svg")-->
@@ -1064,7 +1062,8 @@
                     <svg class="ico ico-ruble">
                       <use xlink:href="img/sprite.svg#ico-ruble"></use>
                     </svg>
-                  </div></a><a class="examples__item" href="#">
+                  </div></a>
+                <!-- item--><a class="examples__item wow" href="#">
                   <div class="examples__photo"><img src="img/example4.png">
                     <button class="examples__btn" type="button">
                       <!--img(src="img/bag.svg")-->
@@ -1079,32 +1078,33 @@
                     <svg class="ico ico-ruble">
                       <use xlink:href="img/sprite.svg#ico-ruble"></use>
                     </svg>
-                  </div></a></div>
+                  </div></a>
+              </div>
             </div>
           </section>
           <!-- CATALOG INFO-->
           <div class="catalog-info">
             <div class="container">
-              <div class="catalog-info__wrap wow">
-                <div class="catalog-info__descr">
+              <div class="catalog-info__wrap">
+                <div class="catalog-info__descr wow" data-animation-class="wowFadeLeft">
                   <h2 class="catalog-info__title">Шелк: виды, свойства, уход за тканью </h2>
                   <p class="catalog-info__text">Шёлк – это натуральная ткань, которая не относится к растительному или животному происхождению. Её получают из кокона гусеницы шелкопряда. Но также бывают искусственные и синтетические виды шёлковых полотен. Все они отличаются уникальным блеском, гладкостью и прочностью.</p>
                 </div>
-                <div class="catalog-info__photo"><img src="img/catalog-info.jpg"></div>
+                <div class="catalog-info__photo wow" data-animation-class="wowFadeRight"><img src="img/catalog-info.jpg"></div>
               </div>
             </div>
           </div>
           <!-- NEWSLETTER-->
-          <section class="newsletter wow">
+          <section class="newsletter">
             <div class="container">
               <div class="newsletter__wrap">
-                <div class="newsletter__info">
+                <div class="newsletter__info wow" data-animation-class="wowFadeLeft">
                   <h2 class="newsletter__title">Подпишись на рассылку </h2>
                   <h3 class="newsletter__subtitle">и всегда будь в курсе наших новостей!</h3>
                 </div>
-                <form class="newsletter__form" action="#">
+                <form class="newsletter__form wow" action="#" data-animation-class="wowFadeRight">
                   <div class="newsletter__form-wrap">
-                    <input class="newsletter__input" type="email" placeholder="Ваш email">
+                    <input class="newsletter__input" type="text" placeholder="Ваш email">
                     <button class="newsletter__btn" type="submit">Подписаться !</button>
                     <div class="newsletter__error">Неверный формат e-mail</div>
                   </div>

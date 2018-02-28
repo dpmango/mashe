@@ -26,42 +26,8 @@ block content
     // ADVANTAGES
     section.advantages
       .container
-        .advantages__wrap
-          .advantages__item.wow
-            h3.advantages__title Мин.отрез 0,5 метра
-              //- +icon('ico-scissors')
-              img(src="img/scissors.svg")
-            p.advantages__descr Идеально для рукоделия или на пробу
-              //+icon('ico-')
-              img(src="img/wave-pink.svg")
-          .advantages__item.wow(data-animation-delay=".1s")
-            h3.advantages__title Высокое качество
-              +icon('ico-medal')
-              //img(src="img/medal.svg")
-            p.advantages__descr Работаем напрямую с производителями тканей
-              //+icon('ico-')
-              img(src="img/wave-pink.svg")
-          .advantages__item.wow(data-animation-delay=".2s")
-            h3.advantages__title Удобная доставка
-              +icon('ico-truck')
-              //img(src="img/truck.svg")
-            p.advantages__descr Курьер, самовывоз, почта – от 130 руб.
-              //+icon('ico-')
-              img(src="img/wave-pink.svg")
-          .advantages__item.wow(data-animation-delay=".3s")
-            h3.advantages__title Безопасная оплата
-              +icon('ico-card')
-              //img(src="img/card.svg")
-            p.advantages__descr Онлайн-чек сразу после оплаты по e-mail или в sms
-              //+icon('ico-')
-              img(src="img/wave-pink.svg")
-          .advantages__item.wow(data-animation-delay=".4s")
-            h3.advantages__title Оптовые цены от 10 м
-              +icon('ico-action')
-              //img(src="img/action.svg")
-            p.advantages__descr Выгодное предложение при заказе оптом
-              //+icon('ico-')
-              img(src="img/wave-pink.svg")
+        // ADVANTAGES      
+        include components/_advantages
               
     .container
       h2.masterpiece__title.wow
@@ -268,57 +234,8 @@ block content
             p Акция действует до 23 февраля 2017
             span.inside-link Правила участия в акции
             
-  // EXAPMLES
-  section.examples
-    .container
-      h2.examples__title.wow Образцы тканей
-      h3.examples__subtitle.wow(data-animation-delay=".2s") Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap(jsExamplesSlider)
-        // item
-        a.examples__item(href="#").wow
-          .examples__photo
-            img(src="img/example1.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
-          .examples__size 10x10 см
-          .examples__price 600
-            +icon('ico-ruble')
-        // item
-        a.examples__item(href="#").wow
-          .examples__photo
-            img(src="img/example2.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов цветных шелковых тканей
-          .examples__size 10x10 см
-          .examples__price 500
-            +icon('ico-ruble')
-        // item
-        a.examples__item(href="#").wow
-          .examples__photo
-            img(src="img/example3.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов по применению
-          .examples__size 10x10 см
-          .examples__price 400
-            +icon('ico-ruble')
-        // item
-        a.examples__item(href="#").wow
-          .examples__photo
-            img(src="img/example4.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Образцы волокон и нитей
-          .examples__size 10x10 см
-          .examples__price 300
-            +icon('ico-ruble')
-          
+  include components/_examples
+  
   // CLIENTS
   section.clients
     .container
@@ -372,18 +289,4 @@ block content
     a(href="#")
       img.photos__item(src="img/image2.jpg")
     
-  // NEWSLETTER
-  section.newsletter
-    .container
-      .newsletter__wrap
-        .newsletter__info.wow(data-animation-class="wowFadeLeft")
-          h2.newsletter__title Подпишись на рассылку 
-          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
-        form.newsletter__form(action="#").wow(data-animation-class="wowFadeRight")
-          .newsletter__form-wrap
-            input.newsletter__input(type="text" placeholder="Ваш email")
-            button.newsletter__btn(type="submit") Подписаться !
-            .newsletter__error Неверный формат e-mail
-          p.newsletter__text Нажимая на кнопку, вы даете согласие на
-            a.newsletter__link(href="#") обработку своих персональных данных
-        
+  include components/_newsletter

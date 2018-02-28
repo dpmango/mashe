@@ -164,10 +164,10 @@
           </div>
         </nav>
         <!-- header-->
-        <div class="header__topbar">
+        <div class="header__topbar wow" data-animation-class="wowFadeDown">
           <div class="container"><span>Бесплатная доставка первого заказа для новых клиентов!</span></div>
         </div>
-        <div class="header__mainbar"><a class="header__menu" href="#" jsOpenMenu>
+        <div class="header__mainbar wow" data-animation-class="wowFadeDown"><a class="header__menu" href="#" jsOpenMenu>
             <!--img(src="img/menu.svg")-->
             <svg class="ico ico-menu">
               <use xlink:href="img/sprite.svg#ico-menu"></use>
@@ -290,8 +290,8 @@
           <section class="cart">
             <div class="container">
               <h1 class="cart__title wow">Корзина</h1>
-              <form class="cart__wrapper wow" action="#">
-                <div class="cart__main">
+              <form class="cart__wrapper" action="#">
+                <div class="cart__main wow">
                   <div class="cart__header">
                     <div class="cart__header-name">Наименование</div>
                     <div class="cart__header-price">Цена за метр</div>
@@ -299,7 +299,7 @@
                     <div class="cart__header-sum">Сумма</div>
                   </div>
                   <!-- DESKTOP ITEMS  -->
-                  <div class="cart__item">
+                  <div class="cart__item wow">
                     <div class="cart__img"><img src="img/popular2.jpg"></div>
                     <div class="cart__info"><span class="cart__articul">Арт. АС14016PP</span>
                       <h2 class="cart__item-title">Атлас стрейч «Magic White»</h2>
@@ -332,7 +332,8 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="cart__item">
+                  <!-- next-->
+                  <div class="cart__item wow">
                     <div class="cart__img"><img src="img/popular3.jpg"></div>
                     <div class="cart__info"><span class="cart__articul">Арт. АС14016PP</span>
                       <h2 class="cart__item-title">Хаботай 10 мм</h2>
@@ -440,7 +441,7 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="cart__promo"><a class="cart__back" href="#">Вернуться в каталог
+                  <div class="cart__promo wow"><a class="cart__back" href="#">Вернуться в каталог
                       <svg class="ico ico-arrow-button">
                         <use xlink:href="img/sprite.svg#ico-arrow-button"></use>
                       </svg></a>
@@ -455,7 +456,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cart__all">
+                <div class="cart__all wow">
                   <h3 class="cart__all-title">2 товара в корзине на сумму</h3>
                   <div class="cart__all-sum">15 250
                     <del>1 760
@@ -485,9 +486,9 @@
                     </svg></a>
                 </div>
               </form>
-              <!-- RECENT ITEMS-->
+              <!-- RECENT ITEMS      -->
               <div class="recent-items">
-                <h2 class="recent-items__title"> <span>Вы недавно просматривали</span></h2>
+                <h2 class="recent-items__title wow"><span>Вы недавно просматривали</span></h2>
                 <div class="recent-items__wrap wow" jsRecentSlider><a class="recent-items__item" href="#">
                     <div class="recent-items__img"><img src="img/popular1.jpg"></div>
                     <h3 class="recent-items__subtitle">Эксельсиор узбекский</h3><span class="recent-items__price">1 260
@@ -530,14 +531,14 @@
           <!-- NEWSLETTER-->
           <section class="newsletter">
             <div class="container">
-              <div class="newsletter__wrap wow">
-                <div class="newsletter__info">
+              <div class="newsletter__wrap">
+                <div class="newsletter__info wow" data-animation-class="wowFadeLeft">
                   <h2 class="newsletter__title">Подпишись на рассылку </h2>
                   <h3 class="newsletter__subtitle">и всегда будь в курсе наших новостей!</h3>
                 </div>
-                <form class="newsletter__form" action="#">
+                <form class="newsletter__form wow" action="#" data-animation-class="wowFadeRight">
                   <div class="newsletter__form-wrap">
-                    <input class="newsletter__input" type="email" placeholder="Ваш email">
+                    <input class="newsletter__input" type="text" placeholder="Ваш email">
                     <button class="newsletter__btn" type="submit">Подписаться !</button>
                     <div class="newsletter__error">Неверный формат e-mail</div>
                   </div>

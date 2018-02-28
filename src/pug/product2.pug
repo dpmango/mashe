@@ -7,20 +7,20 @@ block content
   // PRODUCT SECTION
   section.product-section
     .container
-      .product-section__top-wrap.wow
+      .product-section__top-wrap
         a.product-section__link.product-section__link--prev(href="#") Предыдущий товар
           +icon('ico-arrow-left')
-        .breadcrumbs
+        .breadcrumbs.wow
           a.breadcrumbs__link(href="#") Главная
           a.breadcrumbs__link(href="#") Каталог
           a.breadcrumbs__link.is-active(href="#") Атлас АС14016PP
         a.product-section__link.product-section__link--next(href="#") Следующий товар
           +icon('ico-arrow-right')
-      h1.product-section__title.wow Атлас стрейч «Magic White»
-      span.product-section__articul.wow Арт. АС14016PP
+      h1.product-section__title.wow(data-animation-delay=".1s") Атлас стрейч «Magic White»
+      span.product-section__articul.wow(data-animation-delay=".2s") Арт. АС14016PP
       .product-section__wrap
-        .product-section__topbar.wow
-          .product-section__slider
+        .product-section__topbar
+          .product-section__slider.wow
             .product-section__badge.product-section__badge--wait Ожидаем поступления
             .product-section__share
                 +icon('ico-share')
@@ -47,7 +47,7 @@ block content
                 span Видео
                   +icon('ico-play')
             
-          .product-section__info
+          .product-section__info.wow(data-animation-delay=".1s")
             .product-section__price-wrap
               .product-section__first-price 1 350
                 +icon('ico-ruble')
@@ -149,7 +149,7 @@ block content
   // RECENT ITEMS
   .recent-items
     .container
-      h2.recent-items__title 
+      h2.recent-items__title.wow
         span Вы недавно просматривали
       .recent-items__wrap.wow(jsRecentSlider)
         a.recent-items__item(href="#")
@@ -198,7 +198,7 @@ block content
   //YOU LIKE
   section.you-like
     .container
-      h2.you-like__title Вам понравится
+      h2.you-like__title.wow Вам понравится
       .recent-items__wrap.wow
         a.recent-items__item(href="#")
           .recent-items__img
@@ -231,17 +231,5 @@ block content
           span.recent-items__price 1 260
             +icon('ico-ruble')
               
-  // NEWSLETTER
-  section.newsletter.wow
-    .container
-      .newsletter__wrap
-        .newsletter__info
-          h2.newsletter__title Подпишись на рассылку 
-          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
-        form.newsletter__form(action="#")
-          .newsletter__form-wrap
-            input.newsletter__input(type="email" placeholder="Ваш email")
-            button.newsletter__btn(type="submit") Подписаться !
-            .newsletter__error Неверный формат e-mail
-          p.newsletter__text Нажимая на кнопку, вы даете согласие на
-            a.newsletter__link(href="#") обработку своих персональных данных
+  include components/_newsletter
+  

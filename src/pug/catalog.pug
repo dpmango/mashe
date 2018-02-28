@@ -12,41 +12,41 @@ block content
       .breadcrumbs.wow
         a.breadcrumbs__link(href="#") Главная
         a.breadcrumbs__link.is-active(href="#") Каталог
-      h1.catalog-promo__title.wow Каталог
-      form.catalog-promo__sorting.wow(action="#")
-        p.catalog-promo__text Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
+      h1.catalog-promo__title.wow(data-animation-delay=".1s") Каталог
+      form.catalog-promo__sorting(action="#")
+        p.catalog-promo__text.wow(data-animation-delay=".2s") Шелк – это роскошная и деликатная ткань, которой восхищались целые столетия. Скользкая и гладкая текстура этой ткани создает некоторые трудности при шитье, что требует особого внимания. Тем не менее, существуют простые техники, которые упростят работу с шелком на любом этапе шитья дома.
         .catalog-promo__mainsort
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item1")
-          label.catalog-promo__main-item(for="catalog-item1")
+          label.catalog-promo__main-item(for="catalog-item1" data-animation-delay=".25s").wow
             h2.catalog-promo__subtitle Для росписи
               +icon('ico-for-paint')
               //img(src="img/for-paint.svg")
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item2")
-          label.catalog-promo__main-item(for="catalog-item2")
+          label.catalog-promo__main-item(for="catalog-item2" data-animation-delay=".3s").wow
             h2.catalog-promo__subtitle Для цветов
               +icon('ico-for-flower')
               //img(src="img/for-flower.svg")
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item3")
-          label.catalog-promo__main-item(for="catalog-item3")
+          label.catalog-promo__main-item(for="catalog-item3" data-animation-delay=".35s").wow
             h2.catalog-promo__subtitle Для валяния
               +icon('ico-for-felt')
               //img(src="img/for-felt.svg")
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item4")
-          label.catalog-promo__main-item(for="catalog-item4")
+          label.catalog-promo__main-item(for="catalog-item4" data-animation-delay=".4s").wow
             h2.catalog-promo__subtitle Для шитья
               +icon('ico-for-stitch')
               //img(src="img/for-stitch.svg")
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item5")
-          label.catalog-promo__main-item(for="catalog-item5")
+          label.catalog-promo__main-item(for="catalog-item5" data-animation-delay=".45s").wow
             h2.catalog-promo__subtitle Для вышивки
               +icon('ico-for-embr')
               //img(src="img/for-embr.svg")
           input.catalog-promo__input(type="radio" name="catalog-items" id="catalog-item6")
-          label.catalog-promo__main-item(for="catalog-item6")
+          label.catalog-promo__main-item(for="catalog-item6" data-animation-delay=".5s").wow
             h2.catalog-promo__subtitle Для декора
               +icon('ico-for-decor')
               //img(src="img/for-decor.svg")
-        .catalog-promo__secondsort
+        .catalog-promo__secondsort.wow(data-animation-delay=".6s")
           input(type="radio" name="second-items" id="second-item1")
           label.catalog-promo__second-item(for="second-item1") Все товары / 50
           input(type="radio" name="second-items" id="second-item2" jsTissue)
@@ -301,42 +301,7 @@ block content
               span цена за 1м – при покупке от 10м
             
       // ADVANTAGES      
-      .advantages__wrap.wow
-        .advantages__item
-          h3.advantages__title Мин.отрез 0,5 метра
-            +icon('ico-scissors')
-            //img(src="img/scissors.svg")
-          p.advantages__descr Идеально для рукоделия или на пробу
-            //+icon('ico-')
-            img(src="img/wave-pink.svg")
-        .advantages__item
-          h3.advantages__title Высокое качество
-            +icon('ico-medal')
-            //img(src="img/medal.svg")
-          p.advantages__descr Работаем напрямую с производителями тканей
-            //+icon('ico-')
-            img(src="img/wave-pink.svg")
-        .advantages__item
-          h3.advantages__title Удобная доставка
-            +icon('ico-truck')
-            //img(src="img/truck.svg")
-          p.advantages__descr Курьер, самовывоз, почта – от 130 руб.
-            //+icon('ico-')
-            img(src="img/wave-pink.svg")
-        .advantages__item
-          h3.advantages__title Безопасная оплата
-            +icon('ico-card')
-            //img(src="img/card.svg")
-          p.advantages__descr Онлайн-чек сразу после оплаты по e-mail или в sms
-            //+icon('ico-')
-            img(src="img/wave-pink.svg")
-        .advantages__item
-          h3.advantages__title Оптовые цены от 10 м
-            +icon('ico-action')
-            //img(src="img/action.svg")
-          p.advantages__descr Выгодное предложение при заказе оптом
-            //+icon('ico-')
-            img(src="img/wave-pink.svg")
+      include components/_advantages
             
       .popular__wrap.wow
         a.catalog-item(href="#")
@@ -558,78 +523,19 @@ block content
                 +icon('ico-ruble')
               span цена за 1м – при покупке от 10м
             
-      a.catalog-items__btn(href="#") Показать еще
+      a.catalog-items__btn(href="#").wow Показать еще
             
             
-  // EXAPMLES
-  section.examples
-    .container
-      h2.examples__title Образцы тканей
-      h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap.wow(jsExamplesSlider)
-        a.examples__item(href="#")
-          .examples__photo
-            img(src="img/example1.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов тканей
-          .examples__size 10x10 см
-          .examples__price 600
-            +icon('ico-ruble')
-        a.examples__item(href="#")
-          .examples__photo
-            img(src="img/example2.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов цветных шелковых тканей
-          .examples__size 10x10 см
-          .examples__price 500
-            +icon('ico-ruble')
-        a.examples__item(href="#")
-          .examples__photo
-            img(src="img/example3.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Каталог образцов по применению
-          .examples__size 10x10 см
-          .examples__price 400
-            +icon('ico-ruble')
-        a.examples__item(href="#")
-          .examples__photo
-            img(src="img/example4.png")
-            button.examples__btn(type="button")
-              //img(src="img/bag.svg")
-              +icon('ico-bag')
-          h3.examples__item-title Образцы волокон и нитей
-          .examples__size 10x10 см
-          .examples__price 300
-            +icon('ico-ruble')
-          
-          
+  include components/_examples
+              
   // CATALOG INFO
   .catalog-info
     .container
-      .catalog-info__wrap.wow
-        .catalog-info__descr
+      .catalog-info__wrap
+        .catalog-info__descr.wow(data-animation-class="wowFadeLeft")
           h2.catalog-info__title Шелк: виды, свойства, уход за тканью 
           p.catalog-info__text Шёлк – это натуральная ткань, которая не относится к растительному или животному происхождению. Её получают из кокона гусеницы шелкопряда. Но также бывают искусственные и синтетические виды шёлковых полотен. Все они отличаются уникальным блеском, гладкостью и прочностью.
-        .catalog-info__photo
+        .catalog-info__photo.wow(data-animation-class="wowFadeRight")
           img(src="img/catalog-info.jpg")
           
-  // NEWSLETTER
-  section.newsletter.wow
-    .container
-      .newsletter__wrap
-        .newsletter__info
-          h2.newsletter__title Подпишись на рассылку 
-          h3.newsletter__subtitle и всегда будь в курсе наших новостей!
-        form.newsletter__form(action="#")
-          .newsletter__form-wrap
-            input.newsletter__input(type="email" placeholder="Ваш email")
-            button.newsletter__btn(type="submit") Подписаться !
-            .newsletter__error Неверный формат e-mail
-          p.newsletter__text Нажимая на кнопку, вы даете согласие на
-            a.newsletter__link(href="#") обработку своих персональных данных
+  include components/_newsletter
