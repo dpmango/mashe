@@ -9,11 +9,11 @@ gulp.task('default', function (callback) {
   )
 })
 
-gulp.task('build', function (callback) {
-  runSequence('build:production',
-    callback
-  )
-})
+//gulp.task('build', function (callback) {
+//  runSequence('build:production',
+//    callback
+//  )
+//})
 
 // Watch
 gulp.task('watch',

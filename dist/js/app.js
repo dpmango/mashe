@@ -673,16 +673,33 @@ $(document).ready(function(){
     
     
     // PRODUCT SLIDER
-    $('[jsProductSlider]').slick({
-      arrows: true,
+//    $('[jsProductSlider]').slick({
+//      arrows: true,
+//      dots: false,
+//      touchThreshold: 15,
+//      easing: 'swing',
+//      accessibility: false,
+//      swipeToSlide: true,
+//      slidesToShow: 1,
+//      slidesToScroll: 1,
+//      infinite: false
+//    });
+//    
+//    $('[jsProductBtn]').on('click', function(e){
+//      e.preventDefault();
+//      $('[jsProductBtn]').removeClass('is-active');
+//      $(this).addClass('is-active');
+//      var dataIndex = $(this).attr('data-index');
+//      $('[jsProductSlider]').slick('slickGoTo', dataIndex)
+//    });
+    var myOwl = $('[jsProductSlider]');
+    myOwl.owlCarousel({
+      loop: false,
+      nav: true,
       dots: false,
-      touchThreshold: 15,
-      easing: 'swing',
-      accessibility: false,
-      swipeToSlide: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false
+      autoplay: false,
+      smartSpeed: 900,
+      items: 1
     });
     
     $('[jsProductBtn]').on('click', function(e){
@@ -690,10 +707,10 @@ $(document).ready(function(){
       $('[jsProductBtn]').removeClass('is-active');
       $(this).addClass('is-active');
       var dataIndex = $(this).attr('data-index');
-      $('[jsProductSlider]').slick('slickGoTo', dataIndex)
+      myOwl.trigger('to.owl.carousel', dataIndex);
     });
-    
-    
+      
+      
     
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');

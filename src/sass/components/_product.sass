@@ -75,7 +75,7 @@
       cursor: url(../../img/search-black.svg), zoom-in
   &__badge
     position: absolute
-    z-index: 2
+    z-index: 5
     top: 45px
     left: 0
     font-size: 12px
@@ -105,7 +105,7 @@
     position: absolute !important
     left: 25px
     bottom: 140px
-    z-index: 2
+    z-index: 5
     font-size: 26px
     transition: all $transitionSpeed $ease
     color: $btnBgColor
@@ -149,16 +149,25 @@
     img
       display: block
       max-width: 100%
+    .owl-nav
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 5
+    .owl-prev,
+    .owl-next,
     .slick-prev,
     .slick-next
       width: 40px
       height: 40px
       border: 0
       background-color: transparent
-      transform: translateY(-50%)
       background-size: 20px 25px
       &:hover
         opacity: 0.8
+    .owl-prev
+      margin-left: 10px
+    .owl-next
+      margin-right: 10px
   &__photos
     display: flex
     flex-direction: row
