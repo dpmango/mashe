@@ -3739,34 +3739,48 @@ html.mfp-helper body {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  .wow {
+    visibility: visible;
+  }
+}
+
 .wowFadeUp, .wowFadeDown, .wowFadeLeft, .wowFadeRight {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  .wowFadeUp, .wowFadeDown, .wowFadeLeft, .wowFadeRight {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 .wowFadeUp {
-  -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0, 60px, 0);
+          transform: translate3d(0, 60px, 0);
 }
 
 .wowFadeDown {
-  -webkit-transform: translate3d(0, -20px, 0);
-          transform: translate3d(0, -20px, 0);
+  -webkit-transform: translate3d(0, -60px, 0);
+          transform: translate3d(0, -60px, 0);
 }
 
 .wowFadeLeft {
-  -webkit-transform: translate3d(-20px, 0px, 0);
-          transform: translate3d(-20px, 0px, 0);
+  -webkit-transform: translate3d(-30px, 0px, 0);
+          transform: translate3d(-30px, 0px, 0);
 }
 
 .wowFadeRight {
-  -webkit-transform: translate3d(20px, 0px, 0);
-          transform: translate3d(20px, 0px, 0);
+  -webkit-transform: translate3d(30px, 0px, 0);
+          transform: translate3d(30px, 0px, 0);
 }
 
 @-webkit-keyframes wowFade {
@@ -6004,7 +6018,7 @@ html.mfp-helper body {
   letter-spacing: 0.05em;
 }
 
-.advantages__title svg {
+.advantages__title svg, .advantages__title img {
   font-size: 70px;
   color: #FFDAD4;
   position: absolute;
@@ -6015,20 +6029,20 @@ html.mfp-helper body {
           transform: translateX(-50%);
 }
 
-.advantages__title svg.ico-scissors {
+.advantages__title svg.ico-scissors, .advantages__title img.ico-scissors {
   font-size: 80px;
 }
 
-.advantages__title svg.ico-medal {
+.advantages__title svg.ico-medal, .advantages__title img.ico-medal {
   font-size: 90px;
 }
 
-.advantages__title svg.ico-truck {
+.advantages__title svg.ico-truck, .advantages__title img.ico-truck {
   font-size: 65px;
   top: 10px;
 }
 
-.advantages__title svg.ico-card {
+.advantages__title svg.ico-card, .advantages__title img.ico-card {
   top: 10px;
 }
 
@@ -6194,7 +6208,7 @@ html.mfp-helper body {
   color: #353535;
 }
 
-.masterpiece__item:nth-child(4) .masterpiece__item-amount svg, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg {
+.masterpiece__item:nth-child(4) .masterpiece__item-amount svg, .masterpiece__item:nth-child(4) .masterpiece__item-amount img, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg, .masterpiece__item:nth-child(6) .masterpiece__item-amount img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-42%);
@@ -6205,11 +6219,11 @@ html.mfp-helper body {
   color: #fff;
 }
 
-.masterpiece__item:nth-child(4) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg:first-child {
+.masterpiece__item:nth-child(4) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(4) .masterpiece__item-amount img:first-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount img:first-child {
   left: -70%;
 }
 
-.masterpiece__item:nth-child(4) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg:last-child {
+.masterpiece__item:nth-child(4) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(4) .masterpiece__item-amount img:last-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(6) .masterpiece__item-amount img:last-child {
   right: -70%;
 }
 
@@ -6217,7 +6231,7 @@ html.mfp-helper body {
   background-color: #FFBFB5;
 }
 
-.masterpiece__item:nth-child(2) .masterpiece__item-title svg {
+.masterpiece__item:nth-child(2) .masterpiece__item-title svg, .masterpiece__item:nth-child(2) .masterpiece__item-title img {
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6232,7 +6246,7 @@ html.mfp-helper body {
   color: #9E9E9E;
 }
 
-.masterpiece__item:nth-child(2) .masterpiece__item-amount svg {
+.masterpiece__item:nth-child(2) .masterpiece__item-amount svg, .masterpiece__item:nth-child(2) .masterpiece__item-amount img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-42%);
@@ -6243,11 +6257,11 @@ html.mfp-helper body {
   color: #A4AEB2;
 }
 
-.masterpiece__item:nth-child(2) .masterpiece__item-amount svg:first-child {
+.masterpiece__item:nth-child(2) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(2) .masterpiece__item-amount img:first-child {
   left: -70%;
 }
 
-.masterpiece__item:nth-child(2) .masterpiece__item-amount svg:last-child {
+.masterpiece__item:nth-child(2) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(2) .masterpiece__item-amount img:last-child {
   right: -70%;
 }
 
@@ -6283,7 +6297,7 @@ html.mfp-helper body {
   font-family: "FuturaPTBook";
 }
 
-.masterpiece__item:nth-child(1) .masterpiece__item-amount svg, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg {
+.masterpiece__item:nth-child(1) .masterpiece__item-amount svg, .masterpiece__item:nth-child(1) .masterpiece__item-amount img, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg, .masterpiece__item:nth-child(3) .masterpiece__item-amount img, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg, .masterpiece__item:nth-child(5) .masterpiece__item-amount img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-42%);
@@ -6294,11 +6308,11 @@ html.mfp-helper body {
   color: #ffdad5;
 }
 
-.masterpiece__item:nth-child(1) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg:first-child {
+.masterpiece__item:nth-child(1) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(1) .masterpiece__item-amount img:first-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount img:first-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg:first-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount img:first-child {
   left: -70%;
 }
 
-.masterpiece__item:nth-child(1) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg:last-child {
+.masterpiece__item:nth-child(1) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(1) .masterpiece__item-amount img:last-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(3) .masterpiece__item-amount img:last-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount svg:last-child, .masterpiece__item:nth-child(5) .masterpiece__item-amount img:last-child {
   right: -70%;
 }
 
@@ -6326,7 +6340,7 @@ html.mfp-helper body {
   opacity: 1;
 }
 
-.masterpiece__item:hover .masterpiece__item-title svg, .masterpiece__item:focus .masterpiece__item-title svg {
+.masterpiece__item:hover .masterpiece__item-title svg, .masterpiece__item:hover .masterpiece__item-title img, .masterpiece__item:focus .masterpiece__item-title svg, .masterpiece__item:focus .masterpiece__item-title img {
   -webkit-transform: translateX(-50%) scale(1.05);
       -ms-transform: translateX(-50%) scale(1.05);
           transform: translateX(-50%) scale(1.05);
@@ -6412,13 +6426,13 @@ html.mfp-helper body {
           box-shadow: 0 0 0 2px #171717;
 }
 
-.masterpiece__btn:hover svg, .masterpiece__btn:focus svg {
+.masterpiece__btn:hover svg, .masterpiece__btn:hover img, .masterpiece__btn:focus svg, .masterpiece__btn:focus img {
   -webkit-transform: translate(7px, -50%);
       -ms-transform: translate(7px, -50%);
           transform: translate(7px, -50%);
 }
 
-.masterpiece__btn svg {
+.masterpiece__btn svg, .masterpiece__btn img {
   font-size: 12px;
   position: absolute;
   -webkit-transition: all 0.25s ease-in-out;
@@ -6865,7 +6879,7 @@ html.mfp-helper body {
   border-color: transparent;
 }
 
-.catalog-item__special svg {
+.catalog-item__special svg, .catalog-item__special img {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
@@ -7714,7 +7728,7 @@ html.mfp-helper body {
   .masterpiece__btn {
     padding: 16px 54px 16px 34px;
   }
-  .masterpiece__btn svg {
+  .masterpiece__btn svg, .masterpiece__btn img {
     right: 30px;
   }
   .popular {

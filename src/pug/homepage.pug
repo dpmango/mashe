@@ -9,10 +9,10 @@ block content
   section.main-slider(jsMainSlider)
     .main-slider__slide.main-slider__slide--first
       .container
-        span.main-slider__subtitle Натуральный
-        h1.main-slider__title Шелк для декора
-        p.main-slider__descr от 315 рублей, с доставкой по России от 2 дней
-        a.main-slider__btn(href="#") Перейти в каталог
+        span.main-slider__subtitle.wow Натуральный
+        h1.main-slider__title.wow(data-animation-delay=".1s") Шелк для декора
+        p.main-slider__descr.wow(data-animation-delay=".3s") от 315 рублей, с доставкой по России от 2 дней
+        a.main-slider__btn(href="#" data-animation-delay=".6s").wow Перейти в каталог
     .main-slider__slide.main-slider__slide--second
       .container
         span.main-slider__subtitle Белоснежный
@@ -29,33 +29,33 @@ block content
         .advantages__wrap
           .advantages__item.wow
             h3.advantages__title Мин.отрез 0,5 метра
-              +icon('ico-scissors')
-              //img(src="img/scissors.svg")
+              //- +icon('ico-scissors')
+              img(src="img/scissors.svg")
             p.advantages__descr Идеально для рукоделия или на пробу
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item.wow
+          .advantages__item.wow(data-animation-delay=".1s")
             h3.advantages__title Высокое качество
               +icon('ico-medal')
               //img(src="img/medal.svg")
             p.advantages__descr Работаем напрямую с производителями тканей
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item.wow
+          .advantages__item.wow(data-animation-delay=".2s")
             h3.advantages__title Удобная доставка
               +icon('ico-truck')
               //img(src="img/truck.svg")
             p.advantages__descr Курьер, самовывоз, почта – от 130 руб.
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item.wow
+          .advantages__item.wow(data-animation-delay=".3s")
             h3.advantages__title Безопасная оплата
               +icon('ico-card')
               //img(src="img/card.svg")
             p.advantages__descr Онлайн-чек сразу после оплаты по e-mail или в sms
               //+icon('ico-')
               img(src="img/wave-pink.svg")
-          .advantages__item.wow
+          .advantages__item.wow(data-animation-delay=".4s")
             h3.advantages__title Оптовые цены от 10 м
               +icon('ico-action')
               //img(src="img/action.svg")
@@ -64,9 +64,9 @@ block content
               img(src="img/wave-pink.svg")
               
     .container
-      h2.masterpiece__title 
+      h2.masterpiece__title.wow
         span Творите шедевры
-      h3.masterpiece__subtitle Наслаждайтесь результатом
+      h3.masterpiece__subtitle.wow(data-animation-delay=".2s") Наслаждайтесь результатом
       .masterpiece__wrap
         a.masterpiece__item.masterpiece__item--photo.wow(href="#")
           .masterpiece__title-wrap
@@ -76,7 +76,7 @@ block content
               +icon('ico-wave-pink')
             
           p.masterpiece__descr Возможна покраска шелка по pantone и тканипод заказ на выгодныхусловиях
-        a.masterpiece__item.wow(href="#")
+        a.masterpiece__item.wow(href="#" data-animation-delay=".1s")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для росписи
               +icon('ico-for-paint')
@@ -86,7 +86,7 @@ block content
               +icon('ico-wave-pink')
        
           p.masterpiece__descr Натуральный белый шелк, платки и шарфы
-        a.masterpiece__item.masterpiece__item--photo.wow(href="#")
+        a.masterpiece__item.masterpiece__item--photo.wow(href="#" data-animation-delay=".2s")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для декора
             span.masterpiece__item-amount 22 вида
@@ -104,7 +104,7 @@ block content
               +icon('ico-wave-pink')
          
           p.masterpiece__descr Разреженный маргиланские шелка, лен, хлопок
-        a.masterpiece__item.masterpiece__item--photo.wow(href="#")
+        a.masterpiece__item.masterpiece__item--photo.wow(href="#" data-animation-delay=".1s")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для вышивки
             span.masterpiece__item-amount 22 вида
@@ -112,7 +112,7 @@ block content
               +icon('ico-wave-pink')
             
           p.masterpiece__descr Пайетки, бисер и шелковые нити
-        a.masterpiece__item.wow(href="#")
+        a.masterpiece__item.wow(href="#" data-animation-delay=".2s")
           .masterpiece__title-wrap
             h3.masterpiece__item-title Шелк для цветов
               +icon('ico-for-flower')
@@ -122,17 +122,18 @@ block content
               +icon('ico-wave-pink')
          
           p.masterpiece__descr Минимальный отрез от 0,5 метра
-      a.masterpiece__btn(href="#") Перейти в полный каталог
+      a.masterpiece__btn(href="#").wow Перейти в полный каталог
         +icon('ico-arrow-button')
   
   // POPULAR
   section.popular
     .container
-      h2.popular__title 
+      h2.popular__title.wow
         span самые популярные
-      h3.popular__subtitle Первоклассные природные материалы
-      .popular__wrap.wow(jsPopularSlider)
-        a.catalog-item(href="#")
+      h3.popular__subtitle.wow(data-animation-delay=".2s") Первоклассные природные материалы
+      // list
+      .popular__wrap(jsPopularSlider)
+        a.catalog-item(href="#").wow
           .catalog-item__photo
             img(src="img/popular1.jpg")
             .catalog-item__badge.catalog-item__badge--hit Хит продаж
@@ -159,7 +160,8 @@ block content
               span.catalog-item__special-price 1 160 
                 +icon('ico-ruble')
               span цена за 1м – при покупке от 10м
-        a.catalog-item(href="#")
+        // item
+        a.catalog-item.wow(href="#")
           .catalog-item__photo
             img(src="img/popular2.jpg")
             .catalog-item__badge.catalog-item__badge--new Новинка
@@ -186,6 +188,7 @@ block content
               span.catalog-item__special-price 1 160 
                 +icon('ico-ruble')
               span цена за 1м – при покупке от 10м
+        // item
         a.catalog-item(href="#")
           .catalog-item__photo
             img(src="img/popular3.jpg")
@@ -213,7 +216,8 @@ block content
           .catalog-item__special.catalog-item__special--sale
             p Незначительные вкрапления в полотне
             span.inside-link Посмотреть фото дефектов
-        a.catalog-item(href="#")
+        // item
+        a.catalog-item(href="#").wow
           .catalog-item__photo
             img(src="img/popular4.jpg")
             .catalog-item__badge.catalog-item__badge--wait Ожидаем поступления
@@ -237,7 +241,8 @@ block content
               +icon('ico-heart')
           .catalog-item__special.catalog-item__special--wait
             p Сообщить о поступлении на почту
-        a.catalog-item(href="#")
+        // item
+        a.catalog-item(href="#").wow
           .catalog-item__photo
             img(src="img/popular4.jpg")
             .catalog-item__badge.catalog-item__badge--action Акция
@@ -263,15 +268,14 @@ block content
             p Акция действует до 23 февраля 2017
             span.inside-link Правила участия в акции
             
-            
-            
   // EXAPMLES
   section.examples
     .container
-      h2.examples__title Образцы тканей
-      h3.examples__subtitle Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
-      .examples__wrap.wow(jsExamplesSlider)
-        a.examples__item(href="#")
+      h2.examples__title.wow Образцы тканей
+      h3.examples__subtitle.wow(data-animation-delay=".2s") Если вы сомневаетесь в плотности ткани или хотели бы посмотреть на цвет ткани "в живую", то специально для Вас у нас действует специальный сервис - "Заказ образца"
+      .examples__wrap(jsExamplesSlider)
+        // item
+        a.examples__item(href="#").wow
           .examples__photo
             img(src="img/example1.png")
             button.examples__btn(type="button")
@@ -281,7 +285,8 @@ block content
           .examples__size 10x10 см
           .examples__price 600
             +icon('ico-ruble')
-        a.examples__item(href="#")
+        // item
+        a.examples__item(href="#").wow
           .examples__photo
             img(src="img/example2.png")
             button.examples__btn(type="button")
@@ -291,7 +296,8 @@ block content
           .examples__size 10x10 см
           .examples__price 500
             +icon('ico-ruble')
-        a.examples__item(href="#")
+        // item
+        a.examples__item(href="#").wow
           .examples__photo
             img(src="img/example3.png")
             button.examples__btn(type="button")
@@ -301,7 +307,8 @@ block content
           .examples__size 10x10 см
           .examples__price 400
             +icon('ico-ruble')
-        a.examples__item(href="#")
+        // item
+        a.examples__item(href="#").wow
           .examples__photo
             img(src="img/example4.png")
             button.examples__btn(type="button")
@@ -315,36 +322,36 @@ block content
   // CLIENTS
   section.clients
     .container
-      h2.clients__title 
+      h2.clients__title.wow
         span Довольные клиенты
-      h3.clients__subtitle Более 1 500 человек
+      h3.clients__subtitle.wow(data-animation-delay=".2s") Более 1 500 человек
       .clients__wrap(jsClientsSlider)
-        .clients__item
+        .clients__item.wow
           .clients__photo
             img(src="img/client.png")
           blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
           cite.clients__name Оксана Гутка
           span.clients__pos Дизайнер одежды Gutka
-        .clients__item
+        .clients__item.wow
           .clients__photo
             img(src="img/client.png")
           blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
           cite.clients__name Оксана Гутка
           span.clients__pos Дизайнер одежды Gutka
-        .clients__item
+        .clients__item.wow
           .clients__photo
             img(src="img/client.png")
           blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
           cite.clients__name Оксана Гутка
           span.clients__pos Дизайнер одежды Gutka
-        .clients__item
+        .clients__item.wow
           .clients__photo
             img(src="img/client.png")
           blockquote.clients__text В своей работе я очень ценю качество материала с которым работаю, поэтому не прекращаю поиск поставщиков качественных тканей по выгодным ценам. Я очень рада своему знакомству с Марией и сотрудничеству с Mashe, потому как качество, пунктуальность и честность – это про них. Рекомендую!
           cite.clients__name Оксана Гутка
           span.clients__pos Дизайнер одежды Gutka
           
-      a.clients__btn(href="#") + Добавить отзыв
+      a.clients__btn(href="#").wow + Добавить отзыв
   
   // PHOTOS
   section.photos.wow(jsPhotosSlider)
@@ -366,13 +373,13 @@ block content
       img.photos__item(src="img/image2.jpg")
     
   // NEWSLETTER
-  section.newsletter.wow
+  section.newsletter
     .container
       .newsletter__wrap
-        .newsletter__info
+        .newsletter__info.wow(data-animation-class="wowFadeLeft")
           h2.newsletter__title Подпишись на рассылку 
           h3.newsletter__subtitle и всегда будь в курсе наших новостей!
-        form.newsletter__form(action="#")
+        form.newsletter__form(action="#").wow(data-animation-class="wowFadeRight")
           .newsletter__form-wrap
             input.newsletter__input(type="text" placeholder="Ваш email")
             button.newsletter__btn(type="submit") Подписаться !

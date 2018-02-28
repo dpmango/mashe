@@ -1,25 +1,30 @@
 .wow
   visibility: hidden
+  +r($tablet)
+    visibility: visible
 
 .wowFadeUp, .wowFadeDown, .wowFadeLeft, .wowFadeRight
   opacity: 0
   // added with scrollmonitor
   // animation-name: wowFade;
   animation-fill-mode: forwards
-  animation-timing-function: ease-in
-  animation-duration: 0.2s
+  animation-timing-function: ease-in-out
+  animation-duration: 0.5s
+  +r($tablet)
+    opacity: 1
+    transform: translate3d(0, 0, 0)
 
 .wowFadeUp
-  transform: translate3d(0, 20px, 0)
+  transform: translate3d(0, 60px, 0)
 
 .wowFadeDown
-  transform: translate3d(0, -20px, 0)
+  transform: translate3d(0, -60px, 0)
 
 .wowFadeLeft
-  transform: translate3d(-20px, 0px, 0)
+  transform: translate3d(-30px, 0px, 0)
 
 .wowFadeRight
-  transform: translate3d(20px, 0px, 0)
+  transform: translate3d(30px, 0px, 0)
 
 @keyframes wowFade
   to

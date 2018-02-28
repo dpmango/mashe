@@ -67,8 +67,8 @@
     &:hover
       background-color: $btnBgHover
       box-shadow: 0 0 0 2px $btnBgHover
-    
-    
+
+
 // ADVANTAGES SECTION
 .advantages
   margin-top: -122px
@@ -100,7 +100,7 @@
     color: $btnBgColor
     padding-top: 110px
     letter-spacing: 0.05em
-    svg
+    svg, img
       font-size: 70px
       color: $primaryColor
       position: absolute
@@ -129,8 +129,8 @@
       top: 0
       left: 50%
       transform: translateX(-50%)
-    
-    
+
+
 // MASTERPIECE SECTION
 .masterpiece
   //padding-top: 105px
@@ -221,7 +221,7 @@
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
-        svg
+        svg, img
           position: absolute
           top: 50%
           transform: translateY(-42%)
@@ -236,14 +236,14 @@
         background-color: #FFBFB5
     &:nth-child(2)
       .masterpiece__item-title
-        svg
+        svg, img
           transition: all $transitionSpeed $ease
           color: #B1BABE
       .masterpiece__descr
         color: $btnBgColor
       .masterpiece__item-amount
         color: $textColor
-        svg
+        svg, img
           position: absolute
           top: 50%
           transform: translateY(-42%)
@@ -263,7 +263,7 @@
         .masterpiece__item-title
           svg
            color: #fff
-          
+
     &:nth-child(2),
     &:nth-child(4),
     &:nth-child(6)
@@ -281,7 +281,7 @@
       .masterpiece__descr
         font-family: $fontBook
       .masterpiece__item-amount
-        svg
+        svg, img
           position: absolute
           top: 50%
           transform: translateY(-42%)
@@ -309,7 +309,7 @@
           opacity: 1
     &:hover
       .masterpiece__item-title
-        svg
+        svg, img
           transform: translateX(-50%) scale(1.05)
   &__title-wrap
     max-width: 340px
@@ -363,7 +363,7 @@
     max-width: 280px
     position: relative
     z-index: 2
-    
+
   &__btn
     display: inline-block
     padding: 16px 66px 16px 42px
@@ -380,17 +380,17 @@
     &:hover
       background-color: $btnBgHover
       box-shadow: 0 0 0 2px $btnBgHover
-      svg
+      svg, img
         transform: translate(7px, -50%)
-    svg
+    svg, img
       font-size: 12px
       position: absolute
       transition: all $transitionSpeed $ease
       top: 50%
       right: 40px
       transform: translate(0, -50%)
-    
-    
+
+
 // POPULAR SECTION
 .popular
   padding-top: 105px
@@ -507,7 +507,7 @@
       transition: all $transitionSpeed $ease
       transform: translateY(20px)
       font-size: 18px
-      font-family: 
+      font-family:
       line-height: 140%
       margin-bottom: 20px
       color: #707070
@@ -574,7 +574,7 @@
       span
         color: $btnBgColor
         margin-left: 5px
-        
+
   &__wrap
     display: flex
     flex-direction: row
@@ -583,7 +583,7 @@
   &__price
     font-size: 36px
     letter-spacing: -0.05em
-    font-family: 
+    font-family:
     line-height: 80%
     margin-right: auto
     text-align: left
@@ -642,7 +642,7 @@
       border-bottom: 1px solid #fff
       &:hover
         border-color: transparent
-    svg
+    svg, img
       transition: none
       font-size: 11px
     p
@@ -660,8 +660,8 @@
       letter-spacing: -0.05em
       font-size: 18px
       margin-right: 4px
-      
-      
+
+
 // EXAMPLES SECTION
 .examples
   padding-top: 185px
@@ -789,8 +789,8 @@
       background-size: auto 100%
       width: 92px
       height: 8px
-    
-    
+
+
 // CLIENTS SECTION
 .clients
   padding-top: 115px
@@ -916,7 +916,7 @@
     font-size: 18px
     font-family: $fontBook
     color: #B5C3C9
-    
+
   &__btn
     display: inline-block
     padding: 16px 44px
@@ -932,8 +932,8 @@
     &:hover
       background-color: $btnBgHover
       box-shadow: 0 0 0 2px $btnBgHover
-    
-    
+
+
 // PHOTOS SECTION
 .photos
   display: flex !important
@@ -947,7 +947,7 @@
     align-items: stretch !important
   &.owl-loaded
     a
-      width: 100%      
+      width: 100%
       min-height: 100%
   a
     display: block
@@ -963,7 +963,7 @@
     min-height: 100%
     width: 100%
     max-width: 100%
-    
+
 // NEWSLETTER SECTION
 .newsletter
   padding-top: 48px
@@ -1067,14 +1067,14 @@
     transition: all $transitionSpeed $ease
     &:hover
       border-color: $btnBgColor
-    
-    
+
+
 @media(max-width: 1600px)
   .main-slider
     &__slide
       padding-top: 136px
       padding-bottom: 240px
-    
+
 +r($wide)
   .advantages
     padding-bottom: 75px
@@ -1123,7 +1123,7 @@
     padding-bottom: 75px
     &__item
       padding: 0 25px 48px 25px
-      
+
 +r($desktop)
   .main-slider
     .slick-dots,
@@ -1149,7 +1149,7 @@
       margin-bottom: 40px
     &__btn
       padding: 16px 30px
-      
+
   .advantages
     margin-top: -102px
     padding-bottom: 85px
@@ -1163,7 +1163,7 @@
     &__descr
       font-size: 16px
       padding-top: 27px
-      
+
   .masterpiece
     padding-bottom: 95px
     > .container
@@ -1193,9 +1193,9 @@
       margin-bottom: 20px
     &__btn
       padding: 16px 54px 16px 34px
-      svg
+      svg, img
         right: 30px
-      
+
   .popular
     padding-top: 40px
     &__subtitle
@@ -1207,7 +1207,7 @@
       .owl-dots
         width: 100%
         bottom: -50px
-      
+
   .owl-loaded
     .catalog-item
       width: 100%
@@ -1241,14 +1241,14 @@
       margin-bottom: 20px
       &:last-child
         display: block
-      
+
   .clients
     padding-top: 115px
     padding-bottom: 115px
     &__wrap
       width: calc(100% + 60px)
       margin-left: -30px
-      
+
   .newsletter
     overflow: hidden
     &:before
@@ -1313,7 +1313,7 @@
       margin-left: auto
       margin-right: auto
       text-align: center
-      
+
 +r($tablet)
   .main-slider
     &__subtitle
@@ -1329,7 +1329,7 @@
       margin-bottom: 50px
     &__slide
       padding-bottom: 175px
-      
+
   .masterpiece
     &__title
       padding-bottom: 50px
@@ -1350,7 +1350,7 @@
       width: 100%
       margin-left: 0
       margin-right: 0
-      
+
   .popular
     &__title
       padding-bottom: 50px
@@ -1364,7 +1364,7 @@
           left: 50%
           bottom: -30px !important
           transform: translateX(-50%)
-        
+
     .catalog-item
       &:nth-child(3),
       &:nth-child(4),
@@ -1373,7 +1373,7 @@
       &:nth-child(7),
       &:nth-child(8)
         display: none
-      
+
   .examples
     &__title
       width: 100%
@@ -1408,7 +1408,7 @@
       width: 100%
       margin-left: 0
       margin-right: 0
-      
+
   .clients
     padding-top: 65px
     padding-bottom: 85px
@@ -1446,7 +1446,7 @@
         transition: all $transitionSpeed $ease
         &.active
           background-color: $btnBgColor
-      
+
   .newsletter
     &__info
       padding-bottom: 50px

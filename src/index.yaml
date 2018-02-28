@@ -2,14 +2,14 @@ ProjectTitle: Mashe
 
 PageList:
 - file: homepage.html
-  ready: 90
+  ready: 100
 - file: catalog.html
-  ready: 90
+  ready: 100
 - file: cart1.html
-  ready: 80
+  ready: 100
 - file: cart2.html
-  ready: 80
+  ready: 100
 - file: product1.html
-  ready: 80
+  ready: 100
 - file: product2.html
-  ready: 80
+  ready: 100
