@@ -3829,8 +3829,8 @@ html.mfp-helper body {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  -webkit-box-shadow: -1920px 0 15px #9E9E9E;
-          box-shadow: -1920px 0 15px #9E9E9E;
+  -webkit-box-shadow: -1920px 0 15px transparent;
+          box-shadow: -1920px 0 15px transparent;
   -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
   transition: -webkit-box-shadow 0.2s ease-in-out;
   -o-transition: box-shadow 0.2s ease-in-out;
@@ -4061,8 +4061,8 @@ html.mfp-helper body {
   opacity: 0;
   visibility: hidden;
   max-height: 100vh;
-  -webkit-box-shadow: -1920px 0 15px #9E9E9E;
-          box-shadow: -1920px 0 15px #9E9E9E;
+  -webkit-box-shadow: -1920px 0 15px transparent;
+          box-shadow: -1920px 0 15px transparent;
   -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
   transition: -webkit-box-shadow 0.2s ease-in-out;
   -o-transition: box-shadow 0.2s ease-in-out;
@@ -4467,6 +4467,7 @@ html.mfp-helper body {
   padding-top: 40px;
   padding-bottom: 42px;
   position: relative;
+  z-index: 3;
 }
 
 .header__mainbar .container {

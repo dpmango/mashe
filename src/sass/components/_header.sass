@@ -16,7 +16,7 @@
   overflow: hidden
   opacity: 0
   visibility: hidden
-  box-shadow: -1920px 0 15px $textColor
+  box-shadow: -1920px 0 15px transparent
   transition: box-shadow 0.2s $ease
   &.is-active
     opacity: 1
@@ -162,7 +162,7 @@
   opacity: 0
   visibility: hidden
   max-height: 100vh
-  box-shadow: -1920px 0 15px $textColor
+  box-shadow: -1920px 0 15px transparent
   transition: box-shadow 0.2s $ease
   //&:before
     content: ''
@@ -412,6 +412,7 @@
     padding-top: 40px
     padding-bottom: 42px
     position: relative
+    z-index: 3
     .container
       display: flex
       flex-direction: row

@@ -115,7 +115,7 @@ header.header#top
   .header__topbar.wow(data-animation-class="wowFadeDown")
     .container
       span Бесплатная доставка первого заказа для новых клиентов!
-  .header__mainbar.wow(data-animation-class="wowFadeDown")
+  .header__mainbar
     a.header__menu(href="#" jsOpenMenu)
       //img(src="img/menu.svg")
       +icon('ico-menu')
@@ -193,7 +193,7 @@ header.header#top
     a.header__like(href="#")
       //img(src="img/heart.svg")
       +icon('ico-heart')
-    .container
+    .container.wow(data-animation-class="wowFadeDown")
       .header__nav
         a.header__link(href="#") Оплата и доставка
         a.header__link(href="#") Скидки
