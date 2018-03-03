@@ -147,7 +147,7 @@ $(document).ready(function() {
       $('.main-nav__wrapper').removeClass('is-active');
       setTimeout(function() {
         $('.main-nav').removeClass('is-active');
-      }, 500)
+      }, 400)
     })
 
   //SEARCH
@@ -167,7 +167,7 @@ $(document).ready(function() {
       $('.search-panel__hint').removeClass('is-active');
       setTimeout(function() {
         $('.search-panel').removeClass('is-active');
-      }, 500)
+      }, 400)
     })
 
   // search panel
@@ -298,7 +298,7 @@ $(document).ready(function() {
 
   // ZOOM
   $('.product-section__slider-wrap').zoom({
-    on: 'click',
+    on: 'mouseover',
     magnify: 1.2
   });
 
@@ -385,7 +385,7 @@ $(document).ready(function() {
           nav: false
         },
 
-        768: {
+        690: {
           items: 2,
           nav: false
         },
@@ -477,7 +477,7 @@ $(document).ready(function() {
     //_socialsSlickMobile.slick(socialsSlickMobileOptions);
 
     _window.on('resize', debounce(function(e) {
-      if (_window.width() > 767) {
+      if (_window.width() > 690) {
         if (_socialsSlickMobile.hasClass('slick-initialized')) {
           _socialsSlickMobile.slick('unslick');
         }
@@ -590,6 +590,12 @@ $(document).ready(function() {
         maxScrollbarLength: 160
       });
     }
+    if ($('.advantages__scroll-wrap').length > 0) {
+      var ps = new PerfectScrollbar('.advantages__scroll-wrap', {
+        wheelSpeed: 1,
+        maxScrollbarLength: 160
+      });
+    }
   }
 
   ////////////
@@ -633,7 +639,7 @@ $(document).ready(function() {
       var elWatcher = scrollMonitor.create($(el));
 
       var delay;
-      if (_window.width() < 768) {
+      if (_window.width() < 992) {
         delay = 0
       } else {
         delay = $(el).data('animation-delay');
@@ -643,7 +649,7 @@ $(document).ready(function() {
 
       var animationName = $(el).data('animation-name') || "wowFade"
 
-      if (_window.width() > 768) {
+      if (_window.width() > 991) {
         elWatcher.enterViewport(throttle(function() {
           $(el).addClass(animationClass);
           $(el).css({

@@ -16,8 +16,8 @@
   overflow: hidden
   opacity: 0
   visibility: hidden
-  box-shadow: -1920px 0 15px transparent
-  transition: box-shadow 0.2s $ease
+  box-shadow: 0 -100px 15px transparent
+  transition: box-shadow 0.5s $ease
   &.is-active
     opacity: 1
     visibility: visible
@@ -162,8 +162,8 @@
   opacity: 0
   visibility: hidden
   max-height: 100vh
-  box-shadow: -1920px 0 15px transparent
-  transition: box-shadow 0.2s $ease
+  box-shadow: 0 -100px 15px transparent
+  transition: box-shadow 0.5s $ease
   //&:before
     content: ''
     position: absolute
@@ -598,7 +598,8 @@
   right: 90px
   background-color: #fff
   box-shadow: 0 0 20px $textColor
-  padding: 10px 40px 40px 40px
+  padding-top: 10px
+  padding-bottom: 40px
   width: 610px
   transition: all 0.2s $ease
   opacity: 0
@@ -645,7 +646,13 @@
         background-size: 100%
   &__topbar
     max-height: 285px
-    overflow-y: scroll
+    overflow-y: auto
+    overflow-x: hidden !important
+    position: relative
+    padding-left: 40px
+    padding-right: 40px
+    .ps__thumb-y
+      right: 10px
   &__item
     display: flex
     flex-direction: row
@@ -708,6 +715,8 @@
       font-size: 10px
   &__bottombar
     padding-top: 20px
+    padding-left: 40px
+    padding-right: 40px
   &__summ
     display: flex
     flex-direction: row
@@ -824,6 +833,9 @@
     &__cart,
     &__like
       right: 20px
+    &__search,
+    &__like
+      top: 120px
     &__cart
       &-amount
         width: 25px

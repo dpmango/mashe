@@ -492,11 +492,22 @@
       background-size: 100%
     svg
       font-size: 15px
-      
-+r($hd)
+
++r($wide)
   .cart
     &__wrapper
       padding: 35px
+    &__main
+      padding-right: 30px
+      width: calc(100% - 275px)
+    &__all
+      width: 275px
+      padding-left: 25px
+      padding-right: 25px
+      
+@media(max-width: 1250px)
+  .cart
+    &__wrapper
       padding-bottom: 70px
       flex-direction: column
     &__main
@@ -591,6 +602,7 @@
     &__img
       img
         height: 100%
+        object-fit: cover
     &__info,
     &__price,
     &__amount,
