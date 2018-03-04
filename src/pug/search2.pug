@@ -1,0 +1,23 @@
+---
+title: Search || MASHE
+bodyClass: search-page
+---
+extends shared/_layout
+block content
+
+
+  // SEARCH SECTION
+  section.search-section
+    .container
+      form.search-section__form.wow(action="#")
+        .search-section__label Вы искали:
+        .search-section__wrap
+          input.search-section__input.search-panel__input(type="text" placeholder="Поиск" value="Вечернее платье")
+          button.search-section__btn.search-panel__btn(type="button")
+            +icon('ico-search-arrow')
+      .search-section__nothing.wow
+        p.search-section__nothing-text К сожалению, по вашему запросу ничего не найдено. Попробуйте ввести другой запрос или вернитесь в каталог.
+          +icon('ico-not-found-face')
+        a.search-section__nothing-link(href="#") Перейти в каталог
+        
+  include components/_newsletter

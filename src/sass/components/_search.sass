@@ -1,0 +1,138 @@
+.search-section
+  padding-top: 95px
+  padding-bottom: 70px
+  background-image: linear-gradient(to bottom, $bgColor, #fff)
+  &__form
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    max-width: 1030px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 55px
+  &__label
+    font-size: 30px
+    font-family: $fontBook
+    color: transparentize($btnBgColor, 0.7)
+    margin-right: 25px
+  &__wrap
+    width: calc(100% - 160px)
+    position: relative
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-image: url(../../img/search-black.svg)
+      width: 42px
+      height: 33px
+      background-size: 100%
+  &__input
+    background-color: transparent
+  &__finded
+    font-size: 24px
+    text-align: center
+    color: #B6B6B6
+    margin-bottom: 35px
+  .popular__wrap
+    margin-bottom: 30px
+  &__more
+  &__nothing-link
+    display: block
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    text-transform: uppercase
+    max-width: 240px
+    border-radius: 30px
+    color: #fff
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    padding: 15px 20px
+    font-size: 13px
+    font-family: $fontHeavy
+    margin-top: 45px
+    &:hover
+      background-color: $btnBgHover
+      box-shadow: 0 0 0 2px $btnBgHover
+  &__nothing
+    padding-top: 30px
+    margin-bottom: 70px
+    &-text
+      margin: 0
+      position: relative
+      max-width: 640px
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      font-size: 24px
+      font-family: $fontBook
+      line-height: 120%
+      padding-top: 145px
+      color: #B6B6B6
+      svg
+        position: absolute
+        top: 0
+        left: 50% 
+        transform: translateX(-50%)
+        width: 115px
+        height: 115px
+    
++r($wide)
+  .search-section
+    .catalog-item
+      width: calc(33.33% - 14px)
+      &:last-child
+        display: none
+    
++r($desktop)
+  .search-section
+    padding-top: 60px
+    padding-bottom: 60px
+    &__form
+      margin-bottom: 40px
+    &__wrap
+      &:before
+        width: 38px
+        height: 29px
+    &__input
+      font-size: 40px
+      padding-left: 50px
+    .catalog-item
+      width: calc(50% - 14px)
+      &:nth-last-child(2)
+        display: none
+    &__nothing
+      margin-bottom: 30px
+      padding-top: 0
+      
++r($tablet)
+  .search-section
+    .popular__wrap
+      flex-direction: column
+      margin-bottom: 0
+    .catalog-item
+      width: calc(100%)
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 20px
+    &__nothing
+      margin-bottom: 0
+      
++r($mobile)
+  .search-section
+    &__form
+      flex-direction: column
+      justify-content: center
+    &__label
+      width: 100%
+      text-align: center
+      margin-right: 0
+      margin-bottom: 10px
+    &__wrap
+      width: 100%
