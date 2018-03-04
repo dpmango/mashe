@@ -21,3 +21,5 @@ PageList:
   ready: 90
 - file: favorites2.html
   ready: 90
+- file: 404.html
+  ready: 90

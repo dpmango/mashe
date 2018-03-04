@@ -11492,4 +11492,122 @@ html.mfp-helper body {
   }
 }
 
+.nf-section {
+  background-color: #F9F9F9;
+  background-image: none;
+}
+
+.nf-section__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-family: "FuturaPTBold";
+  letter-spacing: 0.05em;
+  color: #353535;
+}
+
+.nf-section__wrap {
+  background-color: #fff;
+  padding: 20px 20px 100px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nf-section__subtitle {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "FuturaPTDemiC";
+  color: #353535;
+  padding-top: 340px;
+}
+
+.nf-section__subtitle:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  max-width: 570px;
+  height: 320px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/nf.png);
+}
+
+.nf-section__text {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-family: "FuturaPTBook";
+  color: #707070;
+  max-width: 745px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nf-section__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 240px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  background-color: #353535;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  padding: 15px 20px;
+  font-size: 13px;
+  font-family: "FuturaPTHeavy";
+  margin-top: 45px;
+}
+
+.nf-section__btn:hover {
+  background-color: #171717;
+  -webkit-box-shadow: 0 0 0 2px #171717;
+          box-shadow: 0 0 0 2px #171717;
+}
+
+@media only screen and (max-width: 992px) {
+  .nf-section__title {
+    font-size: 36px;
+  }
+  .nf-section__wrap {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nf-section__subtitle {
+    font-size: 28px;
+    padding-top: 250px;
+  }
+  .nf-section__subtitle:before {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .nf-section__subtitle {
+    padding-top: 170px;
+  }
+  .nf-section__subtitle:before {
+    height: 170px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

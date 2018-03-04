@@ -1,0 +1,88 @@
+.nf-section
+  background-color: $bgColor
+  background-image: none
+  &__title
+    text-align: center
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 20px
+    font-size: 48px
+    font-family: $fontBold
+    letter-spacing: 0.05em
+    color: $btnBgColor
+  &__wrap
+    background-color: #fff
+    padding: 20px 20px 100px 20px
+    margin-top: 40px
+    margin-bottom: 40px
+  &__subtitle
+    text-align: center
+    font-size: 36px
+    margin-top: 0
+    position: relative
+    margin-bottom: 20px
+    font-family: $fontDemi
+    color: $btnBgColor
+    padding-top: 340px
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      max-width: 570px
+      height: 320px
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      background-image: url(../img/nf.png)
+  &__text
+    margin-top: 0
+    margin-bottom: 35px
+    font-size: 20px
+    font-family: $fontBook
+    color: #707070
+    max-width: 745px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  &__btn
+    display: block
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    text-transform: uppercase
+    max-width: 240px
+    border-radius: 30px
+    color: #fff
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    padding: 15px 20px
+    font-size: 13px
+    font-family: $fontHeavy
+    margin-top: 45px
+    &:hover
+      background-color: $btnBgHover
+      box-shadow: 0 0 0 2px $btnBgHover
+    
++r($desktop)
+  .nf-section
+    &__title
+      font-size: 36px
+    &__wrap
+      margin-bottom: 0
+      padding-bottom: 50px
+      
++r($tablet)
+  .nf-section
+    &__subtitle
+      font-size: 28px
+      padding-top: 250px
+      &:before
+        height: 250px
++r($mobile)
+  .nf-section
+    &__subtitle
+      padding-top: 170px
+      &:before
+        height: 170px
