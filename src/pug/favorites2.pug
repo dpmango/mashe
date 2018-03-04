@@ -1,0 +1,19 @@
+---
+title: Favorites || MASHE
+bodyClass: favorites-page
+---
+extends shared/_layout
+block content
+
+
+  // FAVORITES SECTION
+  section.favorites-section.search-section
+    .container
+      h1.favorites-section__title.wow Избранное
+      .favorites-section__wrap
+        h2.favorites-section__subtitle.wow Нет сохраненных товаров
+          +icon('ico-heart')
+        p.favorites-section__text.wow Хотите сохранить понравившиеся товары? Просто нажмите на значок в виде сердца на товаре, после чего этот товар появится здесь.
+        a.favorites-section__btn.wow(href="#") Перейти в каталог
+        
+  include components/_newsletter

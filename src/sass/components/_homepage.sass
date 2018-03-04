@@ -620,6 +620,7 @@
       font-size: 10px
   &__tobag,
   &__like
+    position: relative
     display: flex
     justify-content: center
     align-items: center
@@ -639,9 +640,58 @@
   &__like
     background-color: $primaryColor
     margin-left: 8px
+    &:before
+      content: '/'
+      position: absolute
+      font-family: $fontBook
+      top: 50%
+      left: 50%
+      font-size: 36px
+      transition: all $transitionSpeed $ease
+      transform: translate(-50%, -50%)
+      visibility: hidden
+      opacity: 0
+    &.is-active
+      background-color: $primaryHover
+      &:hover
+        &:before
+          visibility: visible
+          opacity: 1
+        .catalog-item__tooltip
+          visibility: visible
+          opacity: 1
+          transform: translate(-50%, 0)
     &:hover
       background-color: $primaryHover
       box-shadow: 0 0 0 2px $primaryHover
+  &__tooltip
+    position: absolute
+    z-index: 3
+    top: -60px
+    left: 50%
+    transform: translate(-50%, 10px)
+    transition: all $transitionSpeed $ease
+    background-color: $btnBgColor
+    color: #fff
+    font-size: 16px
+    font-family: $fontBook
+    width: 220px
+    height: 50px
+    padding: 15px 10px
+    text-align: center
+    visibility: hidden
+    opacity: 0
+    &:after
+      content: ''
+      position: absolute
+      bottom: 4px
+      left: 50%
+      transform: translate(-50%, 10px)
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 5px 0 5px;
+      border-color: $btnBgColor transparent transparent transparent;
   &__special
     background-color: #F5F5F5
     padding: 11px 27px 13px 27px
@@ -1235,6 +1285,11 @@
     width: calc(25% - 18px);
     margin-left: 9px;
     margin-right: 9px;
+    &__tooltip
+      width: 180px
+      padding: 12px 10px
+      height: 44px
+      top: -55px
     &__photo
       min-height: 30px
       max-height: 330px

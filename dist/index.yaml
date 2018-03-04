@@ -14,6 +14,10 @@ PageList:
 - file: product2.html
   ready: 100
 - file: search1.html
-  ready: 100
+  ready: 90
 - file: search2.html
-  ready: 100
+  ready: 90
+- file: favorites1.html
+  ready: 90
+- file: favorites2.html
+  ready: 90

@@ -295,6 +295,17 @@ $(document).ready(function() {
     $('.product-section__tab-item').removeClass('is-active');
     $('.product-section__tab-item#' + dataId).addClass('is-active');
   });
+  
+  
+  // FAVORITES
+  $('.catalog-item__like').on('click', function(e){
+    e.preventDefault();
+    if ($(this).hasClass('is-active')) {
+      $(this).removeClass('is-active');
+    } else {
+      $(this).addClass('is-active');
+    }
+  });
 
 
   //////////

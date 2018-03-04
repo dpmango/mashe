@@ -1,0 +1,85 @@
+.favorites-section
+  background-color: $bgColor
+  background-image: none
+  &__title
+    text-align: center
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 20px
+    font-size: 48px
+    font-family: $fontBold
+    letter-spacing: 0.05em
+    color: $btnBgColor
+  &__amount
+    font-size: 24px
+    text-align: center
+    color: #B6B6B6
+    margin-bottom: 35px
+  &__wrap
+    background-color: #fff
+    padding: 80px 20px 100px 20px
+    margin-top: 40px
+    margin-bottom: 40px
+  &__subtitle
+    text-align: center
+    font-size: 36px
+    margin-top: 0
+    position: relative
+    margin-bottom: 20px
+    font-family: $fontDemi
+    color: $btnBgColor
+    padding-top: 110px
+    svg
+      position: absolute
+      width: 90px
+      height: 80px
+      top: 0
+      left: 50%
+      color: $primaryColor
+      transform: translateX(-50%)
+  &__text
+    margin-top: 0
+    margin-bottom: 35px
+    font-size: 20px
+    font-family: $fontBook
+    color: #707070
+    max-width: 745px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  &__btn
+    display: block
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    text-transform: uppercase
+    max-width: 240px
+    border-radius: 30px
+    color: #fff
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    padding: 15px 20px
+    font-size: 13px
+    font-family: $fontHeavy
+    margin-top: 45px
+    &:hover
+      background-color: $btnBgHover
+      box-shadow: 0 0 0 2px $btnBgHover
+    
+    
++r($desktop)
+  .favorites-section
+    &__title
+      font-size: 40px
+    &__wrap
+      padding-top: 30px
+      padding-bottom: 30px
+      margin-bottom: 0
+    &__subtitle
+      font-size: 28px
+      padding-top: 80px
+      svg
+        width: 70px
+        height: 60px
+    &__text
+      font-size: 18px
