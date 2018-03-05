@@ -1,0 +1,48 @@
+---
+title: Contacts || MASHE
+bodyClass: contacts-page
+---
+extends shared/_layout
+block content
+  
+  
+  // CONTACTS
+  section.contacts-section
+    .container
+      .breadcrumbs.wow
+        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link(href="#") Информация
+        a.breadcrumbs__link.is-active(href="#") Контакты
+      h1.contacts-section__title.wow(data-animation-delay=".1s") Контакты
+      .contacts-section__container
+        .contacts-section__wrap
+          .contacts-section__info.wow
+            a.contacts-section__tel(href="tel:88005059543") 
+              span 8 800 505-95-43
+                +icon('ico-tel')
+            span.contacts-section__time по будням с 10 до 18
+            a.contacts-section__mail(href="mailto:silk@mashe-shop.ru") 
+              span silk@mashe-shop.ru
+                +icon('ico-envelope')
+              +icon('ico-wave')
+              +icon('ico-wave')
+            .contacts-section__socials
+              a.contacts-section__soc-link(href="#")
+                +icon('ico-fb')
+              a.contacts-section__soc-link(href="#")
+                +icon('ico-vk')
+              a.contacts-section__soc-link(href="#")
+                +icon('ico-inst')
+            p.contacts-section__text Будьте в курсе новостей, следите за нами в социальных сетях
+          .contacts-section__write.wow(data-animation-delay=".1s")
+            h2.contacts-section__subtitle Написать нам
+              +icon('ico-wave')
+            form.contacts-section__form(action="#")
+              input.contacts-section__input(type="text" placeholder="Ваше имя")
+              input.contacts-section__input(type="text" placeholder="Контактный номер")
+              textarea.contacts-section__textarea(placeholder="Текст вашего сообщения")
+              button.contacts-section__btn(type="submit") Отправить
+        .contacts-section__map#contacts-map.wow
+        
+  include components/_newsletter
+        

@@ -1,0 +1,29 @@
+<svg width="62" height="62" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2.1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-27995 10701)">
+<g id="Group 2.1">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(27995 -10701)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(27995 -10701)" fill="#FFDAD4"/>
+</g>
+</g>
+<g id="Group">
+<g id="Line 2 (Stroke)">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 0.707107 0.707107 -0.707107 28016.3 -10677.9)" fill="#FFDAD4"/>
+</g>
+<g id="Line 2 (Stroke)">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 0.707107 0.707107 0.707107 28036.2 -10679.3)" fill="#FFDAD4"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 62 31C 62 48.1208 48.1208 62 31 62C 13.8792 62 0 48.1208 0 31C 0 13.8792 13.8792 0 31 0C 48.1208 0 62 13.8792 62 31Z"/>
+<path id="path1_stroke_2x" d="M 60 31C 60 47.0163 47.0163 60 31 60L 31 64C 49.2254 64 64 49.2254 64 31L 60 31ZM 31 60C 14.9837 60 2 47.0163 2 31L -2 31C -2 49.2254 12.7746 64 31 64L 31 60ZM 2 31C 2 14.9837 14.9837 2 31 2L 31 -2C 12.7746 -2 -2 12.7746 -2 31L 2 31ZM 31 2C 47.0163 2 60 14.9837 60 31L 64 31C 64 12.7746 49.2254 -2 31 -2L 31 2Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 28.2796 1.99967L 0 1.99967L 0 0L 28.2796 0L 28.2796 1.99967Z"/>
+</defs>
+</svg>

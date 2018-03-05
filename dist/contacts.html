@@ -3,7 +3,7 @@
   <head>
     <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
     <meta charset="utf-8">
-    <title>Search || MASHE</title>
+    <title>Contacts || MASHE</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -14,7 +14,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body class="search-page">
+  <body class="contacts-page">
     <!-- place where pjax bindings happen's-->
     <div id="barba-wrapper">
       <!-- HEADER :: START-->
@@ -295,303 +295,54 @@
       <!-- what should be changed with every pjax-->
       <div class="page">
         <div class="page__content">
-          <!-- SEARCH SECTION-->
-          <section class="search-section">
+          <!-- CONTACTS-->
+          <section class="contacts-section">
             <div class="container">
-              <form class="search-section__form wow" action="#">
-                <div class="search-section__label">Вы искали:</div>
-                <div class="search-section__wrap">
-                  <input class="search-section__input search-panel__input" type="text" placeholder="Поиск" value="Атлас">
-                  <button class="search-section__btn search-panel__btn" type="button">
-                    <svg class="ico ico-search-arrow">
-                      <use xlink:href="img/sprite.svg#ico-search-arrow"></use>
-                    </svg>
-                  </button>
+              <div class="breadcrumbs wow"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Информация</a><a class="breadcrumbs__link is-active" href="#">Контакты</a></div>
+              <h1 class="contacts-section__title wow" data-animation-delay=".1s">Контакты</h1>
+              <div class="contacts-section__container">
+                <div class="contacts-section__wrap">
+                  <div class="contacts-section__info wow"><a class="contacts-section__tel" href="tel:88005059543"> <span>8 800 505-95-43
+                        <svg class="ico ico-tel">
+                          <use xlink:href="img/sprite.svg#ico-tel"></use>
+                        </svg></span></a><span class="contacts-section__time">по будням с 10 до 18</span><a class="contacts-section__mail" href="mailto:silk@mashe-shop.ru"> <span>silk@mashe-shop.ru
+                        <svg class="ico ico-envelope">
+                          <use xlink:href="img/sprite.svg#ico-envelope"></use>
+                        </svg></span>
+                      <svg class="ico ico-wave">
+                        <use xlink:href="img/sprite.svg#ico-wave"></use>
+                      </svg>
+                      <svg class="ico ico-wave">
+                        <use xlink:href="img/sprite.svg#ico-wave"></use>
+                      </svg></a>
+                    <div class="contacts-section__socials"><a class="contacts-section__soc-link" href="#">
+                        <svg class="ico ico-fb">
+                          <use xlink:href="img/sprite.svg#ico-fb"></use>
+                        </svg></a><a class="contacts-section__soc-link" href="#">
+                        <svg class="ico ico-vk">
+                          <use xlink:href="img/sprite.svg#ico-vk"></use>
+                        </svg></a><a class="contacts-section__soc-link" href="#">
+                        <svg class="ico ico-inst">
+                          <use xlink:href="img/sprite.svg#ico-inst"></use>
+                        </svg></a></div>
+                    <p class="contacts-section__text">Будьте в курсе новостей, следите за нами в социальных сетях</p>
+                  </div>
+                  <div class="contacts-section__write wow" data-animation-delay=".1s">
+                    <h2 class="contacts-section__subtitle">Написать нам
+                      <svg class="ico ico-wave">
+                        <use xlink:href="img/sprite.svg#ico-wave"></use>
+                      </svg>
+                    </h2>
+                    <form class="contacts-section__form" action="#">
+                      <input class="contacts-section__input" type="text" placeholder="Ваше имя">
+                      <input class="contacts-section__input" type="text" placeholder="Контактный номер">
+                      <textarea class="contacts-section__textarea" placeholder="Текст вашего сообщения"></textarea>
+                      <button class="contacts-section__btn" type="submit">Отправить</button>
+                    </form>
+                  </div>
                 </div>
-              </form>
-              <div class="search-section__finded wow">Найдено: 16 товаров</div>
-              <div class="popular__wrap wow"><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular1.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--hit">Хит продаж</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Эксельсиор узбекский</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 260
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular2.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--new">Новинка</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Атлас стрейч «Deep Pink»</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 500
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular1.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--hit">Хит продаж</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Эксельсиор узбекский</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 260
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular2.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--new">Новинка</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Атлас стрейч «Deep Pink»</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 500
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a></div>
-              <div class="popular__wrap wow"><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular1.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--hit">Хит продаж</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Эксельсиор узбекский</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 260
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular2.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--new">Новинка</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Атлас стрейч «Deep Pink»</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 500
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular1.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--hit">Хит продаж</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Эксельсиор узбекский</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 260
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a><a class="catalog-item" href="#">
-                  <div class="catalog-item__photo"><img src="img/popular2.jpg">
-                    <div class="catalog-item__badge catalog-item__badge--new">Новинка</div>
-                    <div class="catalog-item__descr">
-                      <p>Разновидность шифона. Имеет креповую гофрированную текстуру и благородную матовую поверхность. </p>
-                      <p>Ткань не мнется благодаря повышенной крутке нитей. Легкий, искристый, воздушный.</p>
-                    </div>
-                  </div>
-                  <h3 class="catalog-item__title">Атлас стрейч «Deep Pink»</h3>
-                  <div class="catalog-item__info">
-                    <div class="catalog-item__info-item">Ширина:<span>140 см</span></div>
-                    <div class="catalog-item__info-item">Плотность:<span>8 м/м ≈ 34 г/м2</span></div>
-                  </div>
-                  <div class="catalog-item__wrap"><span class="catalog-item__price">1 500
-                      <svg class="ico ico-ruble">
-                        <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                      </svg></span>
-                    <button class="catalog-item__tobag" type="button">
-                      <!--img(src="img/bag.svg")-->
-                      <svg class="ico ico-bag">
-                        <use xlink:href="img/sprite.svg#ico-bag"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog-item__like" type="button">
-                      <!--img(src="img/heart.svg")-->
-                      <svg class="ico ico-heart">
-                        <use xlink:href="img/sprite.svg#ico-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="catalog-item__special">
-                    <p> <span class="catalog-item__special-price">1 160 
-                        <svg class="ico ico-ruble">
-                          <use xlink:href="img/sprite.svg#ico-ruble"></use>
-                        </svg></span><span>цена за 1м – при покупке от 10м</span></p>
-                  </div></a></div><a class="search-section__more" href="#">Показать еще</a>
+                <div class="contacts-section__map wow" id="contacts-map"></div>
+              </div>
             </div>
           </section>
           <!-- NEWSLETTER-->

@@ -190,7 +190,7 @@ header.header#top
           .cart-popup__buttons
             button.cart-popup__tocart(type="button") Перейти в корзину
             button.cart-popup__checkout(type="button") Оформить заказ
-    a.header__like(href="#")
+    a.header__like(href="#fav-popup" js-popup)
       //img(src="img/heart.svg")
       +icon('ico-heart')
     .container.wow(data-animation-class="wowFadeDown")
@@ -210,5 +210,14 @@ header.header#top
         
 a.to-top-btn(href="#top")
   +icon('ico-totop')
+  
+// FAVORITES POPUP
+.fav-popup#fav-popup
+  p.fav-popup__text Пожалуйста, 
+    a.fav-popup__link(href="#") авторизуйтесь 
+    span или 
+    a.fav-popup__link(href="#") зарегистрируйтесь 
+    +icon('ico-wave')
+  p.fav-popup__text Это даст вам возможность откладывать понравившиеся вам товары в избранное
       
 // HEADER :: END

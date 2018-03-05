@@ -590,7 +590,65 @@
       top: -27px
       z-index: 2
       
+// FAVORITES POPUP
+.fav-popup
+  display: none
+  background-color: #fff
+  max-width: 600px
+  width: 100%
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  padding: 125px 60px 40px 60px
+  text-align: center
+  z-index: 3
+  &:before
+    content: ''
+    position: absolute
+    top: 30px
+    left: 50%
+    transform: translateX(-50%)
+    width: 62px
+    height: 62px
+    color: $primaryColor
+    background-repeat: no-repeat
+    background-size: 100%
+    background-image: url(../../img/fav-krest.svg)
+  &__text
+    font-size: 20px
+    font-family: $fontBook
+    position: relative
+    color: #707070
+    margin-top: 0
+    margin-bottom: 30px
+    &:last-of-type
+      margin-bottom: 0
+    &:first-of-type
+      padding-bottom: 25px
+    svg
+      font-size: 10px
+      position: absolute
+      bottom: -8px
+      left: 50%
+      transform: translateX(-50%)
+      color: $primaryColor
+  &__link
+    text-decoration: none
+    font-size: 20px
+    font-family: $fontHeavy
+    color: $primaryHover
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $primaryColor
+.mfp-ready
+  .fav-popup
+    display: block
+  .mfp-close
+    color: transparent
       
+
+// CART POPUP  
 .cart-popup
   position: absolute
   z-index: 5

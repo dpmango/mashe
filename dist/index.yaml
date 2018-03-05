@@ -23,3 +23,5 @@ PageList:
   ready: 90
 - file: 404.html
   ready: 90
+- file: contacts.html
+  ready: 90
