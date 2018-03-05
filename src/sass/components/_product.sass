@@ -273,6 +273,7 @@
   &__amount-btns
     display: flex
     align-items: center
+    width: 100%
     &--mobile
       display: none
   &__tocart
@@ -292,9 +293,20 @@
       right: 30px
       transform: translateY(-50%)
       font-size: 20px
+    &--done
+      display: none
+      width: calc(100% - 55px)
+      padding-left: 55px
+      padding-right: 35px
+      span
+        position: relative
+      svg
+        left: -40px
+        font-size: 14px
     &--envelope
       padding-left: 25px
       padding-right: 55px
+      width: calc(100% - 55px)
       svg
         font-size: 14px
         right: 25px
@@ -662,6 +674,9 @@
       padding-left: 20px
       padding-right: 20px
       width: 56%
+      svg
+        display: none
+    &__tocart--done
       svg
         display: none
     &__badge

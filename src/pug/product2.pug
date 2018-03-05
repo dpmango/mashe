@@ -60,8 +60,11 @@ block content
               h4.product-section__amount-subtitle Минимальный отрез 0,5 метра, далее с шагом 10 см.
               .product-section__amount
                 .product-section__amount-btns
-                  button.product-section__tocart.product-section__tocart--envelope(type="button") Сообщить о поступлении на почту
+                  a.product-section__tocart.product-section__tocart--envelope(href="#" jsSubscr) Сообщить о поступлении на почту
                     +icon('ico-envelope')
+                  button.product-section__tocart.product-section__tocart--done(type="button" jsSubscrDone) 
+                    span Вы подписаны на товар
+                      +icon('ico-check')
                   button.product-section__like(type="button")
                     +icon('ico-heart')
             .product-section__charac-wrap
@@ -77,9 +80,12 @@ block content
               p.product-section__charac-descr Производство:
                 span Китай
         .product-section__amount-btns.product-section__amount-btns--mobile
-          button.product-section__tocart.product-section__tocart--envelope(type="button") 
+          a.product-section__tocart.product-section__tocart--envelope(href="#" jsSubscr) 
             span Сообщить о поступлении на почту
               +icon('ico-envelope')
+          button.product-section__tocart.product-section__tocart--done(type="button" jsSubscrDone) 
+            span Вы подписаны на товар
+              +icon('ico-check')
           button.product-section__like(type="button") 
             span В избранное
               +icon('ico-heart')
