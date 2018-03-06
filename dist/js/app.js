@@ -510,6 +510,15 @@ $(document).ready(function() {
       $('.callback__second').show();
     })
     
+    // recipient
+    $('[jsNotYou]').on('change', function(){
+      if ($(this).is(':checked')) {
+        $('.order-section__recipient').css('display', 'flex')
+      } else {
+        $('.order-section__recipient').css('display', 'none')
+      }
+    })
+    
     
 
     // EXAMPLES SLIDER

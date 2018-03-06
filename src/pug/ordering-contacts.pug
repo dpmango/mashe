@@ -1,0 +1,59 @@
+---
+title: Ordering || MASHE
+bodyClass: ordering-page
+---
+extends shared/_layout
+block content
+  // ORDERING SECTION
+  section.order-section
+    .container
+      h1.order-section__title Оформление заказа
+      .order-section__wrapper
+        .order-section__main
+          .order-section__pages
+            .order-section__page.is-active 1. Контактные данные
+              +icon('ico-arrow-right')
+            .order-section__page 2. Способ доставки
+              +icon('ico-arrow-right')
+            .order-section__page 3. Оплата
+          .order-section__datas
+            h2.order-section__subtitle 1. Контактные данные
+              +icon('ico-contact-data')
+            p.order-section__text Вы можете <a href="#">войти</a> под своим логином или <a href="#">зарегистрироваться</a>
+            p.order-section__text Если у вас нет аккаунта, мы создадим его автоматически в ходе оформления заказа.
+            form.order-section__form(action="#")
+              .order-section__check-wrap
+                input.order-section__checkbox(type="radio" id="fiz-type" name="types" checked)
+                label.order-section__label(for="fiz-type") Физ.лицо
+                input.order-section__checkbox(type="radio" id="ur-type" name="types")
+                label.order-section__label(for="ur-type") Юр.лицо
+                input.order-section__checkbox(type="radio" id="ip-type" name="types")
+                label.order-section__label(for="ip-type") ИП
+              .order-section__fields
+                input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+              input.order-section__checkbox(type="checkbox" id="not-you" jsNotYou)
+              label.order-section__label(for="not-you") Отметьте здесь, если получать заказ будете не вы
+              .order-section__fields.order-section__recipient
+                input.order-section__input.order-section__input--65(type="text" placeholder="ФИО получателя*")
+                input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+          .order-section__btn-wrap
+            button.order-section__btn(type="button" disabled) Продолжить
+              +icon('ico-arrow-button')
+        aside.order-section__aside
+          .order-section__wrap
+            .order-section__amount
+              .order-section__amount-number 2 товара
+              .order-section__amount-summ 14 900
+                +icon('ico-ruble')
+            .order-section__all
+              h3.order-section__all-title сумма заказа
+                +icon('ico-wave')
+              .order-section__all-price 14 900
+                +icon('ico-ruble')
+              .order-section__all-hint без стоимости доставки
+    
+    
+  include components/_newsletter

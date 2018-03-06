@@ -25,3 +25,5 @@ PageList:
   ready: 90
 - file: contacts.html
   ready: 90
+- file: ordering-contacts.html
+  ready: 50

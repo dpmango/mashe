@@ -1,0 +1,258 @@
+.order-section
+  padding-top: 100px
+  background-color: $bgColor
+  padding-bottom: 100px
+  &__title
+    text-align: center
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 40px
+    letter-spacing: 0.05em
+    font-size: 48px
+    font-family: $fontBold
+    color: $btnBgColor
+  &__wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &__main
+    width: 72%
+  &__pages
+    background-color: #fff
+    margin-bottom: 18px
+    padding: 35px 55px
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__page
+    text-transform: uppercase
+    font-size: 16px
+    font-family: $fontDemi
+    color: #B1BABE
+    margin-right: 25px
+    position: relative
+    padding-right: 30px
+    &:last-child
+      margin-right: 0
+      padding-right: 0
+    &.is-active
+      color: $btnBgColor
+    svg
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+  &__datas
+    background-color: #fff
+    padding: 50px 55px
+  &__subtitle
+    margin-top: 0
+    text-transform: uppercase
+    color: $btnBgColor
+    font-size: 24px
+    font-family: $fontBold
+    margin-bottom: 43px
+    position: relative
+    svg
+      font-size: 36px
+      color: $primaryColor
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+  &__text
+    font-size: 20px
+    font-family: $fontBook
+    margin-top: 0
+    margin-bottom: 16px
+    color: #707070
+    a
+      color: $primaryColor
+      font-family: $fontDemi
+      transition: all $transitionSpeed $ease
+      &:hover
+        color: $primaryHover
+  &__check-wrap
+    margin-top: 40px
+    margin-bottom: 55px
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__checkbox
+    display: none
+    &:checked + label:before
+      border-color: $primaryHover
+      background-image: url(../../img/check.svg)
+  &__label
+    font-size: 24px
+    font-family: $fontMedium
+    position: relative
+    padding-left: 40px
+    color: $btnBgColor
+    margin-right: 80px
+    &:hover
+      cursor: pointer
+    &:last-child
+      margin-right: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 50%
+      width: 24px
+      height: 24px
+      border: 2px solid #F1F1F1
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 16px 16px
+  &__fields
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  &__recipient
+    display: none
+    margin-top: 30px
+    input:last-child
+      margin-bottom: 0
+  &__input
+    border: 2px solid #F0F1F2
+    padding: 12px 25px
+    font-size: 18px
+    font-family: $fontBook
+    color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    margin-bottom: 30px
+    &--65
+      width: 65%
+      margin-right: 35px
+    &--35
+      width: calc(35% - 35px)
+    &:focus
+      border-color: $btnBgColor
+  &__btn-wrap
+    background-color: #fff
+    padding: 10px 55px 50px 55px
+  &__btn
+    display: block
+    position: relative
+    text-align: center
+    max-width: 220px
+    width: 100%
+    color: #fff
+    text-transform: uppercase
+    padding: 14px 80px 14px 45px
+    background-color: $btnBgColor
+    transition: all $transitionSpeed $ease
+    font-size: 14px
+    font-family: $fontHeavy
+    border-radius: 30px
+    svg
+      position: absolute
+      top: 50%
+      right: 45px
+      transform: translateY(-50%)
+    &:hover
+      background-color: $btnBgHover
+      box-shadow: 0 0 0 2px $btnBgHover
+    &:disabled
+      background-color: rgb(174,174,174)
+      &:hover
+        box-shadow: none
+        cursor: default
+  &__aside
+    width: calc(28% - 30px)
+    background-color: #fff
+    padding: 55px
+  &__wrap
+    border: 2px solid #F5F5F5
+    position: relative
+    padding: 24px
+    text-align: center
+  &__amount
+    padding-left: 70px
+    position: relative
+    padding-bottom: 20px
+    border-bottom: 2px solid #F5F5F5
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 72px
+      height: 72px
+      background-repeat: no-repeat
+      background-position: 50%
+      background-color: transparentize($primaryColor, 0.86)
+      background-image: url(../../img/bag2.svg)
+    &-number
+      font-size: 20px
+      font-family: $fontDemi
+      color: $btnBgColor
+      margin-bottom: 12px
+    &-summ
+      font-size: 28px
+      letter-spacing: -0.05em
+      font-family: $fontMedium
+      color: #B1BABE
+      svg
+        font-size: 16px
+  &__all
+    &-title
+      font-size: 16px
+      font-family: $fontHeavy
+      text-transform: uppercase
+      position: relative
+      margin-top: 25px
+      margin-bottom: 15px
+      padding-bottom: 25px
+      color: $btnBgColor
+      svg
+        font-size: 7px
+        color: $primaryColor
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    &-price
+      color: $btnBgColor
+      letter-spacing: -0.05em
+      font-size: 42px
+      font-family: $fontMedium
+      svg
+        font-size: 24px
+    &-hint
+      font-size: 18px
+      font-family: $fontBook
+      color: #BDBDBD
+      
++r($hd)
+  .order-section
+    &__aside
+      padding: 35px
+    
++r($wide)
+  .order-section
+    &__pages
+      padding: 25px
+    &__datas
+      padding: 25px
+    &__btn-wrap
+      padding: 10px 25px 35px 25px
+    &__aside
+      padding: 25px
+    &__wrap
+      padding: 18px
+    &__amount
+      padding-left: 0
+      padding-top: 85px
+      &:before
+        top: 0
+        left: 50%
+        transform: translate(-50%, 0)
+    &__all
+      &-price
+        font-size: 38px
+        svg
+          font-size: 20px
