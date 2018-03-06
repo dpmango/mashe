@@ -490,6 +490,27 @@ $(document).ready(function() {
   });
   })
     
+    // PRODUCT PAGE POPUP
+    $('[jsNotifyMe]').on('click', function(){
+      $('.product-popup__first').hide();
+      $('.product-popup__second').show();
+      
+      $('[jsSubscr]').css('display', 'none');
+      $('[jsSubscrDone]').css('display', 'inline-block');
+    })
+    $('[jsClosePopup]').on('click', function(){
+      closeMfp();
+      //$('.product-popup__first').show();
+      //$('.product-popup__second').hide();
+    }) 
+    
+    // CALLBACK POPUP
+    $('[jsSendCallback]').on('click', function(){
+      $('.callback__first').hide();
+      $('.callback__second').show();
+    })
+    
+    
 
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');

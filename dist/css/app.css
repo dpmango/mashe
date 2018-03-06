@@ -4891,12 +4891,25 @@ html.mfp-helper body {
   color: #FFDAD4;
 }
 
-.mfp-ready .fav-popup {
+.mfp-ready .fav-popup,
+.mfp-ready .callback {
   display: block;
 }
 
 .mfp-ready .mfp-close {
   color: transparent;
+}
+
+.callback:before, .callback:after {
+  display: none !important;
+}
+
+.callback .product-popup__input {
+  margin-bottom: 30px;
+}
+
+.callback__second {
+  display: none;
 }
 
 .cart-popup {
@@ -9921,6 +9934,186 @@ html.mfp-helper body {
   z-index: 1 !important;
 }
 
+.mfp-ready .product-popup {
+  display: block;
+}
+
+.product-popup {
+  display: none;
+  background-color: #fff;
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 40px 80px 40px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-popup:before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-image: url(../../img/news-left.svg);
+  left: -20px;
+  top: 30px;
+  width: 90px;
+  height: 100%;
+}
+
+.product-popup:after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50px;
+  width: 80px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../../img/news-right.svg);
+}
+
+.product-popup__second {
+  display: none;
+}
+
+.product-popup__title {
+  position: relative;
+  font-size: 32px;
+  font-family: "FuturaPTBold";
+  text-align: center;
+  text-transform: uppercase;
+  color: #353535;
+  padding-top: 95px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+.product-popup__title:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 62px;
+  height: 62px;
+  color: #FFDAD4;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-image: url(../../img/fav-krest.svg);
+}
+
+.product-popup__title svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 10px;
+  color: #F5F5F5;
+}
+
+.product-popup__text {
+  font-size: 20px;
+  line-height: 110%;
+  margin: 0;
+  font-family: "FuturaPTBook";
+  color: #707070;
+}
+
+.product-popup form {
+  margin-top: 30px;
+}
+
+.product-popup__input, .product-popup__textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid #F0F1F2;
+  padding: 11px 25px;
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  color: #353535;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-popup__input:focus, .product-popup__textarea:focus {
+  border-color: #353535;
+}
+
+.product-popup__textarea {
+  min-height: 100px;
+}
+
+.product-popup__btn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  padding: 17px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 0;
+  font-size: 14px;
+  font-family: "FuturaPTHeavy";
+  letter-spacing: 0.03em;
+  background-color: #353535;
+  color: #fff;
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-popup__btn:hover {
+  background-color: #171717;
+  -webkit-box-shadow: 0 0 0 2px #171717;
+          box-shadow: 0 0 0 2px #171717;
+}
+
+.product-popup__btn--close {
+  padding-left: 40px;
+}
+
+.product-popup__btn--close svg {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.product-popup__link {
+  text-decoration: none;
+  font-family: "FuturaPTDemiC";
+  color: #FFB2A6;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-popup__link:hover {
+  color: #FFDAD4;
+}
+
 .product-section {
   padding-top: 100px;
   background-color: #F9F9F9;
@@ -11120,6 +11313,10 @@ html.mfp-helper body {
   .product-page .recent-items {
     background-image: none;
     background-color: #fff;
+  }
+  .product-popup {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .product-section__articul {
     margin-bottom: 20px;

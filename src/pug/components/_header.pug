@@ -203,7 +203,7 @@ header.header#top
       a.header__logo--mini(href="homepage.html")
         img(src="img/logo.svg")
       .header__nav
-        a.header__link(href="#") Обратный звонок
+        a.header__link(href="#callback" js-popup) Обратный звонок
         a.header__link.header__link--tel(href="tel:88005059543") 8 800 505-95-43
           span по будням с 10 до 18
         a.header__link(href="#") Вход
@@ -219,5 +219,26 @@ a.to-top-btn(href="#top")
     a.fav-popup__link(href="#") зарегистрируйтесь 
     +icon('ico-wave')
   p.fav-popup__text Это даст вам возможность откладывать понравившиеся вам товары в избранное
+  
+// CALLBACK POPUP
+.callback.product-popup#callback
+  .callback__first
+    h2.product-popup__title Обратный звонок
+        +icon('ico-wave')
+    p.product-popup__text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
+    form(action="#")
+      input.product-popup__input(type="text" placeholder="Ваше имя")
+      input.product-popup__input(type="text" placeholder="Контактный номер")
+      textarea.product-popup__textarea(placeholder="Комментарий")
+      button.product-popup__btn(type="button" jsSendCallback) Отправить
+    p.product-popup__text Нажимая кнопку, вы соглашаетесь с 
+      a.product-popup__link(href="#") офертой
+  .callback__second
+    h2.product-popup__title Заявка отправлена
+        +icon('ico-wave')
+    p.product-popup__text Спасибо за вашу заявку. Наши менеджеры свяжутся с вами в ближайшее время
+    button.product-popup__btn.product-popup__btn--close(type="button" jsClosePopup) Закрыть
+        +icon('ico-close')
+    
       
 // HEADER :: END

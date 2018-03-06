@@ -275,7 +275,7 @@
             </svg></a>
           <div class="container wow" data-animation-class="wowFadeDown">
             <div class="header__nav"><a class="header__link" href="#">Оплата и доставка</a><a class="header__link" href="#">Скидки</a><a class="header__link" href="#">Контакты</a></div><a class="header__logo" href="homepage.html"><img src="img/logo-big.svg"></a><a class="header__logo--mini" href="homepage.html"><img src="img/logo.svg"></a>
-            <div class="header__nav"><a class="header__link" href="#">Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#">Вход</a></div>
+            <div class="header__nav"><a class="header__link" href="#callback" js-popup>Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#">Вход</a></div>
           </div>
         </div>
       </header><a class="to-top-btn" href="#top">
@@ -290,6 +290,37 @@
           </svg>
         </p>
         <p class="fav-popup__text">Это даст вам возможность откладывать понравившиеся вам товары в избранное</p>
+      </div>
+      <!-- CALLBACK POPUP-->
+      <div class="callback product-popup" id="callback">
+        <div class="callback__first">
+          <h2 class="product-popup__title">Обратный звонок
+            <svg class="ico ico-wave">
+              <use xlink:href="img/sprite.svg#ico-wave"></use>
+            </svg>
+          </h2>
+          <p class="product-popup__text">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+          <form action="#">
+            <input class="product-popup__input" type="text" placeholder="Ваше имя">
+            <input class="product-popup__input" type="text" placeholder="Контактный номер">
+            <textarea class="product-popup__textarea" placeholder="Комментарий"></textarea>
+            <button class="product-popup__btn" type="button" jsSendCallback>Отправить</button>
+          </form>
+          <p class="product-popup__text">Нажимая кнопку, вы соглашаетесь с <a class="product-popup__link" href="#">офертой</a></p>
+        </div>
+        <div class="callback__second">
+          <h2 class="product-popup__title">Заявка отправлена
+            <svg class="ico ico-wave">
+              <use xlink:href="img/sprite.svg#ico-wave"></use>
+            </svg>
+          </h2>
+          <p class="product-popup__text">Спасибо за вашу заявку. Наши менеджеры свяжутся с вами в ближайшее время</p>
+          <button class="product-popup__btn product-popup__btn--close" type="button" jsClosePopup>Закрыть
+            <svg class="ico ico-close">
+              <use xlink:href="img/sprite.svg#ico-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <!-- HEADER :: END-->
       <!-- what should be changed with every pjax-->

@@ -642,12 +642,21 @@
     &:hover
       color: $primaryColor
 .mfp-ready
-  .fav-popup
+  .fav-popup,
+  .callback
     display: block
   .mfp-close
     color: transparent
       
-
+.callback
+  &:before,
+  &:after
+    display: none !important
+  .product-popup__input
+    margin-bottom: 30px
+  &__second
+    display: none
+    
 // CART POPUP  
 .cart-popup
   position: absolute

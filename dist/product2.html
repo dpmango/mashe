@@ -275,7 +275,7 @@
             </svg></a>
           <div class="container wow" data-animation-class="wowFadeDown">
             <div class="header__nav"><a class="header__link" href="#">Оплата и доставка</a><a class="header__link" href="#">Скидки</a><a class="header__link" href="#">Контакты</a></div><a class="header__logo" href="homepage.html"><img src="img/logo-big.svg"></a><a class="header__logo--mini" href="homepage.html"><img src="img/logo.svg"></a>
-            <div class="header__nav"><a class="header__link" href="#">Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#">Вход</a></div>
+            <div class="header__nav"><a class="header__link" href="#callback" js-popup>Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#">Вход</a></div>
           </div>
         </div>
       </header><a class="to-top-btn" href="#top">
@@ -290,6 +290,37 @@
           </svg>
         </p>
         <p class="fav-popup__text">Это даст вам возможность откладывать понравившиеся вам товары в избранное</p>
+      </div>
+      <!-- CALLBACK POPUP-->
+      <div class="callback product-popup" id="callback">
+        <div class="callback__first">
+          <h2 class="product-popup__title">Обратный звонок
+            <svg class="ico ico-wave">
+              <use xlink:href="img/sprite.svg#ico-wave"></use>
+            </svg>
+          </h2>
+          <p class="product-popup__text">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+          <form action="#">
+            <input class="product-popup__input" type="text" placeholder="Ваше имя">
+            <input class="product-popup__input" type="text" placeholder="Контактный номер">
+            <textarea class="product-popup__textarea" placeholder="Комментарий"></textarea>
+            <button class="product-popup__btn" type="button" jsSendCallback>Отправить</button>
+          </form>
+          <p class="product-popup__text">Нажимая кнопку, вы соглашаетесь с <a class="product-popup__link" href="#">офертой</a></p>
+        </div>
+        <div class="callback__second">
+          <h2 class="product-popup__title">Заявка отправлена
+            <svg class="ico ico-wave">
+              <use xlink:href="img/sprite.svg#ico-wave"></use>
+            </svg>
+          </h2>
+          <p class="product-popup__text">Спасибо за вашу заявку. Наши менеджеры свяжутся с вами в ближайшее время</p>
+          <button class="product-popup__btn product-popup__btn--close" type="button" jsClosePopup>Закрыть
+            <svg class="ico ico-close">
+              <use xlink:href="img/sprite.svg#ico-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <!-- HEADER :: END-->
       <!-- what should be changed with every pjax-->
@@ -341,7 +372,7 @@
                       <h3 class="product-section__amount-title">Количество / м /</h3>
                       <h4 class="product-section__amount-subtitle">Минимальный отрез 0,5 метра, далее с шагом 10 см.</h4>
                       <div class="product-section__amount">
-                        <div class="product-section__amount-btns"><a class="product-section__tocart product-section__tocart--envelope" href="#" jsSubscr>Сообщить о поступлении на почту
+                        <div class="product-section__amount-btns"><a class="product-section__tocart product-section__tocart--envelope" href="#product-popup" jsSubscr js-popup>Сообщить о поступлении на почту
                             <svg class="ico ico-envelope">
                               <use xlink:href="img/sprite.svg#ico-envelope"></use>
                             </svg></a>
@@ -367,7 +398,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-section__amount-btns product-section__amount-btns--mobile"><a class="product-section__tocart product-section__tocart--envelope" href="#" jsSubscr> <span>Сообщить о поступлении на почту
+                <div class="product-section__amount-btns product-section__amount-btns--mobile"><a class="product-section__tocart product-section__tocart--envelope" href="#product-popup" jsSubscr js-popup> <span>Сообщить о поступлении на почту
                       <svg class="ico ico-envelope">
                         <use xlink:href="img/sprite.svg#ico-envelope"></use>
                       </svg></span></a>
@@ -540,6 +571,35 @@
                     </svg></span></a></div>
             </div>
           </section>
+          <!-- PRODUCT POPUP-->
+          <div class="product-popup" id="product-popup">
+            <div class="product-popup__first">
+              <h2 class="product-popup__title">Уведомление о поступлении
+                <svg class="ico ico-wave">
+                  <use xlink:href="img/sprite.svg#ico-wave"></use>
+                </svg>
+              </h2>
+              <p class="product-popup__text">Впишите свой e-mail, чтобы получить письмо, как только товар можно будет заказать</p>
+              <form action="#">
+                <input class="product-popup__input" type="text" placeholder="Ваш email">
+                <button class="product-popup__btn" type="button" jsNotifyMe>Уведомить меня</button>
+              </form>
+              <p class="product-popup__text">Нажимая кнопку, вы соглашаетесь с <a class="product-popup__link" href="#">офертой</a></p>
+            </div>
+            <div class="product-popup__second">
+              <h2 class="product-popup__title">Вы подписаны на товар
+                <svg class="ico ico-wave">
+                  <use xlink:href="img/sprite.svg#ico-wave"></use>
+                </svg>
+              </h2>
+              <p class="product-popup__text">Мы обязательно напишем вам, когда нужный товар появится в наличии</p>
+              <button class="product-popup__btn product-popup__btn--close" type="button" jsClosePopup>Закрыть
+                <svg class="ico ico-close">
+                  <use xlink:href="img/sprite.svg#ico-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <!-- NEWSLETTER-->
           <section class="newsletter">
             <div class="container">
