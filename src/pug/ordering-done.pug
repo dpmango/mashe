@@ -1,0 +1,29 @@
+---
+title: Ordering || MASHE
+bodyClass: ordering-page
+---
+extends shared/_layout
+block content
+  // ORDERING SECTION
+  section.order-section
+    .container
+      h1.order-section__title Заказ успешно оформлен
+      .order-section__done
+        .order-section__done-hint Заказы оформленные в период с 18.04.2018 по 28.04.2018 будут отправлены 29.04.2018. Приносим извенения за доставленные неудобства!
+          +icon('ico-info')
+        h2.order-section__done-title Номер вашего заказа #1708/266
+        p.order-section__text Письмо с информацией о заказе отправлено на ваш адрес электорнной почты <a href="#">yana@flat12.ru</a> 
+        p.order-section__text При необходимости наш менеджер перезвонит вам для уточнения деталей. Отправление заказов проиводится по будням. Заказы принятые до 12:30 по будням, отправляются в день оформления. Остальные на следующий рабочий день. 
+        p.order-section__text Если у вас возникнут вопросы по заказу, можете написать нам на почту <a href="#">info@mashe-shop.ru</a>. Спасибо, что выбрали нас! 
+        .order-section__socials
+          +icon('ico-wave-title')
+          p.order-section__text Будьте в курсе новостей, следите за нами в социальных сетях
+          .order-section__soc-wrap
+            a.order-section__soc-link(href="#")
+              +icon('ico-fb')
+            a.order-section__soc-link(href="#")
+              +icon('ico-vk')
+            a.order-section__soc-link(href="#")
+              +icon('ico-inst')
+        a.order-section__btn(href="#") На главную
+          +icon('ico-arrow-button')

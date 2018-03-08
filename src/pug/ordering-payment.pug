@@ -1,0 +1,77 @@
+---
+title: Ordering || MASHE
+bodyClass: ordering-page payment-page
+---
+extends shared/_layout
+block content
+  // ORDERING SECTION
+  section.order-section
+    .container
+      h1.order-section__title Оформление заказа
+      .order-section__wrapper
+        .order-section__main
+          .order-section__pages
+            .order-section__page.step-done 1. Контактные данные
+              +icon('ico-arrow-right')
+              +icon('ico-check')
+            .order-section__page.step-done 2. Способ доставки
+              +icon('ico-arrow-right')
+              +icon('ico-check')
+            .order-section__page.is-active 3. Оплата
+          .order-section__datas
+            h2.order-section__subtitle 3. Способ оплаты
+              +icon('ico-payment')
+            .order-section__delivery.order-section__payment
+              input.order-section__delivery-check(name="payment-type" type="radio" id="pay-card" checked)
+              label.order-section__delivery-item(for="pay-card")
+                +icon('ico-pay-card')
+                h3.order-section__delivery-title Оплата картой
+                span.order-section__delivery-date комиссия 0%
+              input.order-section__delivery-check(name="payment-type" type="radio" id="pay-cash")
+              label.order-section__delivery-item(for="pay-cash")
+                +icon('ico-pay-nal')
+                h3.order-section__delivery-title Оплата при получении
+                span.order-section__delivery-date комиссия 3%
+              input.order-section__delivery-check(name="payment-type" type="radio" id="pay-bill")
+              label.order-section__delivery-item(for="pay-bill")
+                img(src="../img/pay-bill.svg")
+                h3.order-section__delivery-title Выставить счет
+          .order-section__btn-wrap
+            button.order-section__btn(type="button") Оплатить заказ
+              +icon('ico-arrow-button')
+            p.order-section__text Нажимая кнопку, вы согласаетесь с <a href="#">офертой</a>
+                    
+                    
+        aside.order-section__aside
+          .order-section__wrap
+            
+            .order-section__amount
+              .order-section__amount-number 2 товара
+              .order-section__amount-summ 14 900
+                +icon('ico-ruble')
+                
+            .order-section__aside-gift
+              .order-section__amount-number Каталог образцов
+              .order-section__all-hint подарок
+              
+            .order-section__amount.order-section__aside-deliv
+              .order-section__amount-number Курьерская доставка, IML
+              .order-section__amount-summ 350
+                +icon('ico-ruble')
+            .order-section__amount.order-section__aside-deliv.order-section__aside-pay
+              .order-section__amount-number Наложенный платеж
+              .order-section__amount-summ 457
+                +icon('ico-ruble')
+            .order-section__all
+              h3.order-section__all-title сумма заказа
+                +icon('ico-wave')
+              .order-section__all-price 14 900
+                +icon('ico-ruble')
+              .order-section__all-hint без стоимости доставки
+        .order-section__btn-wrap.order-section__btn-wrap--mobile
+          button.order-section__btn(type="button") Продолжить
+            +icon('ico-arrow-button')
+          p.order-section__text Нажимая кнопку, вы согласаетесь с <a href="#">офертой</a>
+    
+    
+  include components/_newsletter

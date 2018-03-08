@@ -547,6 +547,15 @@ $(document).ready(function() {
       }
     });
     
+    // ORDER PAYMENT
+    $('.order-section__delivery-check').on('change', function(){
+      if ($('#pay-cash').is(':checked')) {
+        $('.order-section__aside-pay').css('display', 'block');
+      } else {
+        $('.order-section__aside-pay').css('display', 'none');
+      }
+    });
+    
     
 
     // EXAMPLES SLIDER

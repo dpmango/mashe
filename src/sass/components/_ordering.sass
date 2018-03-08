@@ -417,9 +417,10 @@
       margin-top: 0
       margin-bottom: 15px
       font-family: $fontMedium
+      font-weight: 400
       color: $btnBgColor
     &-date
-      font-size: 16px
+      font-size: 18px
       font-family: $fontBook
       color: #B1BABE
       display: block
@@ -487,8 +488,118 @@
     flex-direction: row
     align-items: center  
     justify-content: space-between
-  
     
+  // PAYMENT
+  &__payment
+    .order-section
+      &__delivery-item
+        width: calc(50% - 14px)
+        min-height: 155px
+      &__delivery-title
+        margin-bottom: 8px
+      &__delivery-date
+        font-size: 20px
+      &__delivery-item
+        svg,
+        img
+          position: absolute
+          bottom: 20px
+          left: 25px
+          color: #FFDAD4
+          font-size: 30px
+        .ico-pay-nal
+          font-size: 40px
+  &__aside-pay
+    display: none
+    &:before
+      content: '+ 3%'
+      background-image: none
+      display: flex
+      justify-content: center
+      align-items: center
+      color: $primaryColor
+      font-size: 20px
+      font-family: $fontDemi
+    
+  // ORDER DONE
+  &__done
+    background-color: #fff
+    padding: 75px 50px 80px 50px
+    text-align: center
+    &-title
+      margin-top: 0
+      margin-bottom: 40px
+      font-size: 36px
+      font-family: $fontDemi
+      color: $btnBgColor
+    .order-section__text
+      line-height: 150%
+      max-width: 855px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 30px
+    .order-section__btn
+      margin-left: auto
+      margin-right: auto
+  &__done-hint
+    margin-bottom: 55px
+    padding: 25px 20px 25px 110px
+    background-color: $primaryColor
+    color: $btnBgColor
+    font-size: 16px
+    font-family: $fontBook
+    position: relative
+    text-align: left
+    svg
+      font-size: 24px
+      position: absolute
+      top: 50%
+      left: 55px
+      transform: translateY(-50%)
+  &__socials
+    position: relative
+    padding-top: 60px
+    margin-bottom: 45px
+    > svg
+      position: absolute
+      top: 5px
+      left: 50%
+      transform: translateX(-50%)
+      color: #F5F5F5
+  &__soc-wrap
+    margin-top: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__soc-link
+    width: 60px
+    height: 60px
+    margin-left: 8px
+    margin-right: 8px
+    border-radius: 50%
+    border: 2px solid $btnBgColor
+    color: $btnBgColor
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    transition: all $transitionSpeed $ease
+    svg
+      transition: none
+    &:hover
+      background-color: $btnBgHover
+      border-color: $btnBgHover
+      color: #fff
+      box-shadow: 0 0 0 2px $btnBgHover
+    .ico-vk
+      font-size: 16px
+  
+.payment-page
+  .order-section__btn
+    max-width: 250px
+  .order-section__text
+    margin-bottom: 0
+    margin-top: 15px
     
     
 +r($hd)
@@ -562,6 +673,11 @@
         width: 100%
     &__myself-map
       min-height: 450px
+    &__done
+      padding-top: 50px
+      padding-bottom: 60px
+    &__done-title
+      font-size: 32px
         
 +r($tablet)
   .order-section
@@ -604,6 +720,12 @@
       text-align: left
       width: 100%
       margin-top: 5px
+    &__done-hint
+      padding-top: 18px
+      padding-bottom: 18px
+      padding-left: 65px
+      svg
+        left: 20px
       
 +r($mobile)
   .order-section
@@ -671,4 +793,16 @@
         transform: none
     &__myself-map
       min-height: 380px
+    &__payment
+      .order-section
+        &__delivery-item
+          width: 100%
+    &__done
+      padding-top: 30px
+      padding-bottom: 40px
+      padding-left: 20px
+      padding-right: 20px
+      &-title
+        font-size: 30px
+        margin-bottom: 30px
       
