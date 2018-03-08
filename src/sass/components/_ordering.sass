@@ -37,6 +37,19 @@
       padding-right: 0
     &.is-active
       color: $btnBgColor
+    &.step-done
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: -4px
+        top: 0
+        background-color: #fff
+        width: 17px
+        height: 100%
+      .ico-check
+        left: -5px
+        font-size: 12px
     svg
       position: absolute
       top: 50%
@@ -90,6 +103,8 @@
     padding-left: 40px
     color: $btnBgColor
     margin-right: 80px
+    &[for="not-you"]
+      margin-right: 0
     &:hover
       cursor: pointer
     &:last-child
@@ -98,8 +113,7 @@
       content: ''
       position: absolute
       left: 0
-      top: 50%
-      transform: translateY(-50%)
+      top: 0
       border-radius: 50%
       width: 24px
       height: 24px
@@ -107,10 +121,22 @@
       background-repeat: no-repeat
       background-position: 50% 50%
       background-size: 16px 16px
+  &__type
+    display: none
+    &.is-active
+      display: block
   &__fields
     display: flex
     flex-direction: row
     flex-wrap: wrap
+  &__fields-title
+    margin-top: 0
+    margin-bottom: 15px
+    color: $btnBgColor
+    font-size: 24px
+    font-family: $fontMedium
+    display: block
+    width: 100%
   &__recipient
     display: none
     margin-top: 30px
@@ -118,22 +144,30 @@
       margin-bottom: 0
   &__input
     border: 2px solid #F0F1F2
-    padding: 12px 25px
+    padding: 12px 15px 12px 25px
     font-size: 18px
     font-family: $fontBook
     color: $btnBgColor
     transition: all $transitionSpeed $ease
     margin-bottom: 30px
+    width: 100%
     &--65
       width: 65%
       margin-right: 35px
     &--35
       width: calc(35% - 35px)
+    &--25
+      width: 25%
+      margin-right: 25px
+      &:last-child
+        margin-right: 0
     &:focus
       border-color: $btnBgColor
   &__btn-wrap
     background-color: #fff
     padding: 10px 55px 50px 55px
+    &--mobile
+      display: none
   &__btn
     display: block
     position: relative
@@ -171,10 +205,11 @@
     padding: 24px
     text-align: center
   &__amount
-    padding-left: 70px
+    padding-left: 90px
     position: relative
     padding-bottom: 20px
     border-bottom: 2px solid #F5F5F5
+    text-align: left
     &:before
       content: ''
       position: absolute
@@ -198,6 +233,30 @@
       color: #B1BABE
       svg
         font-size: 16px
+  &__aside-gift,
+  &__aside-deliv
+    padding-left: 90px
+    position: relative
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 2px solid #F5F5F5
+    text-align: left
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 72px
+      height: 72px
+      background-repeat: no-repeat
+      background-position: 50%
+      background-color: transparentize($primaryColor, 0.86)
+      background-image: url(../../img/gift.svg)
+  &__aside-deliv
+    &:before
+      background-image: url(../../img/truck.svg)
+      background-size: 52px 35px
   &__all
     &-title
       font-size: 16px
@@ -227,6 +286,211 @@
       font-family: $fontBook
       color: #BDBDBD
       
+  &__gifts
+    margin-top: 25px
+    background-color: #fff
+    padding: 45px 55px 45px 55px
+  &__gifts-wrap
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+    margin-left: -4px
+    margin-right: -4px
+    margin-bottom: 35px
+    margin-top: 35px
+  &__gift-item
+    width: calc(16.66% - 8px)
+    margin-left: 4px
+    margin-right: 4px
+    border: 2px solid #F1F1F1
+    padding: 20px 10px
+    text-align: center
+    transition: all $transitionSpeed $ease
+    &:hover
+      cursor: pointer
+      border-color: $btnBgColor
+      .order-section__gift-title svg
+        color: $btnBgColor
+  &__gift-title
+    text-transform: uppercase
+    margin: 0
+    position: relative
+    font-size: 12px
+    font-family: $fontBold
+    padding-top: 50px
+    letter-spacing: 0.05em
+    svg
+      color: #B1BABE
+      position: absolute
+      font-size: 35px
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+  &__another
+    display: flex
+    flex-direction: row
+    align-items: center
+    &-title
+      width: 16.66%
+      text-align: center
+      text-transform: uppercase
+      color: $btnBgColor
+      margin: 0
+      font-size: 12px
+      font-family: $fontBold
+    input
+      width: 100%
+      max-width: 420px
+      margin-bottom: 0
+      
+      
+  // ORDERING DELIVERY
+  &__city
+    font-size: 20px
+    font-family: $fontBook
+    position: relative
+    padding-left: 33px
+    color: #707070
+    margin-bottom: 35px
+    svg
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      font-size: 22px
+    &-link
+      margin-left: 3px
+      font-family: $fontDemi
+      border-bottom: 2px solid #E8988B
+      color: #E8988B
+      transition: all $transitionSpeed $ease
+      position: relative
+      &:after
+        content: ' ▼'
+        font-size: 11px
+      &:hover
+        border-color: transparent
+  &__delivery
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    flex-wrap: wrap
+    margin-left: -7px
+    margin-right: -7px
+    
+    &-check
+      display: none
+      &:checked + label
+        border-color: $btnBgColor
+        &:before
+          border-color: #E8988B
+          background-image: url(../../img/check.svg)
+    &-item
+      display: flex
+      flex-direction: column
+      width: calc(33.33% - 14px)
+      margin-left: 7px
+      margin-right: 7px
+      border: 2px solid #F1F1F1
+      padding: 20px 25px
+      margin-bottom: 14px
+      transition: all $transitionSpeed $ease
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        bottom: 20px
+        right: 25px
+        border-radius: 50%
+        width: 26px
+        height: 26px 
+        border: 2px solid #f1f1f1
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 16px 16px
+      &:hover
+        cursor: pointer
+        border-color: $btnBgColor
+    &-title
+      font-size: 24px
+      margin-top: 0
+      margin-bottom: 15px
+      font-family: $fontMedium
+      color: $btnBgColor
+    &-date
+      font-size: 16px
+      font-family: $fontBook
+      color: #B1BABE
+      display: block
+      margin-bottom: 45px
+    &-price
+      margin-top: auto
+      font-size: 18px
+      font-family: $fontMedium
+      span
+        font-size: 28px
+        margin-left: 4px
+      svg
+        font-size: 18px
+  &__info-hint
+    padding: 15px 30px 15px 85px
+    background-color: #F9F9F9
+    color: #B1BABE
+    font-size: 16px
+    font-family: $fontBook
+    position: relative
+    margin-top: 35px
+    svg
+      position: absolute
+      top: 50%
+      left: 30px
+      transform: translateY(-50%)
+      font-size: 30px
+  &__address
+    margin-top: 25px
+    padding: 45px 55px
+    background-color: #fff
+    padding-bottom: 0
+  &__input
+    &--15
+      width: 127px
+      margin-left: 17px
+    &--40
+      width: calc(100% - 433px)
+  &__myself
+    display: none
+    padding: 45px 55px
+    padding-bottom: 0
+    margin-top: 25px
+    background-color: #fff
+    h2
+      width: 60%
+      margin-bottom: 0
+    &-amount
+      width: 38%
+      font-size: 20px
+      font-family: $fontBook
+      text-align: right
+      color: #B1BABE
+    &-wrap
+      position: relative
+      padding-bottom: 30px
+    &-map
+      min-height: 520px
+      iframe
+        width: 100%
+        height: 100%
+  &__title-wrap
+    margin-bottom: 43px
+    display: flex
+    flex-direction: row
+    align-items: center  
+    justify-content: space-between
+  
+    
+    
+    
 +r($hd)
   .order-section
     &__aside
@@ -244,15 +508,167 @@
       padding: 25px
     &__wrap
       padding: 18px
-    &__amount
+    &__address
+      padding: 25px
+      padding-bottom: 0
+    &__amount,
+    &__aside-gift,
+    &__aside-deliv
       padding-left: 0
       padding-top: 85px
+      text-align: center
       &:before
         top: 0
         left: 50%
         transform: translate(-50%, 0)
+    &__aside-gift,
+    &__aside-deliv
+      padding-top: 95px
+      &:before
+        top: 20px
     &__all
       &-price
         font-size: 38px
         svg
           font-size: 20px
+    &__gifts
+      padding: 25px
+    &__myself
+      padding: 25px
+      padding-bottom: 0
+      
+@media(max-width: 1180px)
+  .order-section
+    &__delivery
+      &-item
+        width: calc(50% - 14px)
+      
++r($desktop)
+  .order-section
+    padding: 50px 0
+    &__title
+      font-size: 36px
+      margin-bottom: 30px
+    &__wrapper
+      flex-direction: column
+    &__main
+      width: 100%
+    &__aside
+      width: 100%
+    &__btn-wrap
+      display: none
+      &--mobile
+        display: block
+        width: 100%
+    &__myself-map
+      min-height: 450px
+        
++r($tablet)
+  .order-section
+    &__pages
+      flex-wrap: wrap
+      padding: 18px 25px 10px 25px
+    &__page
+      padding-right: 25px
+      margin-right: 15px
+      margin-bottom: 10px
+    &__label
+      font-size: 20px
+      margin-right: 40px
+      &:last-child
+        margin-right: 0
+    &__input
+      &--35
+        width: 65%
+      &--25
+        width: 40%
+      &--40
+        width: 48%
+      &--15
+        width: 48%
+        margin-left: 4%
+        &:nth-child(3)
+          margin-left: 0
+    &__gifts-wrap
+      flex-wrap: wrap
+    &__gift-item
+      width: calc(33.33% - 8px)
+      margin-bottom: 8px
+    &__title-wrap
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 30px
+      h2
+        width: 100%
+    &__myself-amount
+      text-align: left
+      width: 100%
+      margin-top: 5px
+      
++r($mobile)
+  .order-section
+    padding-top: 40px
+    &__title
+      font-size: 32px
+    &__subtitle
+      font-size: 20px
+      padding-right: 50px
+      margin-bottom: 25px
+    &__text
+      font-size: 18px
+    &__check-wrap
+      flex-wrap: wrap
+      margin-top: 35px
+      margin-bottom: 25px
+    &__label
+      margin-bottom: 15px
+      margin-right: 30px
+      padding-left: 32px
+      &:last-child
+        margin-right: 0
+      &:before
+        width: 20px
+        height: 20px
+        background-size: 12px 12px
+    &__input
+      &--65,
+      &--35
+        margin-right: 0
+        width: 100%
+        margin-bottom: 20px
+      &--25
+        width: 100%
+        margin-right: 0
+      &--15,
+      &--40
+        width: 100%
+        margin-left: 0
+    &__gifts-wrap
+      margin-bottom: 25px
+    &__gift-item
+      width: calc(50% - 8px)
+    &__another
+      flex-direction: column
+      align-items: flex-start
+      &-title
+        margin-bottom: 10px
+    &__city
+      font-size: 18px
+      &-link
+        white-space: nowrap
+    &__delivery
+      &-item
+        width: 100%
+      &-title
+        font-size: 20px
+    &__info-hint
+      margin-top: 20px
+      padding-left: 55px
+      svg
+        font-size: 26px
+        left: 15px
+        top: 17px
+        transform: none
+    &__myself-map
+      min-height: 380px
+      

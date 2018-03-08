@@ -1,0 +1,112 @@
+---
+title: Ordering || MASHE
+bodyClass: ordering-page
+---
+extends shared/_layout
+block content
+  // ORDERING SECTION
+  section.order-section
+    .container
+      h1.order-section__title Оформление заказа
+      .order-section__wrapper
+        .order-section__main
+          .order-section__pages
+            .order-section__page.step-done 1. Контактные данные
+              +icon('ico-arrow-right')
+              +icon('ico-check')
+            .order-section__page.is-active 2. Способ доставки
+              +icon('ico-arrow-right')
+            .order-section__page 3. Оплата
+          .order-section__datas
+            h2.order-section__subtitle 2. Способ доставки
+              +icon('ico-truck')
+            .order-section__city Город доставки - 
+              +icon('ico-nav')
+              a.order-section__city-link(href="#") Нижний Новгород
+            .order-section__delivery
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="courier-iml" jsCourier checked)
+              label.order-section__delivery-item(for="courier-iml")
+                h3.order-section__delivery-title Курьерская, IML
+                span.order-section__delivery-date 3-4 рабочих дня
+                .order-section__delivery-price от
+                  span 260 
+                    +icon('ico-ruble')
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="courier-sdek" jsCourier)
+              label.order-section__delivery-item(for="courier-sdek")
+                h3.order-section__delivery-title Курьерская, СДЭК
+                span.order-section__delivery-date 3-4 рабочих дня
+                .order-section__delivery-price от
+                  span 560 
+                    +icon('ico-ruble')
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="punkt-iml" jsMyself)
+              label.order-section__delivery-item(for="punkt-iml")
+                h3.order-section__delivery-title В пункт выдачи, IML
+                span.order-section__delivery-date 3-4 рабочих дня
+                .order-section__delivery-price от
+                  span 360 
+                    +icon('ico-ruble')
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="punkt-sdek" jsMyself)
+              label.order-section__delivery-item(for="punkt-sdek")
+                h3.order-section__delivery-title В пункт выдачи, СДЭК
+                span.order-section__delivery-date 3-4 рабочих дня
+                .order-section__delivery-price от
+                  span 760 
+                    +icon('ico-ruble')
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="ru-post" jsCourier)
+              label.order-section__delivery-item(for="ru-post")
+                h3.order-section__delivery-title Почта России
+                span.order-section__delivery-date 7-14 рабочих дня
+                .order-section__delivery-price от
+                  span 860 
+                    +icon('ico-ruble')
+            .order-section__info-hint Отправление заказов производится по будням. Заказы принятые до 12:30 по будням, отправляются в день оформления. Остальные на следующих рабочий день.
+              +icon('ico-info')
+          .order-section__address
+            h2.order-section__subtitle Адрес доставки
+            .order-section__fields
+              input.order-section__input.order-section__input--40(type="text" placeholder="Улица*")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
+              input.order-section__input(type="text" placeholder="Коментарий к заказу")
+              
+          .order-section__myself
+            .order-section__title-wrap
+              h2.order-section__subtitle Выберите пункт самовывоза
+              .order-section__myself-amount 35 пунктов в вашем городе
+            .order-section__myself-wrap
+              .order-section__myself-map#order-map
+              .order-section__list
+          .order-section__btn-wrap
+            button.order-section__btn(type="button") Продолжить
+              +icon('ico-arrow-button')
+            
+            
+        aside.order-section__aside
+          .order-section__wrap
+            
+            .order-section__amount
+              .order-section__amount-number 2 товара
+              .order-section__amount-summ 14 900
+                +icon('ico-ruble')
+                
+            .order-section__aside-gift
+              .order-section__amount-number Каталог образцов
+              .order-section__all-hint подарок
+              
+            .order-section__amount.order-section__aside-deliv
+              .order-section__amount-number Курьерская доставка, IML
+              .order-section__amount-summ 350
+                +icon('ico-ruble')
+            .order-section__all
+              h3.order-section__all-title сумма заказа
+                +icon('ico-wave')
+              .order-section__all-price 14 900
+                +icon('ico-ruble')
+              .order-section__all-hint без стоимости доставки
+        .order-section__btn-wrap.order-section__btn-wrap--mobile
+          button.order-section__btn(type="button") Продолжить
+            +icon('ico-arrow-button')
+    
+    
+  include components/_newsletter

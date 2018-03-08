@@ -517,7 +517,35 @@ $(document).ready(function() {
       } else {
         $('.order-section__recipient').css('display', 'none')
       }
-    })
+    });
+    
+    // FIZ UR IP
+    $('.order-section__check-wrap input').on('change', function(){
+      if ($('#fiz-type').is(':checked')) {
+        $('.order-section__type').css('display', 'none');
+        $('.order-section__type--fiz').css('display', 'block');
+      }
+      if ($('#ur-type').is(':checked')) {
+        $('.order-section__type').css('display', 'none');
+        $('.order-section__type--ur').css('display', 'block');
+      }
+      if ($('#ip-type').is(':checked')) {
+        $('.order-section__type').css('display', 'none');
+        $('.order-section__type--ip').css('display', 'block');
+      }
+    });
+    
+    // ORDER DELIVERY
+    $('.order-section__delivery-check').on('change', function(){
+      if ($('[jsCourier]').is(':checked')) {
+        $('.order-section__myself').css('display', 'none');
+        $('.order-section__address').css('display', 'block');
+      }
+      if ($('[jsMyself]').is(':checked')) {
+        $('.order-section__address').css('display', 'none');
+        $('.order-section__myself').css('display', 'block');
+      }
+    });
     
     
 
@@ -553,19 +581,7 @@ $(document).ready(function() {
 	  	lng: 43.979796
 	  }
 	  //var myicon = '../img/map-marker.svg';
-
-    if($('#contacts-map').length > 0) {
-      var locations = [
-        {
-          lat: 56.308833,
-	  	    lng: 43.979796
-        }
-      ];
-
-      var contactMap = new google.maps.Map(document.getElementById('contacts-map'), {
-	    	center: cntr,
-	    	zoom: 16,
-        styles: [
+    var mapStyles = [
         {
             "featureType": "water",
             "elementType": "geometry",
@@ -740,7 +756,20 @@ $(document).ready(function() {
                 }
             ]
         }
-      ]
+      ];
+
+    if($('#contacts-map').length > 0) {
+      var locations = [
+        {
+          lat: 56.308833,
+	  	    lng: 43.979796
+        }
+      ];
+
+      var contactMap = new google.maps.Map(document.getElementById('contacts-map'), {
+	    	center: cntr,
+	    	zoom: 16,
+        styles: mapStyles
 	    });
 
       var markers = locations.map(function (location, i) {
@@ -752,8 +781,21 @@ $(document).ready(function() {
 	        }
         });
       });
+    }
+    
+    if($('#order-map').length > 0) {
+      var locations = [
+        {
+          lat: 56.308833,
+	  	    lng: 43.979796
+        }
+      ];
 
-
+      var contactMap = new google.maps.Map(document.getElementById('order-map'), {
+	    	center: cntr,
+	    	zoom: 16,
+        styles: mapStyles
+	    });
     }
 
   }

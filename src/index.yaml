@@ -26,4 +26,6 @@ PageList:
 - file: contacts.html
   ready: 90
 - file: ordering-contacts.html
-  ready: 50
+  ready: 90
+- file: ordering-delivery.html
+  ready: 60

@@ -29,16 +29,79 @@ block content
                 label.order-section__label(for="ur-type") Юр.лицо
                 input.order-section__checkbox(type="radio" id="ip-type" name="types")
                 label.order-section__label(for="ip-type") ИП
-              .order-section__fields
-                input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
-                input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
-              input.order-section__checkbox(type="checkbox" id="not-you" jsNotYou)
-              label.order-section__label(for="not-you") Отметьте здесь, если получать заказ будете не вы
-              .order-section__fields.order-section__recipient
-                input.order-section__input.order-section__input--65(type="text" placeholder="ФИО получателя*")
-                input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                
+                
+              .order-section__type.order-section__type--fiz.is-active
+                .order-section__fields
+                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                input.order-section__checkbox(type="checkbox" id="not-you" jsNotYou)
+                label.order-section__label(for="not-you") Отметьте здесь, если получать заказ будете не вы
+                .order-section__fields.order-section__recipient
+                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО получателя*")
+                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                  
+                  
+              .order-section__type.order-section__type--ur
+                .order-section__fields
+                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                .order-section__fields
+                  h3.order-section__fields-title Юридические реквизиты
+                  input.order-section__input(type="text" placeholder="Название организации*")
+                  input.order-section__input(type="text" placeholder="Адрес организации*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="КПП*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="ОГРНИП*")
+                .order-section__fields
+                  h3.order-section__fields-title Расчетный счет
+                  input.order-section__input(type="text" placeholder="Банк*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
+              .order-section__type.order-section__type--ip
+                .order-section__fields
+                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                .order-section__fields
+                  h3.order-section__fields-title Юридические реквизиты
+                  input.order-section__input(type="text" placeholder="Название организации*")
+                  input.order-section__input(type="text" placeholder="Адрес организации*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
+                .order-section__fields
+                  h3.order-section__fields-title Расчетный счет
+                  input.order-section__input(type="text" placeholder="Банк*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
+                  input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
+          .order-section__gifts
+            h2.order-section__subtitle Каталог образцов в подарок!
+              +icon('ico-gift')
+            p.order-section__text Ответьте на вопрос, чем вы занимаетесь, для чего покупате шелк и мы пришлем вам образец тканей в подарок!
+            .order-section__gifts-wrap
+              .order-section__gift-item
+                h3.order-section__gift-title Для росписи
+                  +icon('ico-for-paint')
+              .order-section__gift-item
+                h3.order-section__gift-title Для цветов
+                  +icon('ico-for-flower')
+              .order-section__gift-item
+                h3.order-section__gift-title Для валяния
+                  +icon('ico-for-felt')
+              .order-section__gift-item
+                h3.order-section__gift-title Для шитья
+                  +icon('ico-for-stitch')
+              .order-section__gift-item
+                h3.order-section__gift-title Для вышивки
+                  +icon('ico-for-embr')
+              .order-section__gift-item
+                h3.order-section__gift-title Для декора
+                  +icon('ico-for-decor')
+            .order-section__another
+              h3.order-section__another-title Другое
+              input.order-section__input(type="text")
           .order-section__btn-wrap
             button.order-section__btn(type="button" disabled) Продолжить
               +icon('ico-arrow-button')
@@ -54,6 +117,9 @@ block content
               .order-section__all-price 14 900
                 +icon('ico-ruble')
               .order-section__all-hint без стоимости доставки
+        .order-section__btn-wrap.order-section__btn-wrap--mobile
+          button.order-section__btn(type="button" disabled) Продолжить
+            +icon('ico-arrow-button')
     
     
   include components/_newsletter
