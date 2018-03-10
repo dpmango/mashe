@@ -545,10 +545,25 @@
       border-left: 0
       border-right: 0
       border-bottom: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      &-title
+        width: 33%
+        padding: 0
+        margin: 0
+        &:after
+          display: none
+      &-sum
+        width: 33%
+      
       &-btn
         max-width: 330px
         margin-left: auto
         margin-right: auto
+        margin: 0
+        width: 33%
       &-free
         max-width: 280px
         margin-right: auto
@@ -627,11 +642,22 @@
       padding-right: 20px
       padding-left: 20px
     &__all
+      display: block
       &-title
         padding-bottom: 25px
         margin-bottom: 20px
+        width: 100%
+        &:after
+          display: block
+      &-sum
+        width: 100%
+        margin-left: auto
+        margin-right: auto
       &-btn
         margin-top: 40px
+        width: 100%
+        margin-left: auto
+        margin-right: auto
         
   .recent-items
     margin-top: 70px

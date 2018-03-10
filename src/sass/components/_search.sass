@@ -82,6 +82,7 @@
         transform: translateX(-50%)
         width: 115px
         height: 115px
+        color: #e8e8e8
     
 +r($wide)
   .search-section
@@ -126,6 +127,7 @@
       
 +r($mobile)
   .search-section
+    padding-top: 35px
     &__form
       flex-direction: column
       justify-content: center
@@ -136,3 +138,11 @@
       margin-bottom: 10px
     &__wrap
       width: 100%
+      &:before
+        width: 30px
+        height: 23px
+    &__input
+      padding: 7px 50px 7px 40px
+      font-size: 32px
+    .search-panel__btn
+      font-size: 24px
