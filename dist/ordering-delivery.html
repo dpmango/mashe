@@ -357,7 +357,7 @@
                     <div class="order-section__city">Город доставки - 
                       <svg class="ico ico-nav">
                         <use xlink:href="img/sprite.svg#ico-nav"></use>
-                      </svg><a class="order-section__city-link" href="#">Нижний Новгород</a>
+                      </svg><a class="order-section__city-link" href="#city-popup" js-popup>Нижний Новгород</a>
                     </div>
                     <div class="order-section__delivery">
                       <input class="order-section__delivery-check" name="delivery-type" type="radio" id="courier-iml" jsCourier checked>
@@ -482,6 +482,27 @@
               </div>
             </div>
           </section>
+          <div class="city-popup" id="city-popup">
+            <h2 class="city-popup__title">Выбор города
+              <svg class="ico ico-wave-long">
+                <use xlink:href="img/sprite.svg#ico-wave-long"></use>
+              </svg>
+            </h2>
+            <form action="#">
+              <input class="search-panel__input" type="text" placeholder="Поиск города">
+              <button class="search-panel__btn" type="button">
+                <svg class="ico ico-search-arrow">
+                  <use xlink:href="img/sprite.svg#ico-search-arrow"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="city-popup__wrap">
+              <div class="city-popup__col"><a class="city-popup__item" href="#">Москва</a><a class="city-popup__item" href="#">Санкт-Петербург</a><a class="city-popup__item" href="#">Архангельск</a><a class="city-popup__item" href="#">Владивосток</a><a class="city-popup__item" href="#">Волгоград</a><a class="city-popup__item" href="#">Воронеж</a><a class="city-popup__item" href="#">Екатеринбург</a><a class="city-popup__item" href="#">Ижевск</a></div>
+              <div class="city-popup__col"><a class="city-popup__item" href="#">Иркутск</a><a class="city-popup__item" href="#">Казань</a><a class="city-popup__item" href="#">Кемерово</a><a class="city-popup__item" href="#">Краснодар</a><a class="city-popup__item" href="#">Красноярск</a><a class="city-popup__item" href="#">Мурманск</a><a class="city-popup__item" href="#">Набережные челны</a><a class="city-popup__item is-active" href="#">Нижний новгород</a></div>
+              <div class="city-popup__col"><a class="city-popup__item" href="#">Новосибирск</a><a class="city-popup__item" href="#">Омск</a><a class="city-popup__item" href="#">Пермь</a><a class="city-popup__item" href="#">Ростов-на-Дону</a><a class="city-popup__item" href="#">Саратов</a><a class="city-popup__item" href="#">Тверь</a><a class="city-popup__item" href="#">Тольятти</a><a class="city-popup__item" href="#">Тула</a></div>
+              <div class="city-popup__col"> <a class="city-popup__item" href="#">Тюмень</a><a class="city-popup__item" href="#">Ульяновск</a><a class="city-popup__item" href="#">Уфа</a><a class="city-popup__item" href="#">Хабаровск</a><a class="city-popup__item" href="#">Челябинск</a><a class="city-popup__item" href="#">Ярославль</a></div>
+            </div>
+          </div>
           <!-- NEWSLETTER-->
           <section class="newsletter">
             <div class="container">

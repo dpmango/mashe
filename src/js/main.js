@@ -556,6 +556,15 @@ $(document).ready(function() {
       }
     });
     
+    $('.city-popup__item').on('click', function(e){
+      e.preventDefault();
+      $('.city-popup__item').removeClass('is-active');
+      $(this).addClass('is-active')
+      var thisText = $(this).text();
+      $('.order-section__city-link').text(thisText);
+      closeMfp();
+    });
+    
     
 
     // EXAMPLES SLIDER

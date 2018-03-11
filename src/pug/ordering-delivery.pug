@@ -22,7 +22,7 @@ block content
               +icon('ico-truck')
             .order-section__city Город доставки - 
               +icon('ico-nav')
-              a.order-section__city-link(href="#") Нижний Новгород
+              a.order-section__city-link(href="#city-popup" js-popup) Нижний Новгород
             .order-section__delivery
               input.order-section__delivery-check(name="delivery-type" type="radio" id="courier-iml" jsCourier checked)
               label.order-section__delivery-item(for="courier-iml")
@@ -107,6 +107,49 @@ block content
         .order-section__btn-wrap.order-section__btn-wrap--mobile
           button.order-section__btn(type="button") Продолжить
             +icon('ico-arrow-button')
+            
+  .city-popup#city-popup
+    h2.city-popup__title Выбор города
+      +icon('ico-wave-long')
+    form(action="#")
+      input.search-panel__input(type="text" placeholder="Поиск города")
+      button.search-panel__btn(type="button")
+        +icon('ico-search-arrow')
+    .city-popup__wrap
+      .city-popup__col
+        a.city-popup__item(href="#") Москва
+        a.city-popup__item(href="#") Санкт-Петербург
+        a.city-popup__item(href="#") Архангельск
+        a.city-popup__item(href="#") Владивосток
+        a.city-popup__item(href="#") Волгоград
+        a.city-popup__item(href="#") Воронеж
+        a.city-popup__item(href="#") Екатеринбург
+        a.city-popup__item(href="#") Ижевск
+      .city-popup__col
+        a.city-popup__item(href="#") Иркутск
+        a.city-popup__item(href="#") Казань
+        a.city-popup__item(href="#") Кемерово
+        a.city-popup__item(href="#") Краснодар
+        a.city-popup__item(href="#") Красноярск
+        a.city-popup__item(href="#") Мурманск
+        a.city-popup__item(href="#") Набережные челны
+        a.city-popup__item.is-active(href="#") Нижний новгород
+      .city-popup__col
+        a.city-popup__item(href="#") Новосибирск
+        a.city-popup__item(href="#") Омск
+        a.city-popup__item(href="#") Пермь
+        a.city-popup__item(href="#") Ростов-на-Дону
+        a.city-popup__item(href="#") Саратов
+        a.city-popup__item(href="#") Тверь
+        a.city-popup__item(href="#") Тольятти
+        a.city-popup__item(href="#") Тула
+      .city-popup__col 
+        a.city-popup__item(href="#") Тюмень
+        a.city-popup__item(href="#") Ульяновск
+        a.city-popup__item(href="#") Уфа
+        a.city-popup__item(href="#") Хабаровск
+        a.city-popup__item(href="#") Челябинск
+        a.city-popup__item(href="#") Ярославль
     
     
   include components/_newsletter

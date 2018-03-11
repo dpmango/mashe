@@ -601,6 +601,96 @@
     margin-bottom: 0
     margin-top: 15px
     
+.mfp-ready
+  .city-popup
+    display: block
+    
+    
+.city-popup
+  display: none
+  background-color: #fff
+  padding: 40px
+  width: 95%
+  max-width: 1400px
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 3
+  &__title
+    font-size: 32px
+    font-family: $fontBold
+    padding-top: 100px
+    position: relative
+    padding-bottom: 30px
+    margin-bottom: 30px
+    margin-top: 0
+    text-align: center
+    text-transform: uppercase
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      background-repeat: no-repeat
+      background-image: url(../../img/fav-krest.svg)
+      background-size: 100%
+      width: 60px
+      height: 60px
+      transform: translateX(-50%)
+    svg
+      width: 100%
+      color: #F5F5F5
+      position: absolute
+      bottom: -10px
+      left: 50%
+      transform: translateX(-50%)
+  form
+    max-width: 400px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    margin-bottom: 65px
+    &:before
+      content: ''
+      position: absolute
+      left: 20px
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-image: url(../../img/search-black.svg)
+      width: 25px
+      height: 21px
+      background-size: 100%
+  .search-panel__input
+    font-size: 18px
+    font-family: $fontBook
+    padding: 11px 40px 11px 60px
+    border: 2px solid #F0F1F2
+    &:focus
+      border-color: $btnBgColor
+  .search-panel__btn
+    font-size: 20px
+  &__wrap
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+  &__col
+    width: 25%
+    padding-left: 10px
+    padding-right: 10px
+  &__item
+    display: block
+    font-size: 20px
+    font-family: $fontDemi
+    color: $btnBgColor
+    margin-bottom: 20px
+    transition: all $transitionSpeed $ease
+    &.is-active,
+    &:hover
+      color: $primaryHover
+    &:last-child
+      margin-bottom: 0
     
 +r($hd)
   .order-section
@@ -678,6 +768,9 @@
       padding-bottom: 60px
     &__done-title
       font-size: 32px
+  .city-popup
+    &__title
+      padding-top: 80px
         
 +r($tablet)
   .order-section
@@ -726,6 +819,13 @@
       padding-left: 65px
       svg
         left: 20px
+  .city-popup
+    padding: 30px 15px
+    &__wrap
+      flex-wrap: wrap
+    &__col
+      width: 33.33%
+      margin-bottom: 50px
       
 +r($mobile)
   .order-section
@@ -805,4 +905,7 @@
       &-title
         font-size: 30px
         margin-bottom: 30px
+  .city-popup
+    &__col
+      width: 50%
       
