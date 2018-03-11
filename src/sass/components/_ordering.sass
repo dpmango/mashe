@@ -482,6 +482,132 @@
       iframe
         width: 100%
         height: 100%
+  &__list
+    position: absolute
+    z-index: 2
+    top: 0
+    right: 0
+    width: 100%
+    max-width: 350px
+    height: calc(100% - 30px)
+    overflow-y: scroll
+    background-color: #fff
+    padding-right: 18px
+    border: 2px solid #F1F1F1
+    border-left: 0
+    &-item
+      padding: 18px 0 18px 25px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      border-bottom: 2px solid #f1f1f1
+      color: $btnBgColor
+      &:hover
+        .order-section__list-title
+          color: $primaryHover
+      &:last-child
+        border-bottom: 0
+    &-title
+      width: 90%
+      margin-top: 0
+      margin-bottom: 20px
+      font-size: 20px
+      font-family: $fontMedium
+      font-weight: 400
+      transition: all $transitionSpeed $ease
+    &-company
+      font-size: 16px
+      font-family: $fontBook
+      color: #B1BABE
+      width: calc(100% - 80px)
+    &-price
+      text-align: right
+      font-size: 22px
+      font-family: $fontMedium
+      letter-spacing: -0.05em
+      color: $btnBgColor
+      width: 80px
+      svg
+        font-size: 12px
+  &__list-scroll
+    display: block
+  &__full
+    display: none
+    padding: 50px 30px 30px 40px
+    position: relative
+    &-close
+      position: absolute
+      top: 20px
+      right: 0
+      font-size: 22px
+      color: $btnBgColor
+      transition: all $transitionSpeed $ease
+      background-color: transparent
+      &:hover
+        opacity: 0.8
+    &-title
+      margin-top: 0
+      margin-bottom: 20px
+      font-size: 24px
+      font-family: $fontMedium
+      font-weight: 400
+    &-company
+      font-family: $fontBook
+      color: #B1BABE
+      font-size: 20px
+    &-deliv
+      position: relative
+      padding-top: 30px
+      margin-top: 20px
+      font-size: 20px
+      font-family: $fontBook
+      color: $btnBgColor
+      margin-bottom: 15px
+      svg
+        font-size: 10px
+        position: absolute
+        top: 0
+        left: 0
+        color: $primaryColor
+    &-price
+      font-size: 22px
+      font-family: $fontMedium
+      letter-spacing: -0.05em
+      color: $btnBgColor
+      margin-bottom: 40px
+      svg
+        font-size: 12px
+    &-here,
+    &-another
+      text-align: center
+      text-transform: uppercase
+      font-size: 14px
+      font-family: $fontHeavy
+      padding: 14px
+      position: relative
+      border-radius: 30px
+      width: 100%
+      transition: all $transitionSpeed $ease
+    &-here
+      color: #fff
+      background-color: $btnBgColor
+      margin-bottom: 15px
+      &:hover
+        background-color: $btnBgHover
+        box-shadow: 0 0 0 2px $btnBgHover
+    &-another
+      color: $btnBgColor
+      background-color: $primary2Color
+      padding-right: 0
+      padding-left: 20px
+      svg
+        position: absolute
+        top: 50%
+        left: 50px
+        transform: translateY(-50%) rotate(-180deg)
+      &:hover
+        background-color: $primary2Hover
+        box-shadow: 0 0 0 2px $primary2Hover
   &__title-wrap
     margin-bottom: 43px
     display: flex
@@ -768,6 +894,17 @@
       padding-bottom: 60px
     &__done-title
       font-size: 32px
+    &__list
+      position: static
+      padding-left: 25px
+      border-left: 2px solid #f5f5f5
+      &-item
+        padding-left: 0
+    &__full
+      padding: 40px 0 20px 0
+      &-another
+        svg
+          left: 40px
   .city-popup
     &__title
       padding-top: 80px

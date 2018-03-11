@@ -565,6 +565,17 @@ $(document).ready(function() {
       closeMfp();
     });
     
+    // MAP POPUP ITEM
+    $('.order-section__list-item').on('click', function(e){
+      $('.order-section__list-scroll').hide();
+      $('.order-section__full').show();
+    });
+    
+    $('.order-section__full-close, .order-section__full-another').on('click', function(e){
+      $('.order-section__list-scroll').show();
+      $('.order-section__full').hide();
+    });
+    
     
 
     // EXAMPLES SLIDER
@@ -921,6 +932,12 @@ $(document).ready(function() {
     }
     if ($('.advantages__scroll-wrap').length > 0) {
       var ps = new PerfectScrollbar('.advantages__scroll-wrap', {
+        wheelSpeed: 1,
+        maxScrollbarLength: 160
+      });
+    }
+    if ($('.order-section__list').length > 0) {
+      var ps = new PerfectScrollbar('.order-section__list', {
         wheelSpeed: 1,
         maxScrollbarLength: 160
       });
