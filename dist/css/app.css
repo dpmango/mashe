@@ -12604,7 +12604,7 @@ html.mfp-helper body {
 }
 
 .order-section__text a {
-  color: #FFDAD4;
+  color: #F2B6AC;
   font-family: "FuturaPTDemiC";
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -12612,7 +12612,7 @@ html.mfp-helper body {
 }
 
 .order-section__text a:hover {
-  color: #FFB2A6;
+  color: #E09284;
 }
 
 .order-section__check-wrap {
@@ -12707,6 +12707,7 @@ html.mfp-helper body {
   margin-bottom: 15px;
   color: #353535;
   font-size: 24px;
+  font-weight: 400;
   font-family: "FuturaPTMedium";
   display: block;
   width: 100%;
@@ -12770,8 +12771,9 @@ html.mfp-helper body {
   display: block;
   position: relative;
   text-align: center;
-  max-width: 220px;
+  max-width: 230px;
   width: 100%;
+  letter-spacing: 0.05em;
   color: #fff;
   text-transform: uppercase;
   padding: 14px 80px 14px 45px;
@@ -13107,7 +13109,7 @@ html.mfp-helper body {
 }
 
 .order-section__delivery-check:checked + label:before {
-  border-color: #E8988B;
+  border-color: #FFB2A6;
   background-image: url(../../img/check.svg);
 }
 
@@ -13181,6 +13183,7 @@ html.mfp-helper body {
 .order-section__delivery-price span {
   font-size: 28px;
   margin-left: 4px;
+  letter-spacing: -0.05em;
 }
 
 .order-section__delivery-price svg {
@@ -13680,6 +13683,7 @@ html.mfp-helper body {
 .city-popup__title {
   font-size: 32px;
   font-family: "FuturaPTBold";
+  color: #353535;
   padding-top: 100px;
   position: relative;
   padding-bottom: 30px;
