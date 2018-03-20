@@ -39,14 +39,16 @@
       color: $btnBgColor
     &.step-done
       position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: -4px
-        top: 0
-        background-color: #fff
-        width: 17px
-        height: 100%
+      span
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          left: -4px
+          top: 0
+          background-color: #fff
+          width: 17px
+          height: 100%
       .ico-check
         left: -5px
         font-size: 12px
@@ -231,7 +233,7 @@
     &-summ
       font-size: 28px
       letter-spacing: -0.05em
-      font-family: $fontMedium
+      font-family: $fontBook
       color: #B1BABE
       svg
         font-size: 16px
@@ -451,17 +453,22 @@
       left: 30px
       transform: translateY(-50%)
       font-size: 30px
-  &__address
+  &__address,
+  &__post
     margin-top: 25px
     padding: 45px 55px
     background-color: #fff
     padding-bottom: 0
+  &__post
+    display: none
   &__input
     &--15
       width: 127px
       margin-left: 17px
     &--40
       width: calc(100% - 433px)
+    &--27
+      width: calc(100% - 605px)
   &__myself
     display: none
     padding: 45px 55px
@@ -716,16 +723,16 @@
     svg
       transition: none
     &:hover
-      background-color: $btnBgHover
-      border-color: $btnBgHover
+      background-color: $btnBgColor
+      border-color: $btnBgColor
       color: #fff
-      box-shadow: 0 0 0 2px $btnBgHover
+      box-shadow: 0 0 0 2px $btnBgColor
     .ico-vk
       font-size: 16px
   
 .payment-page
   .order-section__btn
-    max-width: 250px
+    max-width: 260px
   .order-section__text
     margin-bottom: 0
     margin-top: 15px
@@ -826,6 +833,13 @@
   .order-section
     &__aside
       padding: 35px
+    &__input
+      &--27
+        width: calc(100% - 433px)
+        margin-right: 0
+    &__post
+      .order-section__input:nth-child(5)
+        margin-left: 0
     
 +r($wide)
   .order-section
@@ -839,7 +853,8 @@
       padding: 25px
     &__wrap
       padding: 18px
-    &__address
+    &__address,
+    &__post
       padding: 25px
       padding-bottom: 0
     &__amount,
@@ -934,6 +949,8 @@
         width: 40%
       &--40
         width: 48%
+      &--27
+        width: 48%
       &--15
         width: 48%
         margin-left: 4%
@@ -975,10 +992,32 @@
       font-size: 32px
     &__subtitle
       font-size: 20px
-      padding-right: 50px
+      padding-right: 0px
       margin-bottom: 25px
+      text-align: center
+      svg
+        display: none
+    &__pages
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      margin-bottom: 10px
+      padding: 0
+    &__page
+      margin-right: 0
+      padding-right: 0
+      font-size: 20px
+      margin-bottom: 0
+      padding: 20px 0
+      border-top: 2px solid #f5f5f5
+      width: 100%
+      &:first-child
+        border-top: 0
+      .ico-arrow-right
+        display: none
     &__text
       font-size: 18px
+      text-align: center
     &__check-wrap
       flex-wrap: wrap
       margin-top: 35px
@@ -1002,6 +1041,8 @@
       &--25
         width: 100%
         margin-right: 0
+      &--27
+        width: 100%
       &--15,
       &--40
         width: 100%
@@ -1026,12 +1067,13 @@
         font-size: 20px
     &__info-hint
       margin-top: 20px
-      padding-left: 55px
+      padding: 65px 15px 20px 15px
+      text-align: center
       svg
         font-size: 26px
-        left: 15px
-        top: 17px
-        transform: none
+        left: 50%
+        transform: translateX(-50%)
+        top: 20px
     &__myself-map
       min-height: 380px
     &__payment
@@ -1046,6 +1088,14 @@
       &-title
         font-size: 30px
         margin-bottom: 30px
+      &-hint
+        padding: 55px 15px 20px 15px
+        text-align: center
+        margin-bottom: 30px
+        svg
+          top: 20px
+          left: 50%
+          transform: translateX(-50%)
   .city-popup
     &__col
       width: 50%

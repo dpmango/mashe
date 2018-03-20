@@ -333,20 +333,20 @@
               <div class="order-section__wrapper">
                 <div class="order-section__main">
                   <div class="order-section__pages">
-                    <div class="order-section__page step-done">1. Контактные данные
-                      <svg class="ico ico-arrow-right">
-                        <use xlink:href="img/sprite.svg#ico-arrow-right"></use>
-                      </svg>
-                      <svg class="ico ico-check">
-                        <use xlink:href="img/sprite.svg#ico-check"></use>
-                      </svg>
-                    </div>
-                    <div class="order-section__page is-active">2. Способ доставки
+                    <div class="order-section__page step-done"> <span>1. Контактные данные
+                        <svg class="ico ico-check">
+                          <use xlink:href="img/sprite.svg#ico-check"></use>
+                        </svg></span>
                       <svg class="ico ico-arrow-right">
                         <use xlink:href="img/sprite.svg#ico-arrow-right"></use>
                       </svg>
                     </div>
-                    <div class="order-section__page">3. Оплата</div>
+                    <div class="order-section__page is-active"> <span>2. Способ доставки</span>
+                      <svg class="ico ico-arrow-right">
+                        <use xlink:href="img/sprite.svg#ico-arrow-right"></use>
+                      </svg>
+                    </div>
+                    <div class="order-section__page"> <span>3. Оплата</span></div>
                   </div>
                   <div class="order-section__datas">
                     <h2 class="order-section__subtitle">2. Способ доставки
@@ -392,7 +392,7 @@
                               <use xlink:href="img/sprite.svg#ico-ruble"></use>
                             </svg></span></div>
                       </label>
-                      <input class="order-section__delivery-check" name="delivery-type" type="radio" id="ru-post" jsCourier>
+                      <input class="order-section__delivery-check" name="delivery-type" type="radio" id="ru-post" jsPost>
                       <label class="order-section__delivery-item" for="ru-post">
                         <h3 class="order-section__delivery-title">Почта России</h3><span class="order-section__delivery-date">7-14 рабочих дня</span>
                         <div class="order-section__delivery-price">от<span>860 
@@ -414,6 +414,17 @@
                       <input class="order-section__input order-section__input--15" type="text" placeholder="Дом*">
                       <input class="order-section__input order-section__input--15" type="text" placeholder="Корпус">
                       <input class="order-section__input order-section__input--15" type="text" placeholder="Квартира*">
+                      <input class="order-section__input" type="text" placeholder="Коментарий к заказу">
+                    </div>
+                  </div>
+                  <div class="order-section__post">
+                    <h2 class="order-section__subtitle">Адрес доставки</h2>
+                    <div class="order-section__fields">
+                      <input class="order-section__input order-section__input--27" type="text" placeholder="Улица*">
+                      <input class="order-section__input order-section__input--15" type="text" placeholder="Дом*">
+                      <input class="order-section__input order-section__input--15" type="text" placeholder="Корпус">
+                      <input class="order-section__input order-section__input--15" type="text" placeholder="Квартира*">
+                      <input class="order-section__input order-section__input--15" type="text" placeholder="Индекс*">
                       <input class="order-section__input" type="text" placeholder="Коментарий к заказу">
                     </div>
                   </div>

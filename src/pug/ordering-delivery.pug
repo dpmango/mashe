@@ -11,12 +11,15 @@ block content
       .order-section__wrapper
         .order-section__main
           .order-section__pages
-            .order-section__page.step-done 1. Контактные данные
+            .order-section__page.step-done 
+              span 1. Контактные данные
+                +icon('ico-check')
               +icon('ico-arrow-right')
-              +icon('ico-check')
-            .order-section__page.is-active 2. Способ доставки
+            .order-section__page.is-active 
+              span 2. Способ доставки
               +icon('ico-arrow-right')
-            .order-section__page 3. Оплата
+            .order-section__page 
+              span 3. Оплата
           .order-section__datas
             h2.order-section__subtitle 2. Способ доставки
               +icon('ico-truck')
@@ -52,7 +55,7 @@ block content
                 .order-section__delivery-price от
                   span 760 
                     +icon('ico-ruble')
-              input.order-section__delivery-check(name="delivery-type" type="radio" id="ru-post" jsCourier)
+              input.order-section__delivery-check(name="delivery-type" type="radio" id="ru-post" jsPost)
               label.order-section__delivery-item(for="ru-post")
                 h3.order-section__delivery-title Почта России
                 span.order-section__delivery-date 7-14 рабочих дня
@@ -68,6 +71,15 @@ block content
               input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
               input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
               input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
+              input.order-section__input(type="text" placeholder="Коментарий к заказу")
+          .order-section__post
+            h2.order-section__subtitle Адрес доставки
+            .order-section__fields
+              input.order-section__input.order-section__input--27(type="text" placeholder="Улица*")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
+              input.order-section__input.order-section__input--15(type="text" placeholder="Индекс*")
               input.order-section__input(type="text" placeholder="Коментарий к заказу")
               
           .order-section__myself

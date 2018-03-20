@@ -539,11 +539,18 @@ $(document).ready(function() {
     $('.order-section__delivery-check').on('change', function(){
       if ($('[jsCourier]').is(':checked')) {
         $('.order-section__myself').css('display', 'none');
+        $('.order-section__post').css('display', 'none');
         $('.order-section__address').css('display', 'block');
       }
       if ($('[jsMyself]').is(':checked')) {
         $('.order-section__address').css('display', 'none');
+        $('.order-section__post').css('display', 'none');
         $('.order-section__myself').css('display', 'block');
+      }
+      if ($('[jsPost]').is(':checked')) {
+        $('.order-section__myself').css('display', 'none');
+        $('.order-section__address').css('display', 'none');
+        $('.order-section__post').css('display', 'block');
       }
     });
     

@@ -11,13 +11,16 @@ block content
       .order-section__wrapper
         .order-section__main
           .order-section__pages
-            .order-section__page.step-done 1. Контактные данные
+            .order-section__page.step-done 
+              span 1. Контактные данные
+                 +icon('ico-check')
               +icon('ico-arrow-right')
-              +icon('ico-check')
-            .order-section__page.step-done 2. Способ доставки
+            .order-section__page.step-done 
+              span 2. Способ доставки
+                 +icon('ico-check')
               +icon('ico-arrow-right')
-              +icon('ico-check')
-            .order-section__page.is-active 3. Оплата
+            .order-section__page.is-active 
+              span 3. Оплата
           .order-section__datas
             h2.order-section__subtitle 3. Способ оплаты
               +icon('ico-payment')
@@ -69,7 +72,7 @@ block content
                 +icon('ico-ruble')
               .order-section__all-hint без стоимости доставки
         .order-section__btn-wrap.order-section__btn-wrap--mobile
-          button.order-section__btn(type="button") Продолжить
+          button.order-section__btn(type="button") Оплатить заказ
             +icon('ico-arrow-button')
           p.order-section__text Нажимая кнопку, вы согласаетесь с <a href="#">офертой</a>
     
