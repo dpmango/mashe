@@ -187,6 +187,61 @@
     &:hover
       background-color: $btnBgHover
       box-shadow: 0 0 0 2px $btnBgHover
+  &__requis
+    font-size: 20px
+    text-transform: uppercase
+    text-align: center
+    color: #F2B6AC
+    font-family: $fontDemi
+    width: 100%
+    padding: 20px 10px
+    border-top: 2px solid #F2B6AC
+    border-bottom: 2px solid #F2B6AC
+    margin-bottom: 50px
+    &:hover
+      cursor: pointer
+    span
+      position: relative
+      &:after
+        display: inline-block
+        vertical-align: middle
+        content: '▼'
+        margin-left: 7px
+        transition: all $transitionSpeed $ease
+        transform-origin: center center
+        font-size: 12px
+    &.is-active span:after
+      transform: rotate(-180deg) translateY(2px)
+    &-wrap
+      
+      display: none
+      flex-direction: row
+      justify-content: space-between
+      padding-bottom: 50px
+      border-bottom: 2px solid #f2b6ac
+      margin-bottom: 30px
+    &-col
+      width: 48%
+      text-align: center
+    &-item
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    &-title,
+    &-link
+      margin-top: 0
+      font-size: 20px
+      margin-bottom: 5px
+      font-family: $fontDemi
+      font-weight: 400
+      color: $btnBgColor
+    &-text
+      font-size: 20px
+      margin-top: 0
+      margin-bottom: 5px
+      color: #707070
+      font-family: $fontBook
+      
   &__map
     min-height: 380px
     width: 100%
@@ -259,5 +314,24 @@
     &__input,
     &__textarea
       margin-bottom: 20px
+    &__requis
+      width: calc(100% + 50px)
+      margin-left: -25px
+      font-size: 16px
+      padding: 15px 10px
+      margin-bottom: 30px
+      &-wrap
+        flex-direction: column
+        padding-bottom: 10px
+      &-col
+        width: 100%
+      &-item
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 25px
+      &-title,
+      &-text,
+      &-link
+        font-size: 16px
     &__map
       min-height: 320px

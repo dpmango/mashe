@@ -519,6 +519,19 @@ $(document).ready(function() {
       }
     });
     
+    
+    // CONTACTS
+    $('.contacts-section__requis').on('click', function(){
+      if ($(this).hasClass('is-active')) {
+        $(this).removeClass('is-active');
+        $('.contacts-section__requis-wrap').slideUp(300);
+      } else {
+        $(this).addClass('is-active')
+        $('.contacts-section__requis-wrap').slideDown(300);
+        $('.contacts-section__requis-wrap').css('display', 'flex');
+      }
+    });
+    
     // FIZ UR IP
     $('.order-section__check-wrap input').on('change', function(){
       if ($('#fiz-type').is(':checked')) {
