@@ -39,5 +39,9 @@ PageList:
   ready: 90
 - file: serv-payment.html
   ready: 90
+- file: serv-sales.html
+  ready: 90
 - file: serv-refund.html
+  ready: 90
+- file: info.html
   ready: 90

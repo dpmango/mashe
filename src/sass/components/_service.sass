@@ -20,6 +20,9 @@
     background-color: #fff
     margin-right: 25px
     padding: 50px 55px
+    &--empty
+      .service-page__aside-item
+        padding-left: 40px
   &__aside-item
     display: block
     font-size: 16px
@@ -225,6 +228,64 @@
       margin-top: 20px
   &__info
     width: calc(100% - 330px)
+    
+  // SALES
+  &__sales-wrap
+    padding-bottom: 50px
+    position: relative
+    margin-bottom: 50px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    > svg
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 20px
+      color: #f5f5f5
+  &__sales-item
+    width: 31%
+    text-align: center
+    position: relative
+    padding-top: 100px
+    font-size: 20px
+    font-family: $fontBook
+    color: #707070
+    &:nth-of-type(2)
+      &:before,
+      &:after
+        content: '+'
+        position: absolute
+        transform: translateY(-50%)
+        font-family: $fontBook
+        font-weight: 200
+        top: 50%
+        font-size: 48px
+        color: transparentize($btnBgColor, 0.7)
+      &:before
+        left: -10px
+      &:after
+        right: -10px
+    svg
+      position: absolute
+      top: 0
+      left: 50%
+      font-size: 90px
+      color: $primaryColor
+      transform: translateX(-50%)
+  &__hints
+    padding-top: 28px
+    border-top: 2px solid #f5f5f5
+  &__hint
+    font-size: 20px
+    font-family: $fontBook
+    color: transparentize(#707070, 0.6)
+    margin-bottom: 20px
+    padding-left: 10px
+    margin-top: 0
+    &:last-child
+      margin-bottom: 0
       
       
 @media(max-width: 1200px)
@@ -240,6 +301,10 @@
       margin-right: 40px
     &__info
       width: calc(100% - 240px)
+    &__sales-item
+      &:before,
+      &:after
+        display: none
       
 +r($desktop)
   .service-page
@@ -331,3 +396,11 @@
       margin-right: auto
     &__info
       width: 100%
+    &__sales-wrap
+      margin-bottom: 33px
+      padding-bottom: 33px
+    &__sales-item
+      font-size: 14px
+      padding-top: 60px
+      > svg
+        font-size: 50px
