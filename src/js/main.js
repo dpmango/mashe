@@ -597,6 +597,22 @@ $(document).ready(function() {
     });
     
     
+    // SERVICE PAGES
+    $('.service-page__accord').on('click', function(){
+      if ($(this).hasClass('is-active')) {
+        $(this).removeClass('is-active');
+        $(this).next('.service-page__hidden-item').slideUp(200);
+        $(this).next('.service-page__hidden-item').removeClass('is-active');
+      } else {
+        $('.service-page__accord').removeClass('is-active');
+        $('.service-page__hidden-item').slideUp(200);
+        $('.service-page__hidden-item').addClass('is-active');
+
+        $(this).addClass('is-active');
+        $(this).next('.service-page__hidden-item').slideDown(200);
+      }
+    });
+    
 
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');

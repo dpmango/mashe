@@ -128,6 +128,64 @@
     a
       color: #f2b6ac
       
+  // DELIV
+  &__accord
+    font-size: 24px
+    font-family: $fontMedium
+    padding: 60px 60px 60px 120px
+    position: relative
+    border-bottom: 2px solid #f5f5f5
+    &:first-of-type
+      border-top: 2px solid #f5f5f5
+    &:hover
+      cursor: pointer
+    svg:not(.ico-arrow-right)
+      color: $primaryColor
+      font-size: 30px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%) translateX(-50%)
+      left: 42px
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      border: 2px solid $primaryColor
+    .ico-arrow-right
+      position: absolute
+      top: 50%
+      right: 20px
+      transform: translateY(-50%) rotate(90deg)
+  &__hidden-item
+    padding-top: 60px
+    display: none
+    &.is-active
+      display: block
+  &__list
+    padding-left: 60px
+    padding-bottom: 5px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 10px
+      left: 0
+      width: 45px
+      height: 1px
+      background-color: $btnBgColor
+  &__subtitle3
+    font-size: 20px
+    margin-top: 0
+    margin-bottom: 15px
+    font-family: $fontDemi
+    font-weight: 400
+    color: $btnBgColor
+      
       
 @media(max-width: 1200px)
   .service-page
@@ -201,3 +259,20 @@
       padding-top: 25px
       svg
         top: 0px
+        
+    &__accord
+      padding: 25px 25px 25px 120px
+      width: calc(100% + 60px)
+      margin-left: -30px
+      &:before
+        width: 70px
+        height: 70px
+        left: 30px
+      svg:not(.ico-arrow-right)
+        left: 66px
+      .ico-arrow-right
+        display: none
+    &__list
+      width: calc(100% + 60px)
+      margin-left: -30px
+      padding-right: 30px
