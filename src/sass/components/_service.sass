@@ -1,0 +1,203 @@
+.service-page
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: $bgColor
+  &__title
+    margin-top: 0
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 55px
+    letter-spacing: 0.05em
+    font-size: 48px
+    font-family: $fontBold
+    color: $btnBgColor
+  &__wrap
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+  &__aside
+    width: 405px
+    background-color: #fff
+    margin-right: 25px
+    padding: 50px 55px
+  &__aside-item
+    display: block
+    font-size: 16px
+    font-family: $fontDemi
+    color: #B1BABE
+    padding: 35px 20px 35px 125px
+    position: relative
+    border: 2px solid #F1F1F1
+    border-bottom-color: transparent
+    text-transform: uppercase
+    letter-spacing: 0.03em
+    transition: all $transitionSpeed $ease
+    &:last-child
+      border: 2px solid #F1F1F1
+    &:hover,
+    &.is-active
+      border-color: $btnBgColor
+      color: $btnBgColor
+    svg
+      position: absolute
+      top: 50%
+      left: 45px
+      transform: translateY(-50%)
+      transition: none
+      font-size: 40px
+  &__main
+    width: calc(100% - 430px)
+    background-color: #fff
+    padding: 60px 55px
+  &__subtitle
+    font-size: 36px
+    font-family: $fontDemi
+    font-weight: 400
+    color: $btnBgColor
+    margin-top: 0
+    margin-bottom: 45px
+  &__subtitle2
+    font-size: 24px
+    font-family: $fontDemi
+    font-weight: 400
+    margin-top: 0
+    margin-bottom: 35px
+    color: $btnBgColor
+  &__act
+    padding-left: 100px
+    position: relative
+    padding-bottom: 30px
+    .ico-dashed
+      height: 100%
+      width: 5px
+      position: absolute
+      top: 0
+      left: 32px
+      z-index: 0
+    &:before
+      content: ''
+      position: absolute
+      z-index: 1
+      background-color: #fff
+      top: 0
+      left: 0
+      width: 65px
+      height: 65px
+      border-radius: 50%
+      border: 2px solid $primaryColor
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 20px
+      font-family: $fontMedium
+      color: $btnBgColor
+    &:nth-of-type(1):before
+      content: '1'
+    &:nth-of-type(2):before
+      content: '2'
+    &:nth-of-type(3):before
+      content: '3'
+    &:nth-of-type(4):before
+      content: '4'
+    &:nth-of-type(5):before
+      content: '5'
+      
+  &__text
+    font-size: 20px
+    line-height: 150%
+    margin-top: 0
+    margin-bottom: 30px
+    color: #707070
+    font-family: $fontBook
+    span
+      color: $btnBgColor
+      font-family: $fontDemi
+  &__questions
+    font-size: 24px
+    line-height: 150%
+    font-family: $fontDemi
+    padding-top: 60px
+    color: $btnBgColor
+    position: relative
+    svg
+      position: absolute
+      top: 15px
+      left: 0
+      width: 100%
+      color: #F5F5F5
+    a
+      color: #f2b6ac
+      
+      
+@media(max-width: 1200px)
+  .service-page
+    &__aside
+      padding: 25px 30px
+      width: 350px
+    &__main
+      padding: 30px 35px
+      width: calc(100% - 375px)
+      
++r($desktop)
+  .service-page
+    padding-top: 60px
+    padding-bottom: 60px
+    &__title
+      font-size: 36px
+      margin-bottom: 30px
+    &__wrap
+      flex-direction: column
+    &__aside
+      width: 100%
+      margin-right: 0
+      margin-bottom: 10px
+      &-item
+        font-size: 20px
+    &__main
+      width: 100%
+      
++r($tablet)
+  .service-page
+    padding-top: 40px
+    padding-bottom: 0
+    .breadcrumbs
+      display: none
+    &__aside
+      width: calc(100% + 60px)
+      margin-left: -30px
+      padding: 0
+      &-item
+        padding: 20px 10px
+        border: 0
+        border-bottom: 2px solid #f5f5f5
+        text-align: center
+        &:last-child,
+        &:hover,
+        &.is-active
+          border: 0
+          border-bottom: 2px solid #f5f5f5
+        svg
+          display: none
+    &__main
+      padding: 40px 30px
+      width: calc(100% + 60px)
+      margin-left: -30px
+    &__subtitle
+      font-size: 32px
+      margin-bottom: 35px
+    &__subtitle2
+      font-size: 24px
+    &__act
+      padding-left: 50px
+      padding-bottom: 0px
+      &:before
+        width: 30px
+        height: 30px
+        font-size: 14px
+      .ico-dashed
+        left: 16px
+    &__questions
+      font-size: 22px
+      padding-top: 25px
+      svg
+        top: 0px

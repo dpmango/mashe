@@ -1,0 +1,49 @@
+---
+title: Service-order || MASHE
+bodyClass: service-body
+---
+extends shared/_layout
+block content
+  
+  
+  // SERVICE
+  section.service-page
+    .container
+      .breadcrumbs.wow
+        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link.is-active(href="#") Сервис
+      h1.service-page__title.wow(data-animation-delay=".1s") Сервис
+      .service-page__wrap
+        aside.service-page__aside
+          a.service-page__aside-item.is-active(href="#") Как оформить заказ?
+            +icon('ico-serv-order')
+          a.service-page__aside-item(href="#") Способы доставки
+            +icon('ico-serv-truck')
+          a.service-page__aside-item(href="#") Способы оплаты
+            +icon('ico-payment')
+          a.service-page__aside-item(href="#") Скидки и бонусы
+            +icon('ico-action')
+          a.service-page__aside-item(href="#") Обмен/возврат
+            +icon('ico-serv-refund')
+        .service-page__main
+          h2.service-page__subtitle Как оформить заказ?
+          h3.service-page__subtitle2 Для того, чтобы приобрести товар из ассортимента вам необходимо совершить следующие действия:
+          .service-page__act
+            +icon('ico-dashed')
+            p.service-page__text Выбрать интересующий товар, при необходимости отметить дополнительные параметры и указать количество. После чего нажать на кнопку в <span>корзину</span> (пиктограмма) - товар будет добавлен в корзину. Когда все нужные товары будут в корзине, можете переходить к следующему шагу.
+          .service-page__act
+            +icon('ico-dashed')
+            p.service-page__text Перейти в корзину. При необходимости отредактировать количество товара. Далее можно перейти к следующему шагу, нажав на кнопку <span>оформить заказ</span>.
+          .service-page__act
+            +icon('ico-dashed')
+            p.service-page__text В случае, если Вы ранее совершали покупки на нашем сайте, то введите свои контактные данные (ФИО, мобильный номер и адрес электронной почты). Сайт вас узнает и вы сможете продолжить оформление заказа.
+            p.service-page__text В случае, если вы впервые совершаете покупку на нашем сайте, вам необходимо заполнить форму с контактными данными  (ФИО, мобильный номер и адрес электронной почты). После этого на ваш электронный адрес придет письмо со ссылкой на активацию вашего профиля. После чего вы сможете продолжить оформление заказа.
+          .service-page__act
+            +icon('ico-dashed')
+            p.service-page__text В процессе оформления заказа, если получать заказ будете не вы, вам нужно будет указать получателя заказа. Также нужно будет выбрать предпочтительный способ доставки и оплаты, после чего заказ будет оформлен.
+          .service-page__act
+            p.service-page__text На финальной стадии вам нужно будет оплатить заказа или дождаться подтверждения заказа оператором, если вы выбрали оплату при получении. В любом случае на ваш электронный адрес придет письмо с информацией о заказе. Не забудьте проверить папку «Спам», если письмо будет задерживаться.
+          .service-page__questions Если у вас возникнут вопросы вы в любое время можете написать нам на электронный адрес <a href="#">info@mashe-shop.ru</a>, а также позвонить по будням с 10 до 18 часов по Мск на бесплатный номер <a href="#">8(800)505-95-43</a>
+            +icon('ico-wave-long')
+      
+  include components/_newsletter
