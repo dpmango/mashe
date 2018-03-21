@@ -1,0 +1,59 @@
+---
+title: Service-payment || MASHE
+bodyClass: service-body
+---
+extends shared/_layout
+block content
+  
+  
+  // SERVICE
+  section.service-page
+    .container
+      .breadcrumbs.wow
+        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link.is-active(href="#") Сервис
+      h1.service-page__title.wow(data-animation-delay=".1s") Сервис
+      .service-page__wrap
+        aside.service-page__aside
+          a.service-page__aside-item(href="#") Как оформить заказ?
+            +icon('ico-serv-order')
+          a.service-page__aside-item(href="#") Способы доставки
+            +icon('ico-serv-truck')
+          a.service-page__aside-item.is-active(href="#") Способы оплаты
+            +icon('ico-payment')
+          a.service-page__aside-item(href="#") Скидки и бонусы
+            +icon('ico-action')
+          a.service-page__aside-item(href="#") Обмен/возврат
+            +icon('ico-serv-refund')
+        .service-page__main
+          h2.service-page__subtitle Оплата
+          p.service-page__text Оплата товаров в нашем интернет-магазине возможна банковскими картами при оформлении заказа или наличными при получении заказа от курьера или в пункте выдачи курьерской компании. В некоторых пунктах выдачи оплата при получении невозможна. При выборе таких пунктов вам будет предложено оплатить заказ банковской картой при оформлении заказа.
+          p.service-page__text Оплата заказов, отправляемых Почтой России производится банковскими картами при оформлении заказа.
+          h4.service-page__subtitle3 Оплата банковскими картами осуществляется через АО «АЛЬФА-БАНК»
+          .service-page__img-wrap
+            img(src="img/alfa.png")
+            img(src="img/visa.png")
+            img(src="img/master.png")
+          p.service-page__text Услуга оплаты через интернет осуществляется в соответствии с Правилами международных платежных систем Visa и MasterCard на принципах соблюдения конфиденциальности и безопасности совершения платежа, для чего используются самые современные методы проверки, шифрования и передачи данных по закрытым каналам связи. Ввод данных банковской карты осуществляется на защищенной платежной странице АО «АЛЬФА-БАНК».
+          .service-page__float
+            .service-page__imgs
+              +icon('ico-serv-card')
+              img(src="img/mastervisa.png")
+            .service-page__info
+              p.service-page__text На странице для ввода данных банковской карты потребуется ввести номер карты, имя владельца карты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA или CVC2 для MasterCard). Все необходимые данные пропечатаны на самой карте.
+              p.service-page__text Трёхзначный код безопасности — это три цифры, находящиеся на обратной стороне карты.
+          p.service-page__text Далее вы будете перенаправлены на страницу Вашего банка для ввода 3DSecure кода, который придет к Вам в СМС. Если 3DSecure код к Вам не пришел, то следует обратится в банк выдавший Вам карту.
+          p.service-page__text Предоставляемая вами персональная информация (имя, адрес, телефон, e-mail, номер банковской карты) является конфиденциальной и не подлежит разглашению. Данные вашей кредитной карты передаются только в зашифрованном виде и не сохраняются на нашем Web-сервере.
+          h3.service-page__subtitle2 Случаи отказа в совершении платежа:
+          .service-page__list.service-page__list--single
+            p.service-page__text банковская карта не предназначена для совершения платежей через интернет, о чем можно узнать, обратившись в Ваш Банк;
+          .service-page__list.service-page__list--single
+            p.service-page__text недостаточно средств для оплаты на банковской карте. Подробнее о наличии средств на банковской карте Вы можете узнать, обратившись в банк, выпустивший банковскую карту;
+          .service-page__list.service-page__list--single
+            p.service-page__text данные банковской карты введены неверно;
+          .service-page__list.service-page__list--single
+            p.service-page__text истек срок действия банковской карты. Срок действия карты, как правило, указан на лицевой стороне карты (это месяц и год, до которого действительна карта). Подробнее о сроке действия карты Вы можете узнать, обратившись в банк, выпустивший банковскую карту;
+          .service-page__questions Если у вас возникнут вопросы вы в любое время можете написать нам на электронный адрес <a href="#">info@mashe-shop.ru</a>, а также позвонить по будням с 10 до 18 часов по Мск на бесплатный номер <a href="#">8(800)505-95-43</a>
+            +icon('ico-wave-long')
+
+  include components/_newsletter

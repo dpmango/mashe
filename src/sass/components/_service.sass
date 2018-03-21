@@ -112,6 +112,9 @@
     span
       color: $btnBgColor
       font-family: $fontDemi
+    a
+      color: #f2b6ac
+      font-family: $fontDemi
   &__questions
     font-size: 24px
     line-height: 150%
@@ -178,6 +181,9 @@
       width: 45px
       height: 1px
       background-color: $btnBgColor
+    &--single
+      &:before
+        top: 16px
   &__subtitle3
     font-size: 20px
     margin-top: 0
@@ -185,6 +191,40 @@
     font-family: $fontDemi
     font-weight: 400
     color: $btnBgColor
+  
+  // PAYMENT
+  &__img-wrap
+    display: flex
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 40px
+    img
+      display: inline-block
+      vertical-align: middle
+      margin-right: 15px
+      margin-bottom: 10px
+      &:last-child
+        margin-right: 0
+  &__float
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+  &__imgs
+    width: 280px
+    margin-right: 50px
+    svg
+      width: 100%
+      height: auto
+    img
+      display: block
+      text-align: center
+      max-width: 100%
+      margin-left: auto
+      margin-right: auto
+      margin-top: 20px
+  &__info
+    width: calc(100% - 330px)
       
       
 @media(max-width: 1200px)
@@ -195,6 +235,11 @@
     &__main
       padding: 30px 35px
       width: calc(100% - 375px)
+    &__imgs
+      width: 200px
+      margin-right: 40px
+    &__info
+      width: calc(100% - 240px)
       
 +r($desktop)
   .service-page
@@ -276,3 +321,13 @@
       width: calc(100% + 60px)
       margin-left: -30px
       padding-right: 30px
+    &__float
+      flex-direction: column
+    &__imgs
+      width: 100%
+      margin-left: 0
+      max-width: 300px
+      margin-left: auto
+      margin-right: auto
+    &__info
+      width: 100%
