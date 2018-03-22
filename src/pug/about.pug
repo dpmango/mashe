@@ -1,0 +1,47 @@
+---
+title: About || MASHE
+bodyClass: about-body
+---
+extends shared/_layout
+block content
+  
+  
+  // SERVICE
+  section.about-page
+    .container
+      .breadcrumbs.wow
+        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link(href="#") Информация
+        a.breadcrumbs__link.is-active(href="#") О компании
+      h1.about-page__title.wow(data-animation-delay=".1s") О компании
+      .about-page__wrap
+        blockquote.about-page__blockquote.wow(data-animation-delay=".1s") Сшить платье мечты для самого особенного дня... Воссоздать интерьер XVII века... Отреставрировать исторические костюмы с соблюдением всех технологий... Изготовить 150 балетных пачек для постановки знаменитого Петербургского театра...
+          +icon('ico-wave-long')
+        img.about-page__img.wow(src="img/about-img.jpg" data-animation-delay=".1s")
+        p.service-page__text.wow Когда <span>Masheé</span> только начал свою работу, невозможно было вообразить в какие интересные, уникальные и невероятно сложные проекты мы окажемся вовлечены вами. <span>Приверженность качеству, честность и желание работать на результат</span> – помогли заслужить ваше <span>доверие</span>
+        p.service-page__text.wow(data-animation-delay=".1s") Спасибо вам, что доверяете нам свои мечты, делитесь страстью, заряжаете энергией и вдохновляете на развитие! В свою очередь <span>мы счастливы помогать вам</span> начинать свое дело, раскрыть творческий потенциал, осуществить смелые и удивительные проекты.
+        h3.service-page__subtitle2.wow(data-animation-delay=".2s") Именно для этого мы создали Masheé!
+        
+  .about-page__subscribe ПОДПИСЫВАЙТЕСЬ НА НАШ ИНСТАГРАМ  
+    a(href="#") @mashe_shop
+  
+  // PHOTOS
+  section.photos.wow(jsPhotosSlider)
+    a(href="#")
+      img.photos__item(src="img/image1.jpg")
+    a(href="#")
+      img.photos__item(src="img/image2.jpg")
+    a(href="#")
+      img.photos__item(src="img/image3.jpg")
+    a(href="#")
+      img.photos__item(src="img/image4.jpg")
+    a(href="#")
+      img.photos__item(src="img/image5.jpg")
+    a(href="#")
+      img.photos__item(src="img/image6.jpg")
+    a(href="#")
+      img.photos__item(src="img/image7.jpg")
+    a(href="#")
+      img.photos__item(src="img/image2.jpg")
+    
+  include components/_newsletter

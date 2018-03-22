@@ -1,0 +1,89 @@
+.about-page
+  padding-top: 100px
+  padding-bottom: 55px
+  background-color: $bgColor
+  &__title
+    margin-top: 0
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 55px
+    letter-spacing: 0.05em
+    font-size: 48px
+    font-family: $fontBold
+    color: $btnBgColor
+  &__wrap
+    background-color: #fff
+    padding: 25px 25px 50px 25px
+    text-align: center
+  &__blockquote
+    max-width: 1180px
+    margin-left: auto
+    margin-right: auto
+    font-size: 24px
+    line-height: 150%
+    font-family: $fontBook
+    font-weight: 200
+    font-style: italic
+    color: $textColor
+    position: relative
+    margin-top: 0
+    padding: 0
+    padding-bottom: 70px
+    margin-bottom: 40px
+    svg
+      position: absolute
+      width: 70%
+      height: 20px
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      color: #F5F5F5
+  &__img
+    display: block
+    height: auto
+    width: 100%
+    max-width: 980px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+  .service-page__text,
+  .service-page__subtitle2
+    max-width: 1180px
+    margin-left: auto
+    margin-right: auto
+    
+  &__subscribe
+    font-size: 18px
+    text-transform: uppercase
+    color: $btnBgColor
+    text-align: center
+    background-color: #fff
+    padding: 34px 25px
+    font-family: $fontDemi
+    a
+      color: #f2b6ac
+      margin-left: 4px
+      
++r($desktop)
+  .about-page
+    padding-top: 60px
+    &__title
+      font-size: 36px
+      margin-bottom: 30px
+    &__blockquote
+      font-size: 20px
+      padding-bottom: 30px
+      margin-bottom: 30px
+      
++r($tablet)
+  .about-page
+    padding-top: 40px
+    .breadcrumbs
+      display: none
+    &__wrap
+      padding-bottom: 25px
+      width: calc(100% + 60px)
+      margin-left: -30px
+    &__subscribe
+      padding-top: 25px
+      padding-bottom: 25px

@@ -613,6 +613,22 @@ $(document).ready(function() {
       }
     });
     
+    // HELP PAGES
+    $('.help-page__item').on('click', function(){
+      if ($(this).hasClass('is-active')) {
+        $(this).removeClass('is-active');
+        $(this).next('.help-page__hidden').slideUp(200);
+        $(this).next('.help-page__hidden').removeClass('is-active');
+      } else {
+        $('.help-page__item').removeClass('is-active');
+        $('.help-page__hidden').slideUp(200);
+        $('.help-page__hidden').addClass('is-active');
+
+        $(this).addClass('is-active');
+        $(this).next('.help-page__hidden').slideDown(200);
+      }
+    });
+    
 
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');

@@ -3411,6 +3411,12 @@ body, html {
   fill: #fff;
 }
 
+.ico-faq {
+  width: 0.81em;
+  height: 1em;
+  fill: #B1BABE;
+}
+
 .ico-favourites2 {
   width: 1.13em;
   height: 1em;
@@ -14474,7 +14480,11 @@ html.mfp-helper body {
   border: 2px solid #F1F1F1;
 }
 
-.service-page__aside-item:hover, .service-page__aside-item.is-active {
+.service-page__aside-item:hover {
+  color: #353535;
+}
+
+.service-page__aside-item.is-active {
   border-color: #353535;
   color: #353535;
 }
@@ -14869,6 +14879,52 @@ html.mfp-helper body {
   margin-bottom: 0;
 }
 
+.help-page__item {
+  font-size: 24px;
+  font-family: "FuturaPTMedium";
+  position: relative;
+  padding: 34px 50px 34px 0;
+  border-bottom: 2px solid #f5f5f5;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.help-page__item:first-of-type {
+  border-top: 2px solid #f5f5f5;
+}
+
+.help-page__item.is-active svg {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+
+.help-page__item svg {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+.help-page__hidden {
+  padding-top: 40px;
+  padding-left: 60px;
+  display: none;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.help-page__hidden p {
+  margin-bottom: 0;
+}
+
+.help-page__hidden.is-active {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .service-page__aside {
     padding: 25px 30px;
@@ -15030,6 +15086,134 @@ html.mfp-helper body {
   }
   .service-page__sales-item > svg {
     font-size: 50px;
+  }
+  .help-page__item {
+    font-size: 20px;
+    padding: 25px 40px 25px 0;
+  }
+  .help-page__item svg {
+    right: 10px;
+  }
+  .help-page__hidden {
+    padding: 25px 0 25px 20px;
+  }
+}
+
+.about-page {
+  padding-top: 100px;
+  padding-bottom: 55px;
+  background-color: #F9F9F9;
+}
+
+.about-page__title {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+  letter-spacing: 0.05em;
+  font-size: 48px;
+  font-family: "FuturaPTBold";
+  color: #353535;
+}
+
+.about-page__wrap {
+  background-color: #fff;
+  padding: 25px 25px 50px 25px;
+  text-align: center;
+}
+
+.about-page__blockquote {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  line-height: 150%;
+  font-family: "FuturaPTBook";
+  font-weight: 200;
+  font-style: italic;
+  color: #9E9E9E;
+  position: relative;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 70px;
+  margin-bottom: 40px;
+}
+
+.about-page__blockquote svg {
+  position: absolute;
+  width: 70%;
+  height: 20px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #F5F5F5;
+}
+
+.about-page__img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.about-page .service-page__text,
+.about-page .service-page__subtitle2 {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-page__subscribe {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #353535;
+  text-align: center;
+  background-color: #fff;
+  padding: 34px 25px;
+  font-family: "FuturaPTDemiC";
+}
+
+.about-page__subscribe a {
+  color: #f2b6ac;
+  margin-left: 4px;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-page {
+    padding-top: 60px;
+  }
+  .about-page__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .about-page__blockquote {
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-page {
+    padding-top: 40px;
+  }
+  .about-page .breadcrumbs {
+    display: none;
+  }
+  .about-page__wrap {
+    padding-bottom: 25px;
+    width: -webkit-calc(100% + 60px);
+    width: calc(100% + 60px);
+    margin-left: -30px;
+  }
+  .about-page__subscribe {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 

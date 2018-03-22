@@ -45,3 +45,7 @@ PageList:
   ready: 90
 - file: info.html
   ready: 90
+- file: about.html
+  ready: 90
+- file: help.html
+  ready: 90

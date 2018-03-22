@@ -37,7 +37,8 @@
     transition: all $transitionSpeed $ease
     &:last-child
       border: 2px solid #F1F1F1
-    &:hover,
+    &:hover
+      color: $btnBgColor
     &.is-active
       border-color: $btnBgColor
       color: $btnBgColor
@@ -286,6 +287,36 @@
     margin-top: 0
     &:last-child
       margin-bottom: 0
+    
+// HELP PAGE
+.help-page
+  &__item
+    font-size: 24px
+    font-family: $fontMedium
+    position: relative
+    padding: 34px 50px 34px 0
+    border-bottom: 2px solid #f5f5f5
+    transition: all $transitionSpeed $ease
+    &:first-of-type
+      border-top: 2px solid #f5f5f5
+    &.is-active
+      svg
+        transform: translateY(-50%) rotate(-90deg)
+    svg
+      position: absolute
+      top: 50%
+      right: 20px
+      transform: translateY(-50%) rotate(90deg)
+  &__hidden
+    padding-top: 40px
+    padding-left: 60px
+    display: none
+    padding-bottom: 30px
+    border-bottom: 2px solid #f5f5f5
+    p
+      margin-bottom: 0
+    &.is-active
+      display: block
       
       
 @media(max-width: 1200px)
@@ -404,3 +435,12 @@
       padding-top: 60px
       > svg
         font-size: 50px
+        
+  .help-page
+    &__item
+      font-size: 20px
+      padding: 25px 40px 25px 0
+      svg
+        right: 10px
+    &__hidden
+      padding: 25px 0 25px 20px
