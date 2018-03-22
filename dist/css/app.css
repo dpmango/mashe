@@ -3591,8 +3591,20 @@ body, html {
   fill: #fff;
 }
 
+.ico-serv-action {
+  width: 0.65em;
+  height: 1em;
+  fill: #B1BABE;
+}
+
+.ico-serv-arrow {
+  width: 1.73em;
+  height: 1em;
+  fill: #353535;
+}
+
 .ico-serv-card {
-  width: 2.03em;
+  width: 2.04em;
   height: 1em;
   fill: #B1BABE;
 }
@@ -3613,6 +3625,12 @@ body, html {
   width: 0.82em;
   height: 1em;
   fill: #353535;
+}
+
+.ico-serv-payment {
+  width: 1.12em;
+  height: 1em;
+  fill: #B1BABE;
 }
 
 .ico-serv-post {
@@ -14499,7 +14517,22 @@ html.mfp-helper body {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+  font-size: 45px;
+}
+
+.service-page__aside-item .ico-serv-truck {
+  font-size: 35px;
+  left: 40px;
+}
+
+.service-page__aside-item .ico-serv-payment {
   font-size: 40px;
+  left: 40px;
+}
+
+.service-page__aside-item .ico-serv-action {
+  font-size: 46px;
+  left: 50px;
 }
 
 .service-page__main {
@@ -14533,13 +14566,16 @@ html.mfp-helper body {
   padding-bottom: 30px;
 }
 
-.service-page__act .ico-dashed {
+.service-page__act:after {
+  content: '';
   height: 100%;
-  width: 5px;
+  width: 1px;
+  background-color: transparent;
   position: absolute;
   top: 0;
-  left: 32px;
+  left: 34px;
   z-index: 0;
+  border-left: 1px dashed #FFDAD4;
 }
 
 .service-page__act:before {
@@ -14591,6 +14627,10 @@ html.mfp-helper body {
   content: '5';
 }
 
+.service-page__act:nth-of-type(5):after {
+  display: none;
+}
+
 .service-page__text {
   font-size: 20px;
   line-height: 150%;
@@ -14608,6 +14648,13 @@ html.mfp-helper body {
 .service-page__text a {
   color: #f2b6ac;
   font-family: "FuturaPTDemiC";
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.service-page__text a:hover {
+  color: #E09284;
 }
 
 .service-page__questions {
@@ -14629,6 +14676,13 @@ html.mfp-helper body {
 
 .service-page__questions a {
   color: #f2b6ac;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.service-page__questions a:hover {
+  color: #E09284;
 }
 
 .service-page__accord {
@@ -14647,7 +14701,7 @@ html.mfp-helper body {
   cursor: pointer;
 }
 
-.service-page__accord svg:not(.ico-arrow-right) {
+.service-page__accord svg:not(.ico-serv-arrow) {
   color: #FFDAD4;
   font-size: 30px;
   position: absolute;
@@ -14673,13 +14727,18 @@ html.mfp-helper body {
   border: 2px solid #FFDAD4;
 }
 
-.service-page__accord .ico-arrow-right {
+.service-page__accord svg.ico-serv-location {
+  font-size: 36px;
+}
+
+.service-page__accord .ico-serv-arrow {
   position: absolute;
   top: 50%;
   right: 20px;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-      -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 14px;
 }
 
 .service-page__hidden-item {
@@ -14775,6 +14834,7 @@ html.mfp-helper body {
 .service-page__imgs svg {
   width: 100%;
   height: auto;
+  color: #B1BABE;
 }
 
 .service-page__imgs img {
@@ -14885,9 +14945,10 @@ html.mfp-helper body {
   position: relative;
   padding: 34px 50px 34px 0;
   border-bottom: 2px solid #f5f5f5;
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  color: #353535;
+  -webkit-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear;
 }
 
 .help-page__item:first-of-type {
@@ -14895,18 +14956,19 @@ html.mfp-helper body {
 }
 
 .help-page__item.is-active svg {
-  -webkit-transform: translateY(-50%) rotate(-90deg);
-      -ms-transform: translateY(-50%) rotate(-90deg);
-          transform: translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
 }
 
 .help-page__item svg {
+  font-size: 14px;
   position: absolute;
   top: 50%;
   right: 20px;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-      -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .help-page__hidden {
@@ -14928,12 +14990,27 @@ html.mfp-helper body {
 @media (max-width: 1200px) {
   .service-page__aside {
     padding: 25px 30px;
-    width: 350px;
+    width: 300px;
+  }
+  .service-page__aside-item {
+    padding-left: 95px;
+  }
+  .service-page__aside-item svg {
+    left: 30px;
+  }
+  .service-page__aside-item .ico-serv-truck {
+    left: 25px;
+  }
+  .service-page__aside-item .ico-serv-payment {
+    left: 25px;
+  }
+  .service-page__aside-item .ico-serv-action {
+    left: 35px;
   }
   .service-page__main {
     padding: 30px 35px;
-    width: -webkit-calc(100% - 375px);
-    width: calc(100% - 375px);
+    width: -webkit-calc(100% - 325px);
+    width: calc(100% - 325px);
   }
   .service-page__imgs {
     width: 200px;
@@ -15019,14 +15096,16 @@ html.mfp-helper body {
   }
   .service-page__act {
     padding-left: 50px;
-    padding-bottom: 0px;
+  }
+  .service-page__act .service-page__text {
+    margin-bottom: 0;
   }
   .service-page__act:before {
     width: 30px;
     height: 30px;
     font-size: 14px;
   }
-  .service-page__act .ico-dashed {
+  .service-page__act:after {
     left: 16px;
   }
   .service-page__questions {
@@ -15181,6 +15260,13 @@ html.mfp-helper body {
 .about-page__subscribe a {
   color: #f2b6ac;
   margin-left: 4px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.about-page__subscribe a:hover {
+  color: #E09284;
 }
 
 @media only screen and (max-width: 992px) {

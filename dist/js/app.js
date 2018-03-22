@@ -602,11 +602,11 @@ $(document).ready(function() {
       if ($(this).hasClass('is-active')) {
         $(this).removeClass('is-active');
         $(this).next('.service-page__hidden-item').slideUp(200);
-        $(this).next('.service-page__hidden-item').removeClass('is-active');
+        //$(this).next('.service-page__hidden-item').removeClass('is-active');
       } else {
         $('.service-page__accord').removeClass('is-active');
         $('.service-page__hidden-item').slideUp(200);
-        $('.service-page__hidden-item').addClass('is-active');
+        //$('.service-page__hidden-item').addClass('is-active');
 
         $(this).addClass('is-active');
         $(this).next('.service-page__hidden-item').slideDown(200);
@@ -618,11 +618,11 @@ $(document).ready(function() {
       if ($(this).hasClass('is-active')) {
         $(this).removeClass('is-active');
         $(this).next('.help-page__hidden').slideUp(200);
-        $(this).next('.help-page__hidden').removeClass('is-active');
+        //$(this).next('.help-page__hidden').removeClass('is-active');
       } else {
         $('.help-page__item').removeClass('is-active');
         $('.help-page__hidden').slideUp(200);
-        $('.help-page__hidden').addClass('is-active');
+        //$('.help-page__hidden').addClass('is-active');
 
         $(this).addClass('is-active');
         $(this).next('.help-page__hidden').slideDown(200);
