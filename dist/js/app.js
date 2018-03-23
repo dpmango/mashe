@@ -397,11 +397,11 @@ $(document).ready(function() {
           nav: false
         },
 
-        991: {
+        767: {
           items: 3
 
         },
-        1336: {
+        1023: {
           items: 4
 
         }
