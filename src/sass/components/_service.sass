@@ -89,7 +89,7 @@
       top: 0
       left: 34px
       z-index: 0
-      border-left: 1px dashed $primaryColor
+      border-left: 2px dashed $primaryColor
     &:before
       content: ''
       position: absolute
@@ -162,9 +162,12 @@
     font-family: $fontMedium
     padding: 60px 60px 60px 120px
     position: relative
-    border-bottom: 2px solid #f5f5f5
-    &:first-of-type
-      border-top: 2px solid #f5f5f5
+    color: $btnBgColor
+    border-top: 2px solid #f5f5f5
+    &:nth-of-type(5)
+      border-bottom: 2px solid #f5f5f5
+    &.is-active
+      border-bottom: 2px solid #f5f5f5
     &:hover
       cursor: pointer
     svg:not(.ico-serv-arrow)
@@ -194,7 +197,10 @@
       font-size: 14px
   &__hidden-item
     padding-top: 60px
+    padding-left: 120px
     display: none
+    .service-page__hint
+      padding-bottom: 30px
     &.is-active
       display: block
   &__list
@@ -219,6 +225,8 @@
     font-family: $fontDemi
     font-weight: 400
     color: $btnBgColor
+  &__rules
+    padding-top: 55px
   
   // PAYMENT
   &__img-wrap
@@ -440,7 +448,7 @@
         top: 0px
         
     &__accord
-      padding: 25px 25px 25px 120px
+      padding: 35px 25px 35px 120px
       width: calc(100% + 60px)
       margin-left: -30px
       &:before
@@ -449,8 +457,11 @@
         left: 30px
       svg:not(.ico-arrow-right)
         left: 66px
-      .ico-arrow-right
+      .ico-serv-arrow
         display: none
+    &__hidden-item
+      padding-top: 30px
+      padding-left: 30px
     &__list
       width: calc(100% + 60px)
       margin-left: -30px
@@ -463,6 +474,13 @@
       max-width: 300px
       margin-left: auto
       margin-right: auto
+    &__img-wrap
+      margin-bottom: 25px
+      img
+        max-width: 135px
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
     &__info
       width: 100%
     &__sales-wrap

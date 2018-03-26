@@ -1003,6 +1003,8 @@
       text-align: center
       margin-bottom: 10px
       padding: 0
+      width: calc(100% + 60px)
+      margin-left: -30px
     &__page
       margin-right: 0
       padding-right: 0
@@ -1015,6 +1017,8 @@
         border-top: 0
       .ico-arrow-right
         display: none
+      &.step-done span:before
+        left: -2px
     &__text
       font-size: 18px
       text-align: center
@@ -1026,6 +1030,8 @@
       margin-bottom: 15px
       margin-right: 30px
       padding-left: 32px
+      &[for="not-you"]
+        display: inline-block
       &:last-child
         margin-right: 0
       &:before
@@ -1047,6 +1053,16 @@
       &--40
         width: 100%
         margin-left: 0
+    &__btn
+      margin-left: auto
+      margin-right: auto
+    &__datas,
+    &__gifts,
+    &__aside,
+    &__address,
+    &__btn-wrap
+      width: calc(100% + 60px)
+      margin-left: -30px
     &__gifts-wrap
       margin-bottom: 25px
     &__gift-item
