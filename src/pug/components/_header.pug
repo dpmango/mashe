@@ -206,7 +206,7 @@ header.header#top
         a.header__link(href="#callback" js-popup) Обратный звонок
         a.header__link.header__link--tel(href="tel:88005059543") 8 800 505-95-43
           span по будням с 10 до 18
-        a.header__link(href="#") Вход
+        a.header__link(href="#login-popup" js-popup) Вход
         
 a.to-top-btn(href="#top")
   +icon('ico-totop')
@@ -227,9 +227,20 @@ a.to-top-btn(href="#top")
         +icon('ico-wave')
     p.product-popup__text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
     form(action="#")
-      input.product-popup__input(type="text" placeholder="Ваше имя")
-      input.product-popup__input(type="text" placeholder="Контактный номер")
-      textarea.product-popup__textarea(placeholder="Комментарий")
+      .product-popup__input(jsInput)
+        input(type="text" id="prod-name")
+        label.product-popup__placeholder(for="prod-name")
+          span Ваше имя
+      .product-popup__input(jsInput jsTel)
+        input(type="text" id="prod-tel")
+        label.product-popup__placeholder(for="prod-tel")
+          span Контактный номер
+      .product-popup__input(jsInput)
+        textarea(id="prod-comment")
+        label.product-popup__placeholder(for="prod-comment")
+          span Комментарий
+      //input.product-popup__input(type="text" placeholder="Контактный номер")
+      //textarea.product-popup__textarea(placeholder="Комментарий")
       button.product-popup__btn(type="button" jsSendCallback) Отправить
     p.product-popup__text Нажимая кнопку, вы соглашаетесь с 
       a.product-popup__link(href="#") офертой
@@ -239,6 +250,56 @@ a.to-top-btn(href="#top")
     p.product-popup__text Спасибо за вашу заявку. Наши менеджеры свяжутся с вами в ближайшее время
     button.product-popup__btn.product-popup__btn--close(type="button" jsClosePopup) Закрыть
         +icon('ico-close')
-    
+        
+        
+// LOGIN POPUP
+.login-popup.product-popup#login-popup
+  h2.product-popup__title
+    a.login-popup__link.login-popup__link--log.is-active(href="#") Войти
+    a.login-popup__link.login-popup__link--reg(href="#") Зарегистрироваться
+    +icon('ico-wave')
+  .login-popup__first.is-active
+    form(action="#")
+      .product-popup__input(jsInput)
+        +icon('ico-login-mail')
+        input(type="text" id="login-name")
+        label.product-popup__placeholder(for="login-name")
+          span Ваш email
+      .product-popup__input(jsInput)
+        +icon('ico-login-pass')
+        input(type="password" id="login-pass")
+        label.product-popup__placeholder(for="login-pass")
+          span Пароль
+      a.login-popup__hint(href="#") Забыли пароль?
+      button.product-popup__btn(type="button") Войти
+  .login-popup__second
+    p.product-popup__text Пожалуйста, введите свой адрес электронной почты ниже, чтобы получить ссылку на сброс пароля.
+    form(action="#")
+      .product-popup__input(jsInput)
+        +icon('ico-login-mail')
+        input(type="text" id="login-name2")
+        label.product-popup__placeholder(for="login-name2")
+          span Ваш email
+      button.product-popup__btn(type="button") Отправить
+  .login-popup__third
+    form(action="#")
+      .product-popup__input(jsInput)
+        +icon('ico-login-mail')
+        input(type="text" id="login-name3")
+        label.product-popup__placeholder(for="login-name3")
+          span Ваш email
+      .product-popup__input(jsInput)
+        +icon('ico-login-pass')
+        input(type="password" id="login-pass3")
+        label.product-popup__placeholder(for="login-pass3")
+          span Пароль
+      .product-popup__input(jsInput)
+        +icon('ico-login-pass')
+        input(type="password" id="login-again")
+        label.product-popup__placeholder(for="login-again")
+          span Повторите пароль
+      button.product-popup__btn(type="button") Зарегистрироваться
+      p.product-popup__text Нажимая кнопку, вы соглашаетесь с 
+        a.product-popup__link(href="#") правилами сайта
       
 // HEADER :: END

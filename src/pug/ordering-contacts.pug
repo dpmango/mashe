@@ -33,49 +33,153 @@ block content
                 
               .order-section__type.order-section__type--fiz.is-active
                 .order-section__fields
-                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
-                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-name1")
+                    label.order-section__placeholder(for="order-name1")
+                      span ФИО*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  .order-section__input.order-section__input--35(jsInput jsTel)
+                    input(type="text" id="order-tel1")
+                    label.order-section__placeholder(for="order-tel1")
+                      span Контактный телефон*
+                  //input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-mail1")
+                    label.order-section__placeholder(for="order-mail1")
+                      span Email*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
                 input.order-section__checkbox(type="checkbox" id="not-you" jsNotYou)
                 label.order-section__label(for="not-you") Отметьте здесь, если получать заказ будете не вы
                 .order-section__fields.order-section__recipient
-                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО получателя*")
-                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-name2")
+                    label.order-section__placeholder(for="order-name2")
+                      span ФИО получателя*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="ФИО получателя*")
+                  .order-section__input.order-section__input--35(jsInput jsTel)
+                    input(type="text" id="order-tel2")
+                    label.order-section__placeholder(for="order-tel2")
+                      span Контактный телефон*
+                  //input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-mail2")
+                    label.order-section__placeholder(for="order-mail2")
+                      span Email*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
                   
                   
               .order-section__type.order-section__type--ur
                 .order-section__fields
-                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
-                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-name-ur")
+                    label.order-section__placeholder(for="order-name-ur")
+                      span ФИО*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  .order-section__input.order-section__input--35(jsInput jsTel)
+                    input(type="text" id="order-tel-ur")
+                    label.order-section__placeholder(for="order-tel-ur")
+                      span Контактный телефон*
+                  //input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-mail-ur")
+                    label.order-section__placeholder(for="order-mail-ur")
+                      span Email*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
                 .order-section__fields
                   h3.order-section__fields-title Юридические реквизиты
-                  input.order-section__input(type="text" placeholder="Название организации*")
-                  input.order-section__input(type="text" placeholder="Адрес организации*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="КПП*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="ОГРНИП*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-nameorg-ur")
+                    label.order-section__placeholder(for="order-nameorg-ur")
+                      span Название организации*
+                  //input.order-section__input(type="text" placeholder="Название организации*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-address-ur")
+                    label.order-section__placeholder(for="order-address-ur")
+                      span Адрес организации*
+                  //input.order-section__input(type="text" placeholder="Адрес организации*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-inn-ur")
+                    label.order-section__placeholder(for="order-inn-ur")
+                      span ИНН*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-kpp-ur")
+                    label.order-section__placeholder(for="order-kpp-ur")
+                      span КПП*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="КПП*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-org-ur")
+                    label.order-section__placeholder(for="order-org-ur")
+                      span ОГРНИП*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="ОГРНИП*")
                 .order-section__fields
                   h3.order-section__fields-title Расчетный счет
-                  input.order-section__input(type="text" placeholder="Банк*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-bank-ur")
+                    label.order-section__placeholder(for="order-bank-ur")
+                      span Банк*
+                  //input.order-section__input(type="text" placeholder="Банк*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-bik-ur")
+                    label.order-section__placeholder(for="order-bik-ur")
+                      span БИК*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-schet-ur")
+                    label.order-section__placeholder(for="order-schet-ur")
+                      span Расчетный счет*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
               .order-section__type.order-section__type--ip
                 .order-section__fields
-                  input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
-                  input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
-                  input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-name-ip")
+                    label.order-section__placeholder(for="order-name-ip")
+                      span ФИО*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="ФИО*")
+                  .order-section__input.order-section__input--35(jsInput jsTel)
+                    input(type="text" id="order-tel-ip")
+                    label.order-section__placeholder(for="order-tel-ip")
+                      span Контактный телефон*
+                  //input.order-section__input.order-section__input--35(type="text" placeholder="Контактный телефон*")
+                  .order-section__input.order-section__input--65(jsInput)
+                    input(type="text" id="order-mail-ip")
+                    label.order-section__placeholder(for="order-mail-ip")
+                      span Email*
+                  //input.order-section__input.order-section__input--65(type="text" placeholder="Email*")
                 .order-section__fields
                   h3.order-section__fields-title Юридические реквизиты
-                  input.order-section__input(type="text" placeholder="Название организации*")
-                  input.order-section__input(type="text" placeholder="Адрес организации*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-nameorg-ip")
+                    label.order-section__placeholder(for="order-nameorg-ip")
+                      span Название организации*
+                  //input.order-section__input(type="text" placeholder="Название организации*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-address-ip")
+                    label.order-section__placeholder(for="order-address-ip")
+                      span Адрес организации*
+                  //input.order-section__input(type="text" placeholder="Адрес организации*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-inn-ip")
+                    label.order-section__placeholder(for="order-inn-ip")
+                      span ИНН*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="ИНН*")
                 .order-section__fields
                   h3.order-section__fields-title Расчетный счет
-                  input.order-section__input(type="text" placeholder="Банк*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
-                  input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
+                  .order-section__input(jsInput)
+                    input(type="text" id="order-bank-ip")
+                    label.order-section__placeholder(for="order-bank-ip")
+                      span Банк*
+                  //input.order-section__input(type="text" placeholder="Банк*")
+                  .order-section__input.order-section__input--25(jsInput jsNumb)
+                    input(type="text" id="order-bik-ip")
+                    label.order-section__placeholder(for="order-bik-ip")
+                      span БИК*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="БИК*")
+                  .order-section__input.order-section__input--25(jsInput)
+                    input(type="text" id="order-schet-ip")
+                    label.order-section__placeholder(for="order-schet-ip" jsNumb)
+                      span Расчетный счет*
+                  //input.order-section__input.order-section__input--25(type="text" placeholder="Расчетный счет*")
           .order-section__gifts
             h2.order-section__subtitle Каталог образцов в подарок!
               +icon('ico-gift')

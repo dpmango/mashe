@@ -629,6 +629,48 @@ $(document).ready(function() {
       }
     });
     
+    // PLACEHOLDERS
+    $('[jsInput] input, [jsInput] textarea').focus(function () {
+		  $(this).next('.product-popup__placeholder, .order-section__placeholder').addClass('is-active');
+	  });
+	  $('[jsInput] input, [jsInput] textarea').focusout(function () {
+	  	if ($(this).val() === "" || $(this).val() == "_ ___-___-____") {
+	  		$(this).next('.product-popup__placeholder, .order-section__placeholder').removeClass('is-active');
+	  	}
+	  });
+    
+    // MASK TEL
+    $('[jsTel] input').mask("9 999-999-9999", {
+	  	clearIfNotMatch: true
+	  });
+    // RESET MASK
+    $(window).on('load', function () {
+		  $('[jsTel] input').val("")
+	  });
+    
+    
+    //LOGIN POPUP
+    $('.login-popup__hint').on('click', function(e){
+      e.preventDefault();
+      $('.login-popup__first, .login-popup__third').removeClass('is-active');
+      $('.login-popup__second').addClass('is-active');
+    });
+    $('.login-popup__link--reg').on('click', function(e){
+      e.preventDefault();
+      $('.login-popup__link').removeClass('is-active');
+      $(this).addClass('is-active');
+      $('.login-popup__first, .login-popup__second').removeClass('is-active');
+      $('.login-popup__third').addClass('is-active');
+    });
+    $('.login-popup__link--log').on('click', function(e){
+      e.preventDefault();
+      $('.login-popup__link').removeClass('is-active');
+      $(this).addClass('is-active');
+      $('.login-popup__third, .login-popup__second').removeClass('is-active');
+      $('.login-popup__first').addClass('is-active');
+    });
+
+    
 
     // EXAMPLES SLIDER
     var _socialsSlickMobile = $('[jsExamplesSlider]');

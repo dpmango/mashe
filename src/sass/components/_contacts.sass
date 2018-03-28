@@ -119,9 +119,11 @@
     .ico-vk
       font-size: 16px
     &:hover
-      background-color: $btnBgColor
-      box-shadow: 0 0 0 2px $btnBgColor
-      color: #fff
+      transform: scale(1.05)
+      //border-color: transparent
+      //background-color: $btnBgColor
+      //box-shadow: 0 0 0 2px $btnBgColor
+      //color: #fff
   &__text
     margin-left: auto
     margin-right: auto
@@ -164,7 +166,7 @@
     transition: all $transitionSpeed $ease
     &:focus
       border-color: $btnBgColor
-  &__textarea
+  textarea
     min-height: 100px
     max-width: 100%
     resize: none

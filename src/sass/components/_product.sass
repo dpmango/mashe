@@ -85,17 +85,49 @@
   &__input,
   &__textarea
     display: block
+    position: relative
     width: 100%
-    border: 2px solid #F0F1F2
     padding: 11px 25px
+    //font-size: 18px
+    //font-family: $fontBook
+    //color: $btnBgColor
+    input,
+    textarea
+      text-align: left
+      border: 0
+      width: 100%
+      font-size: 18px
+      font-family: $fontBook
+      color: $btnBgColor
+      &:focus + .product-popup__placeholder
+        border-color: $btnBgColor
+  &__placeholder
+    border: 2px solid #F0F1F2
+    padding: 10px 25px 12px 25px
+    text-align: left
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
     font-size: 18px
-    font-family: $fontBook
-    color: $btnBgColor
     transition: all $transitionSpeed $ease
-    &:focus
-      border-color: $btnBgColor
-  &__textarea
+    font-family: $fontBook
+    color: #BDBDBD
+    &.is-active
+      pointer-events: none
+      span
+        font-size: 14px
+        transform: translate(-26px, -33px)
+    span
+      display: block
+      width: 100%
+      transition: all $transitionSpeed $ease
+      transform-origin: left top
+      
+  textarea
     min-height: 100px
+    resize: none
   &__btn
     margin-top: 30px
     margin-bottom: 10px
@@ -356,6 +388,7 @@
     margin-bottom: 35px
   &__first-price,
   &__second-price
+    position: relative
     width: 45%
     border: 2px solid #FFF4F2
     padding: 12px 10px 12px 30px
@@ -363,6 +396,8 @@
     font-family: $fontMedium
     letter-spacing: -0.05em
     color: $btnBgColor
+    &--sale
+      border-color: #F0827D
     svg
       font-size: 24px
     span
@@ -371,9 +406,20 @@
       font-family: $fontBook
       color: transparentize($btnBgColor, 0.6)
       letter-spacing: 0
+  &__first-price
+    del
+      position: absolute
+      top: 3px
+      right: 7px
+      font-size: 18px
+      color: #F0827D
+      svg
+        font-size: 12px
   &__second-price
     width: 55%
     background-color: #FFF4F2
+    &--sale
+      background-color: #F0827D
   &__amount-wrap
     padding-bottom: 35px
     position: relative
@@ -748,6 +794,13 @@
       margin-bottom: 40px
     &__slider
       width: 50%
+    &__slider-wrap
+      .owl-next,
+      .owl-prev
+        background-size: 16px 21px
+    &__photos-item
+      svg
+        font-size: 23px
     &__info
       width: 50%
       padding-left: 20px
@@ -769,17 +822,26 @@
         display: none
       &-title
         font-size: 24px
+        text-align: center
       &-subtitle
         font-size: 18px
         font-family: $fontBook
         margin-bottom: 12px
+        text-align: center
       .cart__amount-wrap
+        width: 200px
         margin-right: auto
+        margin-left: auto
+      .cart__btn
+        width: 60px
+        font-size: 20px
+      .cart__input
+        width: 75px
     &__amount-btns
       display: none
       &--mobile
         display: flex
-        justify-content: space-around
+        justify-content: center
         margin-bottom: 30px
         position: relative
         &:before
@@ -799,14 +861,16 @@
         margin-bottom: 50px
     &__tocart,
     &__like
-      width: 40%
+      width: 45%
       text-align: center
       flex: 0 1 auto
       border-radius: 30px
       font-size: 16px
       font-family: $fontBold
       text-transform: uppercase
-      padding: 17px 85px 17px 55px
+      padding: 16px 85px 16px 55px
+      margin-left: 8px
+      margin-right: 8px
       color: $btnBgColor
       height: auto
       margin-left: 0

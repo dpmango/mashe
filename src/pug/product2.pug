@@ -242,7 +242,10 @@ block content
         +icon('ico-wave')
       p.product-popup__text Впишите свой e-mail, чтобы получить письмо, как только товар можно будет заказать
       form(action="#")
-        input.product-popup__input(type="text" placeholder="Ваш email")
+        .product-popup__input(jsInput)
+          input(type="text" id="prod2-mail")
+          label.product-popup__placeholder(for="prod2-mail")
+            span Ваш email
         button.product-popup__btn(type="button" jsNotifyMe) Уведомить меня
       p.product-popup__text Нажимая кнопку, вы соглашаетесь с 
         a.product-popup__link(href="#") офертой

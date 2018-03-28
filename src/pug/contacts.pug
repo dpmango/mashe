@@ -38,9 +38,21 @@ block content
             h2.contacts-section__subtitle Написать нам
               +icon('ico-wave')
             form.contacts-section__form(action="#")
-              input.contacts-section__input(type="text" placeholder="Ваше имя")
-              input.contacts-section__input(type="text" placeholder="Контактный номер")
-              textarea.contacts-section__textarea(placeholder="Текст вашего сообщения")
+              .order-section__input(jsInput)
+                input(type="text" id="order-cont-name")
+                label.order-section__placeholder(for="order-cont-name")
+                  span Ваше имя
+              //input.contacts-section__input(type="text" placeholder="Ваше имя")
+              .order-section__input(jsInput jsTel)
+                input(type="text" id="order-cont-tel")
+                label.order-section__placeholder(for="order-cont-tel")
+                  span Контактный номер
+              //input.contacts-section__input(type="text" placeholder="Контактный номер")
+              .order-section__input(jsInput)
+                textarea(type="text" id="order-cont-comment")
+                label.order-section__placeholder(for="order-cont-comment")
+                  span Текст вашего сообщения
+              //textarea.contacts-section__textarea(placeholder="Текст вашего сообщения")
               button.contacts-section__btn(type="submit") Отправить
         .contacts-section__requis
           span реквизиты и Дополнительные контакты

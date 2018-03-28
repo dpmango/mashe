@@ -49,10 +49,12 @@ block content
             
           .product-section__info(data-animation-delay=".1s").wow
             .product-section__price-wrap
-              .product-section__first-price 1 350
+              .product-section__first-price.product-section__first-price--sale 1 350
                 +icon('ico-ruble')
                 span цена за метр
-              .product-section__second-price 1 050
+                del 1 760 
+                  +icon('ico-ruble')
+              .product-section__second-price.product-section__second-price--sale 1 050
                 +icon('ico-ruble')
                 span цена за метр, от 10 метров
             .product-section__amount-wrap

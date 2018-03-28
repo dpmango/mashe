@@ -282,8 +282,9 @@
     width: 31%
     text-align: center
     position: relative
-    padding-top: 100px
+    padding-top: 120px
     font-size: 20px
+    line-height: 130%
     font-family: $fontBook
     color: #707070
     &:nth-of-type(2)
@@ -294,20 +295,26 @@
         transform: translateY(-50%)
         font-family: $fontBook
         font-weight: 200
-        top: 50%
+        top: 40%
         font-size: 48px
         color: transparentize($btnBgColor, 0.7)
       &:before
-        left: -10px
+        left: -25px
       &:after
-        right: -10px
+        right: 10px
     svg
       position: absolute
       top: 0
       left: 50%
-      font-size: 90px
+      font-size: 100px
       color: $primaryColor
       transform: translateX(-50%)
+    .ico-serv-service
+      font-size: 110px
+      top: -15px
+    .ico-serv-money
+      font-size: 90px
+      top: 20px
   &__hints
     padding-top: 28px
     border-top: 2px solid #f5f5f5
@@ -360,8 +367,9 @@
       padding: 25px 30px
       width: 300px
       &-item
-        padding-left: 95px
+        padding-left: 35px
         svg
+          display: none
           left: 30px
         .ico-serv-truck
           left: 25px
@@ -371,9 +379,9 @@
           left: 35px
     &__main
       padding: 30px 35px
-      width: calc(100% - 325px)
+      width: calc(100% - 265px)
     &__imgs
-      width: 200px
+      width: 140px
       margin-right: 40px
     &__info
       width: calc(100% - 240px)
@@ -397,6 +405,9 @@
       margin-bottom: 10px
       &-item
         font-size: 20px
+        padding-left: 95px
+        svg
+          display: block
     &__main
       width: 100%
       

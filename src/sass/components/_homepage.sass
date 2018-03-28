@@ -1055,6 +1055,8 @@
     z-index: 2
   &__info
     width: 40%
+    svg
+      display: none
   &__form
     width: 60%
     text-align: right
@@ -1065,6 +1067,8 @@
     text-transform: uppercase
     color: $btnBgColor
     margin-bottom: 8px
+    svg
+      display: none
   &__subtitle
     font-size: 18px
     font-family: $fontHeavy
@@ -1083,7 +1087,7 @@
   &__input
     text-align: left
     border: 1px solid transparent
-    border-radius: 20px
+    border-radius: 30px
     display: block
     width: 100%
     background-color: #fff
@@ -1165,9 +1169,42 @@
     &__descr
       font-size: 18px
   .catalog-item
+    &__photo
+      min-height: 220px
+    &__title
+      font-size: 22px
+      margin-bottom: 15px
+      padding: 0 20px
+    &__info
+      padding-left: 20px
+      padding-right: 20px
+    &__wrap
+      padding-left: 20px
+      padding-right: 20px
+    &__info-item
+      font-size: 16px
+    &__tobag,
+    &__like
+      width: 40px
+      height: 40px
+      font-size: 16px
+    &__price
+      font-size: 24px
+      svg
+        font-size: 16px
+    &__descr
+      padding-left: 20px
+      padding-right: 20px
+      p
+        margin-top: 0
+        font-size: 16px
+        line-height: 110%
+        margin-bottom: 15px
     &__special
       padding-left: 21px
       padding-right: 21px
+      span
+        display: inline
   .popular
     padding-top: 75px
   .examples
@@ -1345,17 +1382,17 @@
       width: 100%
       padding-bottom: 105px
       position: relative
-      &:after
-        content: ''
+      
+      > svg
+        display: block
+        margin-left: auto
+        margin-right: auto
         position: absolute
         bottom: 50px
         left: 50%
         transform: translateX(-50%)
-        background-repeat: no-repeat
-        background-image: url(../../img/wave-title.svg)
-        width: 180px
-        height: 12px
-        background-size: 100%
+        max-width: 180px
+        color: #E1E5E6
     &__form
       width: 100%
     &__title
@@ -1518,21 +1555,26 @@
           background-color: $btnBgColor
 
   .newsletter
+    &:before
+      background-position: -20px 50%
+      width: 20%
+      height: 80%
+    &:after
+      right: -60px
+      bottom: -20px
     &__info
       padding-bottom: 50px
-      &:after
+      svg
         display: none
+        
     &__title
       position: relative
       margin-bottom: 50px
-      &:before
-        content: ''
+      svg
+        display: block
         position: absolute
-        bottom: -30px
+        bottom: -40px
         left: 50%
         transform: translateX(-50%)
-        background-repeat: no-repeat
-        background-image: url(../../img/wave-title.svg)
-        width: 180px
-        height: 12px
-        background-size: 100%
+        max-width: 180px
+        color: #E1E5E6

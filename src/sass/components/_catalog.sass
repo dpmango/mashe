@@ -221,12 +221,6 @@
       padding-left: 40px
       padding-right: 40px
     
-+r($wide)
-  .catalog-items
-    .catalog-item
-      width: calc(33.33% - 14px)
-      &:nth-child(4)
-        display: none
     
 +r($desktop)
   .catalog-promo
@@ -267,8 +261,7 @@
       
   .catalog-items
     .catalog-item
-      width: calc(50% - 14px)
-      &:nth-child(3),
+      width: calc(33.33% - 14px)
       &:nth-child(4)
         display: none
       
@@ -354,9 +347,8 @@
       flex-wrap: wrap
       margin-bottom: 0
     .catalog-item
-      width: 100%
+      width: calc(50% - 18px)
       margin-bottom: 30px
-      &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4)
         display: none
@@ -367,3 +359,32 @@
       padding-bottom: 60px
     &__title
       font-size: 24px
+      
++r($mobile)
+  .catalog-items
+    .catalog-item
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        display: none
+  .catalog-item
+    &__title
+      font-size: 26px
+      padding: 0 30px
+      min-height: auto
+    &__info-item
+      font-size: 18px
+      padding-left: 30px
+      padding-right: 30px
+    &__price
+      font-size: 36px
+      svg
+        font-size: 22px
+    &__tobag,
+    &__like
+      width: 52px
+      height: 52px
+      font-size: 20px

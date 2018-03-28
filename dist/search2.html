@@ -275,7 +275,7 @@
             </svg></a>
           <div class="container wow" data-animation-class="wowFadeDown">
             <div class="header__nav"><a class="header__link" href="#">Оплата и доставка</a><a class="header__link" href="#">Скидки</a><a class="header__link" href="#">Контакты</a></div><a class="header__logo" href="homepage.html"><img src="img/logo-big.svg"></a><a class="header__logo--mini" href="homepage.html"><img src="img/logo.svg"></a>
-            <div class="header__nav"><a class="header__link" href="#callback" js-popup>Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#">Вход</a></div>
+            <div class="header__nav"><a class="header__link" href="#callback" js-popup>Обратный звонок</a><a class="header__link header__link--tel" href="tel:88005059543">8 800 505-95-43<span>по будням с 10 до 18</span></a><a class="header__link" href="#login-popup" js-popup>Вход</a></div>
           </div>
         </div>
       </header><a class="to-top-btn" href="#top">
@@ -301,9 +301,20 @@
           </h2>
           <p class="product-popup__text">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
           <form action="#">
-            <input class="product-popup__input" type="text" placeholder="Ваше имя">
-            <input class="product-popup__input" type="text" placeholder="Контактный номер">
-            <textarea class="product-popup__textarea" placeholder="Комментарий"></textarea>
+            <div class="product-popup__input" jsInput>
+              <input type="text" id="prod-name">
+              <label class="product-popup__placeholder" for="prod-name"><span>Ваше имя</span></label>
+            </div>
+            <div class="product-popup__input" jsInput jsTel>
+              <input type="text" id="prod-tel">
+              <label class="product-popup__placeholder" for="prod-tel"><span>Контактный номер</span></label>
+            </div>
+            <div class="product-popup__input" jsInput>
+              <textarea id="prod-comment"></textarea>
+              <label class="product-popup__placeholder" for="prod-comment"><span>Комментарий</span></label>
+            </div>
+            <!--input.product-popup__input(type="text" placeholder="Контактный номер")-->
+            <!--textarea.product-popup__textarea(placeholder="Комментарий")-->
             <button class="product-popup__btn" type="button" jsSendCallback>Отправить</button>
           </form>
           <p class="product-popup__text">Нажимая кнопку, вы соглашаетесь с <a class="product-popup__link" href="#">офертой</a></p>
@@ -320,6 +331,73 @@
               <use xlink:href="img/sprite.svg#ico-close"></use>
             </svg>
           </button>
+        </div>
+      </div>
+      <!-- LOGIN POPUP-->
+      <div class="login-popup product-popup" id="login-popup">
+        <h2 class="product-popup__title"><a class="login-popup__link login-popup__link--log is-active" href="#">Войти</a><a class="login-popup__link login-popup__link--reg" href="#">Зарегистрироваться</a>
+          <svg class="ico ico-wave">
+            <use xlink:href="img/sprite.svg#ico-wave"></use>
+          </svg>
+        </h2>
+        <div class="login-popup__first is-active">
+          <form action="#">
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-mail">
+                <use xlink:href="img/sprite.svg#ico-login-mail"></use>
+              </svg>
+              <input type="text" id="login-name">
+              <label class="product-popup__placeholder" for="login-name"><span>Ваш email</span></label>
+            </div>
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-pass">
+                <use xlink:href="img/sprite.svg#ico-login-pass"></use>
+              </svg>
+              <input type="password" id="login-pass">
+              <label class="product-popup__placeholder" for="login-pass"><span>Пароль</span></label>
+            </div><a class="login-popup__hint" href="#">Забыли пароль?</a>
+            <button class="product-popup__btn" type="button">Войти</button>
+          </form>
+        </div>
+        <div class="login-popup__second">
+          <p class="product-popup__text">Пожалуйста, введите свой адрес электронной почты ниже, чтобы получить ссылку на сброс пароля.</p>
+          <form action="#">
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-mail">
+                <use xlink:href="img/sprite.svg#ico-login-mail"></use>
+              </svg>
+              <input type="text" id="login-name2">
+              <label class="product-popup__placeholder" for="login-name2"><span>Ваш email</span></label>
+            </div>
+            <button class="product-popup__btn" type="button">Отправить</button>
+          </form>
+        </div>
+        <div class="login-popup__third">
+          <form action="#">
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-mail">
+                <use xlink:href="img/sprite.svg#ico-login-mail"></use>
+              </svg>
+              <input type="text" id="login-name3">
+              <label class="product-popup__placeholder" for="login-name3"><span>Ваш email</span></label>
+            </div>
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-pass">
+                <use xlink:href="img/sprite.svg#ico-login-pass"></use>
+              </svg>
+              <input type="password" id="login-pass3">
+              <label class="product-popup__placeholder" for="login-pass3"><span>Пароль</span></label>
+            </div>
+            <div class="product-popup__input" jsInput>
+              <svg class="ico ico-login-pass">
+                <use xlink:href="img/sprite.svg#ico-login-pass"></use>
+              </svg>
+              <input type="password" id="login-again">
+              <label class="product-popup__placeholder" for="login-again"><span>Повторите пароль</span></label>
+            </div>
+            <button class="product-popup__btn" type="button">Зарегистрироваться</button>
+            <p class="product-popup__text">Нажимая кнопку, вы соглашаетесь с <a class="product-popup__link" href="#">правилами сайта</a></p>
+          </form>
         </div>
       </div>
       <!-- HEADER :: END-->
@@ -354,7 +432,14 @@
             <div class="container">
               <div class="newsletter__wrap">
                 <div class="newsletter__info wow" data-animation-class="wowFadeLeft">
-                  <h2 class="newsletter__title">Подпишись на рассылку </h2>
+                  <svg class="ico ico-wave">
+                    <use xlink:href="img/sprite.svg#ico-wave"></use>
+                  </svg>
+                  <h2 class="newsletter__title">Подпишись на рассылку 
+                    <svg class="ico ico-wave">
+                      <use xlink:href="img/sprite.svg#ico-wave"></use>
+                    </svg>
+                  </h2>
                   <h3 class="newsletter__subtitle">и всегда будь в курсе наших новостей!</h3>
                 </div>
                 <form class="newsletter__form wow" action="#" data-animation-class="wowFadeRight">

@@ -3424,7 +3424,7 @@ body, html {
 }
 
 .ico-fb {
-  width: 0.46em;
+  width: 0.53em;
   height: 1em;
   fill: #353535;
 }
@@ -3487,6 +3487,18 @@ body, html {
   width: 1em;
   height: 1em;
   fill: #353535;
+}
+
+.ico-login-mail {
+  width: 1.53em;
+  height: 1em;
+  fill: #C8CFD1;
+}
+
+.ico-login-pass {
+  width: 1em;
+  height: 1em;
+  fill: #C8CFD1;
 }
 
 .ico-logo-big {
@@ -3559,6 +3571,12 @@ body, html {
   width: 0.75em;
   height: 1em;
   fill: #353535;
+}
+
+.ico-product-wave {
+  width: 39.82em;
+  height: 1em;
+  fill: #C4C4C4;
 }
 
 .ico-quotes {
@@ -3694,7 +3712,7 @@ body, html {
 }
 
 .ico-vk {
-  width: 1.78em;
+  width: 1.82em;
   height: 1em;
   fill: #353535;
 }
@@ -4567,8 +4585,8 @@ html.mfp-helper body {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   margin-right: 6px;
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #353535;
   color: #353535;
   display: -webkit-box;
@@ -4604,8 +4622,6 @@ html.mfp-helper body {
 }
 
 .main-nav__fb:hover, .main-nav__vk:hover, .main-nav__inst:hover {
-  background-color: #353535;
-  color: #fff;
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
@@ -5399,6 +5415,95 @@ html.mfp-helper body {
   background-color: #171717;
 }
 
+.login-popup {
+  max-width: 690px !important;
+}
+
+.login-popup:before, .login-popup:after {
+  display: none;
+}
+
+.login-popup__first, .login-popup__second, .login-popup__third {
+  display: none;
+}
+
+.login-popup__first.is-active, .login-popup__second.is-active, .login-popup__third.is-active {
+  display: block;
+}
+
+.login-popup form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-popup .product-popup__input {
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+
+.login-popup .product-popup__input svg {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #C8CFD1;
+}
+
+.login-popup .product-popup__input .ico-login-pass {
+  font-size: 21px;
+}
+
+.login-popup .product-popup__placeholder {
+  padding-left: 60px;
+}
+
+.login-popup .product-popup__placeholder.is-active span {
+  -webkit-transform: translate(-56px, -33px);
+      -ms-transform: translate(-56px, -33px);
+          transform: translate(-56px, -33px);
+}
+
+.login-popup__link {
+  position: relative;
+  color: #C8CFD1;
+}
+
+.login-popup__link.is-active {
+  color: #353535;
+}
+
+.login-popup__link--reg {
+  margin-left: 30px;
+}
+
+.login-popup__link--reg:before {
+  font-size: 28px;
+  content: '/';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+          transform: translateY(-55%);
+  left: -22px;
+  color: #C8CFD1;
+}
+
+.login-popup__hint {
+  font-size: 20px;
+  font-family: "FuturaPTBook";
+  color: #C8CFD1;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.login-popup__hint:hover {
+  color: #353535;
+}
+
 .to-top-btn {
   position: fixed;
   right: 35px;
@@ -5798,6 +5903,16 @@ html.mfp-helper body {
   .main-nav__item:nth-last-child(7) {
     border-right-color: transparent;
   }
+  .login-popup__link {
+    font-size: 21px;
+  }
+  .login-popup__link--reg {
+    margin-left: 20px;
+  }
+  .login-popup__link--reg:before {
+    font-size: 18px;
+    left: -15px;
+  }
 }
 
 .footer__topbar {
@@ -5920,8 +6035,8 @@ html.mfp-helper body {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   margin-right: 6px;
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #353535;
   color: #353535;
   display: -webkit-box;
@@ -5960,8 +6075,6 @@ html.mfp-helper body {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
-  background-color: #353535;
-  color: #fff;
 }
 
 .footer__bottombar {
@@ -7813,6 +7926,10 @@ html.mfp-helper body {
   width: 40%;
 }
 
+.newsletter__info svg {
+  display: none;
+}
+
 .newsletter__form {
   width: 60%;
   text-align: right;
@@ -7825,6 +7942,10 @@ html.mfp-helper body {
   text-transform: uppercase;
   color: #353535;
   margin-bottom: 8px;
+}
+
+.newsletter__title svg {
+  display: none;
 }
 
 .newsletter__subtitle {
@@ -7852,8 +7973,8 @@ html.mfp-helper body {
 .newsletter__input {
   text-align: left;
   border: 1px solid transparent;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
   display: block;
   width: 100%;
   background-color: #fff;
@@ -7959,9 +8080,52 @@ html.mfp-helper body {
   .masterpiece__descr {
     font-size: 18px;
   }
+  .catalog-item__photo {
+    min-height: 220px;
+  }
+  .catalog-item__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  .catalog-item__info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .catalog-item__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .catalog-item__info-item {
+    font-size: 16px;
+  }
+  .catalog-item__tobag, .catalog-item__like {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .catalog-item__price {
+    font-size: 24px;
+  }
+  .catalog-item__price svg {
+    font-size: 16px;
+  }
+  .catalog-item__descr {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .catalog-item__descr p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 110%;
+    margin-bottom: 15px;
+  }
   .catalog-item__special {
     padding-left: 21px;
     padding-right: 21px;
+  }
+  .catalog-item__special span {
+    display: inline;
   }
   .popular {
     padding-top: 75px;
@@ -8198,20 +8362,18 @@ html.mfp-helper body {
     padding-bottom: 105px;
     position: relative;
   }
-  .newsletter__info:after {
-    content: '';
+  .newsletter__info > svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     bottom: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-image: url(../../img/wave-title.svg);
-    width: 180px;
-    height: 12px;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    max-width: 180px;
+    color: #E1E5E6;
   }
   .newsletter__form {
     width: 100%;
@@ -8417,30 +8579,35 @@ html.mfp-helper body {
   .clients .owl-dots .owl-dot.active {
     background-color: #353535;
   }
+  .newsletter:before {
+    background-position: -20px 50%;
+    width: 20%;
+    height: 80%;
+  }
+  .newsletter:after {
+    right: -60px;
+    bottom: -20px;
+  }
   .newsletter__info {
     padding-bottom: 50px;
   }
-  .newsletter__info:after {
+  .newsletter__info svg {
     display: none;
   }
   .newsletter__title {
     position: relative;
     margin-bottom: 50px;
   }
-  .newsletter__title:before {
-    content: '';
+  .newsletter__title svg {
+    display: block;
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-image: url(../../img/wave-title.svg);
-    width: 180px;
-    height: 12px;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    max-width: 180px;
+    color: #E1E5E6;
   }
 }
 
@@ -8820,16 +8987,6 @@ html.mfp-helper body {
   }
 }
 
-@media only screen and (max-width: 1336px) {
-  .catalog-items .catalog-item {
-    width: -webkit-calc(33.33% - 14px);
-    width: calc(33.33% - 14px);
-  }
-  .catalog-items .catalog-item:nth-child(4) {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .catalog-promo {
     padding-top: 60px;
@@ -8883,10 +9040,10 @@ html.mfp-helper body {
     margin-top: 30px;
   }
   .catalog-items .catalog-item {
-    width: -webkit-calc(50% - 14px);
-    width: calc(50% - 14px);
+    width: -webkit-calc(33.33% - 14px);
+    width: calc(33.33% - 14px);
   }
-  .catalog-items .catalog-item:nth-child(3), .catalog-items .catalog-item:nth-child(4) {
+  .catalog-items .catalog-item:nth-child(4) {
     display: none;
   }
   .catalog-info__wrap {
@@ -8999,10 +9156,11 @@ html.mfp-helper body {
     margin-bottom: 0;
   }
   .catalog-items .catalog-item {
-    width: 100%;
+    width: -webkit-calc(50% - 18px);
+    width: calc(50% - 18px);
     margin-bottom: 30px;
   }
-  .catalog-items .catalog-item:nth-child(2), .catalog-items .catalog-item:nth-child(3), .catalog-items .catalog-item:nth-child(4) {
+  .catalog-items .catalog-item:nth-child(3), .catalog-items .catalog-item:nth-child(4) {
     display: none;
   }
   .catalog-info__descr {
@@ -9011,6 +9169,38 @@ html.mfp-helper body {
   }
   .catalog-info__title {
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .catalog-items .catalog-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .catalog-items .catalog-item:nth-child(2), .catalog-items .catalog-item:nth-child(3), .catalog-items .catalog-item:nth-child(4) {
+    display: none;
+  }
+  .catalog-item__title {
+    font-size: 26px;
+    padding: 0 30px;
+    min-height: auto;
+  }
+  .catalog-item__info-item {
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .catalog-item__price {
+    font-size: 36px;
+  }
+  .catalog-item__price svg {
+    font-size: 22px;
+  }
+  .catalog-item__tobag, .catalog-item__like {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
   }
 }
 
@@ -10245,23 +10435,70 @@ html.mfp-helper body {
 
 .product-popup__input, .product-popup__textarea {
   display: block;
+  position: relative;
   width: 100%;
-  border: 2px solid #F0F1F2;
   padding: 11px 25px;
+}
+
+.product-popup__input input,
+.product-popup__input textarea, .product-popup__textarea input,
+.product-popup__textarea textarea {
+  text-align: left;
+  border: 0;
+  width: 100%;
   font-size: 18px;
   font-family: "FuturaPTBook";
   color: #353535;
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
 }
 
-.product-popup__input:focus, .product-popup__textarea:focus {
+.product-popup__input input:focus + .product-popup__placeholder,
+.product-popup__input textarea:focus + .product-popup__placeholder, .product-popup__textarea input:focus + .product-popup__placeholder,
+.product-popup__textarea textarea:focus + .product-popup__placeholder {
   border-color: #353535;
 }
 
-.product-popup__textarea {
+.product-popup__placeholder {
+  border: 2px solid #F0F1F2;
+  padding: 10px 25px 12px 25px;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-family: "FuturaPTBook";
+  color: #BDBDBD;
+}
+
+.product-popup__placeholder.is-active {
+  pointer-events: none;
+}
+
+.product-popup__placeholder.is-active span {
+  font-size: 14px;
+  -webkit-transform: translate(-26px, -33px);
+      -ms-transform: translate(-26px, -33px);
+          transform: translate(-26px, -33px);
+}
+
+.product-popup__placeholder span {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.product-popup textarea {
   min-height: 100px;
+  resize: none;
 }
 
 .product-popup__btn {
@@ -10727,6 +10964,7 @@ html.mfp-helper body {
 }
 
 .product-section__first-price, .product-section__second-price {
+  position: relative;
   width: 45%;
   border: 2px solid #FFF4F2;
   padding: 12px 10px 12px 30px;
@@ -10734,6 +10972,10 @@ html.mfp-helper body {
   font-family: "FuturaPTMedium";
   letter-spacing: -0.05em;
   color: #353535;
+}
+
+.product-section__first-price--sale, .product-section__second-price--sale {
+  border-color: #F0827D;
 }
 
 .product-section__first-price svg, .product-section__second-price svg {
@@ -10748,9 +10990,25 @@ html.mfp-helper body {
   letter-spacing: 0;
 }
 
+.product-section__first-price del {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  font-size: 18px;
+  color: #F0827D;
+}
+
+.product-section__first-price del svg {
+  font-size: 12px;
+}
+
 .product-section__second-price {
   width: 55%;
   background-color: #FFF4F2;
+}
+
+.product-section__second-price--sale {
+  background-color: #F0827D;
 }
 
 .product-section__amount-wrap {
@@ -11363,6 +11621,14 @@ html.mfp-helper body {
   .product-section__slider {
     width: 50%;
   }
+  .product-section__slider-wrap .owl-next,
+  .product-section__slider-wrap .owl-prev {
+    -webkit-background-size: 16px 21px;
+            background-size: 16px 21px;
+  }
+  .product-section__photos-item svg {
+    font-size: 23px;
+  }
   .product-section__info {
     width: 50%;
     padding-left: 20px;
@@ -11389,14 +11655,25 @@ html.mfp-helper body {
   }
   .product-section__amount-title {
     font-size: 24px;
+    text-align: center;
   }
   .product-section__amount-subtitle {
     font-size: 18px;
     font-family: "FuturaPTBook";
     margin-bottom: 12px;
+    text-align: center;
   }
   .product-section__amount .cart__amount-wrap {
+    width: 200px;
     margin-right: auto;
+    margin-left: auto;
+  }
+  .product-section__amount .cart__btn {
+    width: 60px;
+    font-size: 20px;
+  }
+  .product-section__amount .cart__input {
+    width: 75px;
   }
   .product-section__amount-btns {
     display: none;
@@ -11406,9 +11683,10 @@ html.mfp-helper body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
     position: relative;
   }
@@ -11432,7 +11710,7 @@ html.mfp-helper body {
     margin-bottom: 50px;
   }
   .product-section__tocart, .product-section__like {
-    width: 40%;
+    width: 45%;
     text-align: center;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
@@ -11443,7 +11721,9 @@ html.mfp-helper body {
     font-size: 16px;
     font-family: "FuturaPTBold";
     text-transform: uppercase;
-    padding: 17px 85px 17px 55px;
+    padding: 16px 85px 16px 55px;
+    margin-left: 8px;
+    margin-right: 8px;
     color: #353535;
     height: auto;
     margin-left: 0;
@@ -12416,10 +12696,9 @@ html.mfp-helper body {
 }
 
 .contacts-section__soc-link:hover {
-  background-color: #353535;
-  -webkit-box-shadow: 0 0 0 2px #353535;
-          box-shadow: 0 0 0 2px #353535;
-  color: #fff;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .contacts-section__text {
@@ -12478,7 +12757,7 @@ html.mfp-helper body {
   border-color: #353535;
 }
 
-.contacts-section__textarea {
+.contacts-section textarea {
   min-height: 100px;
   max-width: 100%;
   resize: none;
@@ -12973,7 +13252,7 @@ html.mfp-helper body {
 
 .order-section__fields-title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #353535;
   font-size: 24px;
   font-weight: 400;
@@ -12992,11 +13271,8 @@ html.mfp-helper body {
 }
 
 .order-section__input {
-  border: 2px solid #F0F1F2;
+  position: relative;
   padding: 12px 15px 12px 25px;
-  font-size: 18px;
-  font-family: "FuturaPTBook";
-  color: #353535;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -13025,6 +13301,59 @@ html.mfp-helper body {
 
 .order-section__input:focus {
   border-color: #353535;
+}
+
+.order-section__input input,
+.order-section__input textarea {
+  border: 0;
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  color: #353535;
+  width: 100%;
+  display: block;
+}
+
+.order-section__input input:focus + .order-section__placeholder,
+.order-section__input textarea:focus + .order-section__placeholder {
+  border-color: #353535;
+}
+
+.order-section__placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 11px 15px 13px 25px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-size: 18px;
+  font-family: "FuturaPTBook";
+  color: #BDBDBD;
+  top: 0;
+  left: 0;
+  border: 2px solid #F0F1F2;
+}
+
+.order-section__placeholder.is-active {
+  pointer-events: none;
+}
+
+.order-section__placeholder.is-active span {
+  font-size: 14px;
+  -webkit-transform: translate(-26px, -33px);
+      -ms-transform: translate(-26px, -33px);
+          transform: translate(-26px, -33px);
+}
+
+.order-section__placeholder span {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
 }
 
 .order-section__btn-wrap {
@@ -13919,11 +14248,9 @@ html.mfp-helper body {
 }
 
 .order-section__soc-link:hover {
-  background-color: #353535;
-  border-color: #353535;
-  color: #fff;
-  -webkit-box-shadow: 0 0 0 2px #353535;
-          box-shadow: 0 0 0 2px #353535;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .order-section__soc-link .ico-vk {
@@ -14945,8 +15272,9 @@ html.mfp-helper body {
   width: 31%;
   text-align: center;
   position: relative;
-  padding-top: 100px;
+  padding-top: 120px;
   font-size: 20px;
+  line-height: 130%;
   font-family: "FuturaPTBook";
   color: #707070;
 }
@@ -14959,28 +15287,38 @@ html.mfp-helper body {
           transform: translateY(-50%);
   font-family: "FuturaPTBook";
   font-weight: 200;
-  top: 50%;
+  top: 40%;
   font-size: 48px;
   color: rgba(53, 53, 53, 0.3);
 }
 
 .service-page__sales-item:nth-of-type(2):before {
-  left: -10px;
+  left: -25px;
 }
 
 .service-page__sales-item:nth-of-type(2):after {
-  right: -10px;
+  right: 10px;
 }
 
 .service-page__sales-item svg {
   position: absolute;
   top: 0;
   left: 50%;
-  font-size: 90px;
+  font-size: 100px;
   color: #FFDAD4;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.service-page__sales-item .ico-serv-service {
+  font-size: 110px;
+  top: -15px;
+}
+
+.service-page__sales-item .ico-serv-money {
+  font-size: 90px;
+  top: 20px;
 }
 
 .service-page__hints {
@@ -15055,9 +15393,10 @@ html.mfp-helper body {
     width: 300px;
   }
   .service-page__aside-item {
-    padding-left: 95px;
+    padding-left: 35px;
   }
   .service-page__aside-item svg {
+    display: none;
     left: 30px;
   }
   .service-page__aside-item .ico-serv-truck {
@@ -15071,11 +15410,11 @@ html.mfp-helper body {
   }
   .service-page__main {
     padding: 30px 35px;
-    width: -webkit-calc(100% - 325px);
-    width: calc(100% - 325px);
+    width: -webkit-calc(100% - 265px);
+    width: calc(100% - 265px);
   }
   .service-page__imgs {
-    width: 200px;
+    width: 140px;
     margin-right: 40px;
   }
   .service-page__info {
@@ -15110,6 +15449,10 @@ html.mfp-helper body {
   }
   .service-page__aside-item {
     font-size: 20px;
+    padding-left: 95px;
+  }
+  .service-page__aside-item svg {
+    display: block;
   }
   .service-page__main {
     width: 100%;
@@ -15376,6 +15719,12 @@ html.mfp-helper body {
   .about-page__subscribe {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .about-page__blockquote svg {
+    width: 90%;
   }
 }
 

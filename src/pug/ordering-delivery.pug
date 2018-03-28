@@ -67,20 +67,64 @@ block content
           .order-section__address
             h2.order-section__subtitle Адрес доставки
             .order-section__fields
-              input.order-section__input.order-section__input--40(type="text" placeholder="Улица*")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
-              input.order-section__input(type="text" placeholder="Коментарий к заказу")
+              .order-section__input.order-section__input--40(jsInput)
+                input(type="text" id="order-deliv-str")
+                label.order-section__placeholder(for="order-deliv-str")
+                  span Улица*
+              //input.order-section__input.order-section__input--40(type="text" placeholder="Улица*")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-hous")
+                label.order-section__placeholder(for="order-deliv-hous")
+                  span Дом*
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-korp")
+                label.order-section__placeholder(for="order-deliv-korp")
+                  span Корпус
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-flat")
+                label.order-section__placeholder(for="order-deliv-flat")
+                  span Квартира*
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
+              .order-section__input(jsInput)
+                input(type="text" id="order-deliv-comment")
+                label.order-section__placeholder(for="order-deliv-comment")
+                  span Коментарий к заказу
+              //input.order-section__input(type="text" placeholder="Коментарий к заказу")
           .order-section__post
             h2.order-section__subtitle Адрес доставки
             .order-section__fields
-              input.order-section__input.order-section__input--27(type="text" placeholder="Улица*")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
-              input.order-section__input.order-section__input--15(type="text" placeholder="Индекс*")
-              input.order-section__input(type="text" placeholder="Коментарий к заказу")
+              .order-section__input.order-section__input--27(jsInput)
+                input(type="text" id="order-deliv-str2")
+                label.order-section__placeholder(for="order-deliv-str2")
+                  span Улица*
+              //input.order-section__input.order-section__input--27(type="text" placeholder="Улица*")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-hous2")
+                label.order-section__placeholder(for="order-deliv-hous2")
+                  span Дом*
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Дом*")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-korp2")
+                label.order-section__placeholder(for="order-deliv-korp2")
+                  span Корпус
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Корпус")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-flat2")
+                label.order-section__placeholder(for="order-deliv-flat2")
+                  span Квартира*
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Квартира*")
+              .order-section__input.order-section__input--15(jsInput)
+                input(type="text" id="order-deliv-index")
+                label.order-section__placeholder(for="order-deliv-index")
+                  span Индекс*
+              //input.order-section__input.order-section__input--15(type="text" placeholder="Индекс*")
+              .order-section__input(jsInput)
+                input(type="text" id="order-deliv-comment2")
+                label.order-section__placeholder(for="order-deliv-comment2")
+                  span Коментарий к заказу
+              //input.order-section__input(type="text" placeholder="Коментарий к заказу")
               
           .order-section__myself
             .order-section__title-wrap

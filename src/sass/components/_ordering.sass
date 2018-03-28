@@ -133,7 +133,7 @@
     flex-wrap: wrap
   &__fields-title
     margin-top: 0
-    margin-bottom: 15px
+    margin-bottom: 20px
     color: $btnBgColor
     font-size: 24px
     font-weight: 400
@@ -146,11 +146,8 @@
     input:last-child
       margin-bottom: 0
   &__input
-    border: 2px solid #F0F1F2
+    position: relative
     padding: 12px 15px 12px 25px
-    font-size: 18px
-    font-family: $fontBook
-    color: $btnBgColor
     transition: all $transitionSpeed $ease
     margin-bottom: 30px
     width: 100%
@@ -166,6 +163,38 @@
         margin-right: 0
     &:focus
       border-color: $btnBgColor
+    input,
+    textarea
+      border: 0
+      font-size: 18px
+      font-family: $fontBook
+      color: $btnBgColor
+      width: 100%
+      display: block
+      &:focus + .order-section__placeholder
+        border-color: $btnBgColor
+  &__placeholder
+    position: absolute
+    width: 100%
+    height: 100%
+    padding: 11px 15px 13px 25px
+    transition: all $transitionSpeed $ease
+    font-size: 18px
+    font-family: $fontBook
+    color: #BDBDBD
+    top: 0
+    left: 0
+    border: 2px solid #F0F1F2
+    &.is-active
+      pointer-events: none
+      span
+        font-size: 14px
+        transform: translate(-26px, -33px)
+    span
+      display: block
+      width: 100%
+      transition: all $transitionSpeed $ease
+      transform-origin: left top
   &__btn-wrap
     background-color: #fff
     padding: 10px 55px 50px 55px
@@ -723,10 +752,11 @@
     svg
       transition: none
     &:hover
-      background-color: $btnBgColor
-      border-color: $btnBgColor
-      color: #fff
-      box-shadow: 0 0 0 2px $btnBgColor
+      transform: scale(1.05)
+      //background-color: $btnBgColor
+      //border-color: $btnBgColor
+      //color: #fff
+      //box-shadow: 0 0 0 2px $btnBgColor
     .ico-vk
       font-size: 16px
   

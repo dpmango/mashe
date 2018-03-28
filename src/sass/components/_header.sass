@@ -377,8 +377,8 @@
     margin-bottom: 12px
     border-radius: 50%
     margin-right: 6px
-    width: 37px
-    height: 37px
+    width: 50px
+    height: 50px
     border: 2px solid $btnBgColor
     color: $btnBgColor
     display: flex
@@ -393,8 +393,8 @@
       &.ico-inst
         font-size: 16px
     &:hover
-      background-color: $btnBgColor
-      color: #fff
+      //background-color: $btnBgColor
+      //color: #fff
       transform: scale(1.05)
 
     
@@ -854,6 +854,62 @@
     background-color: $btnBgColor
     &:hover
       background-color: $btnBgHover
+    
+// LOGIN POPUP
+.login-popup
+  max-width: 690px !important
+  &:before,
+  &:after
+    display: none
+  &__first,
+  &__second,
+  &__third
+    display: none
+    &.is-active
+      display: block
+  form
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+  .product-popup__input
+    margin-bottom: 30px
+    padding-left: 60px
+    svg
+      position: absolute
+      top: 50%
+      left: 25px
+      transform: translateY(-50%)
+      color: #C8CFD1
+    .ico-login-pass
+      font-size: 21px
+  .product-popup__placeholder
+    padding-left: 60px
+    &.is-active
+      span
+        transform: translate(-56px, -33px)
+  &__link
+    position: relative
+    color: #C8CFD1
+    &.is-active
+      color: $btnBgColor
+  &__link--reg
+    margin-left: 30px
+    &:before
+      font-size: 28px
+      content: '/'
+      position: absolute
+      top: 50%
+      transform: translateY(-55%)
+      left: -22px
+      color: #C8CFD1
+  &__hint
+    font-size: 20px
+    font-family: $fontBook
+    color: #C8CFD1
+    transition: all $transitionSpeed $ease
+    &:hover
+      color: $btnBgColor
+    
       
       
 .to-top-btn
@@ -1146,3 +1202,12 @@
         border-bottom-color: transparent
       &:nth-last-child(7)
         border-right-color: transparent
+      
+  .login-popup
+    &__link
+      font-size: 21px
+      &--reg
+        margin-left: 20px
+        &:before
+          font-size: 18px
+          left: -15px
