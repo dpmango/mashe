@@ -133,7 +133,7 @@
     flex-wrap: wrap
   &__fields-title
     margin-top: 0
-    margin-bottom: 20px
+    margin-bottom: 25px
     color: $btnBgColor
     font-size: 24px
     font-weight: 400
@@ -145,12 +145,26 @@
     margin-top: 30px
     input:last-child
       margin-bottom: 0
+  &__is-error
+    display: none
+    position: absolute
+    color: #F0827D
+    left: 0
+    bottom: -15px
+    font-size: 12px
   &__input
     position: relative
     padding: 12px 15px 12px 25px
     transition: all $transitionSpeed $ease
     margin-bottom: 30px
     width: 100%
+    &.is-error
+      .order-section__is-error
+        display: block
+      .order-section__placeholder
+        border-color: #F0827D !important
+      input
+        color: #F0827D
     &--65
       width: 65%
       margin-right: 35px
@@ -192,6 +206,8 @@
         transform: translate(-26px, -33px)
     span
       display: block
+      overflow: hidden
+      white-space: nowrap
       width: 100%
       transition: all $transitionSpeed $ease
       transform-origin: left top
@@ -351,6 +367,7 @@
     position: relative
     font-size: 12px
     font-family: $fontBold
+    color: $btnBgColor
     padding-top: 50px
     letter-spacing: 0.05em
     svg
@@ -462,6 +479,7 @@
       margin-top: auto
       font-size: 18px
       font-family: $fontMedium
+      color: $btnBgColor
       span
         font-size: 28px
         margin-left: 4px

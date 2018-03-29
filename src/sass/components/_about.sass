@@ -13,7 +13,7 @@
     color: $btnBgColor
   &__wrap
     background-color: #fff
-    padding: 25px 25px 50px 25px
+    padding: 50px 25px 50px 25px
     text-align: center
   &__blockquote
     max-width: 1180px
@@ -30,6 +30,8 @@
     padding: 0
     padding-bottom: 70px
     margin-bottom: 40px
+    .ico-product-wave
+      display: none
     svg
       position: absolute
       width: 70%
@@ -77,6 +79,10 @@
       font-size: 20px
       padding-bottom: 30px
       margin-bottom: 30px
+      .ico-product-wave
+        display: inline-block
+      .ico-about-wave
+        display: none
       
 +r($tablet)
   .about-page
@@ -84,6 +90,7 @@
     .breadcrumbs
       display: none
     &__wrap
+      padding-top: 35px
       padding-bottom: 25px
       width: calc(100% + 60px)
       margin-left: -30px

@@ -579,7 +579,7 @@
       left: 37px
       height: 2px
       width: calc(100% - 74px)
-      background-color: $primary2Color
+      background-color: #f5f5f5
     &-item
       font-size: 18px
       margin-bottom: 3px
@@ -1178,6 +1178,13 @@
     &__info
       padding-left: 20px
       padding-right: 20px
+      &:before
+        width: calc(100% - 40px)
+        left: 20px
+    &__badge
+      font-size: 10px
+      padding: 10px 24px 10px 18px
+      
     &__wrap
       padding-left: 20px
       padding-right: 20px
@@ -1188,6 +1195,8 @@
       width: 40px
       height: 40px
       font-size: 16px
+      .ico-envelope
+        font-size: 12px
     &__price
       font-size: 24px
       svg
@@ -1223,6 +1232,18 @@
     padding-bottom: 75px
     &__item
       padding: 0 25px 48px 25px
+      
+@media (max-width: 1250px)
+  .clients,
+  .popular
+    &__title
+      span
+        &:before,
+          width: 130px
+          left: -37%
+        &:after
+          width: 130px
+          right: -37%
 
 +r($desktop)
   .main-slider
@@ -1556,12 +1577,19 @@
 
   .newsletter
     &:before
-      background-position: -20px 50%
-      width: 20%
-      height: 80%
+      background-image: url(../../img/konv-left.svg)
+      width: 80px
+      height: 70px
+      background-size: 100%
+      bottom: 53%
+      left: -30px
     &:after
-      right: -60px
-      bottom: -20px
+      background-image: url(../../img/konv-right.svg)
+      width: 80px
+      height: 70px
+      background-size: 100%
+      bottom: 63%
+      right: -30px
     &__info
       padding-bottom: 50px
       svg

@@ -260,7 +260,8 @@ a.to-top-btn(href="#top")
     +icon('ico-wave')
   .login-popup__first.is-active
     form(action="#")
-      .product-popup__input(jsInput)
+      .product-popup__input(jsInput jsMail)
+        .product-popup__is-error Это поле заполнено неверно
         +icon('ico-login-mail')
         input(type="text" id="login-name")
         label.product-popup__placeholder(for="login-name")
@@ -275,7 +276,8 @@ a.to-top-btn(href="#top")
   .login-popup__second
     p.product-popup__text Пожалуйста, введите свой адрес электронной почты ниже, чтобы получить ссылку на сброс пароля.
     form(action="#")
-      .product-popup__input(jsInput)
+      .product-popup__input(jsInput jsMail)
+        .product-popup__is-error Это поле заполнено неверно
         +icon('ico-login-mail')
         input(type="text" id="login-name2")
         label.product-popup__placeholder(for="login-name2")
@@ -283,7 +285,8 @@ a.to-top-btn(href="#top")
       button.product-popup__btn(type="button") Отправить
   .login-popup__third
     form(action="#")
-      .product-popup__input(jsInput)
+      .product-popup__input(jsInput jsMail)
+        .product-popup__is-error Это поле заполнено неверно
         +icon('ico-login-mail')
         input(type="text" id="login-name3")
         label.product-popup__placeholder(for="login-name3")

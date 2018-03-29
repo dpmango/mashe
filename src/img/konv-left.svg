@@ -1,0 +1,18 @@
+<svg width="99" height="88" viewBox="0 0 99 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 3.5</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(4343 7521)">
+<g id="Group 3.5" opacity="0.3">
+<g id="Rectangle (Stroke)">
+<use xlink:href="#path0_fill" transform="matrix(0.806938 0.447506 -0.440131 0.787982 -4314.99 -7521)" fill="#B1BABE"/>
+</g>
+<g id="Vector (Stroke)">
+<use xlink:href="#path1_fill" transform="matrix(0.806937 0.447507 -0.440129 0.787982 -4314.1 -7520.02)" fill="#B1BABE"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 82.9057 4L 4 4L 4 58.3166L 82.9057 58.3166L 82.9057 4ZM 0 0L 0 62.3166L 86.9057 62.3166L 86.9057 0L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 3.1752L 2.43272 0L 42.1013 30.3925L 80.744 0.724966L 83.1799 3.89775L 42.1038 35.4335L 0 3.1752Z"/>
+</defs>
+</svg>

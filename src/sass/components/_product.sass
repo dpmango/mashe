@@ -91,6 +91,13 @@
     //font-size: 18px
     //font-family: $fontBook
     //color: $btnBgColor
+    &.is-error
+      .product-popup__is-error
+        display: block
+      .product-popup__placeholder
+        border-color: #F0827D !important
+      input
+        color: #F0827D
     input,
     textarea
       text-align: left
@@ -101,6 +108,13 @@
       color: $btnBgColor
       &:focus + .product-popup__placeholder
         border-color: $btnBgColor
+  &__is-error
+    display: none
+    position: absolute
+    color: #F0827D
+    left: 0
+    bottom: -15px
+    font-size: 12px
   &__placeholder
     border: 2px solid #F0F1F2
     padding: 10px 25px 12px 25px
@@ -853,7 +867,7 @@
           height: 20px
           background-size: 100% auto
           background-repeat: no-repeat
-          background-image: url(../../img/product-wave.svg)
+          background-image: url(../../img/wave-tablet.svg)
     &__charac-wrap
       display: none
       &--mobile
@@ -998,8 +1012,8 @@
       height: 60px
       &--envelope
         max-width: 450px
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 18px
+        padding-right: 18px
     &__like
       font-size: 0
       width: 60px

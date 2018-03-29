@@ -634,19 +634,33 @@ $(document).ready(function() {
 		  $(this).next('.product-popup__placeholder, .order-section__placeholder').addClass('is-active');
 	  });
 	  $('[jsInput] input, [jsInput] textarea').focusout(function () {
-	  	if ($(this).val() === "" || $(this).val() == "_ ___-___-____") {
+	  	if ($(this).val() === "" || $(this).val() == "+_ ___-___-____") {
 	  		$(this).next('.product-popup__placeholder, .order-section__placeholder').removeClass('is-active');
 	  	}
 	  });
     
     // MASK TEL
-    $('[jsTel] input').mask("9 999-999-9999", {
+    $('[jsTel] input').mask("+9 999-999-9999", {
 	  	clearIfNotMatch: true
 	  });
     // RESET MASK
     $(window).on('load', function () {
 		  $('[jsTel] input').val("")
 	  });
+    
+    $('[jsMail] input').keyup(function(){
+      var z = $(this).val();
+      if (z.length > 0) {
+        if (!/[a-zA-Z]/.test(z)) {
+        //$(this).removeClass('is-error')
+          $(this).parents('[jsMail]').addClass('is-error');
+        } else {
+          $(this).parents('[jsMail]').removeClass('is-error');
+        }
+      } else {
+        $(this).parents('[jsMail]').removeClass('is-error');
+      }
+    });
     
     
     //LOGIN POPUP
